@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="166.511" height="196" viewBox="0 0 166.511 196">
+  <defs>
+    <linearGradient id="linear-gradient" x1="2.589" y1="0.5" x2="0.057" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f9f9f9"/>
+      <stop offset="0.966" stop-color="#c4c9cd"/>
+      <stop offset="1" stop-color="#c2c8cc"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="2.112" x2="-0.012" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2aa4f4"/>
+      <stop offset="1" stop-color="#007ad9"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="0.5" y1="-0.652" x2="0.5" y2="0.992" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a3ffff"/>
+      <stop offset="0.223" stop-color="#9dfbff"/>
+      <stop offset="0.53" stop-color="#8bf1ff"/>
+      <stop offset="0.885" stop-color="#6ee0ff"/>
+      <stop offset="1" stop-color="#63daff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-7" y1="-0.199" y2="0.965" xlink:href="#linear-gradient-6"/>
+    <linearGradient id="linear-gradient-9" x1="2.074" x2="0.02" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Ménage_Personnalisable" data-name="Ménage Personnalisable" transform="translate(-0.166 0.465)">
+    <g id="Tracé_4498" data-name="Tracé 4498" transform="translate(57.405 -0.465) rotate(30)" fill="none" stroke-linecap="round" opacity="0.6">
+      <path d="M84.612.053a20.065,20.065,0,0,1,17.323,10.026L123.451,47.2a20.193,20.193,0,0,1,.025,20.22L102.05,104.5a19.949,19.949,0,0,1-17.3,9.983l-43.186-.053A20.065,20.065,0,0,1,24.242,104.4L2.725,67.275A20.193,20.193,0,0,1,2.7,47.055L24.127,9.983A19.949,19.949,0,0,1,41.426,0Z" stroke="none"/>
+      <path d="M 41.40095520019531 -1.52587890625e-05 L 41.40095520019531 7.999984741210938 C 37.15258026123047 7.999984741210938 33.18764495849609 10.29384613037109 31.05348205566406 13.98636627197266 L 9.6270751953125 51.05831909179688 C 7.454597473144531 54.81710433959961 7.462196350097656 59.49372482299805 9.64691162109375 63.26315307617188 L 31.163818359375 100.3878631591797 C 33.31912231445312 104.106559753418 37.30843353271484 106.4199142456055 41.57498168945312 106.4251556396484 L 84.77581787109375 106.478271484375 C 89.02421569824219 106.478271484375 92.98915100097656 104.184440612793 95.12331390380859 100.4918899536133 L 116.5496978759766 63.41996002197266 C 118.7221755981445 59.66115188598633 118.7145767211914 54.98453140258789 116.5298614501953 51.21510314941406 L 95.01295471191406 14.09041595458984 C 92.85765075683594 10.37169647216797 88.86833953857422 8.058341979980469 84.60179138183594 8.0531005859375 L 41.41571807861328 8.000007629394531 L 41.40095520019531 -1.52587890625e-05 M 41.40095520019531 -7.62939453125e-06 C 41.40922546386719 -7.62939453125e-06 41.41728210449219 0 41.42555236816406 7.62939453125e-06 L 84.61162567138672 0.0531005859375 C 91.74376678466797 0.06186676025390625 98.34214782714844 3.880744934082031 101.934455871582 10.07881927490234 L 123.4513626098633 47.20350646972656 C 127.0764312744141 53.45808029174805 127.0858383178711 61.17753219604492 123.4760513305664 67.42317199707031 L 102.049674987793 104.4951019287109 C 98.47248077392578 110.6843643188477 91.88145446777344 114.4870071411133 84.751220703125 114.4782485961914 L 41.56514739990234 114.4251556396484 C 34.43302917480469 114.416389465332 27.83462524414062 110.5975112915039 24.24231719970703 104.3994598388672 L 2.725410461425781 67.27474975585938 C -0.8996353149414062 61.02019882202148 -0.9090652465820312 53.30072402954102 2.70074462890625 47.05508422851562 L 24.12712097167969 9.983154296875 C 27.70016479492188 3.801094055175781 34.27836608886719 -7.62939453125e-06 41.40095520019531 -7.62939453125e-06 Z" stroke="none" fill="#7db1ff"/>
+    </g>
+    <g id="icons8-tune" transform="translate(54.166 52.535)">
+      <path id="Tracé_4519" data-name="Tracé 4519" d="M37,22h6.389a1.278,1.278,0,0,1,1.278,1.278v2.556a1.278,1.278,0,0,1-1.278,1.278H37Z" transform="translate(8.889 4.444)" fill="url(#linear-gradient)"/>
+      <path id="Tracé_4520" data-name="Tracé 4520" d="M28,8H45.889a1.278,1.278,0,0,1,1.278,1.278v2.556a1.278,1.278,0,0,1-1.278,1.278H28Z" transform="translate(6.389 0.556)" fill="url(#linear-gradient-2)"/>
+      <path id="Tracé_4521" data-name="Tracé 4521" d="M30.556,8H6.278A1.278,1.278,0,0,0,5,9.278v2.556a1.278,1.278,0,0,0,1.278,1.278H30.556Z" transform="translate(0 0.556)" fill="url(#linear-gradient-3)"/>
+      <path id="Tracé_4522" data-name="Tracé 4522" d="M43.333,22H6.278A1.278,1.278,0,0,0,5,23.278v2.556a1.278,1.278,0,0,0,1.278,1.278H43.333Z" transform="translate(0 4.444)" fill="url(#linear-gradient-3)"/>
+      <path id="Tracé_4523" data-name="Tracé 4523" d="M21.611,36H6.278A1.278,1.278,0,0,0,5,37.278v2.556a1.278,1.278,0,0,0,1.278,1.278H21.611Z" transform="translate(0 8.333)" fill="url(#linear-gradient-3)"/>
+      <path id="Tracé_4524" data-name="Tracé 4524" d="M28.75,16.222H23.639A.639.639,0,0,1,23,15.583V6.639A.639.639,0,0,1,23.639,6H28.75a.639.639,0,0,1,.639.639v8.944A.639.639,0,0,1,28.75,16.222Z" transform="translate(5 0)" fill="url(#linear-gradient-6)"/>
+      <path id="Tracé_4525" data-name="Tracé 4525" d="M37.75,30.222H32.639A.639.639,0,0,1,32,29.583V20.639A.639.639,0,0,1,32.639,20H37.75a.639.639,0,0,1,.639.639v8.944A.639.639,0,0,1,37.75,30.222Z" transform="translate(7.5 3.889)" fill="url(#linear-gradient-7)"/>
+      <path id="Tracé_4526" data-name="Tracé 4526" d="M21.75,44.222H16.639A.639.639,0,0,1,16,43.583V34.639A.639.639,0,0,1,16.639,34H21.75a.639.639,0,0,1,.639.639v8.944A.639.639,0,0,1,21.75,44.222Z" transform="translate(3.056 7.778)" fill="url(#linear-gradient-6)"/>
+      <path id="Tracé_4527" data-name="Tracé 4527" d="M21,36H47.833a1.278,1.278,0,0,1,1.278,1.278v2.556a1.278,1.278,0,0,1-1.278,1.278H21Z" transform="translate(4.444 8.333)" fill="url(#linear-gradient-9)"/>
+    </g>
+    <text id="Ménage_Personnalisable-2" data-name="Ménage
+Personnalisable" transform="translate(83.475 174.535)" fill="#7db1ff" font-size="16" font-family="Ubuntu-Bold, Ubuntu" font-weight="700" opacity="0.6"><tspan x="-30" y="0">Ménage</tspan><tspan x="-60" y="18">Personnalisable</tspan></text>
+  </g>
+</svg>

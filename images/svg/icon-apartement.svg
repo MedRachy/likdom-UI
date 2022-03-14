@@ -1,0 +1,24 @@
+<svg id="Appartement_icon" data-name="Appartement icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="41" viewBox="0 0 30 41">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.006" y1="0.006" x2="0.952" y2="0.952" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8cdcf9"/>
+      <stop offset="1" stop-color="#5493ff"/>
+    </linearGradient>
+  </defs>
+  <path id="Tracé_162" data-name="Tracé 162" d="M38,44H8V5.772A2.716,2.716,0,0,1,10.708,3H35.293A2.716,2.716,0,0,1,38,5.772Z" transform="translate(-8 -3)" fill="#ccc"/>
+  <path id="Tracé_163" data-name="Tracé 163" d="M8,43H38v3H8Z" transform="translate(-8 -5)" fill="#a7a7a7"/>
+  <g id="Windows">
+    <path id="Square_Window" data-name="Square Window" d="M28.75,25h4.5a.75.75,0,0,1,.75.75v4.5a.75.75,0,0,1-.75.75h-4.5a.75.75,0,0,1-.75-.75v-4.5A.75.75,0,0,1,28.75,25Z" transform="translate(-25 -22)" fill="url(#linear-gradient)"/>
+    <path id="Square_Window-2" data-name="Square Window" d="M28.75,25h4.5a.75.75,0,0,1,.75.75v4.5a.75.75,0,0,1-.75.75h-4.5a.75.75,0,0,1-.75-.75v-4.5A.75.75,0,0,1,28.75,25Z" transform="translate(-25 -13)" fill="url(#linear-gradient)"/>
+    <path id="Square_Window-3" data-name="Square Window" d="M28.75,25h4.5a.75.75,0,0,1,.75.75v4.5a.75.75,0,0,1-.75.75h-4.5a.75.75,0,0,1-.75-.75v-4.5A.75.75,0,0,1,28.75,25Z" transform="translate(-25 -4)" fill="url(#linear-gradient)"/>
+    <path id="Square_Window-4" data-name="Square Window" d="M28.75,25h4.5a.75.75,0,0,1,.75.75v4.5a.75.75,0,0,1-.75.75h-4.5a.75.75,0,0,1-.75-.75v-4.5A.75.75,0,0,1,28.75,25Z" transform="translate(-25 5)" fill="url(#linear-gradient)"/>
+    <path id="Square_Window-5" data-name="Square Window" d="M28.75,25h4.5a.75.75,0,0,1,.75.75v4.5a.75.75,0,0,1-.75.75h-4.5a.75.75,0,0,1-.75-.75v-4.5A.75.75,0,0,1,28.75,25Z" transform="translate(-16 -22)" fill="url(#linear-gradient)"/>
+    <path id="Square_Window-6" data-name="Square Window" d="M28.75,25h4.5a.75.75,0,0,1,.75.75v4.5a.75.75,0,0,1-.75.75h-4.5a.75.75,0,0,1-.75-.75v-4.5A.75.75,0,0,1,28.75,25Z" transform="translate(-16 -13)" fill="url(#linear-gradient)"/>
+    <path id="Square_Window-7" data-name="Square Window" d="M28.75,25h4.5a.75.75,0,0,1,.75.75v4.5a.75.75,0,0,1-.75.75h-4.5a.75.75,0,0,1-.75-.75v-4.5A.75.75,0,0,1,28.75,25Z" transform="translate(-16 -4)" fill="url(#linear-gradient)"/>
+    <path id="Square_Window-8" data-name="Square Window" d="M28.75,25h4.5a.75.75,0,0,1,.75.75v4.5a.75.75,0,0,1-.75.75h-4.5a.75.75,0,0,1-.75-.75v-4.5A.75.75,0,0,1,28.75,25Z" transform="translate(-16 5)" fill="url(#linear-gradient)"/>
+    <path id="Square_Window-9" data-name="Square Window" d="M28.75,25h4.5a.75.75,0,0,1,.75.75v4.5a.75.75,0,0,1-.75.75h-4.5a.75.75,0,0,1-.75-.75v-4.5A.75.75,0,0,1,28.75,25Z" transform="translate(-7 -22)" fill="url(#linear-gradient)"/>
+    <path id="Square_Window-10" data-name="Square Window" d="M28.75,25h4.5a.75.75,0,0,1,.75.75v4.5a.75.75,0,0,1-.75.75h-4.5a.75.75,0,0,1-.75-.75v-4.5A.75.75,0,0,1,28.75,25Z" transform="translate(-7 -13)" fill="url(#linear-gradient)"/>
+    <path id="Square_Window-11" data-name="Square Window" d="M28.75,25h4.5a.75.75,0,0,1,.75.75v4.5a.75.75,0,0,1-.75.75h-4.5a.75.75,0,0,1-.75-.75v-4.5A.75.75,0,0,1,28.75,25Z" transform="translate(-7 -4)" fill="url(#linear-gradient)"/>
+  </g>
+  <path id="Door" d="M1,0H6A1,1,0,0,1,7,1V11a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V1A1,1,0,0,1,1,0Z" transform="translate(20 30)" fill="#3d5b8e"/>
+</svg>

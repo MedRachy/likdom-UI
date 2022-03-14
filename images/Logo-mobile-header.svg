@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110.5" height="35.914" viewBox="0 0 110.5 35.914">
+  <g id="Logo" transform="translate(-134.76 -5.5)">
+    <text id="Likdom" transform="translate(172.26 31)" fill="#3d5b8e" font-size="22" font-family="Proxima Nova" font-weight="700"><tspan x="0" y="0">Likdom</tspan></text>
+    <g id="Shape" transform="translate(136.26 7)">
+      <path id="Tracé_1952" data-name="Tracé 1952" d="M136.26,15.229V31.685L150.5,39.914l14.244-8.229V15.229L150.5,7Z" transform="translate(-136.26 -7)" fill="none" stroke="#3d5b8e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <g id="Window" transform="translate(7.177 9.492)">
+        <rect id="Rectangle_136" data-name="Rectangle 136" width="6.397" height="6.397" rx="1" fill="#3d5b8e"/>
+        <rect id="Rectangle_137" data-name="Rectangle 137" width="6.397" height="6.397" rx="1" transform="translate(7.736)" fill="#3d5b8e"/>
+        <rect id="Rectangle_138" data-name="Rectangle 138" width="6.397" height="6.397" rx="1" transform="translate(0 7.534)" fill="#3d5b8e"/>
+        <rect id="Rectangle_139" data-name="Rectangle 139" width="6.397" height="6.397" rx="1" transform="translate(7.736 7.534)" fill="#3d5b8e"/>
+      </g>
+    </g>
+  </g>
+</svg>

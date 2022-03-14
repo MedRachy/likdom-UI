@@ -1,0 +1,16 @@
+<svg id="Maison_icon" data-name="Maison icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="-0.015" x2="0.5" y2="1.033" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7395cf"/>
+      <stop offset="1" stop-color="#3d5b8e"/>
+    </linearGradient>
+  </defs>
+  <path id="Tracé_5750" data-name="Tracé 5750" d="M40,17l-6-4V7h6Z" transform="translate(-3.83 -2)" fill="#ccc"/>
+  <path id="Tracé_5751" data-name="Tracé 5751" d="M41.34,39H6v2a1.981,1.981,0,0,0,1.963,2H39.377a1.981,1.981,0,0,0,1.963-2Z" transform="translate(-3.17 -2)" fill="#a7a7a7"/>
+  <path id="Tracé_5752" data-name="Tracé 5752" d="M41.34,39H6V20L23.67,3,41.34,20Z" transform="translate(-3.17 -2)" fill="#ccc"/>
+  <path id="Tracé_5753" data-name="Tracé 5753" d="M19,25H29a1,1,0,0,1,1,1V43H18V26A1,1,0,0,1,19,25Z" transform="translate(-3.5 -2)" fill="#3d5b8e"/>
+  <path id="Tracé_5754" data-name="Tracé 5754" d="M40,7H34V6a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1Z" transform="translate(-3.83 -2)" fill="#a7a7a7"/>
+  <path id="Tracé_5755" data-name="Tracé 5755" d="M23.67,4a1.938,1.938,0,0,0-1.3.5L17.108,9.314,6,20v5.39L23.67,9.428,41.34,25.39V20L30.233,9.314,24.972,4.5A1.938,1.938,0,0,0,23.67,4Z" transform="translate(-3.17 -2)" opacity="0.07"/>
+  <path id="Tracé_5756" data-name="Tracé 5756" d="M23.67,3a1.945,1.945,0,0,0-1.3.5L17.108,8.284,6,18.909v5.359L23.67,8.4,41.34,24.268V18.909L30.233,8.284,24.972,3.5A1.945,1.945,0,0,0,23.67,3Z" transform="translate(-3.17 -2)" opacity="0.09"/>
+  <path id="Tracé_5757" data-name="Tracé 5757" d="M43.841,19.507,24.975,2.5a1.944,1.944,0,0,0-2.61,0L3.5,19.507a1.01,1.01,0,0,0-.063,1.43l1.61,1.745a.973.973,0,0,0,1.368.067L23.67,7.428,40.925,22.75a.974.974,0,0,0,1.368-.067l1.61-1.745A1.011,1.011,0,0,0,43.841,19.507Z" transform="translate(-3.17 -2)" fill="url(#linear-gradient)"/>
+</svg>

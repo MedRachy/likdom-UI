@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <filter id="Ellipse_71" x="0" y="0" width="50" height="50" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#5493ff" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Right_Arrow" data-name="Right Arrow" transform="translate(15.24 11.24)">
+    <g transform="matrix(1, 0, 0, 1, -15.24, -11.24)" filter="url(#Ellipse_71)">
+      <circle id="Ellipse_71-2" data-name="Ellipse 71" cx="10" cy="10" r="10" transform="translate(15 11)" fill="#fff"/>
+    </g>
+    <g id="Right_Arrow-2" data-name="Right Arrow" transform="translate(6.76 3.76)">
+      <line id="Ligne_34" data-name="Ligne 34" x2="5.86" y2="5.86" transform="matrix(0.996, -0.087, 0.087, 0.996, 0, 0.511)" fill="none" stroke="#5493ff" stroke-linecap="round" stroke-width="2"/>
+      <line id="Ligne_35" data-name="Ligne 35" y1="5.86" x2="5.86" transform="matrix(-0.996, -0.087, 0.087, -0.996, 5.838, 11.842)" fill="none" stroke="#5493ff" stroke-linecap="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

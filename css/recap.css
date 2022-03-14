@@ -1,0 +1,261 @@
+/* ----------------------- section -------------------- */
+.bg-section {
+    background-image: url("../images/svg/bg-etape2-circle.svg"), url("../images/svg/bg-etape1.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 40vw, top center;
+    background-size: 100% 120%, cover;
+    overflow-y: scroll;
+}
+
+/* scrollbar css not supported for firefox  need to add @support ( ....)*/
+.bg-section::-webkit-scrollbar,
+.ul-taches::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+.bg-section::-webkit-scrollbar-track,
+.ul-taches::-webkit-scrollbar-track {
+    background: #7db1ff;
+    border-radius: 100vw;
+    margin-block: 0.5rem;
+}
+
+.bg-section::-webkit-scrollbar-thumb,
+.ul-taches::-webkit-scrollbar-thumb {
+    background: #5493FF;
+    border: 0.25rem solid #7db1ff;
+    border-radius: 100vw;
+}
+
+.bg-section::-webkit-scrollbar-thumb:hover,
+.ul-taches::-webkit-scrollbar-thumb:hover {
+    background: #486a9c;
+}
+
+/* ---------------------------- */
+
+.row-wrapper {
+    height: 91vh;
+}
+
+.w-60 {
+    width: 60%!important;
+}
+
+.w-40 {
+    width: 40%!important;
+}
+
+.img-assistant {
+    width: 100%;
+    max-height: 60vh;
+}
+
+.div-img-wrapper {
+    height: inherit;
+}
+
+.div-img-wrapper svg {
+    max-width: 100%;
+    max-height: 35vh;
+}
+
+
+.bubble-text {
+    fill: #3D5B8E;
+    font-size: 35px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.img-form {
+    max-width: 100%;
+    max-height: 50vh;
+    opacity: 0.45;
+}
+
+/* ---------------- recap list --------------- */
+.recap-list h5 {
+    color: #3D5B8E;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.recap-list p {
+    text-align: center;
+    color: #5493FF;
+    font-weight: 600;
+    font-style: normal;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(247, 250, 255);
+    border-radius: 1.25rem !important;
+    box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+}
+
+.recap-list p img ,
+.recap-list .ul-pieces img {
+    max-height: 32px;
+    margin-right: 1rem;
+}
+
+.ul-pieces {
+    padding: 1rem;
+    background-color: rgba(247, 250, 255);
+    border-radius: 1.25rem !important;
+    box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+}
+
+.ul-pieces h6 {
+    color: #5493FF;
+    /* font-size: 1.25rem; */
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+}
+
+.ul-pieces li {
+    color : #7395CF;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-style: normal;
+    background-color: transparent;
+    border: none;
+}
+
+.product-check {
+    background-color: #54A4FF;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding-right: 1rem;
+}
+
+.product-check .product-icon {
+    background-color: white;
+    border-radius: 50px;
+    padding: 1rem;
+    margin-left: -4px;
+}
+
+.product-check .product-icon img {
+    max-width: 35px;
+    width: 80%;
+    display: block;
+    margin-inline: auto;
+}
+
+.product-check span {
+    color: white;
+    /* font-size: 1.25rem; */
+    font-weight: 600;
+    text-align: center;
+}
+
+.product-check input {
+    /* font-size: 1.25rem; */
+    cursor: pointer;
+}
+
+.ul-taches {
+    /* padding: 1rem; */
+    height: 270px;
+    background-color: transparent;
+    overflow-y: scroll;
+}
+
+.ul-taches h6 {
+    color: #3D5B8E;
+    text-align: left;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+
+.ul-taches li {
+    color : #3D5B8E;
+    font-weight: 600;
+    font-size: 0.8rem;
+    background-color: transparent;
+    border: none;
+}
+
+.ul-prix {
+    background: transparent;
+
+}
+
+.ul-prix li {
+    color: #5493FF;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.25rem;
+    background-color: transparent;
+    border-top: 1px solid #5493FF!important;
+    border-bottom: none ;
+    border-right: none ;
+    border-left: none;
+
+}
+
+
+.btn-confirmer {
+    background-color: #5493FF;
+    color: white;
+    font-weight: 600;
+    font-style: normal;
+    padding: 0.3rem 1.5rem;
+    
+}
+.btn-confirmer:hover {
+    color: white;
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn-modifier {
+    font-weight: 600;
+    font-style: normal;
+    color: #3D5B8E;
+    border-color: #3D5B8E;
+    padding: 0.3rem 1.5rem;
+  
+}
+
+.btn-modifier:hover {
+    color: #5493FF;
+    box-shadow: inset 0px 0px 5px 0px  rgba(84, 147, 255, 0.5);
+}
+
+
+
+/* ------------- form steps & img steps ------- */
+
+.form-step,
+.img-step {
+    /* display: none; */
+    animation: animate 0.5s ease-in;
+}
+
+.form-step-active {
+    display: block;
+}
+
+.img-step-active {
+    display: flex;
+}
+
+
+@keyframes animate {
+    from {
+        /* transform: scale(1, 0); */
+        transform: translate(-50%);
+        opacity: 0;
+    }
+
+    to {
+        /* transform: scale(1, 1); */
+        transform: translate(0%);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1629" height="1632" viewBox="0 0 1629 1632">
+  <defs>
+    <filter id="Etaps_BG_Circle">
+      <feOffset dx="14" dy="13" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-opacity="0.102" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <ellipse id="Etaps_BG_Circle-2" data-name="Etaps BG Circle" cx="814.5" cy="816" rx="814.5" ry="816" fill="#ebf3ff"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Etaps_BG_Circle)">
+      <ellipse id="Etaps_BG_Circle-3" data-name="Etaps BG Circle" cx="814.5" cy="816" rx="814.5" ry="816" fill="#fff"/>
+    </g>
+  </g>
+</svg>

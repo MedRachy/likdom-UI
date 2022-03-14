@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120.619" height="110.484" viewBox="0 0 120.619 110.484">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.057" x2="1.442" y2="0.145" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5493ff"/>
+      <stop offset="1" stop-color="#6f54ff"/>
+    </linearGradient>
+  </defs>
+  <path id="Mini_Rounded_BG" data-name="Mini Rounded BG" d="M-198.259,1160.8c33.566-13.473,54.7,18.372,43.512,50.218s-38.539,63.691-55.944,30.621S-231.825,1174.273-198.259,1160.8Z" transform="matrix(-0.485, 0.875, -0.875, -0.485, 1024.636, 804.419)" fill="url(#linear-gradient)"/>
+</svg>

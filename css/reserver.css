@@ -1,0 +1,106 @@
+body {
+    background-color: #f7faff;
+}
+
+/* -------------------- section -------------------- */
+
+.bg-section {
+    background-image: url("../images/bg-section-reserver2x.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+
+.div-swiper {
+    /* height: 91vh; */
+    height: auto;
+}
+
+.swiper {
+    padding-block: 5rem!important;
+    padding-inline: 6rem !important;
+}
+
+.swiper-slide {
+    width: 60%!important;
+    margin-inline: auto;
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+    width: auto !important;
+}
+.swiper-button-next::after, 
+.swiper-button-prev::after {
+    content: ""!important;
+}
+
+.card-reserv {
+
+    border: none;
+    backdrop-filter: blur(5px);
+    background-color: rgba(247, 250, 255, 0.5);
+    /* background: rgba(255, 255, 255, 0.7) 0% 0% no-repeat padding-box; */
+    border-radius: 1.25rem!important;
+    box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+}
+
+.card-reserv .img-wrapper {
+    margin-top: -3rem;
+    background-color: white;
+    padding: 1.5rem;
+}
+
+.card-reserv .card-img-top {
+    width: 100%;
+    max-height: 15vh;
+}
+
+/* .card-reserv .card-body {
+    padding-block: 2rem;
+    padding-inline: 5rem;
+} */
+
+.card-reserv h4 {
+    
+    color: #5493ff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.list-taches {
+    border: none;
+    background-color: rgba(255, 255, 255);
+    border-radius: 1.25rem!important;
+}
+
+.list-taches li::marker {
+    color: #5493FF;
+}
+
+.list-taches h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+    color: #5493FF;
+}
+
+.list-taches li {
+    font-size: 0.8rem;
+    color: #3D5B8E;
+}
+
+.btn-reserv {
+    background-color: #5493FF;
+    color: white;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 0.3rem 1.5rem;
+}
+.btn-reserv:hover {
+    color: white;
+    box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+}

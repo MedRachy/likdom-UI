@@ -1,0 +1,49 @@
+<svg id="Villa_Icon" data-name="Villa Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49.165" height="36" viewBox="0 0 49.165 36">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="-0.015" x2="0.5" y2="1.033" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7395cf"/>
+      <stop offset="1" stop-color="#3d5b8e"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.006" y1="0.006" x2="0.952" y2="0.952" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8cdcf9"/>
+      <stop offset="1" stop-color="#5493ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.136" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8ad9fa"/>
+      <stop offset="1" stop-color="#5493ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.019" y1="0.019" x2="0.94" y2="0.94" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#89d7fa"/>
+      <stop offset="1" stop-color="#5695ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="0.5" y1="-0.007" x2="0.5" y2="0.972" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="icons8_home" transform="translate(-3.17 -2)">
+    <path id="Tracé_5758" data-name="Tracé 5758" d="M37.03,39H6v1.756a1.74,1.74,0,0,0,1.724,1.756H35.306a1.74,1.74,0,0,0,1.724-1.756Z" transform="translate(-0.83 -4.512)" fill="#a7a7a7"/>
+    <path id="Tracé_5759" data-name="Tracé 5759" d="M37.03,34.61H6V17.927L21.515,3,37.03,17.927Z" transform="translate(-0.83 -0.122)" fill="#ccc"/>
+    <path id="door" d="M12.878,25h8.78a.878.878,0,0,1,.878.878V40.8H12V25.878A.878.878,0,0,1,12.878,25Z" transform="translate(-1.249 -2.805)" fill="#3d5b8e"/>
+    <path id="Shadow_1" data-name="Shadow 1" d="M21.515,4a1.7,1.7,0,0,0-1.143.442L15.753,8.666,6,18.049v4.733L21.515,8.766,37.03,22.781V18.049L27.277,8.666,22.658,4.442A1.7,1.7,0,0,0,21.515,4Z" transform="translate(-0.83 -0.244)" opacity="0.05"/>
+    <path id="Shadow_2" data-name="Shadow 2" d="M21.515,3a1.708,1.708,0,0,0-1.143.439l-4.619,4.2L6,16.969v4.705L21.515,7.739,37.03,21.674V16.969L27.277,7.64l-4.619-4.2A1.708,1.708,0,0,0,21.515,3Z" transform="translate(-0.83 -0.122)" opacity="0.07"/>
+    <path id="Roof" d="M38.881,17.372,22.316,2.442a1.707,1.707,0,0,0-2.292,0L3.46,17.372A.887.887,0,0,0,3.4,18.628L4.818,20.16a.854.854,0,0,0,1.2.059L21.17,6.766,36.321,20.219a.855.855,0,0,0,1.2-.059l1.414-1.532A.888.888,0,0,0,38.881,17.372Z" fill="url(#linear-gradient)"/>
+    <path id="Square_Window" data-name="Square Window" d="M28.878,25h5.268a.878.878,0,0,1,.878.878v5.268a.878.878,0,0,1-.878.878H28.878A.878.878,0,0,1,28,31.146V25.878A.878.878,0,0,1,28.878,25Z" transform="translate(-4.17 -2.366)" fill="url(#linear-gradient-2)"/>
+    <circle id="Ellipse_78" data-name="Ellipse 78" cx="2.5" cy="2.5" r="2.5" transform="translate(19.17 12)" fill="url(#linear-gradient-3)"/>
+  </g>
+  <g id="icons8_warehouse" transform="translate(25.112 10.888)">
+    <path id="Tracé_5765" data-name="Tracé 5765" d="M22.862,25.808H6.992A1.047,1.047,0,0,1,6,24.713V10.476L14.927,5l8.927,5.476V24.713A1.047,1.047,0,0,1,22.862,25.808Z" transform="translate(-0.955 -0.84)" fill="#d7dddf"/>
+    <path id="Tracé_5766" data-name="Tracé 5766" d="M21.548,12h2.19a.548.548,0,0,1,.548.548v2.19a.548.548,0,0,1-.548.548h-2.19A.548.548,0,0,1,21,14.738v-2.19A.548.548,0,0,1,21.548,12Z" transform="translate(-8.672 -4.007)" fill="url(#linear-gradient-4)"/>
+    <g id="Garage" transform="translate(6.687 12.922)">
+      <rect id="Rectangle_350" data-name="Rectangle 350" width="14.568" height="1.095" transform="translate(0 10.952)" fill="#64717c"/>
+      <rect id="Rectangle_351" data-name="Rectangle 351" width="14.568" height="1.095" transform="translate(0 9.856)" fill="#889097"/>
+      <rect id="Rectangle_352" data-name="Rectangle 352" width="14.568" height="1.095" transform="translate(0 8.761)" fill="#64717c"/>
+      <rect id="Rectangle_353" data-name="Rectangle 353" width="14.568" height="1.095" transform="translate(0 7.666)" fill="#889097"/>
+      <rect id="Rectangle_354" data-name="Rectangle 354" width="14.568" height="1.095" transform="translate(0 6.571)" fill="#64717c"/>
+      <rect id="Rectangle_355" data-name="Rectangle 355" width="14.568" height="1.095" transform="translate(0 5.476)" fill="#889097"/>
+      <rect id="Rectangle_356" data-name="Rectangle 356" width="14.568" height="1.095" transform="translate(0 4.381)" fill="#64717c"/>
+      <rect id="Rectangle_357" data-name="Rectangle 357" width="14.568" height="1.095" transform="translate(0 3.285)" fill="#889097"/>
+      <rect id="Rectangle_358" data-name="Rectangle 358" width="14.568" height="1.095" transform="translate(0 2.19)" fill="#64717c"/>
+      <path id="Tracé_5767" data-name="Tracé 5767" d="M23.568,22.1H9v-.548A.52.52,0,0,1,9.486,21h13.6a.52.52,0,0,1,.486.548Z" transform="translate(-9 -21)" fill="#64717c"/>
+      <rect id="Rectangle_359" data-name="Rectangle 359" width="14.568" height="1.095" transform="translate(0 1.095)" fill="#889097"/>
+    </g>
+    <path id="Tracé_5768" data-name="Tracé 5768" d="M22.822,10.784,13.971,5.413,5.12,10.784a.48.48,0,0,1-.682-.212l-.487-.958a.575.575,0,0,1,.195-.745L13.24,3.35a1.4,1.4,0,0,1,1.461,0L23.8,8.869a.574.574,0,0,1,.195.745l-.487.958A.478.478,0,0,1,22.822,10.784Z" transform="translate(0 0)" fill="url(#linear-gradient-5)"/>
+  </g>
+</svg>
