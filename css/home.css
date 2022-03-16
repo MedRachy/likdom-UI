@@ -98,7 +98,7 @@ body {
 }
 
 .g-hexagon {
-    fill: none;
+    fill: #ffff;
 }
 
 .pill-hexagon-fill {
@@ -532,8 +532,6 @@ body {
     font-weight: 600;
 }
 
-
-
 .card-whyus {
     border: none;
     backdrop-filter: blur(5px);
@@ -544,15 +542,13 @@ body {
 }
 
 .icon-wrapper {
-    width: 100px;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: white;
     margin-top: 1rem;
 }
 
 .card-whyus .card-img-top {
-    width: 80%;
-    max-height: 8vh;
+    max-width: 48px;
 }
 
 .card-whyus .card-title {
@@ -597,8 +593,7 @@ body {
         margin-left: auto!important;
     }
     .card-whyus .card-img-top {
-        width: 50%;
-        max-height: 5vh;
+        max-width: 40px;
     }
 }
 
