@@ -31,6 +31,7 @@ body {
     font-weight: bold;
     font-style: normal;
     font-size: clamp(2rem, 1.4655rem + 0.8621vw, 2.5rem); 
+    text-shadow: 0px 3px 6px #3D5B8E4D;
 }
 .desc-text {
     font-size: clamp(1rem, 0.4655rem + 0.8621vw, 1.5rem);
@@ -41,6 +42,8 @@ body {
 }
 
 .btn-reserv {
+    font-weight: 600;
+    font-style: normal;
     background-color: #5493FF;
     color: white;
     margin-top: 0.8rem;
@@ -52,8 +55,10 @@ body {
 }
 
 .btn-taches {
+    font-weight: 600;
+    font-style: normal;
     color: #5493FF;
-    border-color: #5493FF;
+    border: 3px solid #5493FF;
     padding: 0.3rem 1.5rem;
     margin-top: 0.8rem;
 }
@@ -84,10 +89,6 @@ body {
 
 .header-card .card-body {
     height: 50vh;
-}
-.header-card .card-text , 
-.card-ul {
-    font-size: .8rem;
 }
 
 .pill-svg {
@@ -134,24 +135,25 @@ body {
 
 /* scrollbar css not supported for firefox  need to add @support ( ....)*/
 .tab-content::-webkit-scrollbar {
-    width: 0.8rem;
-  }
+    width: 0.5rem;
+}
   
-  .tab-content::-webkit-scrollbar-track {
+.tab-content::-webkit-scrollbar-track {
+    width: 0.5rem;
     background: #7db1ff;
     border-radius: 100vw;
     margin-block: 0.5rem;
-  }
-  
-  .tab-content::-webkit-scrollbar-thumb {
+}
+
+.tab-content::-webkit-scrollbar-thumb {
     background: #5493FF;
-    border: 0.25rem solid #7db1ff;
+    /* border: 0.25rem solid #7db1ff; */
     border-radius: 100vw;
-  }
-  
-  .tab-content::-webkit-scrollbar-thumb:hover {
+}
+
+.tab-content::-webkit-scrollbar-thumb:hover {
     background: #486a9c;
-  }
+}
   
 /* ------------------------------------ */
 
@@ -179,14 +181,12 @@ body {
     font-weight: bold;
     font-style: italic;
     color: white;
-    font-weight: 500;
-    font-style: italic;
     font-size: clamp(1.75rem , 2.5vw , 3rem);
 }
 
 .btn-callus {
     width: clamp(60% , 2.5vw , 70%);
-    margin-top: 1vh;
+    margin-top: 2.5vh;
     font-weight: 700; 
     font-size: clamp(1rem , 1.5vw , 2rem);
     color: white;
@@ -218,18 +218,35 @@ body {
     color: #5493FF;
 }
 
+.modal-taches .modal-dialog {
+    max-width: 75%;
+}
+
+.modal-taches .modal-header , 
+.modal-taches .modal-footer {
+    padding : 4rem 5rem;
+}
+
+.modal-taches .modal-body {
+    padding: 3rem 5rem;
+}
+
 .modal-taches .modal-title {
     font-family: 'Ubuntu', sans-serif;
+    font-size: clamp(1.75rem , 2vw , 2rem);
     color: #5493FF;
     font-weight: bold;
     font-style: normal;
 }
 
 .modal-taches .modal-body h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
     color: #5493FF;
 }
 
 .modal-taches .modal-body li {
+    font-size: 1.25rem;
     color: #3D5B8E;
 }
 
@@ -412,14 +429,14 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-style: normal;
-    font-size: clamp(0.8rem , 1vw , 1.3rem);
+    font-size: clamp(1rem , 2vw , 1.7rem);
 }
 
 .card-steps .card-text {
     font-weight: 600;
     font-style: normal;
     color: #3D5B8E;
-    font-size:  clamp(0.7rem , 1vw, 1rem);
+    font-size:  clamp(0.8rem , 1vw, 2rem);
 
 }
 
@@ -500,8 +517,10 @@ body {
 }
 
 .p-whyus {
+    font-weight: 600;
+    font-style: normal;
     color: #3D5B8E;
-    font-size:  clamp(0.9rem , 1vw, 1rem);
+    font-size:  clamp(1rem , 1vw, 1.75rem);
     margin-bottom: 4rem;
 }
 
@@ -538,12 +557,12 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-style: normal;
-    font-size: clamp(0.8rem , 1vw , 1.3rem);
+    font-size: clamp(1rem , 1vw, 1.75rem);
 }
 .card-whyus .card-text {
     font-weight: 600;
     font-style: normal;
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: #3D5B8E;
 }
 
@@ -635,9 +654,10 @@ body {
 }
 
 .card-review .card-text {
+    text-align: center;
     font-weight: 600;
     font-style: normal;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .row-footer h3 {

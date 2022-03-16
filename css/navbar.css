@@ -18,7 +18,7 @@
 .navbar-desktop .btn {
     font-weight: 600;
     font-style: normal;
-    font-size: 0.8rem;
+    font-size: clamp(0.7rem , 1vw , 1rem);
 }
 .img-logo {
     width: 7vw;
@@ -55,6 +55,7 @@
 }
 
 .link-signin {
+    border-width: 2px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -76,7 +77,7 @@
 .form-search {
     padding-left : 1rem;
     border-radius: 20px 0px 0px 20px;
-    font-size: 0.8rem;
+    font-size: clamp(0.7rem , 1vw , 1rem);
     border: none;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }

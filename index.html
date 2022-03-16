@@ -76,7 +76,8 @@
                             </li>
                         </ul>
                         <!-- descktop menu -->
-                        <div class="navbar-desktop d-none d-lg-flex justify-content-evenly flex-grow-1">
+                        <div
+                            class="navbar-desktop d-none d-lg-flex justify-content-evenly align-items-center flex-grow-1">
                             <a class="btn link-reserv rounded-pill px-5" href="./reserver.html">Réserver</a>
                             <form class="d-flex m-0" method="GET" action="{{ route('reserv.code') }}">
                                 <div class="input-group">
@@ -238,7 +239,7 @@
                                                 <text data-name="Ménage Simple" class="pill-text"
                                                     transform="translate(83.474 174.535)">
                                                     <tspan x="-30" y="0">Ménage</tspan>
-                                                    <tspan x="-25" y="18">Simple</tspan>
+                                                    <tspan x="-25" y="20">Simple</tspan>
                                                 </text>
                                             </g>
                                         </svg>
@@ -306,7 +307,7 @@
                                                 <text data-name="Grand Ménage" transform="translate(83.475 174.535)"
                                                     class="pill-text">
                                                     <tspan x="-22" y="0">Grand</tspan>
-                                                    <tspan x="-30" y="18">Ménage</tspan>
+                                                    <tspan x="-30" y="20">Ménage</tspan>
                                                 </text>
                                             </g>
                                         </svg>
@@ -389,7 +390,7 @@
                                                 <text class="pill-text" data-name="Ménage
                                     Personnalisable" transform="translate(83.475 174.535)">
                                                     <tspan x="-30" y="0">Ménage</tspan>
-                                                    <tspan x="-70" y="18">Personnalisable</tspan>
+                                                    <tspan x="-70" y="20">Personnalisable</tspan>
                                                 </text>
                                             </g>
                                         </svg>
@@ -477,7 +478,7 @@
                                                 <text data-name="Pack
                                         Etudiant" transform="translate(83.474 174.535)" class="pill-text">
                                                     <tspan x="-18" y="0">Pack</tspan>
-                                                    <tspan x="-32" y="18">Etudiant</tspan>
+                                                    <tspan x="-32" y="20">Etudiant</tspan>
                                                 </text>
                                             </g>
                                         </svg>
@@ -491,9 +492,7 @@
                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                                         tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
                                         vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                                        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                                        labore et.
+                                        no sea takimata sanctus
                                     </p>
 
                                 </div>
@@ -502,10 +501,7 @@
                                     <p class="card-text">
                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                                         tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                                        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                                        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                                        labore et.
+                                        vero eos et acc labore et.
                                     </p>
                                 </div>
                                 <div class="tab-pane fade" id="pills-MP" role="tabpanel" aria-labelledby="pills-MP-tab">
@@ -513,9 +509,7 @@
                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                                         tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
                                         vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                                        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                                        labore et.
+
                                     </p>
                                 </div>
                                 <div class="tab-pane fade" id="pills-PE" role="tabpanel" aria-labelledby="pills-PE-tab">
@@ -523,18 +517,16 @@
                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                                         tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
                                         vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                                        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                                        labore et.
+
                                     </p>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-evenly">
-                                <button class="btn btn-sm btn-taches rounded-pill" data-bs-toggle="modal"
+                                <button class="btn  btn-taches rounded-pill" data-bs-toggle="modal"
                                     data-bs-target="#MS-taches-modal">
                                     Voir les tâches inclues
                                 </button>
-                                <button class="btn btn-sm btn-reserv rounded-pill">
+                                <button class="btn btn-reserv rounded-pill">
                                     Réserver un passage
                                 </button>
                             </div>
@@ -1001,9 +993,9 @@
     <!-- Modal -->
     <div class="modal fade modal-taches" id="MS-taches-modal" tabindex="-1" aria-labelledby="MS-taches-modallabel"
         aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header border-0 py-4">
+                <div class="modal-header border-0">
                     <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
                     <h5 class="modal-title flex-grow-1 text-center" id="MS-taches-modallabel">
                         Les taches inclus pour un ménage simple
@@ -1014,9 +1006,9 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="d-flex align-items-center mb-3">
+                                <div class="d-flex align-items-center mb-4">
                                     <img src="./images/svg/icon-chambre.svg" alt="">
-                                    <h5 class="mb-0 ms-2 ">Chambres</h5>
+                                    <h5 class="mb-0 ms-3 ">Chambres</h5>
                                 </div>
 
                                 <ul class="mb-5">
@@ -1027,9 +1019,9 @@
                                 </ul>
                             </div>
                             <div class="col-md-6">
-                                <div class="d-flex align-items-center mb-3">
+                                <div class="d-flex align-items-center mb-4">
                                     <img src="./images/svg/icon-salon.svg" alt="">
-                                    <h5 class="mb-0 ms-2 ">Salon et sèjour</h5>
+                                    <h5 class="mb-0 ms-3 ">Salon et sèjour</h5>
                                 </div>
 
                                 <ul class="mb-5">
@@ -1040,9 +1032,9 @@
                                 </ul>
                             </div>
                             <div class="col-md-6">
-                                <div class="d-flex align-items-center mb-3">
+                                <div class="d-flex align-items-center mb-4">
                                     <img src="./images/svg/icon-salle-de-bain.svg" alt="">
-                                    <h5 class="mb-0 ms-2 ">Salles de bain</h5>
+                                    <h5 class="mb-0 ms-3 ">Salles de bain</h5>
                                 </div>
                                 <ul>
                                     <li> Nettoyer la douche </li>
@@ -1052,9 +1044,9 @@
                                 </ul>
                             </div>
                             <div class="col-md-6">
-                                <div class="d-flex align-items-center mb-3">
+                                <div class="d-flex align-items-center mb-4">
                                     <img src="./images/svg/icon-cuisine.svg" alt="">
-                                    <h5 class="mb-0 ms-2 ">Cuisine</h5>
+                                    <h5 class="mb-0 ms-3 ">Cuisine</h5>
                                 </div>
                                 <ul>
                                     <li>Laver la vaisselle, essuyer les comptoirs de cuisine </li>
@@ -1066,8 +1058,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer border-0 py-4">
-                    <button type="button" class="btn btn-sm btn-reserv rounded-pill mx-auto m-0">Réserver un
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-reserv rounded-pill mx-auto m-0">Réserver un
                         passage</button>
                 </div>
             </div>
