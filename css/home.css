@@ -185,10 +185,13 @@ body {
 }
 
 .btn-callus {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: normal;
     width: clamp(60% , 2.5vw , 70%);
     margin-top: 2.5vh;
-    font-weight: 700; 
     font-size: clamp(1rem , 1.5vw , 2rem);
+    letter-spacing: 0.62px;
     color: white;
     background-color: #40C351;
     border: 0.4rem solid white;
