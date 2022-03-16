@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="74 72 400 400">
+    <path id="Big_Bubble" data-name="Big Bubble"
+        d="M1089.788,1277.57s99.2-100.952,55.709-143.865-221.014,36.5-212.162-81.422,178.759-201.205,293.6-176.731C1358.149,903.515,1374.487,1119.523,1089.788,1277.57Z"
+        transform="translate(-386.49 -1157.341) rotate(22)" fill="#c8deff" />
+    <text class="bubble-text" transform="translate(83.474 174.535)">
+        <tspan x="50" y="0">Merci de saisir</tspan>
+        <tspan x="50" y="40">vos informations</tspan>
+    </text>
+</svg>
