@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="82" height="82" viewBox="0 0 82 82">
+  <defs>
+    <filter id="Ellipse_top_22" x="0" y="0" width="82" height="82" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#5493ff" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="icons8_collapse_arrow" x="20" y="26" width="42" height="29" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-2"/>
+      <feFlood flood-color="#5493ff" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Back_to_Top" data-name="Back to Top" transform="translate(67 13) rotate(90)">
+    <g transform="matrix(0, -1, 1, 0, -13, 67)" filter="url(#Ellipse_top_22)">
+      <circle id="Ellipse_top_22-2" data-name="Ellipse 22" cx="26" cy="26" r="26" transform="translate(67 13) rotate(90)" fill="#fff"/>
+    </g>
+    <g transform="matrix(0, -1, 1, 0, -13, 67)" filter="url(#icons8_collapse_arrow)">
+      <path id="icons8_collapse_arrow-2" data-name="icons8_collapse_arrow" d="M15,6.545l10.178,9.669a2.932,2.932,0,0,0,4,0h0a2.591,2.591,0,0,0,0-3.8L16.883.742a2.76,2.76,0,0,0-3.766,0L.827,12.418a2.591,2.591,0,0,0,0,3.8h0a2.932,2.932,0,0,0,4,0Z" transform="translate(26 30)" fill="#5493ff"/>
+    </g>
+  </g>
+</svg>
