@@ -2,7 +2,7 @@
 .bg-section {
     background-image: url("../images/svg/bg-etape2-circle.svg"), url("../images/svg/bg-etape1.svg");
     background-repeat: no-repeat, no-repeat;
-    background-position: 40vw, top center;
+    background-position: 46vw, top center;
     background-size: 100% 120%, cover;
     overflow-y: scroll;
 }
@@ -148,6 +148,10 @@
 .div-login a {
     color: #3D5B8E;
     font-weight: bold;
+}
+
+.div-login a img {
+    max-width: 28px;
 }
 
 /* ---------------- type logement --------------- */
@@ -333,6 +337,77 @@ input[type=number]::-webkit-outer-spin-button {
     opacity: 0;
 }
 
+/* ------------- select taches --------------- */
+
+.select-taches {
+    width: 100%;
+    max-width: 500px;
+}
+
+.div-tache-wrapper {
+    height: 440px;
+    padding: 1rem;
+    overflow-y: scroll;
+}
+
+.div-tache {
+    margin-bottom: 1.25rem;
+    line-height: 2;
+    color: #3D5B8E;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(255, 255, 255);
+    border-radius: 1.25rem !important;
+    box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+}
+
+.div-tache .form-check-input {
+    border: 3px solid #7db1ff;
+    box-shadow: 0px 2px 6px #0000001a;
+}
+
+.div-tache .form-check-input[type=checkbox] {
+    background-image: none;
+    border-radius: 50%;
+}
+.div-tache .form-check-input:checked {
+    background-color: #5493FF;
+    border-color: white;
+}
+
+.div-prix-tache {
+    padding-inline: 1rem;
+    margin-top: 3rem;
+}
+
+.div-prix-tache span {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #3D5B8E;
+}
+
+/* scrollbar css not supported for firefox  need to add @support ( ....)*/
+.div-tache-wrapper::-webkit-scrollbar {
+    width: 0.5rem;
+}
+  
+.div-tache-wrapper::-webkit-scrollbar-track {
+    width: 0.5rem;
+    background: #7db1ff;
+    border-radius: 100vw;
+    margin-block: 1rem;
+}
+
+.div-tache-wrapper::-webkit-scrollbar-thumb {
+    background: #5493FF;
+    /* border: 0.25rem solid #7db1ff; */
+    border-radius: 100vw;
+}
+
+.div-tache-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #486a9c;
+}
 /* ---------------- passage form ------------ */
 
 

@@ -3,7 +3,7 @@
 .bg-section {
     background-image: url("../images/svg/bg-etape2-circle.svg"), url("../images/svg/bg-etape1.svg");
     background-repeat: no-repeat, no-repeat;
-    background-position: 40vw, top center;
+    background-position: 46vw, top center;
     background-size: 100% 120%, cover;
     overflow-y: scroll;
 }
@@ -13,6 +13,8 @@
 
 .row-wrapper {
     height: 91vh;
+    margin-right: 4rem;
+    margin-left: 4rem;
 }
 
 .w-60 {
@@ -35,6 +37,7 @@
 .div-img-wrapper svg {
     max-width: 100%;
     max-height: 35vh;
+    align-self: start;
 }
 
 .bubble-text {

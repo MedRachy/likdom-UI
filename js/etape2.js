@@ -19,8 +19,13 @@ let formStepsNum = 0;
 
 nextBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
-    if (formStepsNum == 2) {
+    if (formStepsNum == 3) {
       window.location.href = "./recap.html";
+    }
+    // keep the same image for div tache
+    if (formStepsNum == 1) {
+      formStepsNum++;
+      updateFormSteps();
     } else {
       formStepsNum++;
       updateFormSteps();
@@ -61,8 +66,12 @@ function updateImgSteps() {
     imgStep.classList.contains("img-step-active") &&
       imgStep.classList.remove("img-step-active");
   });
-
-  imgSteps[formStepsNum].classList.add("img-step-active");
+  // that because div taches dont have an image
+  if (formStepsNum == 3) {
+    imgSteps[2].classList.add("img-step-active");
+  } else {
+    imgSteps[formStepsNum].classList.add("img-step-active");
+  }
 }
 
 link_apart.addEventListener("click", () => {
