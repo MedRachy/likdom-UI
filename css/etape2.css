@@ -58,9 +58,44 @@
     max-height: 35vh;
     align-self: start;
 }
+
+.form-step-wrapper {
+    height: 750px;
+}
+
+.btn-next {
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.25rem;
+    background-color: #5493FF;
+    color: white;
+    box-shadow: 0 .5rem 1rem rgba(84, 147, 255, 0.4);
+    padding: 0.3rem 2.5rem;
+    transition: box-shadow .15s ease-in-out ;
+}
+
+.btn-next:hover {
+    box-shadow: none !important;
+}
+
+.btn-prev {
+    font-size: 1.25rem;
+    color: #5493FF;
+    font-weight: 600;
+}
+
+.bubble-text {
+    fill: #3D5B8E;
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
 /* ------------------ user form ------------------- */
 
 .user-form {
+    width: 100%;
     max-width: 513px;
 }
 
@@ -81,7 +116,7 @@
 .user-form .form-control,
 .user-form .form-select {
     border: none;
-    border-radius: 1.5rem !important;
+    border-radius: 1.25rem !important;
     box-shadow: 0 .5rem 1rem rgba(84, 147, 255, 0.4) !important;
     padding: 1rem 1.75rem;
     opacity: 0.6;
@@ -99,38 +134,26 @@
 
 }
 
-
-.btn-next {
-    border: none;
-    background-color: #5493FF;
-    color: white;
-    box-shadow: 0 .5rem 1rem rgba(84, 147, 255, 0.4);
-    padding: 0.3rem 2.5rem;
-    transition: color .15s ease-in-out,box-shadow .15s ease-in-out ;
+.div-login {
+    margin-top: 1.75rem;
+    line-height: 2.5;
+    color: #3D5B8E;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(255, 255, 255);
+    border-radius: 1.25rem !important;
+    box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
 }
 
-.btn-next:hover {
-    color: white;
-    box-shadow: none !important;
-}
-
-.btn-prev {
-    font-size: 1.25rem;
-    color: #5493FF;
-    font-weight: 600;
-}
-
-.bubble-text {
-    fill: #3D5B8E;
-    font-size: 40px;
-    font-family: 'Ubuntu', sans-serif;
+.div-login a {
+    color: #3D5B8E;
     font-weight: bold;
-    font-style: normal;
 }
 
 /* ---------------- type logement --------------- */
 
 .type-logement {
+    width: 100%;
     max-width: 400px;
 }
 
@@ -332,9 +355,9 @@ input[type=number]::-webkit-outer-spin-button {
 .passage-form .form-select {
     width: 120px;
     border: none;
-    border-radius: 1.5rem !important;
+    border-radius: 8px !important;
     box-shadow: 0 .5rem 1rem rgba(84, 147, 255, 0.4) !important;
-    padding: 0.8rem 1.25rem;
+    padding: 0.4rem 1.25rem;
     opacity: 1;
     background-position: right 1rem center !important;
     cursor: pointer;
@@ -357,12 +380,18 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .product-check .product-icon {
+    position: relative;
     background-color: white;
     border-radius: 50px;
     padding: 1rem;
     margin-left: -4px;
 }
 
+#stars {
+    position: absolute;
+    top: -8px;
+    left: 0;
+}
 .product-check .product-icon img {
     max-width: 35px;
     display: block;
@@ -423,6 +452,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media (max-height:934px) {
+
+    .form-step-wrapper {
+        height: 520px;
+    }
 
     .passage-form h4 {
         font-size: 1.2rem;
