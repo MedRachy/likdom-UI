@@ -193,23 +193,6 @@ body {
     font-size: clamp(1.75rem , 2.5vw , 3rem);
 }
 
-/* .btn-callus {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    width: clamp(60% , 2.5vw , 70%);
-    margin-top: 2.5vh;
-    font-size: clamp(1rem , 1.5vw , 2rem);
-    letter-spacing: 0.62px;
-    color: white;
-    background-color: #40C351;
-    border: 0.4rem solid white;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-    transition: color .15s ease-in-out,box-shadow .15s ease-in-out ;
-    
-} */
-
-
 .btn-callus {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
@@ -224,7 +207,6 @@ body {
     border: 0.5rem solid white;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     transition: color .15s ease-in-out,box-shadow .15s ease-in-out ;
-    
 }
 
 .btn-callus:hover {

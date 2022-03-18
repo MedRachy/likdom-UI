@@ -66,6 +66,9 @@ function updateImgSteps() {
 }
 
 link_apart.addEventListener("click", () => {
+  // hide title
+  $(".type-logement h4").css("display", "none");
+
   // hide links
   link_maison.classList.add("hide");
   link_villa.classList.add("hide");
@@ -75,6 +78,8 @@ link_apart.addEventListener("click", () => {
   img_villa.classList.add("hide-villa");
 });
 link_maison.addEventListener("click", () => {
+  // hide title
+  $(".type-logement h4").css("display", "none");
   // hide links
   link_apart.classList.add("hide");
   link_villa.classList.add("hide");
@@ -84,6 +89,8 @@ link_maison.addEventListener("click", () => {
   img_apart.classList.add("hide-apart");
 });
 link_villa.addEventListener("click", () => {
+  // hide title
+  $(".type-logement h4").css("display", "none");
   // hide links
   link_maison.classList.add("hide");
   link_apart.classList.add("hide");
@@ -98,6 +105,7 @@ function resetlinks() {
   link_maison.classList.remove("hide");
   link_villa.classList.remove("hide");
   collapse_form.classList.remove("show");
+  $(".type-logement h4").css("display", "block");
 }
 
 function resetImgsLog() {

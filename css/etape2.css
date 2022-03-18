@@ -59,6 +59,11 @@
     align-self: start;
 }
 /* ------------------ user form ------------------- */
+
+.user-form {
+    max-width: 513px;
+}
+
 .user-form h4 {
     color: #3D5B8E;
     font-family: 'Ubuntu', sans-serif;
@@ -124,17 +129,23 @@
 }
 
 /* ---------------- type logement --------------- */
+
+.type-logement {
+    max-width: 400px;
+}
+
 .type-logement h4 {
     color: #3D5B8E;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
+    font-weight: bold;
     font-style: normal;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    /* margin-top: 2rem; */
+    margin-bottom: 3vh;
 }
 
 .type-logement a {
-    width: 55%;
+    width: 80%;
     margin-block: 1rem;
     display: block;
     color: #5493FF;
@@ -301,12 +312,19 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* ---------------- passage form ------------ */
 
+
+.passage-form {
+    width: 80%;
+    max-width: 500px;
+}
+
 .passage-form h4 {
     color: #3D5B8E;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-style: normal;
+    font-size: 1.75rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
