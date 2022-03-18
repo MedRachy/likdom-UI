@@ -27,7 +27,7 @@ body {
 
 .scrollTop {
     position: fixed;
-    right: 5%;
+    right: 1%;
     bottom: 60px;
     opacity: 0;
     cursor: pointer;
