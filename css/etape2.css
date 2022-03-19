@@ -190,6 +190,10 @@
     margin-right: 1rem;
 }
 
+.type-logement a span {
+    vertical-align: middle;
+}
+
 .type-logement h5 {
     color: #3D5B8E;
     text-align: center;
@@ -532,7 +536,8 @@ input[type=number]::-webkit-outer-spin-button {
         height: 520px;
     }
 
-    .passage-form h4 {
+    .passage-form h4 ,
+    .type-logement h4 {
         font-size: 1.2rem;
         margin-top: 0.75rem;
         margin-bottom: 0.75rem;
@@ -540,11 +545,39 @@ input[type=number]::-webkit-outer-spin-button {
     .passage-form .form-select, .passage-form .form-select option ,
     .product-check span ,
     .btn-next , 
-    .btn-prev {
+    .btn-prev ,
+    .type-logement a ,
+    .div-tache {
         font-size: 1rem;
     }
     .product-check .product-icon img {
         max-width: 20px;
     }
-
+    /* -------- user form ----- */
+    .user-form .form-control,
+    .user-form .form-select,
+    .form-step label {
+        padding: 8px 28px;
+    }
+    .form-floating>.form-control, 
+    .form-floating>.form-select {
+        height: 42px;
+        line-height: 1.25;
+    }    
+    .form-floating>.form-control:focus, 
+    .form-floating>.form-control:not(:placeholder-shown){
+        padding-bottom: 0.75rem;
+    }    
+    .form-floating>.form-control:focus~label, 
+    .form-floating>.form-control:not(:placeholder-shown)~label {
+        opacity: .75;
+        transform: scale(.85) translateY(-0.4rem) translateX(0.15rem);
+    }
+    /* ---------------------- */
+    .div-login {
+        line-height: 1.5;
+    }
+    .div-tache-wrapper {
+        height: 300px;
+    }
 }
