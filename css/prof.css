@@ -1,0 +1,62 @@
+.bg-header {
+    background-image: url("../images/svg/bg-etape1.svg") ;
+    background-position: top center ; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row-wrapper {
+    height: 91vh;
+    /* margin-right: 4rem;
+    margin-left: 4rem; */
+}
+
+.big-title {
+    color: white;
+    line-height: 1.35;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3.75rem;
+    text-shadow: 0px 3px 6px #3D5B8E4D;
+    margin-bottom: 3rem;
+}
+
+.desc-text {
+    color: white;
+    font-weight: 600;
+    font-size: clamp(1rem, 0.4655rem + 0.8621vw, 1.5rem);
+    margin-bottom: 3rem;
+}
+
+.btn-wrapper a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;  
+    white-space: nowrap;
+    width: 45%;
+    padding-block: 1.45rem;
+    box-shadow: 0 .5rem 1rem rgba(84, 147, 255, 0.4);
+    transition: box-shadow .15s ease-in-out ;
+}
+
+.btn-devis {
+    color: #3D5B8E;
+    background-color: #FFCF54;
+}
+
+.btn-devis:hover {
+    color: #3D5B8E;
+    box-shadow: none!important;
+}
+
+.btn-brochure {
+    color: white;
+    background-color: #3D5B8E;
+}
+
+.btn-brochure:hover {
+    color: white;
+    box-shadow: none!important;
+}
