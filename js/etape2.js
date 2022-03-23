@@ -1,10 +1,11 @@
 const prevBtns = document.querySelectorAll(".btn-prev");
 const nextBtns = document.querySelectorAll(".btn-next");
-// const progress = document.getElementById("progress");
+
 const formSteps = document.querySelectorAll(".form-step");
 const imgSteps = document.querySelectorAll(".img-step");
 
-// const progressSteps = document.querySelectorAll(".progress-step");
+const progress = document.getElementById("progress");
+const progressSteps = document.querySelectorAll(".progress-step");
 
 const link_apart = document.getElementById("link-apart");
 const link_maison = document.getElementById("link-maison");
@@ -19,19 +20,24 @@ let formStepsNum = 0;
 
 nextBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
-    if (formStepsNum == 3) {
+    if (formStepsNum == 4) {
+      // submit form
       window.location.href = "./recap.html";
     }
     // keep the same image for div tache
-    if (formStepsNum == 1) {
-      formStepsNum++;
-      updateFormSteps();
-    } else {
-      formStepsNum++;
-      updateFormSteps();
-      updateImgSteps();
-      // updateProgressbar();
-    }
+    // if (formStepsNum == 1) {
+    //   formStepsNum++;
+    //   updateFormSteps();
+    // } else {
+    //   formStepsNum++;
+    //   updateFormSteps();
+    //   updateImgSteps();
+    //   updateProgressbar();
+    // }
+    formStepsNum++;
+    updateFormSteps();
+    updateImgSteps();
+    updateProgressbar();
   });
 });
 
@@ -48,7 +54,7 @@ prevBtns.forEach((btn) => {
     formStepsNum--;
     updateFormSteps();
     updateImgSteps();
-    // updateProgressbar();
+    updateProgressbar();
   });
 });
 
@@ -67,11 +73,12 @@ function updateImgSteps() {
       imgStep.classList.remove("img-step-active");
   });
   // that because div taches dont have an image
-  if (formStepsNum == 3) {
-    imgSteps[2].classList.add("img-step-active");
-  } else {
-    imgSteps[formStepsNum].classList.add("img-step-active");
-  }
+  // if (formStepsNum == 3) {
+  //   imgSteps[2].classList.add("img-step-active");
+  // } else {
+  //   imgSteps[formStepsNum].classList.add("img-step-active");
+  // }
+  imgSteps[formStepsNum].classList.add("img-step-active");
 }
 
 link_apart.addEventListener("click", () => {
@@ -123,26 +130,21 @@ function resetImgsLog() {
   img_apart.setAttribute("class", "img-logement");
 }
 
-// function updateProgressbar() {
-//   progressSteps.forEach((progressStep, idx) => {
-//     if (idx < formStepsNum + 1) {
-//       progressStep.classList.add("progress-step-active");
-//     } else {
-//       progressStep.classList.remove("progress-step-active");
-//     }
-//   });
+function updateProgressbar() {
+  progressSteps.forEach((progressStep, idx) => {
+    if (idx < formStepsNum + 1) {
+      progressStep.classList.add("progress-step-active");
+    } else {
+      progressStep.classList.remove("progress-step-active");
+    }
+  });
 
-//   const progressActive = document.querySelectorAll(".progress-step-active");
+  const progressActive = document.querySelectorAll(".progress-step-active");
 
-//   progress.style.width =
-//     ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
-// }
+  progress.style.width =
+    ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
+}
 
-/*
- * todo =>
- * Refacctor with function
- *
- */
 $(document).on("click", ".custom-input-number .cin-increment", function (e) {
   let $input = $(this).siblings(".cin-input"),
     val = parseInt($input.val()),

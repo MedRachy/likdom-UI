@@ -349,7 +349,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* ------------- select taches --------------- */
 
-.select-taches {
+.select-taches ,
+.select-produits {
     width: 100%;
     max-width: 500px;
 }
@@ -426,7 +427,8 @@ input[type=number]::-webkit-outer-spin-button {
     max-width: 500px;
 }
 
-.passage-form h4 {
+.passage-form h4 ,
+.select-produits h4 {
     color: #3D5B8E;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
@@ -456,6 +458,8 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: 600;
     font-style: normal;
 }
+
+/* ---------------- select-produits ----------------- */
 
 .product-check {
     background-color: #54A4FF;
@@ -515,6 +519,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .form-step-active {
     display: block;
+    z-index: 10;
 }
 
 .img-step-active {
@@ -543,7 +548,8 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .passage-form h4 ,
-    .type-logement h4 {
+    .type-logement h4 ,
+    .select-produits h4 {
         font-size: 1.2rem;
         margin-top: 0.75rem;
         margin-bottom: 0.75rem;
@@ -587,6 +593,9 @@ input[type=number]::-webkit-outer-spin-button {
         height: 300px;
     }
 }
+.progressbar {
+    display: none;
+}
 
 @media (max-width:991.98px) {
 
@@ -605,5 +614,110 @@ input[type=number]::-webkit-outer-spin-button {
 
     .btn-wrapper {
         width: 100%;
+    }
+    /*------------- Progressbar -------------*/
+    .progressbar {
+        position: relative;
+        display: flex;
+        width: 70%;
+        min-width: 200px;
+        justify-content: space-between;
+        counter-reset: step;
+        /* margin: 1rem ; */
+        margin-right: auto!important;
+        margin-left: auto!important;
+    }
+    
+    .progressbar::before,
+    .progress {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 8px;
+        width: 100%;
+        background-color: white;
+        z-index: 0;
+    }
+    
+    .progress {
+        background-color: #5493FF;
+        width: 0%;
+        transition: 0.3s;
+    }
+    
+    .progress-step {
+        width: 2.1875rem;
+        height: 2.1875rem;
+        background-color: white;
+        color: #5493FF;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    
+    .progress-step::before {
+        counter-increment: step;
+        content: counter(step);
+    }
+    
+    .progress-step::after {
+        /* content: attr(data-title); */
+        position: absolute;
+        top: calc(100% + 0.5rem);
+        font-size: 0.85rem;
+        color: #5493FF;
+    }
+    
+    .progress-step-active {
+        background-color: #5493FF;
+        color: #f3f3f3;
+        animation: zoom-in-zoom-out 0.5s ease ;
+    }
+
+    @keyframes zoom-in-zoom-out {
+        0% {
+          transform: scale(1, 1);
+        }
+        50% {
+          transform: scale(1.3, 1.3);
+        }
+        100% {
+          transform: scale(1, 1);
+        }
+    }
+    /*  form steps */
+    .user-form .form-control,
+    .user-form .form-select {
+        opacity: 1;
+    }  
+
+    .type-logement a {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .type-logement h4 {
+        text-align: center;
+        margin-bottom: 2.75rem;
+    }
+
+    .passage-form h4 {
+        margin: 1.75rem 0rem;
+    }
+    .div-tache-wrapper {
+        height: 400px;
+    }
+    /* ---------- img mobile step---------- */
+
+    .img-mobile-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .img-mobile-step {
+        max-width: 100%;
     }
 }
