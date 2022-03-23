@@ -1,17 +1,18 @@
 const prevBtns = document.querySelectorAll(".btn-prev");
 const nextBtns = document.querySelectorAll(".btn-next");
-
+// elements with diffrent steps
 const formSteps = document.querySelectorAll(".form-step");
 const imgSteps = document.querySelectorAll(".img-step");
-
+const imgMobile = document.querySelectorAll(".img-mobile-step");
+// progress bar
 const progress = document.getElementById("progress");
 const progressSteps = document.querySelectorAll(".progress-step");
-
+// type logement links
 const link_apart = document.getElementById("link-apart");
 const link_maison = document.getElementById("link-maison");
 const link_villa = document.getElementById("link-villa");
 const collapse_form = document.getElementById("collapse-form");
-
+// type logement img
 const img_apart = document.getElementById("img-apart");
 const img_maison = document.getElementById("img-maison");
 const img_villa = document.getElementById("img-villa");
@@ -68,17 +69,25 @@ function updateFormSteps() {
 }
 
 function updateImgSteps() {
-  imgSteps.forEach((imgStep) => {
-    imgStep.classList.contains("img-step-active") &&
-      imgStep.classList.remove("img-step-active");
-  });
-  // that because div taches dont have an image
-  // if (formStepsNum == 3) {
-  //   imgSteps[2].classList.add("img-step-active");
-  // } else {
-  //   imgSteps[formStepsNum].classList.add("img-step-active");
-  // }
-  imgSteps[formStepsNum].classList.add("img-step-active");
+  if ($(window).width() >= 992) {
+    imgSteps.forEach((imgStep) => {
+      imgStep.classList.contains("img-step-active") &&
+        imgStep.classList.remove("img-step-active");
+    });
+    imgSteps[formStepsNum].classList.add("img-step-active");
+    // that because div taches dont have an image
+    // if (formStepsNum == 3) {
+    //   imgSteps[2].classList.add("img-step-active");
+    // } else {
+    //   imgSteps[formStepsNum].classList.add("img-step-active");
+    // }
+  } else {
+    imgMobile.forEach((imgStep) => {
+      imgStep.classList.contains("img-mobile-active") &&
+        imgStep.classList.remove("img-mobile-active");
+    });
+    imgMobile[formStepsNum].classList.add("img-mobile-active");
+  }
 }
 
 link_apart.addEventListener("click", () => {
@@ -166,11 +175,20 @@ $(document).on("click", ".custom-input-number .cin-decrement", function (e) {
   // console.log(temp);
 });
 
+// select product check
 $("#input-check-product").on("change", function () {
-  $("#select-parfum").toggleClass("opacity-100");
+  $(".div-parfum").toggleClass("active-div");
   if (this.checked) {
-    $("#select-parfum").removeAttr("disabled");
+    $(".div-parfum .form-check-input").removeAttr("disabled");
   } else {
-    $("#select-parfum").attr("disabled", true);
+    $(".div-parfum .form-check-input")
+      .attr("disabled", true)
+      .prop("checked", false);
+  }
+});
+
+$(".div-parfum").on("click", function () {
+  if ($(this).hasClass("active-div")) {
+    $(this).find(".form-check-input").prop("checked", true);
   }
 });
