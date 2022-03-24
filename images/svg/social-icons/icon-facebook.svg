@@ -1,3 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-  <path id="icons8-facebook-entouré" d="M27,2a25.009,25.009,0,0,0-.947,50V34.628H20.195V27.81h5.858V22.792c0-5.816,3.552-8.986,8.737-8.986a50,50,0,0,1,5.23.263V20.15H36.45c-2.825,0-3.375,1.336-3.375,3.308V27.8h6.75l-.878,6.819H33.035V51.282A25.012,25.012,0,0,0,27,2Z" transform="translate(-2 -2)" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.15" y1="0.15" x2="0.915" y2="0.915" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2aa4f4"/>
+      <stop offset="1" stop-color="#007ad9"/>
+    </linearGradient>
+  </defs>
+  <g id="icons8_facebook" transform="translate(-4 -4)">
+    <path id="Tracé_6653" data-name="Tracé 6653" d="M18,4A14,14,0,1,0,32,18,14,14,0,0,0,18,4Z" fill="url(#linear-gradient)"/>
+    <path id="Tracé_6654" data-name="Tracé 6654" d="M23.513,24.174h3.623l.569-3.681H23.513V18.482c0-1.529.5-2.885,1.93-2.885h2.3V12.386a19.532,19.532,0,0,0-2.871-.174c-3.37,0-5.345,1.779-5.345,5.834v2.449H16.06v3.681h3.464V34.291a14.161,14.161,0,0,0,2.094.172,14.085,14.085,0,0,0,1.895-.143Z" transform="translate(-3.618 -2.464)" fill="#fff"/>
+  </g>
 </svg>

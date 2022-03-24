@@ -55,7 +55,6 @@
 }
 
 .link-signin {
-    background-color: #7DB1FF;
     border-width: 2px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
@@ -64,12 +63,16 @@
     color: #3D5B8E;
     box-shadow: none;
 }
+
+.to-custum .navbar .link-signin {
+    background-color: #7DB1FF!important;
+}
 /* ---------------- */
 .offcanvas {
     background-color: #5493FF;
 }
 
-.input-group {
+.navbar .input-group {
     /* width: 14vw; */
     max-width: 300px;
     /* min-width: 14.5rem; */
