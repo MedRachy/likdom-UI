@@ -55,6 +55,7 @@
 }
 
 .link-signin {
+    background-color: #7DB1FF;
     border-width: 2px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }

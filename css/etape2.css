@@ -179,6 +179,7 @@
 
 .type-logement a {
     width: 60%;
+    min-width: 200px;
     margin-block: 1rem;
     display: block;
     color: #5493FF;
@@ -362,9 +363,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .div-tache {
+    height: 84px;
     cursor: pointer;
     margin-bottom: 1.25rem;
-    line-height: 2;
     color: #3D5B8E;
     font-size: 1.25rem;
     font-weight: bold;
@@ -372,6 +373,19 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: rgba(255, 255, 255);
     border-radius: 1.25rem !important;
     box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+}
+
+.div-tache img {
+    width: 48px;
+    height: 48px;
+    /* background-color: grey; */
+}
+
+.div-tache span {
+    line-height: 1;
+    margin-right: 0.8rem;
+    margin-left: 0.8rem;
+    flex-grow: 1!important;
 }
 
 .div-tache .form-check-input,
@@ -520,6 +534,19 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 10px !important;
     box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
     opacity: 0.75;
+}
+
+.div-parfum img {
+    width: 28px;
+    height: 28px;
+    margin-right: 1rem;
+    /* background-color: grey; */
+}
+
+.div-parfum span {
+    margin-right: 0.8rem;
+    margin-left: 0.8rem;
+    flex-grow: 1!important;
 }
 
 .active-div {
