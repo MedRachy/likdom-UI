@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.313" y1="0.027" x2="0.344" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#5493ff"/>
+    </linearGradient>
+  </defs>
+  <g id="icons8_time_machine" transform="translate(-4 -3.996)">
+    <path id="Tracé_6655" data-name="Tracé 6655" d="M40,22A18,18,0,1,1,22,4,18,18,0,0,1,40,22Z" transform="translate(0 0)" fill="#5493ff"/>
+    <path id="Tracé_6656" data-name="Tracé 6656" d="M22.2,22.54,9.459,35.333A17.717,17.717,0,0,1,9.2,10Z" transform="translate(0 -0.54)" fill="url(#linear-gradient)"/>
+    <ellipse id="Ellipse_145" data-name="Ellipse 145" cx="15.27" cy="15.268" rx="15.27" ry="15.268" transform="translate(6.73 6.73)" fill="#f2f2f2"/>
+    <path id="Tracé_6657" data-name="Tracé 6657" d="M23.933,35.535a.683.683,0,0,1-.683-.683V23.933a.683.683,0,1,1,1.365,0v10.92A.683.683,0,0,1,23.933,35.535Z" transform="translate(-1.933 -2.026)" fill="#3d5b8e"/>
+    <path id="Tracé_6658" data-name="Tracé 6658" d="M23.933,23.851a.683.683,0,0,1-.482-1.166l7.721-7.721a.683.683,0,0,1,.966.966l-7.722,7.721A.677.677,0,0,1,23.933,23.851Z" transform="translate(-1.989 -1.114)" fill="#45494d"/>
+    <path id="Tracé_6659" data-name="Tracé 6659" d="M23.186,24.689a1.132,1.132,0,0,1-.491-.112l-7.086-3.4a1.137,1.137,0,0,1,.984-2.051l7.086,3.4a1.138,1.138,0,0,1-.492,2.163Z" transform="translate(-1.134 -1.531)" fill="#45494d"/>
+    <circle id="Ellipse_146" data-name="Ellipse 146" cx="1.82" cy="1.82" r="1.82" transform="translate(20.18 20.178)" fill="#1e2021"/>
+    <path id="Tracé_6660" data-name="Tracé 6660" d="M16.446,12.156l-7.661.991a.748.748,0,0,1-.837-.837l.991-7.661a.747.747,0,0,1,1.269-.432l6.67,6.67A.747.747,0,0,1,16.446,12.156Z" transform="translate(-0.355 0)" fill="#5493ff"/>
+  </g>
+</svg>

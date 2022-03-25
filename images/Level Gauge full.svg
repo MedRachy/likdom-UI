@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="284.106" height="300.876" viewBox="0 0 284.106 300.876">
+  <g id="Level_Gauge_full" data-name="Level Gauge full" transform="translate(7.638 6.763)">
+    <path id="Level_gauge" data-name="Level gauge" d="M182.637,16.571A121.466,121.466,0,0,0,58.686,225.493" transform="matrix(0.883, 0.469, -0.469, 0.883, 105.862, 0)" fill="none" stroke="#5493ff" stroke-linecap="round" stroke-width="10"/>
+    <circle id="Ellipse_18" data-name="Ellipse 18" cx="14" cy="14" r="14" transform="translate(248.468 90.008)" fill="#5493ff"/>
+    <text id="_71" data-name="71" transform="translate(262.468 111.008)" fill="#fff" font-size="20" font-family="ProximaNova-Semibold, Proxima Nova" font-weight="600" letter-spacing="0.01em"><tspan x="-9" y="0">71</tspan></text>
+  </g>
+</svg>

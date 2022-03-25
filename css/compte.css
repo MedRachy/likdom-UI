@@ -1,0 +1,187 @@
+.bg-section {
+    background-image: url("../images/svg/bg-login.svg");
+    background-repeat:  no-repeat;
+    background-position:  top center;
+    background-size: cover;
+}
+
+.row-wrapper {
+    height: 91vh;
+}
+
+.div-wrapper {
+    max-width: 470px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.div-wrapper h4 {
+    font-size: 1.75rem;
+    color: #5493FF;
+    font-weight: bold;
+    margin-top: 1.25rem;
+}
+
+.div-wrapper p {
+    font-size: 1.25rem;
+    color: #3D5B8E;
+    font-style: italic;
+}
+
+.compte-header {
+    position: relative;
+    width: 208px;
+    height: 208px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 16px rgb(0 0 0 / 15%);
+}
+
+/* .compte-header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 10px solid #5493FF;
+    border-radius: 50%;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    width: 208px;
+    height: 208px;
+    transform: scale(1.2);
+  } */
+
+.compte-header span {
+    font-size: 5rem;
+    font-family:'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: #3D5B8E;
+}
+
+.compte-header .svg-star {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* .svg-outline-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    stroke-dasharray: 400;
+    stroke-dashoffset: 0;
+} */
+
+.unavailable {
+    opacity: 0.5;
+    pointer-events: none;
+    box-shadow: none!important;
+    cursor: default!important;
+}
+
+.card-link-1 {
+    height: 65px;
+    margin-bottom: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(255, 255, 255);
+    border-radius: 1.25rem !important;
+    box-shadow: 0px 10px 16px rgb(0 0 0 / 15%);
+    transition: box-shadow 0.2s ease-in;
+}
+
+.card-link-1:hover {
+    box-shadow: none;
+}
+
+.card-link-1 .icon-link {
+    max-width: 36px;
+    max-height: 36px;
+}
+
+.card-link-1 .icon-arrow {
+    max-width: 14px;
+    max-height: 25px;
+}
+
+.card-link-1 a {
+    text-decoration: none;
+    color: #5493FF;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+@media (max-height:800px) {
+    .bg-section {
+        overflow-y: scroll;
+    }
+    .row-wrapper {
+        padding-top: 3rem;
+    }
+    .compte-header {
+        width: 150px;
+        height: 150px;
+    }
+
+    .compte-header span {
+        font-size: 3.75rem;
+    }
+
+    .compte-header .svg-star {
+        width: 40px;
+        height: 40px;
+    }
+
+    .div-wrapper h4 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width:991.98px) {
+    
+
+    .compte-header {
+        width: 150px;
+        height: 150px;
+    }
+
+    .compte-header span {
+        font-size: 3.75rem;
+    }
+
+    .compte-header .svg-star {
+        width: 40px;
+        height: 40px;
+    }
+
+    .div-wrapper h4 {
+        font-size: 1.25rem;
+    }
+
+    .card-link-1 a ,
+    .div-wrapper p {
+        font-size: 0.9rem;
+    }
+
+    .card-link-1 .icon-link {
+        max-width: 28px;
+        max-height: 28px;
+    }
+    .card-link-1 .icon-arrow {
+        max-width: 10px;
+        max-height: 21px;
+    }
+
+}
