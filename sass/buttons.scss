@@ -1,0 +1,58 @@
+@use 'colors' as *;
+
+@mixin default-button {
+    font-weight: 600;
+    font-style: normal;
+    padding: 0.3rem 1.5rem;
+    margin-top: 0.8rem;
+}
+
+.btn-reserv {
+    @include default-button ;
+    background-color: $color-1;
+    color: $light-color;
+}
+.btn-reserv:hover {
+    color: $light-color;
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn-taches {
+    @include default-button ;
+    color: $color-1;
+    border: 3px solid $color-1;
+}
+
+.btn-taches:hover {
+    color: $color-1;
+    box-shadow: inset 0px 0px 5px 0px  rgba(84, 147, 255, 0.5);
+}
+
+.btn-callus {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    width: fit-content;
+    margin-top: 2.5vh;
+    padding-inline: 2rem;
+    font-size: clamp(1rem , 1vw + 1rem , 2rem);
+    letter-spacing: 0.62px;
+    color: $light-color;
+    background-color: #40C351;
+    border: 0.5rem solid $light-color;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    transition: color .15s ease-in-out,box-shadow .15s ease-in-out ;
+}
+
+.btn-callus:hover {
+    color: $light-color;
+    box-shadow: none;
+}
+
+.btn-callus svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
