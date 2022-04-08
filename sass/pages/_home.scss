@@ -1,4 +1,6 @@
-@use 'colors' as * ;
+@use '../abstracts' as * ;
+@use '../components/buttons' as *;
+@use '../components/cards' as *;
 
 body {
     background-color: $color-6;
@@ -52,7 +54,6 @@ body {
     max-height: 45vh;
 }
 
-
 .bg-mini {
     background-image: url("../images/svg/mini-rounded.svg");
     background-position-y: 91%;
@@ -63,11 +64,7 @@ body {
 
 .header-card {
     width: 100%;
-    border: none;
-    backdrop-filter: blur(5px);
     background: rgba(255, 255, 255, 0.7) 0% 0% no-repeat padding-box;
-    border-radius: 1.25rem!important;
-    box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
     .card-body {
         height: 50vh;
     }
@@ -75,8 +72,8 @@ body {
 
 .pill-svg {
     width: 100%;
-    height: 20vh;
-    opacity: 0.6;
+    height: 18vh;
+    max-height: 215px;
 }
 
 .g-hexagon {
@@ -85,54 +82,70 @@ body {
 
 .pill-hexagon-fill {
     fill: $color-1;
+    opacity: 0.6;
 }
 
-.nav-pills .nav-link.active, 
-.nav-pills .show>.nav-link {
-    background-color: transparent;
-    .pill-svg {
+.link-pill.active {
+    .pill-hexagon-fill {
         opacity: 1;
-        .g-hexagon {
-            fill: $light-color;
-        }
     }
 }
 
 .pill-text {
     fill: $color-1;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-style: normal;
 }
 
-.tab-content {
-    margin-block: 2vh;
-    overflow-y: scroll;
+.btn-callus {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    width: fit-content;
+    margin-top: 2.5vh;
+    padding-inline: 2rem;
+    font-size: clamp(1rem , 1vw + 1rem , 2rem);
+    letter-spacing: 0.62px;
+    color: $light-color;
+    background-color: #40C351;
+    border: 0.5rem solid $light-color;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    transition: color .15s ease-in-out,box-shadow .15s ease-in-out ;
 }
 
-/* scrollbar css not supported for firefox  need to add @support ( ....)*/
-.tab-content::-webkit-scrollbar {
-    width: 0.5rem;
-}
-  
-.tab-content::-webkit-scrollbar-track {
-    width: 0.5rem;
-    background: $color-3;
-    border-radius: 100vw;
-    margin-block: 0.5rem;
+.btn-callus:hover {
+    color: $light-color;
+    box-shadow: none;
 }
 
-.tab-content::-webkit-scrollbar-thumb {
-    background: $color-1;
-    /* border: 0.25rem solid $color-3; */
-    border-radius: 100vw;
+.btn-callus svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.btn-reserv {
+    background-color: $color-1;
+    color: $light-color;
+}
+.btn-reserv:hover {
+    color: $light-color;
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-.tab-content::-webkit-scrollbar-thumb:hover {
-    background: $color-4;
+.btn-taches {
+    color: $color-1;
+    border: 3px solid $color-1;
 }
-  
+
+.btn-taches:hover {
+    color: $color-1;
+    box-shadow: inset 0px 0px 5px 0px  rgba(84, 147, 255, 0.5);
+}
+
 /* ------------------------------------ */
 
 .bg-bubble {
@@ -162,49 +175,39 @@ body {
     font-size: clamp(1.75rem , 2.5vw , 3rem);
 }
 
-
-.tab-pane ul,
-.header-card .card-text {
-    color: #272B33;
-}
-.tab-pane ul li::marker,
-.modal-taches .modal-body li::marker {
-    color: $color-1;
-}
-
-.modal-taches .modal-dialog {
-    max-width: 75%;
-}
-
-.modal-taches .modal-header , 
-.modal-taches .modal-footer {
-    padding : 4rem 5rem;
-}
-
-.modal-taches .modal-body {
-    padding: 3rem 5rem;
-    h5 {
-        font-size: 1.5rem;
-        font-weight: 600;
+.modal-taches {
+    .modal-dialog {
+        max-width: 75%;
+    }    
+    .modal-header , 
+    .modal-footer {
+         padding : 4rem 5rem;
+    }
+    .modal-title {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: clamp(1.75rem , 2vw , 2rem);
         color: $color-1;
+        font-weight: bold;
+        font-style: normal;
     }
-    li {
-        font-size: 1.25rem;
-        color: $color-2;
+    .modal-body {
+        padding: 3rem 5rem;
+        h5 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: $color-1;
+        }
+        li {
+            font-size: 1.25rem;
+            color: $color-2;
+        }
+        li::marker {
+            color: $color-1;
+        }
     }
-}
-
-.modal-taches .modal-title {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: clamp(1.75rem , 2vw , 2rem);
-    color: $color-1;
-    font-weight: bold;
-    font-style: normal;
-}
-
-
-.modal-taches .modal-content {
-    border-radius: 1.25rem!important;
+    .modal-content {
+        border-radius: 1.25rem!important;
+    }
 }
 
 /* ------------------- Header mobile ------------------  */
@@ -352,25 +355,6 @@ body {
 }
 
 .card-steps {
-    border: none;
-    backdrop-filter: blur(5px);
-    background-color: rgba(247, 250, 255, 0.5); 
-    /* background: rgba(255, 255, 255, 0.7) 0% 0% no-repeat padding-box; */
-    border-radius: 1.25rem;
-    box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
-}
-
-.step-number {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 5rem;
-    color: #B2D1FF;
-    padding-left: 0.75rem;
-    margin-bottom: 0;
-}
-
-.card-steps {
     .card-title {
         color: $color-1;
         font-family: 'Ubuntu', sans-serif;
@@ -384,8 +368,17 @@ body {
         color: $color-2;
         font-size:  clamp(0.8rem , 1vw, 2rem);
     }
-} 
+}
 
+.step-number {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 5rem;
+    color: #B2D1FF;
+    padding-left: 0.75rem;
+    margin-bottom: 0;
+}
 
 .img-sec-1 {
     width: 90%;
@@ -476,12 +469,6 @@ body {
 }
 
 .card-whyus {
-    border: none;
-    backdrop-filter: blur(5px);
-    background-color: rgba(247, 250, 255, 0.5);  /* #f7faff */
-    /* background: rgba(255, 255, 255, 0.7) 0% 0% no-repeat padding-box; */
-    border-radius: 1.25rem;
-    box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
     .card-img-top {
         max-width: 48px;
     } 
@@ -584,11 +571,7 @@ body {
     font-style: normal;
 }
 .card-review {
-    border: none;
-    backdrop-filter: blur(5px);
     background-color: rgba(255 , 255 , 255);
-    border-radius: 1.25rem;
-    box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
     .card-text {
         text-align: center;
         font-weight: 600;

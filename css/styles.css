@@ -1,58 +1,276 @@
-.btn-reserv {
-  font-weight: 600;
+/* --------------- proxima nova ------------ */
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-RegularIt.woff2") format("woff2"), url("../fonts/ProximaNova-RegularIt.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-ExtrabldIt.woff2") format("woff2"), url("../fonts/ProximaNova-ExtrabldIt.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
-  padding: 0.3rem 1.5rem;
-  margin-top: 0.8rem;
-  background-color: #5493FF;
-  color: white;
+  font-display: swap;
 }
-
-.btn-reserv:hover {
-  color: white;
-  box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-}
-
-.btn-taches {
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-SemiboldIt.woff2") format("woff2"), url("../fonts/ProximaNova-SemiboldIt.woff") format("woff");
   font-weight: 600;
-  font-style: normal;
-  padding: 0.3rem 1.5rem;
-  margin-top: 0.8rem;
-  color: #5493FF;
-  border: 3px solid #5493FF;
+  font-style: italic;
+  font-display: swap;
 }
-
-.btn-taches:hover {
-  color: #5493FF;
-  box-shadow: inset 0px 0px 5px 0px rgba(84, 147, 255, 0.5);
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-BoldIt.woff2") format("woff2"), url("../fonts/ProximaNova-BoldIt.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
 }
-
-.btn-callus {
-  font-family: "Ubuntu", sans-serif;
+@font-face {
+  font-family: "ProximaNovaExtra";
+  src: url("../fonts/ProximaNova-Extrabld.woff2") format("woff2"), url("../fonts/ProximaNova-Extrabld.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  width: fit-content;
-  margin-top: 2.5vh;
-  padding-inline: 2rem;
-  font-size: clamp(1rem, 1vw + 1rem, 2rem);
-  letter-spacing: 0.62px;
-  color: white;
-  background-color: #40C351;
-  border: 0.5rem solid white;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  transition: color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+/* ------------- ubuntu ------------------ */
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Bold.woff2") format("woff2"), url("../fonts/Ubuntu-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Light.woff2") format("woff2"), url("../fonts/Ubuntu-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-BoldItalic.woff2") format("woff2"), url("../fonts/Ubuntu-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Italic.woff2") format("woff2"), url("../fonts/Ubuntu-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Medium.woff2") format("woff2"), url("../fonts/Ubuntu-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-LightItalic.woff2") format("woff2"), url("../fonts/Ubuntu-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-MediumItalic.woff2") format("woff2"), url("../fonts/Ubuntu-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Regular.woff2") format("woff2"), url("../fonts/Ubuntu-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "ProximaNova", sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 
-.btn-callus:hover {
+.navbar {
+  height: 9vh;
+  padding-top: 1.3rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-desktop .btn {
+  font-weight: 600;
+  font-style: normal;
+  font-size: clamp(0.7rem, 1vw, 1rem);
+}
+
+.img-logo {
+  width: 7vw;
+  min-width: 130px;
+}
+
+/* ----- links btn ------  */
+.link-reserv {
+  background-color: #3D5B8E;
+  color: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.link-reserv:hover {
   color: white;
   box-shadow: none;
 }
 
-.btn-callus svg {
-  width: 30px;
-  height: 30px;
-  margin-right: 1rem;
-  display: inline-block;
-  vertical-align: middle;
+.link-prof {
+  background: #FFD700;
+  color: #85720A;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.link-prof:hover {
+  box-shadow: none;
+  color: #5C4E00;
+}
+
+.link-signup {
+  color: #5493FF;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.link-signup:hover {
+  color: #3D5B8E;
+  box-shadow: none;
+}
+
+.link-signin {
+  border-width: 2px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.link-signin:hover {
+  color: #3D5B8E;
+  box-shadow: none;
+}
+
+.to-custum .navbar .link-signin {
+  background-color: #7DB1FF !important;
+}
+
+/* ---------------- */
+.offcanvas {
+  background-color: #5493FF;
+}
+
+.navbar .input-group {
+  /* width: 14vw; */
+  max-width: 300px;
+  /* min-width: 14.5rem; */
+}
+
+.form-search {
+  padding-left: 1.5rem;
+  border-radius: 20px 0px 0px 20px;
+  font-size: clamp(0.7rem, 1vw, 1rem);
+  border: none;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+#button-search {
+  padding: 0rem 1rem 0rem 0.7rem;
+  background-color: #C8DEFF;
+  color: #7DB1FF;
+  border-radius: 0px 20px 20px 0px;
+  box-shadow: 5px 4px 12px 0px rgba(0, 0, 0, 0.15);
+}
+
+.form-search:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.form-search::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #7DB1FF;
+  opacity: 1;
+  /* Firefox */
+}
+
+.form-search:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #7DB1FF;
+}
+
+.form-search::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #7DB1FF;
+}
+
+.loader img {
+  width: 100px;
+}
+
+.loader {
+  position: fixed;
+  z-index: 999999999;
+  top: 0;
+  left: 0;
+  background: #e9ecef;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disppear {
+  animation: vanish 1s forwards;
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.mybutton {
+  font-weight: 600;
+  font-style: normal;
+  padding: 0.3rem 1.5rem;
+  margin-top: 0.8rem;
+  border-radius: 50rem !important;
+}
+
+.mycard {
+  border: none;
+  backdrop-filter: blur(5px);
+  border-radius: 1.25rem !important;
+  box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+  background-color: rgba(247, 250, 255, 0.5);
 }
 
 body {
@@ -117,11 +335,7 @@ body {
 
 .header-card {
   width: 100%;
-  border: none;
-  backdrop-filter: blur(5px);
   background: rgba(255, 255, 255, 0.7) 0% 0% no-repeat padding-box;
-  border-radius: 1.25rem !important;
-  box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
 }
 .header-card .card-body {
   height: 50vh;
@@ -129,8 +343,8 @@ body {
 
 .pill-svg {
   width: 100%;
-  height: 20vh;
-  opacity: 0.6;
+  height: 18vh;
+  max-height: 215px;
 }
 
 .g-hexagon {
@@ -139,54 +353,68 @@ body {
 
 .pill-hexagon-fill {
   fill: #5493FF;
+  opacity: 0.6;
 }
 
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  background-color: transparent;
-}
-.nav-pills .nav-link.active .pill-svg,
-.nav-pills .show > .nav-link .pill-svg {
+.link-pill.active .pill-hexagon-fill {
   opacity: 1;
-}
-.nav-pills .nav-link.active .pill-svg .g-hexagon,
-.nav-pills .show > .nav-link .pill-svg .g-hexagon {
-  fill: white;
 }
 
 .pill-text {
   fill: #5493FF;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   font-style: normal;
 }
 
-.tab-content {
-  margin-block: 2vh;
-  overflow-y: scroll;
+.btn-callus {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  width: fit-content;
+  margin-top: 2.5vh;
+  padding-inline: 2rem;
+  font-size: clamp(1rem, 1vw + 1rem, 2rem);
+  letter-spacing: 0.62px;
+  color: white;
+  background-color: #40C351;
+  border: 0.5rem solid white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-/* scrollbar css not supported for firefox  need to add @support ( ....)*/
-.tab-content::-webkit-scrollbar {
-  width: 0.5rem;
+.btn-callus:hover {
+  color: white;
+  box-shadow: none;
 }
 
-.tab-content::-webkit-scrollbar-track {
-  width: 0.5rem;
-  background: #7DB1FF;
-  border-radius: 100vw;
-  margin-block: 0.5rem;
+.btn-callus svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 1rem;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.tab-content::-webkit-scrollbar-thumb {
-  background: #5493FF;
-  /* border: 0.25rem solid $color-3; */
-  border-radius: 100vw;
+.btn-reserv {
+  background-color: #5493FF;
+  color: white;
 }
 
-.tab-content::-webkit-scrollbar-thumb:hover {
-  background: #486A9C;
+.btn-reserv:hover {
+  color: white;
+  box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn-taches {
+  color: #5493FF;
+  border: 3px solid #5493FF;
+}
+
+.btn-taches:hover {
+  color: #5493FF;
+  box-shadow: inset 0px 0px 5px 0px rgba(84, 147, 255, 0.5);
 }
 
 /* ------------------------------------ */
@@ -215,25 +443,20 @@ body {
   font-size: clamp(1.75rem, 2.5vw, 3rem);
 }
 
-.tab-pane ul,
-.header-card .card-text {
-  color: #272B33;
-}
-
-.tab-pane ul li::marker,
-.modal-taches .modal-body li::marker {
-  color: #5493FF;
-}
-
 .modal-taches .modal-dialog {
   max-width: 75%;
 }
-
 .modal-taches .modal-header,
 .modal-taches .modal-footer {
   padding: 4rem 5rem;
 }
-
+.modal-taches .modal-title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: clamp(1.75rem, 2vw, 2rem);
+  color: #5493FF;
+  font-weight: bold;
+  font-style: normal;
+}
 .modal-taches .modal-body {
   padding: 3rem 5rem;
 }
@@ -246,15 +469,9 @@ body {
   font-size: 1.25rem;
   color: #3D5B8E;
 }
-
-.modal-taches .modal-title {
-  font-family: "Ubuntu", sans-serif;
-  font-size: clamp(1.75rem, 2vw, 2rem);
+.modal-taches .modal-body li::marker {
   color: #5493FF;
-  font-weight: bold;
-  font-style: normal;
 }
-
 .modal-taches .modal-content {
   border-radius: 1.25rem !important;
 }
@@ -392,25 +609,6 @@ body {
   height: 100vh;
 }
 
-.card-steps {
-  border: none;
-  backdrop-filter: blur(5px);
-  background-color: rgba(247, 250, 255, 0.5);
-  /* background: rgba(255, 255, 255, 0.7) 0% 0% no-repeat padding-box; */
-  border-radius: 1.25rem;
-  box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
-}
-
-.step-number {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 5rem;
-  color: #B2D1FF;
-  padding-left: 0.75rem;
-  margin-bottom: 0;
-}
-
 .card-steps .card-title {
   color: #5493FF;
   font-family: "Ubuntu", sans-serif;
@@ -423,6 +621,16 @@ body {
   font-style: normal;
   color: #3D5B8E;
   font-size: clamp(0.8rem, 1vw, 2rem);
+}
+
+.step-number {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 5rem;
+  color: #B2D1FF;
+  padding-left: 0.75rem;
+  margin-bottom: 0;
 }
 
 .img-sec-1 {
@@ -513,15 +721,6 @@ body {
   font-weight: 600;
 }
 
-.card-whyus {
-  border: none;
-  backdrop-filter: blur(5px);
-  background-color: rgba(247, 250, 255, 0.5);
-  /* #f7faff */
-  /* background: rgba(255, 255, 255, 0.7) 0% 0% no-repeat padding-box; */
-  border-radius: 1.25rem;
-  box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
-}
 .card-whyus .card-img-top {
   max-width: 48px;
 }
@@ -621,11 +820,7 @@ body {
 }
 
 .card-review {
-  border: none;
-  backdrop-filter: blur(5px);
   background-color: rgb(255, 255, 255);
-  border-radius: 1.25rem;
-  box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
 }
 .card-review .card-text {
   text-align: center;
