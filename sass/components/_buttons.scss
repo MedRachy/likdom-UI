@@ -8,3 +8,24 @@
     border-radius: 50rem!important;
 }
 
+.btn-next {
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.25rem;
+    background-color: $color-1;
+    color: $light-color;
+    box-shadow: 0 .5rem 1rem rgba(84, 147, 255, 0.4);
+    padding: 0.3rem 2.5rem;
+    transition: box-shadow .15s ease-in-out ;
+}
+
+.btn-next:hover {
+    box-shadow: none !important;
+}
+
+.btn-prev {
+    font-size: 1.25rem;
+    color: $color-1;
+    font-weight: 600;
+}

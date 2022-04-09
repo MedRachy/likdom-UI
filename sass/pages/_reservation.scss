@@ -1,0 +1,739 @@
+@use '../abstracts' as *;
+@use '../components/scrollbar' as *;
+
+.bg-section {
+    background-image: url("../images/svg/bg-etape2-circle.svg"), url("../images/svg/bg-etape1.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 46vw, top center;
+    background-size: 100% 120%, cover;
+}
+
+
+/* ---------------------------- */
+
+.img-assistant {
+    width: 100%;
+    max-height: 60vh;
+}
+
+.div-img-wrapper {
+    height: inherit;
+    svg {
+        max-width: 100%;
+        max-height: 35vh;
+        align-self: start;
+    }
+}
+
+.form-step-wrapper {
+    height: 750px;
+}
+
+.btn-wrapper {
+    width: 500px;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.bubble-text {
+    fill: $color-2;
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+/* ------------------ user form ------------------- */
+
+.user-form {
+    width: 100%;
+    max-width: 513px;
+    h4 {
+        color: $color-2;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .form-control,
+    .form-select {
+    border: none;
+    border-radius: 1.25rem !important;
+    box-shadow: 0 .5rem 1rem rgba(84, 147, 255, 0.4) !important;
+    padding: 1rem 1.75rem;
+    opacity: 0.6;
+    }
+    .form-select {
+        color: $color-1;
+        cursor: pointer;
+        option {
+            opacity: 1;
+            font-size: 1.2rem;
+            font-weight: 600;
+        
+        }
+    }
+}
+
+.form-step label {
+    color: $color-1;
+    padding: 1rem 1.75rem;
+}
+
+.div-login {
+    margin-top: 1.75rem;
+    line-height: 2.5;
+    color: $color-2;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(255, 255, 255);
+    border-radius: 1.25rem !important;
+    box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+    a {
+        color: $color-2;
+        font-weight: bold;
+        img {
+            max-width: 28px;
+        }
+    }
+}
+
+/* ---------------- type logement --------------- */
+
+.type-logement {
+    width: 100%;
+    max-width: 500px;
+    h4 {
+        color: $color-2;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 1.75rem;
+        /* margin-top: 2rem; */
+        margin-bottom: 3vh;
+    }
+    a {
+        width: 60%;
+        min-width: 200px;
+        margin-block: 1rem;
+        display: block;
+        color: $color-1;
+        font-size: 1.25rem;
+        font-weight: 600;
+        font-style: normal;
+        padding: 0.75rem 1.5rem;
+        background-color: rgba(247, 250, 255);
+        border-radius: 1.25rem !important;
+        box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+        span {
+            vertical-align: middle;
+        }
+        transition: width 300ms ease-out , text-align 300ms ease-out;
+    }
+    img {
+        max-height: 32px;
+        margin-right: 3rem;
+    }
+    h5 {
+        color: $color-2;
+        text-align: center;
+        font-weight: bold;
+        font-style: normal;
+        margin-bottom: 1rem;
+    }
+}
+
+.active-type {
+    width: 85%!important;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    img {
+        margin-right: 1rem;
+    }
+}
+
+
+.card-pieces {
+    background: transparent;
+    border: none;
+}
+
+.nbr-piece {
+    border-bottom: 2px solid $color-1;
+    label {
+        color: $color-2;
+        padding: 0.25rem;
+        font-weight: 600;
+        font-style: normal;
+        margin-bottom: 0 !important;
+    }
+}
+
+/*---------------------custom-input-number---------------- */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.custom-input-number {
+    text-align: right;
+    width: 200px;
+    /* margin: 0 auto; */
+    float: left;
+}
+
+.cin-btn {
+    display: inline-block;
+    color: $color-2;
+    background: $light-color;
+    border: 1px solid $light-color;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    /* font-weight: 700; */
+    height: 1.8rem;
+    width: 1.8rem;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    &:active {
+        background: $color-1;
+        border: 1px solid $light-color;
+        color: $light-color;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.cin-input {
+    border: 0;
+    box-shadow: inset 0 0 0 rgba(64, 150, 255, 0.1);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background: transparent;
+    margin: 0.5rem 0;
+    pointer-events: none;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* -------------------------------------------- */
+
+
+.img-form {
+    max-width: 100%;
+    max-height: 50vh;
+    opacity: 0.45;
+}
+
+.img-logement {
+    opacity: 0.45;
+    transition: opacity 500ms ease-in, transform 0.5s ease;
+}
+
+#img-maison {
+    max-width: 25%;
+}
+
+#img-villa {
+    max-width: 45%;
+    transform: translateY(-30%);
+
+}
+
+#img-apart {
+    max-width: 30%;
+    transform: translateY(-50%);
+}
+
+/* ---------------------show & hide img logement------------------- */
+.show-apart {
+    
+    transform: translate(-100%, -15%) scale(1.5) !important;
+}
+
+.show-maison {
+   
+    transform: translate(100%, -60%) scale(2.5) !important;
+}
+
+.show-villa {
+ 
+    transform: translate(0%, -40%) scale(2.5) !important;
+}
+
+
+.hide-apart {
+    transform: translate(-90%, -70%) !important;
+    opacity: 0;
+}
+
+.hide-maison {
+    transform: translate(-90%, 0%) !important;
+    opacity: 0;
+}
+
+.hide-villa {
+    transform: translate(-90%, -20%) !important;
+    opacity: 0;
+}
+
+/* ------------- select taches --------------- */
+
+.select-taches ,
+.select-produits {
+    width: 100%;
+    max-width: 500px;
+}
+
+.div-tache-wrapper {
+    height: 440px;
+    padding: 1rem;
+    overflow-y: scroll;
+}
+
+.div-tache {
+    height: 84px;
+    cursor: pointer;
+    margin-bottom: 1.25rem;
+    color: $color-2;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(255, 255, 255);
+    border-radius: 1.25rem !important;
+    box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+    img {
+        width: 48px;
+        height: 48px;
+        /* background-color: grey; */
+    }
+    span {
+        line-height: 1;
+        margin-right: 0.8rem;
+        margin-left: 0.8rem;
+        flex-grow: 1!important;
+    }
+}
+
+
+.div-tache .form-check-input,
+.div-parfum .form-check-input {
+    border: 3px solid $color-3;
+    box-shadow: 0px 2px 6px #0000001a;
+}
+
+.div-tache .form-check-input[type=checkbox] ,
+.div-parfum .form-check-input[type=radio] {
+    background-image: none;
+    border-radius: 50%;
+}
+.div-tache .form-check-input:checked ,
+.div-parfum .form-check-input:checked {
+    background-color: $color-1;
+    border-color: $light-color;
+}
+
+.div-prix-tache {
+    padding-inline: 1rem;
+    margin-top: 3rem;
+    span {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: $color-2;
+    }
+}
+
+/* ---------------- passage form ------------ */
+
+.passage-form {
+    width: 80%;
+    max-width: 500px;
+    .form-select {
+        width: 120px;
+        border: none;
+        border-radius: 8px !important;
+        box-shadow: 0 .5rem 1rem rgba(84, 147, 255, 0.4) !important;
+        padding: 0.4rem 1.25rem;
+        opacity: 1;
+        background-position: right 1rem center !important;
+        cursor: pointer;
+    }
+}
+
+.passage-form .form-select,
+.passage-form .form-select option {
+    color: $color-1;
+    background-color: $light-color;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.passage-form h4 ,
+.select-produits h4 {
+    color: $color-2;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.75rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+/* ---------------- select-produits ----------------- */
+
+.product-check {
+    background-color: #54A4FF;
+    border: 2px solid $light-color;
+    border-radius: 50px;
+    padding-right: 1rem;
+    .product-icon {
+        position: relative;
+        background-color: $light-color;
+        border-radius: 50px;
+        padding: 1rem;
+        margin-left: -4px;
+        img {
+            max-width: 35px;
+            display: block;
+            margin-inline: auto;
+        }
+    }
+    span {
+        color: $light-color;
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    input {
+        font-size: 1.25rem;
+        cursor: pointer;
+    }
+}
+
+#stars {
+    position: absolute;
+    top: -8px;
+    left: 0;
+}
+
+#select-parfum {
+ opacity: 0.50;   
+ transition: opacity 500ms ease-in;
+}
+
+.div-parfum {
+    cursor:not-allowed ;
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+    color: $color-1;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(255, 255, 255);
+    border-radius: 10px !important;
+    box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+    opacity: 0.75;
+    img {
+        width: 28px;
+        height: 28px;
+        margin-right: 1rem;
+        /* background-color: grey; */
+    }
+    span {
+        margin-right: 0.8rem;
+        margin-left: 0.8rem;
+        flex-grow: 1!important;
+    }
+}
+
+.active-div {
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+/* ------------- form steps & img steps ------- */
+.hide {
+    display: none !important;
+}
+
+.form-step,
+.img-step {
+    display: none;
+    transform-origin: top;
+    animation: animate 0.5s ease-in;
+}
+
+.img-mobile-step {
+    display: none;
+    transform-origin: top;
+    animation: animate-img-mobile 0.5s ease;
+} 
+
+.form-step-active {
+    display: block;
+    z-index: 10;
+}
+
+.img-step-active {
+    display: flex;
+}
+
+.img-mobile-active {
+    display: block;
+    max-width: 100%;
+}
+
+@keyframes animate {
+    from {
+        /* transform: scale(1, 0); */
+        transform: translate(-50%);
+        opacity: 0;
+    }
+
+    to {
+        /* transform: scale(1, 1); */
+        transform: translate(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes animate-img-mobile {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-height:934px) {
+
+    .form-step-wrapper {
+        height: 520px;
+    }
+
+    .bg-section,
+    .type-logement {
+        overflow-y: scroll;
+    }
+
+    .passage-form h4 ,
+    .type-logement h4 ,
+    .select-produits h4 {
+        font-size: 1.2rem;
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+    .passage-form .form-select, .passage-form .form-select option ,
+    .product-check span ,
+    .btn-next , 
+    .btn-prev ,
+    .type-logement a ,
+    .div-tache ,
+    .div-parfum {
+        font-size: 1rem;
+    }
+    .select-produits {
+        width: 70%;
+    }
+    .product-check .product-icon img {
+        max-width: 20px;
+    }
+    /* -------- user form ----- */
+    .user-form .form-control,
+    .user-form .form-select,
+    .form-step label {
+        padding: 8px 28px;
+    }
+    .form-floating>.form-control, 
+    .form-floating>.form-select {
+        height: 42px;
+        line-height: 1.25;
+    }    
+    .form-floating>.form-control:focus, 
+    .form-floating>.form-control:not(:placeholder-shown){
+        padding-bottom: 0.75rem;
+    }    
+    .form-floating>.form-control:focus~label, 
+    .form-floating>.form-control:not(:placeholder-shown)~label {
+        opacity: .75;
+        transform: scale(.85) translateY(-0.4rem) translateX(0.15rem);
+    }
+    /* ---------------------- */
+    .div-login {
+        line-height: 1.5;
+    }
+    .div-tache-wrapper {
+        height: 300px;
+    }
+}
+.progressbar {
+    display: none;
+}
+
+@media (max-width:991.98px) {
+
+    .bg-section {
+        background-image: url('../images/bg-eatpe2.png');
+        background-repeat: no-repeat;
+        background-position:top center;
+        background-size: 106% 100%;
+        overflow-y: auto;
+    }
+
+    .px-4rem {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .btn-wrapper {
+        width: 100%;
+    }
+    /*------------- Progressbar -------------*/
+    .progressbar {
+        position: relative;
+        display: flex;
+        width: 70%;
+        min-width: 200px;
+        justify-content: space-between;
+        counter-reset: step;
+        /* margin: 1rem ; */
+        margin-right: auto!important;
+        margin-left: auto!important;
+    }
+    
+    .progressbar::before,
+    .progress {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 8px;
+        width: 100%;
+        background-color: $light-color;
+        z-index: 0;
+    }
+    
+    .progress {
+        background-color: $color-1;
+        width: 0%;
+        transition: 0.3s;
+    }
+    
+    .progress-step {
+        width: 2.1875rem;
+        height: 2.1875rem;
+        background-color: $light-color;
+        color: $color-1;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    
+    .progress-step::before {
+        counter-increment: step;
+        content: counter(step);
+    }
+    
+    .progress-step::after {
+        /* content: attr(data-title); */
+        position: absolute;
+        top: calc(100% + 0.5rem);
+        font-size: 0.85rem;
+        color: $color-1;
+    }
+    
+    .progress-step-active {
+        background-color: $color-1;
+        color: #f3f3f3;
+        animation: zoom-in-zoom-out 0.5s ease ;
+    }
+
+    @keyframes zoom-in-zoom-out {
+        0% {
+          transform: scale(1, 1);
+        }
+        50% {
+          transform: scale(1.3, 1.3);
+        }
+        100% {
+          transform: scale(1, 1);
+        }
+    }
+    /*  form steps */
+    .user-form .form-control,
+    .user-form .form-select {
+        opacity: 1;
+    }  
+
+    .type-logement a {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .type-logement h4 {
+        text-align: center;
+        margin-bottom: 2.75rem;
+    }
+    .type-logement img {
+        margin-right: 1rem;
+    }
+
+    .passage-form h4 {
+        margin: 1.75rem 0rem;
+    }
+    .div-tache-wrapper {
+        height: 400px;
+    }
+
+    .col-prog-wrapper {
+        position: relative;
+        height: 155px;
+    }
+
+    .div-login {
+        width: 213px;
+        margin-right: auto;
+        margin-left: auto;
+        opacity: 0.875;
+    }
+    
+    .div-login a ,
+    .div-login .fas {
+        text-decoration: none;
+        color: $color-1;
+    }
+
+    .div-tache {
+        line-height: 1;
+    }
+
+    .select-produits {
+        width: 100%!important;
+    }
+
+    /* ---------- img mobile step---------- */
+
+    .img-mobile-wrapper {
+        position: absolute;
+        top: -61px;
+        left: -12px;
+    }
+
+}
