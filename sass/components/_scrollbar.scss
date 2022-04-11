@@ -1,11 +1,14 @@
 @use  '../abstracts/variables' as *;
 
 /* scrollbar css not supported for firefox  need to add @support ( ....)*/
+.ul-taches::-webkit-scrollbar,
 .bg-section::-webkit-scrollbar,
 .type-logement::-webkit-scrollbar,
 .div-tache-wrapper::-webkit-scrollbar {
     width: 0.5rem;
 }
+
+.ul-taches::-webkit-scrollbar-track,
 .bg-section::-webkit-scrollbar-track,
 .type-logement::-webkit-scrollbar-track,
 .div-tache-wrapper::-webkit-scrollbar-track {
@@ -15,6 +18,7 @@
     margin-block: 1rem;
 }
 
+.ul-taches::-webkit-scrollbar-thumb,
 .bg-section::-webkit-scrollbar-thumb,
 .type-logement::-webkit-scrollbar-thumb,
 .div-tache-wrapper::-webkit-scrollbar-thumb {
@@ -22,6 +26,8 @@
     /* border: 0.25rem solid $color-3; */
     border-radius: 100vw;
 }
+
+.ul-taches::-webkit-scrollbar-thumb:hover,
 .bg-section::-webkit-scrollbar-thumb:hover,
 .type-logement::-webkit-scrollbar-thumb:hover,
 .div-tache-wrapper::-webkit-scrollbar-thumb:hover {

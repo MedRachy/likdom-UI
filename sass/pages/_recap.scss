@@ -1,0 +1,168 @@
+@use '../abstracts' as *;
+/* ----------------------- section -------------------- */
+.bg-section {
+    background-image: url("../images/svg/recap-img.svg") , url("../images/svg/bg-etape1.svg");
+    background-repeat: no-repeat , no-repeat;
+    background-position: 97% 95% , top center;
+    background-size: 250px , cover;
+}
+
+
+/* ---------------- recap list --------------- */
+
+.recap-list {
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    .mylabel-card {
+        text-align: center;
+        color: $color-1;
+        font-weight: 600;
+        font-style: normal;
+        margin-bottom: 1.25rem;
+        span {
+            vertical-align: middle;
+        }
+        img {
+            max-height: 32px;
+            margin-right: 1rem;
+        }
+    }
+    h4 {
+        color: $color-2;
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 1.75rem;
+        margin-bottom: 1.25rem;
+    }
+    h6 {
+        color: $color-2;
+        font-size: 1.25rem;
+        text-align: left;
+        font-weight: 600;
+        margin-bottom: 1.25rem;
+    }
+} 
+.mycard {
+    padding: 1.25rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 1.25rem;
+    background-color: rgb(255 255 255 / 30%);
+    span {
+        color: $color-2;
+    }
+    .mylabel-card {
+        padding: 0.8rem;
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+.ul-pieces {
+    padding: 1.25rem;
+    h6 {
+        color: $color-1;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    li {
+        color : #7395CF;
+        font-size: 0.9rem;
+        font-weight: 600;
+        font-style: normal;
+        border: none;
+    }
+}
+
+.colored-card {
+    background: linear-gradient(153deg, #FFCF54 0%, #FCB234 100%) ;
+    border-radius: 141px;
+    padding: 0.7rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    .product-icon {
+        background-color: $light-color;
+        border-radius: 50%;
+        padding: 0.8rem;
+    }
+    .product-icon img {
+        max-width: 35px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    span {
+        flex-grow: 1;
+        color: $light-color!important;
+        margin-bottom: 0!important;
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+    }
+    #stars-svg {
+        position: absolute;
+        top: -40px;
+        right: 0;
+    }
+}
+
+.ul-taches {
+    height: 220px;   
+    overflow-y: scroll;
+    background-color: transparent;
+    list-style: disc;
+    li {
+        color : $color-2;
+        font-weight: 600;
+        font-size: 0.8rem;
+        background-color: transparent;
+        border: none;
+        &::before {
+            content: "●";
+            margin-right: 0.75rem;
+        }
+    }
+
+}
+
+.custom-width {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    span {
+        color: $color-1;
+    }
+}
+.mycard.custom-width {
+    border-radius: 50rem!important;
+}
+
+
+.btn-confirmer {
+    background-color: $color-1;
+    color: $light-color;
+}
+.btn-confirmer:hover {
+    color: $light-color;
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn-modifier {
+    color: $color-2;
+    border-color: $color-2;
+    margin-right: 1.25rem;
+}
+
+.btn-modifier:hover {
+    color: $color-1;
+    box-shadow: inset 0px 0px 5px 0px  rgba(84, 147, 255, 0.5);
+}
