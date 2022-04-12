@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="55" viewBox="0 0 54.028 55.528">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.126" y1="-0.085" x2="0.553" y2="0.668" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#899198"/>
+      <stop offset="1" stop-color="#787e85"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-0.084" y1="-0.132" x2="0.741" y2="1.113" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00b4f0"/>
+      <stop offset="1" stop-color="#0082db"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-0.064" y1="-0.081" x2="0.86" y2="0.871" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#737b80"/>
+      <stop offset="0.473" stop-color="#686f74"/>
+      <stop offset="1" stop-color="#575c61"/>
+    </linearGradient>
+  </defs>
+  <g id="icons8-vacuum_cleaner" transform="translate(0 1.5)">
+    <path id="Tracé_4503" data-name="Tracé 4503" d="M23.5,39.57V17.693C23.5,11.511,28.036,6.5,33.63,6.5h0c5.595,0,10.13,5.011,10.13,11.193V53.509" transform="translate(1.488 -6.5)" fill="none" stroke="#999" stroke-width="3"/>
+    <path id="Tracé_4504" data-name="Tracé 4504" d="M42.753,41.026H36V35.405A1.379,1.379,0,0,1,37.351,34H41.4a1.379,1.379,0,0,1,1.351,1.405Z" transform="translate(5.871 7.431)" fill="url(#linear-gradient)"/>
+    <path id="Tracé_4505" data-name="Tracé 4505" d="M27.753,37.6H21V29.119c0-1.17.605-2.119,1.351-2.119H26.4c.746,0,1.351.949,1.351,2.119Z" transform="translate(0.611 3.077)" fill="#53616a"/>
+    <path id="Tracé_4506" data-name="Tracé 4506" d="M48.208,44.026H33.351A1.379,1.379,0,0,1,32,42.621V39.81A2.757,2.757,0,0,1,34.7,37H46.858a2.757,2.757,0,0,1,2.7,2.81v2.81A1.379,1.379,0,0,1,48.208,44.026Z" transform="translate(4.469 8.647)" fill="#53616a"/>
+    <path id="Tracé_4507" data-name="Tracé 4507" d="M7,48.066H30.38a7.789,7.789,0,0,0,7.685-7.889h0c0-3.38-2.388-5.308-5.216-7.47C28.756,29.794,7,19.753,7,36.35Z" transform="translate(-4.298 4.607)" fill="url(#linear-gradient-2)"/>
+    <ellipse id="Ellipse_44" data-name="Ellipse 44" cx="6.066" cy="6.311" rx="6.066" ry="6.311" transform="translate(0 41.406)" fill="url(#linear-gradient-3)"/>
+  </g>
+</svg>

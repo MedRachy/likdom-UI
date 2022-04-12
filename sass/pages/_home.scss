@@ -1,6 +1,4 @@
 @use '../abstracts' as * ;
-@use '../components/buttons' as *;
-@use '../components/cards' as *;
 
 body {
     background-color: $color-6;
@@ -121,14 +119,6 @@ body {
     margin-right: 1rem;
     display: inline-block;
     vertical-align: middle;
-}
-.btn-reserv {
-    background-color: $color-1;
-    color: $light-color;
-}
-.btn-reserv:hover {
-    color: $light-color;
-    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .btn-taches {

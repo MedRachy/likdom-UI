@@ -37,6 +37,17 @@
         color: $color-9;
     }
 }
+// floating link
+.link-prof {
+    padding-top: 2.8rem;
+    margin-top: -37px;
+    border-radius: 0px 0px 11px 11px;
+    svg {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
 
 .link-signup {
     color: $color-1;

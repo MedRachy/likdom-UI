@@ -182,6 +182,17 @@ body {
   color: #5C4E00;
 }
 
+.link-prof {
+  padding-top: 2.8rem;
+  margin-top: -37px;
+  border-radius: 0px 0px 11px 11px;
+}
+.link-prof svg {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .link-signup {
   color: #5493FF;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -286,6 +297,16 @@ body {
   padding: 0.3rem 1.5rem;
   margin-top: 0.8rem;
   border-radius: 50rem !important;
+}
+
+.btn-reserv {
+  background-color: #5493FF;
+  color: white;
+}
+
+.btn-reserv:hover {
+  color: white;
+  box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .btn-next {
@@ -482,16 +503,6 @@ body {
   margin-right: 1rem;
   display: inline-block;
   vertical-align: middle;
-}
-
-.btn-reserv {
-  background-color: #5493FF;
-  color: white;
-}
-
-.btn-reserv:hover {
-  color: white;
-  box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .btn-taches {
@@ -1961,6 +1972,79 @@ input[type=number]::-webkit-outer-spin-button {
     width: 90px !important;
     height: 90px !important;
   }
+}
+body {
+  background-color: #f7faff;
+}
+
+.bg-section-services {
+  background-image: url("../images/bg-section-reserver2x.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+/* -------------------- swiper -------------------- */
+.div-swiper {
+  /* height: 91vh; */
+  height: auto;
+}
+
+.swiper {
+  padding-block: 5rem !important;
+  padding-inline: 6rem !important;
+}
+
+.swiper-slide {
+  width: 60% !important;
+  margin-inline: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: auto !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "" !important;
+}
+
+.card-service .img-wrapper {
+  margin-top: -3rem;
+  background-color: white;
+  padding: 1.5rem;
+}
+.card-service .card-img-top {
+  width: 100%;
+  max-height: 15vh;
+}
+.card-service h4 {
+  color: #5493FF;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.list-taches {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1.25rem !important;
+}
+.list-taches li {
+  font-size: 0.8rem;
+  color: #3D5B8E;
+}
+.list-taches li::marker {
+  color: #5493FF;
+}
+.list-taches h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #5493FF;
 }
 
 /*# sourceMappingURL=styles.css.map */
