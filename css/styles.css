@@ -313,6 +313,7 @@ body {
 .mycard {
   border: none;
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border-radius: 1.25rem !important;
   box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
   background-color: rgba(247, 250, 255, 0.5);
@@ -327,6 +328,7 @@ body {
 }
 
 /* scrollbar css not supported for firefox  need to add @support ( ....)*/
+.row.overflow-auto::-webkit-scrollbar,
 .ul-taches::-webkit-scrollbar,
 .bg-section::-webkit-scrollbar,
 .type-logement::-webkit-scrollbar,
@@ -334,6 +336,7 @@ body {
   width: 0.5rem;
 }
 
+.row.overflow-auto::-webkit-scrollbar-track,
 .ul-taches::-webkit-scrollbar-track,
 .bg-section::-webkit-scrollbar-track,
 .type-logement::-webkit-scrollbar-track,
@@ -344,6 +347,7 @@ body {
   margin-block: 1rem;
 }
 
+.row.overflow-auto::-webkit-scrollbar-thumb,
 .ul-taches::-webkit-scrollbar-thumb,
 .bg-section::-webkit-scrollbar-thumb,
 .type-logement::-webkit-scrollbar-thumb,
@@ -353,6 +357,7 @@ body {
   border-radius: 100vw;
 }
 
+.row.overflow-auto::-webkit-scrollbar-thumb:hover,
 .ul-taches::-webkit-scrollbar-thumb:hover,
 .bg-section::-webkit-scrollbar-thumb:hover,
 .type-logement::-webkit-scrollbar-thumb:hover,
@@ -1721,7 +1726,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 /* ----------------------- section -------------------- */
-.bg-section {
+.bg-section-recap {
   background-image: url("../images/svg/recap-img.svg"), url("../images/svg/bg-etape1.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: 97% 95%, top center;
@@ -1764,8 +1769,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 600;
   margin-bottom: 1.25rem;
 }
-
-.mycard {
+.recap-list .mycard {
   padding: 1.25rem;
   font-size: 1.25rem;
   font-weight: 600;
@@ -1773,10 +1777,10 @@ input[type=number]::-webkit-outer-spin-button {
   margin-bottom: 1.25rem;
   background-color: rgba(255, 255, 255, 0.3);
 }
-.mycard span {
+.recap-list .mycard span {
   color: #3D5B8E;
 }
-.mycard .mylabel-card {
+.recap-list .mycard .mylabel-card {
   padding: 0.8rem;
   font-size: 1rem;
   margin-top: 1rem;
@@ -1856,15 +1860,25 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
 }
 .custom-width span {
   color: #5493FF;
 }
+.custom-width .mybutton {
+  padding: 0.65rem 1.5rem;
+  margin-top: 0;
+}
 
 .mycard.custom-width {
   border-radius: 50rem !important;
+  padding: 0.65rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .btn-confirmer {
@@ -1879,6 +1893,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .btn-modifier {
   color: #3D5B8E;
+  border-width: 3px;
   border-color: #3D5B8E;
   margin-right: 1.25rem;
 }
@@ -1886,6 +1901,66 @@ input[type=number]::-webkit-outer-spin-button {
 .btn-modifier:hover {
   color: #5493FF;
   box-shadow: inset 0px 0px 5px 0px rgba(84, 147, 255, 0.5);
+}
+
+/* ----------------------- section -------------------- */
+.bg-section-code {
+  background-image: url("../images/svg/bg-etape1.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+/* ----------- card code --------------- */
+.card-code {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  background: rgb(255, 255, 255);
+}
+.card-code .card-body {
+  padding: 2rem !important;
+}
+.card-code .card-body .card-title {
+  color: #5493FF;
+  font-weight: bold;
+  font-style: normal;
+}
+.card-code .card-body .card-text {
+  color: #7395CF;
+  font-size: 1.25rem;
+}
+.card-code .card-body .p-info {
+  background-color: #f5deb3;
+  font-size: 0.9rem;
+  color: #3D5B8E;
+  font-weight: 600;
+  font-style: normal;
+  text-align: left !important;
+  padding: 1rem;
+  border-radius: 1.25rem;
+}
+.card-code .card-body .div-code span {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 600;
+  font-style: normal;
+  padding: 1rem 0.9rem;
+  border-radius: 10px !important;
+  box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+}
+.card-code .card-body svg {
+  fill: #5493FF;
+}
+
+@media (max-height: 934px) {
+  .card-code .card-body .card-text {
+    font-size: 1rem;
+  }
+  .card-code .card-body svg {
+    width: 90px !important;
+    height: 90px !important;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

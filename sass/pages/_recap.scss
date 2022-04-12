@@ -1,12 +1,11 @@
 @use '../abstracts' as *;
 /* ----------------------- section -------------------- */
-.bg-section {
+.bg-section-recap {
     background-image: url("../images/svg/recap-img.svg") , url("../images/svg/bg-etape1.svg");
     background-repeat: no-repeat , no-repeat;
     background-position: 97% 95% , top center;
     background-size: 250px , cover;
 }
-
 
 /* ---------------- recap list --------------- */
 
@@ -44,24 +43,24 @@
         font-weight: 600;
         margin-bottom: 1.25rem;
     }
+    .mycard {
+        padding: 1.25rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        font-style: normal;
+        margin-bottom: 1.25rem;
+        background-color: rgb(255 255 255 / 30%);
+        span {
+            color: $color-2;
+        }
+        .mylabel-card {
+            padding: 0.8rem;
+            font-size: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
 } 
-.mycard {
-    padding: 1.25rem;
-    font-size: 1.25rem;
-    font-weight: 600;
-    font-style: normal;
-    margin-bottom: 1.25rem;
-    background-color: rgb(255 255 255 / 30%);
-    span {
-        color: $color-2;
-    }
-    .mylabel-card {
-        padding: 0.8rem;
-        font-size: 1rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-}
 .ul-pieces {
     padding: 1.25rem;
     h6 {
@@ -136,14 +135,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     margin-right: auto;
     margin-left: auto;
     span {
         color: $color-1;
     }
+    .mybutton {
+        padding: 0.65rem 1.5rem;
+        margin-top: 0;
+    }
 }
 .mycard.custom-width {
     border-radius: 50rem!important;
+    padding: 0.65rem 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-style: normal;
 }
 
 
@@ -158,6 +167,7 @@
 
 .btn-modifier {
     color: $color-2;
+    border-width: 3px;
     border-color: $color-2;
     margin-right: 1.25rem;
 }
