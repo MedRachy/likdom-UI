@@ -141,6 +141,10 @@ body {
   width: 40% !important;
 }
 
+.mt-13vh {
+  margin-top: 13vh;
+}
+
 .span-lg {
   color: #5493FF;
   font-size: 1.25rem;
@@ -363,6 +367,37 @@ body {
   background-color: rgba(247, 250, 255, 0.5);
 }
 
+.mycard-2 {
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #3D5B8E;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.25rem !important;
+  box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+  background-color: rgba(247, 250, 255, 0.5);
+}
+
+.mycard-lg {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.25rem;
+  box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+  background-color: rgb(255, 255, 255);
+}
+.mycard-lg .mycard-lg-header {
+  color: #5493FF;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.25rem;
+}
+.mycard-lg .mycard-lg-body {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .mylabel-card {
   font-size: 1.25rem;
   padding: 0.75rem 1.5rem;
@@ -393,6 +428,16 @@ body {
 }
 .card-link-1:hover {
   box-shadow: none;
+}
+
+.card-link-2 {
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  background-color: rgb(247, 250, 255);
+  border-radius: 1rem !important;
+}
+.card-link-2:hover {
+  outline: 2px #5493FF solid;
 }
 
 /* scrollbar css not supported for firefox  need to add @support ( ....)*/
@@ -1427,6 +1472,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-style: normal;
 }
 
+.nettsec-form h4,
 .passage-form h4,
 .select-produits h4,
 .desinfec-form h4 {
@@ -1523,7 +1569,7 @@ input[type=number]::-webkit-outer-spin-button {
 .desinfec-form .mylabel-sm-card {
   width: 195px;
 }
-.desinfec-form img {
+.desinfec-form .plat-img {
   display: block;
   width: 100%;
   max-width: 364px;
@@ -1562,6 +1608,54 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .desinfec-form .custom-input-number .cin-decrement {
   line-height: 0;
+}
+
+/* ---------------Cristalisation ---------------*/
+.crista-collapse {
+  position: relative;
+}
+.crista-collapse #collapseWidthExample {
+  position: absolute !important;
+  top: 0px !important;
+  left: 516px !important;
+}
+.crista-collapse #collapseWidthExample .mylabel-card {
+  margin: 0 !important;
+}
+.crista-collapse #collapseWidthExample .mylabel-card label {
+  padding: 0rem 1rem;
+}
+.crista-collapse #collapseWidthExample .mylabel-card .form-check-input {
+  border: 2px solid #5493FF;
+}
+.crista-collapse #collapseWidthExample .mylabel-card .form-check-input:checked {
+  background-color: #5493FF;
+  border-color: white;
+  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.1);
+}
+.crista-collapse #collapseWidthExample .mylabel-card .form-check-input:focus {
+  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.1);
+}
+
+.card-link-2 span {
+  color: #5493FF;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.card-link-2 .icon-arrow {
+  max-width: 10px;
+  max-height: 18px;
+}
+
+/* ------------ Nettoyage à sec --------------*/
+.nettsec-form .mycard-lg {
+  height: 50vh;
+}
+.nettsec-form .mycard-lg .mycard-lg-header {
+  border-bottom: 2px solid #C8DEFF;
+}
+.nettsec-form .mycard-lg .mycard-lg-header .img {
+  max-width: 34px;
 }
 
 /* ------------- form steps & img steps ------- */
@@ -1635,7 +1729,8 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 0.75rem;
   }
 
-  .desinfec-form .mycard span,
+  .desinfec-form .card-link-2 span,
+.desinfec-form .mycard span,
 .desinfec-form .mylabel-card .span-lg,
 .passage-form .form-select,
 .passage-form .form-select option,
@@ -1656,11 +1751,12 @@ input[type=number]::-webkit-outer-spin-button {
     max-width: 20px;
   }
 
-  .desinfec-form img {
+  .desinfec-form .plat-img {
     max-width: 230px;
   }
   .desinfec-form .mylabel-card {
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 
   /* -------- user form ----- */

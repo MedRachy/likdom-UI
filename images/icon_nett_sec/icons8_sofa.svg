@@ -1,0 +1,23 @@
+<svg id="icons8_sofa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="24" viewBox="0 0 32 24">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#912dd2"/>
+      <stop offset="1" stop-color="#6119b2"/>
+    </linearGradient>
+    <filter id="Tracé_6781" x="1" y="8.017" width="30" height="10.8" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.078"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Groupe_133" data-name="Groupe 133">
+    <path id="Tracé_6778" data-name="Tracé 6778" d="M6,36H9.2v2.4H6Zm25.6,0h3.2v2.4H31.6Z" transform="translate(-4.4 -14.4)" fill="#ff9800"/>
+    <path id="Tracé_6779" data-name="Tracé 6779" d="M4,17H36V33H4Z" transform="translate(-4 -10.6)" fill="#ce93d8"/>
+    <path id="Tracé_6780" data-name="Tracé 6780" d="M33,12.4A2.4,2.4,0,0,0,30.6,10H11.4A2.4,2.4,0,0,0,9,12.4V22H33Z" transform="translate(-5 -10)" fill="url(#linear-gradient)"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracé_6781)">
+      <path id="Tracé_6781-2" data-name="Tracé 6781" d="M33,26.8H9V23.6A1.6,1.6,0,0,1,10.6,22H31.4A1.6,1.6,0,0,1,33,23.6Z" transform="translate(-5 -11.98)" fill="#e1bee7"/>
+    </g>
+  </g>
+</svg>

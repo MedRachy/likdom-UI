@@ -363,6 +363,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-style: normal;
 }
 
+.nettsec-form h4 ,
 .passage-form h4 ,
 .select-produits h4,
 .desinfec-form h4 {
@@ -460,7 +461,7 @@ input[type=number]::-webkit-outer-spin-button {
     .mylabel-sm-card {
         width: 195px;
     }
-    img {
+    .plat-img {
         display: block;
         width: 100%;
         max-width: 364px;
@@ -498,6 +499,64 @@ input[type=number]::-webkit-outer-spin-button {
         }
         .cin-decrement {
             line-height: 0;
+        }
+    }
+}
+
+
+/* ---------------Cristalisation ---------------*/
+
+
+.crista-collapse {
+    position: relative;
+    #collapseWidthExample {
+        position: absolute!important;
+        top: 0px!important;
+        left: 516px!important;
+        .mylabel-card {
+            margin: 0!important;
+            label {
+                padding: 0rem 1rem;
+            }
+            .form-check-input {
+                border: 2px solid $color-1;
+                &:checked {
+                    background-color: $color-1;
+                    border-color: $light-color;
+                    box-shadow: 0 0 0 2px rgb(13 110 253 / 10%);
+                }
+                &:focus {
+                    box-shadow: 0 0 0 2px rgb(13 110 253 / 10%);
+                }
+            }
+        }
+    }
+}
+
+.card-link-2 {
+    span {
+        color: $color-1;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    .icon-arrow {
+        max-width: 10px;
+        max-height: 18px;
+    }
+}
+
+
+
+/* ------------ Nettoyage à sec --------------*/
+
+.nettsec-form {
+    .mycard-lg {
+        height: 50vh;
+        .mycard-lg-header {
+            border-bottom: 2px solid $color-5;
+            .img {
+                max-width: 34px;
+            }
         }
     }
 }
@@ -578,6 +637,7 @@ input[type=number]::-webkit-outer-spin-button {
         margin-bottom: 0.75rem;
     }
 
+    .desinfec-form .card-link-2 span ,
     .desinfec-form .mycard span ,
     .desinfec-form .mylabel-card .span-lg ,
     .passage-form .form-select, 
@@ -599,11 +659,12 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .desinfec-form {
-        img {
+        .plat-img {
             max-width: 230px;
         }  
         .mylabel-card {
-            margin-bottom: 3rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
         }
     }
     /* -------- user form ----- */

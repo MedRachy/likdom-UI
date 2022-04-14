@@ -1249,12 +1249,12 @@
                     <form action="">
                         <div class="form-step-wrapper d-flex flex-column justify-content-center">
                             <div class="form-step desinfec-form mx-auto form-step-active">
-                                <h4 class="text-start">Désinfection</h4>
+                                <h4 class="text-start">Cristallisation</h4>
                                 <div class="mycard custom-width d-flex ">
                                     <span>Superficie à traiter par m²</span>
                                     <span>Prix: 35dh/m²</span>
                                 </div>
-                                <div class="mylabel-card">
+                                <div class="mylabel-card crista-collapse">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <span class="span-lg">Superficie à trainer</span>
                                         <div class="custom-input-number">
@@ -1269,13 +1269,57 @@
                                         </div>
                                         <span class="span-lg ps-2">m²</span>
                                     </div>
+
+                                    <a class="card-link-2 d-flex align-items-center justify-content-between mt-3"
+                                        data-bs-toggle="collapse" href="#collapseWidthExample" role="button"
+                                        aria-expanded="false" aria-controls="collapseWidthExample">
+                                        <span>Type de surface</span>
+                                        <img src="./images/compte/icon-arrow.svg" class="icon-arrow" alt="">
+                                    </a>
+
+
+                                    <div class="collapse collapse-horizontal " id="collapseWidthExample">
+                                        <div class="mylabel-card" style="width: 240px;">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Marbre">
+                                                <label class="form-check-label" for="Marbre">
+                                                    Marbre
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Granit">
+                                                <label class="form-check-label" for="Granit">
+                                                    Granit
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Pierre">
+                                                <label class="form-check-label" for="Pierre">
+                                                    Pierre
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="Terre_cuite">
+                                                <label class="form-check-label" for="Terre_cuite">
+                                                    Terre cuite
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Granito">
+                                                <label class="form-check-label" for="Granito">
+                                                    Granito
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="d-flex align-items-center justify-content-between mt-3">
                                         <span class="span-lg">Prix total</span>
                                         <span class="mylabel-sm-card">270 DH</span>
                                     </div>
                                 </div>
 
-                                <img src="./images/platforme.png" alt="">
+                                <img src="./images/platforme.png" class="plat-img" alt="">
 
                             </div>
                             <div class="form-step passage-form mx-auto">
@@ -1354,7 +1398,7 @@
                         <!-- img steps -->
                         <div class="d-flex flex-column justify-content-center">
                             <div class="img-step mx-auto img-step-active">
-                                <img src="./images/svg/desinfection.svg" class="img-form mt-13vh" alt="">
+                                <img src="./images/svg/cristallisation.svg" class="img-form mt-13vh" alt="">
                             </div>
                             <div class="img-step mx-auto">
                                 <img src="./images/svg/calendar.svg" class="img-form mt-13vh" alt="">

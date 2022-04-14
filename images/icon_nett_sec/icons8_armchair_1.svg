@@ -1,0 +1,14 @@
+<svg id="icons8_armchair_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.086" height="24.086" viewBox="0 0 24.086 24.086">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7955f5"/>
+      <stop offset="1" stop-color="#401e9f"/>
+    </linearGradient>
+  </defs>
+  <g id="Groupe_134" data-name="Groupe 134">
+    <path id="Tracé_6782" data-name="Tracé 6782" d="M10.676,39.683H8L9.338,35h2.676Zm16.057,0H29.41L28.072,35H25.4Z" transform="translate(-6.662 -15.597)" fill="#ff9800"/>
+    <path id="Tracé_6783" data-name="Tracé 6783" d="M6,17H30.086V29.712H6Z" transform="translate(-6 -9.64)" fill="#9893d8"/>
+    <path id="Tracé_6784" data-name="Tracé 6784" d="M28.4,20.05a2.007,2.007,0,0,1-2.007,2.007H13.007A2.007,2.007,0,0,1,11,20.05V8.007A2.007,2.007,0,0,1,13.007,6H26.388A2.007,2.007,0,0,1,28.4,8.007Z" transform="translate(-7.655 -6)" fill="url(#linear-gradient)"/>
+    <path id="Tracé_6785" data-name="Tracé 6785" d="M28.4,27.683H11V24.338A1.339,1.339,0,0,1,12.338,23H27.057A1.339,1.339,0,0,1,28.4,24.338Z" transform="translate(-7.655 -11.626)" fill="#ccbaff"/>
+  </g>
+</svg>
