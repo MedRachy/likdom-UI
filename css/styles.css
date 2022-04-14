@@ -141,6 +141,13 @@ body {
   width: 40% !important;
 }
 
+.span-lg {
+  color: #5493FF;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-style: normal;
+}
+
 .navbar {
   height: 9vh;
   padding-top: 1.3rem;
@@ -331,6 +338,22 @@ body {
   font-weight: 600;
 }
 
+.btn-submit {
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 1.25rem;
+  background-color: #5493FF;
+  color: white;
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+  padding: 0.7rem 2rem;
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.btn-submit:hover {
+  box-shadow: none !important;
+}
+
 .mycard {
   border: none;
   backdrop-filter: blur(5px);
@@ -346,6 +369,30 @@ body {
   border-radius: 1.25rem;
   box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
   background-color: rgb(255, 255, 255);
+}
+
+.mylabel-sm-card {
+  color: #5493FF;
+  padding: 0.2rem 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 1.25rem;
+  font-weight: bold;
+  font-style: normal;
+  background-color: rgb(247, 250, 255);
+}
+
+.card-link-1 {
+  height: 65px;
+  margin-bottom: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1.25rem !important;
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s ease-in;
+}
+.card-link-1:hover {
+  box-shadow: none;
 }
 
 /* scrollbar css not supported for firefox  need to add @support ( ....)*/
@@ -1381,7 +1428,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .passage-form h4,
-.select-produits h4 {
+.select-produits h4,
+.desinfec-form h4 {
   color: #3D5B8E;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
@@ -1459,6 +1507,63 @@ input[type=number]::-webkit-outer-spin-button {
   opacity: 1;
 }
 
+/* ------------- désinfection form ------------*/
+.desinfec-form {
+  width: 100%;
+  max-width: 500px;
+}
+.desinfec-form .mycard {
+  background-color: rgba(247, 250, 255, 0.6);
+}
+.desinfec-form .mylabel-card {
+  padding: 1rem 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.desinfec-form .mylabel-sm-card {
+  width: 195px;
+}
+.desinfec-form img {
+  display: block;
+  width: 100%;
+  max-width: 364px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.desinfec-form .custom-input-number {
+  display: flex;
+  align-items: center;
+  width: auto;
+  float: none;
+  margin-left: auto;
+  padding: 0rem 0.5rem;
+  background-color: #C8DEFF;
+  border: 4px #7DB1FF solid;
+  border-radius: 1rem;
+}
+.desinfec-form .custom-input-number .cin-input {
+  width: 80px;
+  height: 49px;
+  margin: 0 !important;
+  font-size: 40px;
+  font-weight: 600;
+  color: #3D5B8E;
+  line-height: 0;
+}
+.desinfec-form .custom-input-number .cin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem !important;
+  font-weight: 600;
+}
+.desinfec-form .custom-input-number .cin-increment {
+  line-height: 0.6;
+}
+.desinfec-form .custom-input-number .cin-decrement {
+  line-height: 0;
+}
+
 /* ------------- form steps & img steps ------- */
 .hide {
   display: none !important;
@@ -1521,7 +1626,8 @@ input[type=number]::-webkit-outer-spin-button {
     overflow-y: scroll;
   }
 
-  .passage-form h4,
+  .desinfec-form h4,
+.passage-form h4,
 .type-logement h4,
 .select-produits h4 {
     font-size: 1.2rem;
@@ -1529,7 +1635,10 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 0.75rem;
   }
 
-  .passage-form .form-select, .passage-form .form-select option,
+  .desinfec-form .mycard span,
+.desinfec-form .mylabel-card .span-lg,
+.passage-form .form-select,
+.passage-form .form-select option,
 .product-check span,
 .btn-next,
 .btn-prev,
@@ -1545,6 +1654,13 @@ input[type=number]::-webkit-outer-spin-button {
 
   .product-check .product-icon img {
     max-width: 20px;
+  }
+
+  .desinfec-form img {
+    max-width: 230px;
+  }
+  .desinfec-form .mylabel-card {
+    margin-bottom: 3rem;
   }
 
   /* -------- user form ----- */
@@ -2045,6 +2161,222 @@ body {
   font-weight: 600;
   font-style: normal;
   color: #5493FF;
+}
+
+.bg-section-login,
+.bg-section-compte {
+  background-image: url("../images/svg/bg-login.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 550px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.form-wrapper h4 {
+  color: #3D5B8E;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.75rem;
+  margin-bottom: 4rem;
+}
+.form-wrapper .input-group {
+  background-color: white;
+  padding: 1rem 1.75rem;
+  border-radius: 1.25rem !important;
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15) !important;
+}
+.form-wrapper .form-control,
+.form-wrapper .form-control:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.link-forgetpass {
+  color: #3D5B8E;
+}
+
+.div-login {
+  margin-top: 3.75rem;
+  line-height: 2.5;
+  padding: 0.75rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 3px solid #FFFFFF;
+  border-radius: 1.25rem !important;
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+}
+.div-login span {
+  color: #3D5B8E;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.div-login a img {
+  max-width: 28px;
+}
+
+@media (max-width: 767.98px) {
+  .btn-submit {
+    display: block;
+    width: 80%;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .link-forgetpass {
+    display: block;
+    text-align: center;
+  }
+}
+.compte-wrapper {
+  max-width: 470px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.compte-wrapper h4 {
+  font-size: 1.75rem;
+  color: #5493FF;
+  font-weight: bold;
+  margin-top: 1.25rem;
+}
+.compte-wrapper p {
+  font-size: 1.25rem;
+  color: #3D5B8E;
+  font-style: italic;
+}
+
+.compte-header {
+  position: relative;
+  width: 208px;
+  height: 208px;
+  background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+}
+.compte-header span {
+  font-size: 5rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: #3D5B8E;
+}
+.compte-header .svg-star {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* .compte-header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 10px solid $color-1;
+    border-radius: 50%;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    width: 208px;
+    height: 208px;
+    transform: scale(1.2);
+  } */
+/* .svg-outline-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    stroke-dasharray: 400;
+    stroke-dashoffset: 0;
+} */
+.unavailable {
+  opacity: 0.5;
+  pointer-events: none;
+  box-shadow: none !important;
+  cursor: default !important;
+}
+
+.bg-section-compte .card-link-1 .icon-link {
+  max-width: 36px;
+  max-height: 36px;
+}
+.bg-section-compte .card-link-1 .icon-arrow {
+  max-width: 14px;
+  max-height: 25px;
+}
+.bg-section-compte .card-link-1 a {
+  text-decoration: none;
+  color: #5493FF;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+@media (max-height: 800px) {
+  .bg-section-compte {
+    overflow-y: scroll;
+  }
+  .bg-section-compte .height-91 {
+    padding-top: 3rem;
+  }
+  .bg-section-compte .compte-header {
+    width: 150px;
+    height: 150px;
+  }
+  .bg-section-compte .compte-header span {
+    font-size: 3.75rem;
+  }
+  .bg-section-compte .compte-header .svg-star {
+    width: 40px;
+    height: 40px;
+  }
+  .bg-section-compte .compte-wrapper h4 {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .bg-section-compte .compte-header {
+    width: 150px;
+    height: 150px;
+  }
+  .bg-section-compte .compte-header span {
+    font-size: 3.75rem;
+  }
+  .bg-section-compte .compte-header .svg-star {
+    width: 40px;
+    height: 40px;
+  }
+  .bg-section-compte .compte-wrapper h4 {
+    font-size: 1.25rem;
+  }
+  .bg-section-compte .compte-wrapper p {
+    font-size: 0.9rem;
+  }
+  .bg-section-compte .card-link-1 a {
+    font-size: 0.9rem;
+  }
+  .bg-section-compte .card-link-1 .icon-link {
+    max-width: 28px;
+    max-height: 28px;
+  }
+  .bg-section-compte .card-link-1 .icon-arrow {
+    max-width: 10px;
+    max-height: 21px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

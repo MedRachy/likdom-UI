@@ -1,0 +1,238 @@
+@use '../abstracts' as *;
+
+// --------- login page ----------
+.bg-section-login ,
+.bg-section-compte {
+    background-image: url("../images/svg/bg-login.svg");
+    background-repeat:  no-repeat;
+    background-position:  top center;
+    background-size: cover;
+}
+
+
+.form-wrapper {
+    width: 100%;
+    max-width: 550px;
+    margin-right: auto;
+    margin-left: auto;
+    h4 {
+        color: $color-2;
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 1.75rem;
+        margin-bottom: 4rem;
+    }
+    .input-group {
+        background-color: $light-color;
+        padding: 1rem 1.75rem;
+        border-radius: 1.25rem !important;
+        box-shadow: 0px 10px 16px rgb(0 0 0 / 15%) !important;
+    }
+    .form-control ,
+    .form-control:focus {
+        border: none;
+        box-shadow: none;
+    }
+}
+
+.link-forgetpass {
+    color: $color-2;
+}
+
+.div-login {
+    margin-top: 3.75rem;
+    line-height: 2.5;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(255, 255, 255 , 0.6);
+    border: 3px solid #FFFFFF;
+    border-radius: 1.25rem !important;
+    box-shadow: 0px 10px 16px rgb(0 0 0 / 15%);
+    span {
+        color: $color-2;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    a img {
+        max-width: 28px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .btn-submit {
+        display: block;
+        width: 80%;
+        margin-top: 1rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .link-forgetpass {
+        display: block;
+        text-align: center;
+    }
+}
+
+// -------- Mon compte ---------
+
+.compte-wrapper {
+    max-width: 470px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    h4 {
+        font-size: 1.75rem;
+        color: $color-1;
+        font-weight: bold;
+        margin-top: 1.25rem;
+    }
+    p {
+        font-size: 1.25rem;
+        color: $color-2;
+        font-style: italic;
+    }
+}
+
+.compte-header {
+    position: relative;
+    width: 208px;
+    height: 208px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 16px rgb(0 0 0 / 15%);
+    span {
+        font-size: 5rem;
+        font-family:'Ubuntu', sans-serif;
+        font-weight: bold;
+        color: $color-2;
+    }
+    .svg-star {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+/* .compte-header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 10px solid $color-1;
+    border-radius: 50%;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    width: 208px;
+    height: 208px;
+    transform: scale(1.2);
+  } */
+
+/* .svg-outline-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    stroke-dasharray: 400;
+    stroke-dashoffset: 0;
+} */
+
+.unavailable {
+    opacity: 0.5;
+    pointer-events: none;
+    box-shadow: none!important;
+    cursor: default!important;
+}
+
+.bg-section-compte {
+
+    .card-link-1 {
+        .icon-link {
+            max-width: 36px;
+            max-height: 36px;
+        }
+        .icon-arrow {
+            max-width: 14px;
+            max-height: 25px;
+        }
+        a {
+            text-decoration: none;
+            color: $color-1;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+    }    
+}
+
+@media (max-height:800px) {
+    .bg-section-compte {
+        overflow-y: scroll;
+        .height-91 {
+            padding-top: 3rem;
+        }
+        .compte-header {
+            width: 150px;
+            height: 150px;
+            span {
+                font-size: 3.75rem;
+            }
+            .svg-star {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    
+        .compte-wrapper h4 {
+            font-size: 1.25rem;
+        }
+    }
+}
+@media (max-width:991.98px) {
+    .bg-section-compte {
+        .compte-header {
+            width: 150px;
+            height: 150px;
+            span {
+                font-size: 3.75rem;
+            }
+            .svg-star {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .compte-wrapper {
+            h4 {
+                font-size: 1.25rem;
+            }   
+            p {
+                font-size: 0.9rem;
+            }     
+        } 
+
+        .card-link-1 {
+            a {
+                font-size: 0.9rem;
+            }
+            .icon-link {
+                max-width: 28px;
+                max-height: 28px;
+            }
+            .icon-arrow {
+                max-width: 10px;
+                max-height: 21px;
+            }
+        }         
+    }
+
+}

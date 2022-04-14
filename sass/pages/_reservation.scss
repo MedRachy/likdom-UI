@@ -364,7 +364,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .passage-form h4 ,
-.select-produits h4 {
+.select-produits h4,
+.desinfec-form h4 {
     color: $color-2;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
@@ -443,6 +444,64 @@ input[type=number]::-webkit-outer-spin-button {
     opacity: 1;
 }
 
+/* ------------- désinfection form ------------*/
+
+.desinfec-form {
+    width: 100%;
+    max-width: 500px;
+    .mycard {
+        background-color: rgba(247, 250, 255, 0.6);
+    }
+    .mylabel-card {
+        padding: 1rem 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    .mylabel-sm-card {
+        width: 195px;
+    }
+    img {
+        display: block;
+        width: 100%;
+        max-width: 364px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .custom-input-number {
+        display: flex;
+        align-items: center;
+        width: auto;
+        float: none;
+        margin-left:auto;
+        padding: 0rem 0.5rem;
+        background-color: #C8DEFF;
+        border: 4px #7DB1FF solid ;
+        border-radius: 1rem;
+        .cin-input {
+            width: 80px;
+            height: 49px;
+            margin: 0!important;
+            font-size: 40px;
+            font-weight: 600;
+            color: $color-2;
+            line-height: 0;
+        }
+        .cin-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem!important;
+            font-weight: 600;
+        }
+        .cin-increment {
+            line-height: 0.6;
+        }
+        .cin-decrement {
+            line-height: 0;
+        }
+    }
+}
+
 
 /* ------------- form steps & img steps ------- */
 .hide {
@@ -510,6 +569,7 @@ input[type=number]::-webkit-outer-spin-button {
         overflow-y: scroll;
     }
 
+    .desinfec-form h4,
     .passage-form h4 ,
     .type-logement h4 ,
     .select-produits h4 {
@@ -517,7 +577,11 @@ input[type=number]::-webkit-outer-spin-button {
         margin-top: 0.75rem;
         margin-bottom: 0.75rem;
     }
-    .passage-form .form-select, .passage-form .form-select option ,
+
+    .desinfec-form .mycard span ,
+    .desinfec-form .mylabel-card .span-lg ,
+    .passage-form .form-select, 
+    .passage-form .form-select option ,
     .product-check span ,
     .btn-next , 
     .btn-prev ,
@@ -526,11 +590,21 @@ input[type=number]::-webkit-outer-spin-button {
     .div-parfum {
         font-size: 1rem;
     }
+
     .select-produits {
         width: 70%;
     }
     .product-check .product-icon img {
         max-width: 20px;
+    }
+
+    .desinfec-form {
+        img {
+            max-width: 230px;
+        }  
+        .mylabel-card {
+            margin-bottom: 3rem;
+        }
     }
     /* -------- user form ----- */
     .user-form .form-control,

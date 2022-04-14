@@ -7,7 +7,7 @@
     margin-top: 0.8rem;
     border-radius: 50rem!important;
 }
-
+// -----------
 .btn-reserv {
     background-color: $color-1;
     color: $light-color;
@@ -16,7 +16,7 @@
     color: $light-color;
     box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
-
+// -----------
 .btn-next {
     font-size: 1.25rem;
     font-weight: bold;
@@ -37,4 +37,20 @@
     font-size: 1.25rem;
     color: $color-1;
     font-weight: 600;
+}
+// ----------------
+.btn-submit {
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.25rem;
+    background-color: $color-1;
+    color: $light-color;
+    box-shadow: 0px 10px 16px rgb(0 0 0 / 15%);
+    padding: 0.7rem 2rem;
+    transition: box-shadow .15s ease-in-out ;
+}
+
+.btn-submit:hover {
+    box-shadow: none !important;
 }
