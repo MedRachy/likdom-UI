@@ -1,6 +1,7 @@
 @use  '../abstracts/variables' as *;
 
 /* scrollbar css not supported for firefox  need to add @support ( ....)*/
+.mycard-lg .mycard-lg-body::-webkit-scrollbar,
 .row.overflow-auto::-webkit-scrollbar,
 .ul-taches::-webkit-scrollbar,
 .bg-section::-webkit-scrollbar,
@@ -9,6 +10,7 @@
     width: 0.5rem;
 }
 
+.mycard-lg .mycard-lg-body::-webkit-scrollbar-track,
 .row.overflow-auto::-webkit-scrollbar-track,
 .ul-taches::-webkit-scrollbar-track,
 .bg-section::-webkit-scrollbar-track,
@@ -20,6 +22,7 @@
     margin-block: 1rem;
 }
 
+.mycard-lg .mycard-lg-body::-webkit-scrollbar-thumb,
 .row.overflow-auto::-webkit-scrollbar-thumb,
 .ul-taches::-webkit-scrollbar-thumb,
 .bg-section::-webkit-scrollbar-thumb,
@@ -30,6 +33,7 @@
     border-radius: 100vw;
 }
 
+.mycard-lg .mycard-lg-body::-webkit-scrollbar-thumb:hover,
 .row.overflow-auto::-webkit-scrollbar-thumb:hover,
 .ul-taches::-webkit-scrollbar-thumb:hover,
 .bg-section::-webkit-scrollbar-thumb:hover,

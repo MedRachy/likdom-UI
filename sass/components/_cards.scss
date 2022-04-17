@@ -15,15 +15,15 @@
     font-weight: 600;
     font-style: normal;
     color: $color-2;
-    padding: 0.75rem 1.5rem;
+    padding: 0rem 0.75rem;
     border-radius: 1.25rem!important;
-    box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
-    background-color: rgba(247, 250, 255, 0.5);
+    box-shadow: 0px 6px 12px rgba(84, 147, 255, 0.3);
+    background-color: rgba(247, 250, 255);
 }
 
 .mycard-lg {
     border: none;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 0.5rem;
     border-radius: 1.25rem;
     box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
     background-color: rgba(255, 255, 255);
@@ -33,10 +33,11 @@
         font-style: normal;
         text-align: center;
         font-size: 1.25rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
     }
     .mycard-lg-body {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding: 1rem 0.75rem;
     }
 }
 

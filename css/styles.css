@@ -373,15 +373,15 @@ body {
   font-weight: 600;
   font-style: normal;
   color: #3D5B8E;
-  padding: 0.75rem 1.5rem;
+  padding: 0rem 0.75rem;
   border-radius: 1.25rem !important;
-  box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
-  background-color: rgba(247, 250, 255, 0.5);
+  box-shadow: 0px 6px 12px rgba(84, 147, 255, 0.3);
+  background-color: rgb(247, 250, 255);
 }
 
 .mycard-lg {
   border: none;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 0.5rem;
   border-radius: 1.25rem;
   box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
   background-color: rgb(255, 255, 255);
@@ -392,10 +392,11 @@ body {
   font-style: normal;
   text-align: center;
   font-size: 1.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 .mycard-lg .mycard-lg-body {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0.75rem;
 }
 
 .mylabel-card {
@@ -441,6 +442,7 @@ body {
 }
 
 /* scrollbar css not supported for firefox  need to add @support ( ....)*/
+.mycard-lg .mycard-lg-body::-webkit-scrollbar,
 .row.overflow-auto::-webkit-scrollbar,
 .ul-taches::-webkit-scrollbar,
 .bg-section::-webkit-scrollbar,
@@ -449,6 +451,7 @@ body {
   width: 0.5rem;
 }
 
+.mycard-lg .mycard-lg-body::-webkit-scrollbar-track,
 .row.overflow-auto::-webkit-scrollbar-track,
 .ul-taches::-webkit-scrollbar-track,
 .bg-section::-webkit-scrollbar-track,
@@ -460,6 +463,7 @@ body {
   margin-block: 1rem;
 }
 
+.mycard-lg .mycard-lg-body::-webkit-scrollbar-thumb,
 .row.overflow-auto::-webkit-scrollbar-thumb,
 .ul-taches::-webkit-scrollbar-thumb,
 .bg-section::-webkit-scrollbar-thumb,
@@ -470,6 +474,7 @@ body {
   border-radius: 100vw;
 }
 
+.mycard-lg .mycard-lg-body::-webkit-scrollbar-thumb:hover,
 .row.overflow-auto::-webkit-scrollbar-thumb:hover,
 .ul-taches::-webkit-scrollbar-thumb:hover,
 .bg-section::-webkit-scrollbar-thumb:hover,
@@ -1649,13 +1654,101 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* ------------ Nettoyage à sec --------------*/
 .nettsec-form .mycard-lg {
-  height: 50vh;
+  min-width: 277px;
+  height: 45vh;
+  max-height: 500px;
+  margin-right: 1rem;
 }
 .nettsec-form .mycard-lg .mycard-lg-header {
   border-bottom: 2px solid #C8DEFF;
 }
-.nettsec-form .mycard-lg .mycard-lg-header .img {
+.nettsec-form .mycard-lg .mycard-lg-header span {
+  font-size: 1rem;
+  white-space: nowrap;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.nettsec-form .mycard-lg .mycard-lg-header img {
   max-width: 34px;
+}
+.nettsec-form .mycard-lg .mycard-lg-body {
+  height: 85%;
+  overflow-y: auto;
+}
+.nettsec-form .mycard-lg .mycard-lg-body .mycard-2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.nettsec-form .mycard-lg .mycard-lg-body .mycard-2 .custom-input-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  width: auto;
+  float: none;
+  margin: 0rem;
+  padding: 0rem 0.5rem;
+}
+.nettsec-form .mycard-lg .mycard-lg-body .mycard-2 .custom-input-number .cin-input {
+  max-width: 45px;
+  margin: 0 !important;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3D5B8E;
+}
+.nettsec-form .mycard-lg .mycard-lg-body .mycard-2 .btn-svg {
+  padding: 0rem;
+  border: none;
+  line-height: 0;
+  background-color: transparent;
+}
+.nettsec-form .mycard-lg .mycard-lg-body .mycard-2 .cin-decrement:active .svg-circle,
+.nettsec-form .mycard-lg .mycard-lg-body .mycard-2 .cin-increment:active .svg-circle {
+  fill: #5493FF;
+}
+.nettsec-form .mycard-lg .mycard-lg-body .mycard-2 .cin-decrement:active .svg-line,
+.nettsec-form .mycard-lg .mycard-lg-body .mycard-2 .cin-increment:active .svg-line {
+  stroke: white;
+}
+.nettsec-form .mycard-lg .mycard-lg-body .mycard-2 .cin-close:active .svg-circle {
+  fill: #ef5479;
+}
+.nettsec-form .mycard-lg .mycard-lg-body .mycard-2 .cin-close:active .svg-line {
+  stroke: white;
+}
+.nettsec-form .form-select {
+  border: none;
+  border-radius: 8px !important;
+  padding: 0.4rem 0.75rem;
+  margin: 0.5rem 0.2rem;
+  opacity: 1;
+  background-position: right 0.2rem center !important;
+  cursor: pointer;
+  color: #5493FF;
+  background-color: white;
+  font-size: 0.8rem;
+}
+.nettsec-form .input-group .form-control,
+.nettsec-form .nett_tapis .form-control {
+  border: none;
+  border-radius: 8px !important;
+  background-color: white;
+  font-size: 0.8rem;
+  margin: 0.5rem;
+  padding: 0.375rem 0.5rem;
+}
+.nettsec-form .input-group .form-control::placeholder,
+.nettsec-form .nett_tapis .form-control::placeholder {
+  color: #5493FF;
+}
+.nettsec-form .input-group .form-control:focus,
+.nettsec-form .nett_tapis .form-control:focus {
+  box-shadow: none;
+}
+.nettsec-form .nett_tapis .form-select {
+  width: auto;
+  background-color: #5493FF;
+  color: white;
 }
 
 /* ------------- form steps & img steps ------- */
