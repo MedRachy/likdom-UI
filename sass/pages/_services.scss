@@ -10,29 +10,30 @@ body {
     background-size: contain;
 }
 /* -------------------- swiper -------------------- */
-.div-swiper {
-    /* height: 91vh; */
-    height: auto;
-}
-
-.swiper {
-    padding-block: 5rem!important;
-    padding-inline: 6rem !important;
-}
-
-.swiper-slide {
-    width: 60%!important;
-    margin-inline: auto;
-}
-
-.swiper-button-next, 
-.swiper-button-prev {
-    width: auto !important;
-}
-.swiper-button-next::after, 
-.swiper-button-prev::after {
-    content: ""!important;
-}
+.bg-section-services {
+   .div-swiper {
+        /* height: 91vh; */
+        height: auto;
+    } 
+    .swiper {
+        padding-block: 5rem!important;
+        padding-inline: 6rem !important;
+    }
+    
+    .swiper-slide {
+        width: 60%!important;
+        margin-inline: auto;
+    }
+    
+    .swiper-button-next, 
+    .swiper-button-prev {
+        width: auto !important;
+    }
+    .swiper-button-next::after, 
+    .swiper-button-prev::after {
+        content: ""!important;
+    }
+}  
 // ------------- services card --------------- 
 .card-service {
     .img-wrapper {

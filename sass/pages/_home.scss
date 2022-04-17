@@ -531,19 +531,20 @@ body {
     font-size:  clamp(0.9rem , 1vw, 1rem);
     /* margin-bottom: 4rem; */
 }
-
-.swiper {
+.bg-footer {
+    .swiper {
     padding-left: 4rem !important;
     padding-right: 4rem !important;
-}
+    }
 
-.swiper-button-next, 
-.swiper-button-prev {
-    width: auto !important;
-}
-.swiper-button-next::after, 
-.swiper-button-prev::after {
-    content: ""!important;
+    .swiper-button-next, 
+    .swiper-button-prev {
+        width: auto !important;
+    }
+    .swiper-button-next::after, 
+    .swiper-button-prev::after {
+        content: ""!important;
+    }
 }
 
 .img-persone {

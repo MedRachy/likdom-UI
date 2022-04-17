@@ -988,18 +988,16 @@ body {
   /* margin-bottom: 4rem; */
 }
 
-.swiper {
+.bg-footer .swiper {
   padding-left: 4rem !important;
   padding-right: 4rem !important;
 }
-
-.swiper-button-next,
-.swiper-button-prev {
+.bg-footer .swiper-button-next,
+.bg-footer .swiper-button-prev {
   width: auto !important;
 }
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
+.bg-footer .swiper-button-next::after,
+.bg-footer .swiper-button-prev::after {
   content: "" !important;
 }
 
@@ -2290,28 +2288,24 @@ body {
 }
 
 /* -------------------- swiper -------------------- */
-.div-swiper {
+.bg-section-services .div-swiper {
   /* height: 91vh; */
   height: auto;
 }
-
-.swiper {
+.bg-section-services .swiper {
   padding-block: 5rem !important;
   padding-inline: 6rem !important;
 }
-
-.swiper-slide {
+.bg-section-services .swiper-slide {
   width: 60% !important;
   margin-inline: auto;
 }
-
-.swiper-button-next,
-.swiper-button-prev {
+.bg-section-services .swiper-button-next,
+.bg-section-services .swiper-button-prev {
   width: auto !important;
 }
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
+.bg-section-services .swiper-button-next::after,
+.bg-section-services .swiper-button-prev::after {
   content: "" !important;
 }
 

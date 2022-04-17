@@ -15,3 +15,7 @@ $(document).on("click", ".custom-input-number .cin-decrement", function (e) {
   let temp = val - step;
   $input.val(temp >= min ? temp : min);
 });
+
+$(".btn-next").on("click", function () {
+  window.location.href = "./reserver.html";
+});
