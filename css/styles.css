@@ -176,7 +176,10 @@ body {
 .link-reserv {
   background-color: #3D5B8E;
   color: white;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 10px rgba(61, 91, 142, 0.1);
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+  border-radius: 50rem !important;
 }
 .link-reserv:hover {
   color: white;
@@ -184,29 +187,31 @@ body {
 }
 
 .link-prof {
+  white-space: nowrap;
   background: #FFD700;
-  color: #85720A;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  color: #3D5B8E;
+  box-shadow: 0px 4px 10px rgba(61, 91, 142, 0.1);
+  padding-right: 2.5rem !important;
+  padding-left: 2.5rem !important;
+  border-radius: 50rem !important;
 }
 .link-prof:hover {
   box-shadow: none;
   color: #5C4E00;
 }
-
-.link-prof {
-  padding-top: 2.8rem;
-  margin-top: -37px;
-  border-radius: 0px 0px 11px 11px;
-}
-.link-prof svg {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+.link-prof span {
+  vertical-align: middle;
+  padding-left: 0.5rem;
 }
 
 .link-signup {
+  white-space: nowrap;
   color: #5493FF;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+  margin-right: 0.5rem !important;
+  border-radius: 50rem !important;
 }
 .link-signup:hover {
   color: #3D5B8E;
@@ -214,8 +219,12 @@ body {
 }
 
 .link-signin {
+  white-space: nowrap;
   border-width: 2px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+  border-radius: 50rem !important;
 }
 .link-signin:hover {
   color: #3D5B8E;
@@ -242,7 +251,7 @@ body {
   border-radius: 20px 0px 0px 20px;
   font-size: clamp(0.7rem, 1vw, 1rem);
   border: none;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.08);
 }
 
 #button-search {
@@ -250,7 +259,7 @@ body {
   background-color: #C8DEFF;
   color: #7DB1FF;
   border-radius: 0px 20px 20px 0px;
-  box-shadow: 5px 4px 12px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.08);
 }
 
 .form-search:focus {
@@ -585,7 +594,7 @@ body {
   color: white;
   background-color: #40C351;
   border: 0.5rem solid white;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.07);
   transition: color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -1652,7 +1661,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* ------------ Nettoyage à sec --------------*/
 .nettsec-form .mycard-lg {
-  min-width: 277px;
+  min-width: 265px;
   height: 45vh;
   max-height: 500px;
   margin-right: 1rem;
@@ -1728,6 +1737,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .nettsec-form .input-group .form-control,
 .nettsec-form .nett_tapis .form-control {
+  color: #5493FF;
+  font-family: "ProximaNova", sans-serif;
+  font-style: normal;
   border: none;
   border-radius: 8px !important;
   background-color: white;
@@ -1744,8 +1756,7 @@ input[type=number]::-webkit-outer-spin-button {
   box-shadow: none;
 }
 .nettsec-form .nett_tapis .form-select {
-  width: auto;
-  background-color: #5493FF;
+  background-color: #7DB1FF;
   color: white;
 }
 

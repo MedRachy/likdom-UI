@@ -550,7 +550,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .nettsec-form {
     .mycard-lg {
-        min-width:277px;
+        min-width:265px;
         height: 45vh;
         max-height: 500px;
         margin-right: 1rem;
@@ -630,6 +630,9 @@ input[type=number]::-webkit-outer-spin-button {
     }
     .input-group .form-control ,
     .nett_tapis .form-control {
+        color: $color-1;
+        font-family: "ProximaNova", sans-serif;
+        font-style: normal;
         border: none;
         border-radius: 8px !important;
         background-color: $light-color;
@@ -644,8 +647,7 @@ input[type=number]::-webkit-outer-spin-button {
         }
     }
     .nett_tapis .form-select {
-        width: auto;
-        background-color: $color-1;
+        background-color: $color-3;
         color: $light-color;
     }
 }
