@@ -225,47 +225,35 @@ body {
     max-width: 150px;
 }
 
-.service-grid {
-    /* height: 65vh; */
-    height: auto;
-}
-
 .img-header-mobile {
     max-width: 100%;
     max-height: 26vh
 }
 
-.service-grid .card-img-top {
-    width: 100%;
-    max-height: 15vh;
-    margin-top: 1rem;
+.service-grid {
+    height: auto;
+    .card-img-top {
+        max-width: 42px;
+        margin-top: 1rem;
+    }
+    .card-body {
+        padding: 0.5rem;
+    }
+    .card-link-wrapper {
+        height: 35px;
+        background-color: $color-1;
+        // padding: 0rem 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-link-title {
+        // white-space: nowrap;
+        line-height: 0.7rem;
+        font-size: 0.6rem;
+        color: $light-color;
+    }
 }
-
-.service-grid .card-body {
-    padding: 1rem 0.5rem;
-}
-
-.service-grid .card-link-wrapper {
-    height: 42px;
-    background-color: $color-1;
-    padding: 0.5rem;
-}
-
-.service-grid .card-link-title {
-    font-size: 0.7rem;
-    color: $light-color;
-}
-
-.service-grid .card {
-
-    border: none;
-    backdrop-filter: blur(5px);
-    background-color: rgba(247, 250, 255, 0.5);
-    /* background: rgba(255, 255, 255, 0.7) 0% 0% no-repeat padding-box; */
-    border-radius: 1.25rem!important;
-    box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
-}
-
 
 @media (max-width: 767.98px) {
    

@@ -365,7 +365,8 @@ input[type=number]::-webkit-outer-spin-button {
 .nettsec-form h4 ,
 .passage-form h4 ,
 .select-produits h4,
-.desinfec-form h4 {
+.desinfec-form h4,
+.crista-form h4 {
     color: $color-2;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
@@ -446,7 +447,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* ------------- désinfection form ------------*/
 
-.desinfec-form {
+.desinfec-form ,
+.crista-form {
     width: 100%;
     max-width: 500px;
     .mycard {
@@ -505,31 +507,32 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* ---------------Cristalisation ---------------*/
 
-
-.crista-collapse {
-    position: relative;
-    #collapseWidthExample {
-        position: absolute!important;
-        top: 0px!important;
-        left: 516px!important;
-        .mylabel-card {
-            margin: 0!important;
-            label {
-                padding: 0rem 1rem;
-            }
-            .form-check-input {
-                border: 2px solid $color-1;
-                &:checked {
-                    background-color: $color-1;
-                    border-color: $light-color;
-                    box-shadow: 0 0 0 2px rgb(13 110 253 / 10%);
+.crista-form {
+    .crista-collapse {
+        position: relative;
+        #collapseWidthExample {
+            position: absolute;
+            top: 0px;
+            left: 516px;
+            .mylabel-card {
+                margin: 0;
+                label {
+                    padding: 0rem 1rem;
                 }
-                &:focus {
-                    box-shadow: 0 0 0 2px rgb(13 110 253 / 10%);
+                .form-check-input {
+                    border: 2px solid $color-1;
+                    &:checked {
+                        background-color: $color-1;
+                        border-color: $light-color;
+                        box-shadow: 0 0 0 2px rgb(13 110 253 / 10%);
+                    }
+                    &:focus {
+                        box-shadow: 0 0 0 2px rgb(13 110 253 / 10%);
+                    }
                 }
             }
         }
-    }
+    }   
 }
 
 .card-link-2 {
@@ -622,7 +625,9 @@ input[type=number]::-webkit-outer-spin-button {
         padding: 0.4rem 0.75rem;
         margin: 0.5rem 0.2rem;
         opacity: 1;
+        background-image: url("../images/svg/arrow_down.svg");
         background-position: right 0.2rem center !important;
+        background-size: 16px 5px;
         cursor: pointer;
         color: $color-1;
         background-color: $light-color;
@@ -712,13 +717,16 @@ input[type=number]::-webkit-outer-spin-button {
 
     .form-step-wrapper {
         height: 520px;
+        .form-step {
+            overflow-y: auto;
+        }
+        // because the collapse is hidden when overlay is scroll 
+        .crista-form {
+            overflow-y: unset;
+        }
     }
 
-    .bg-section,
-    .type-logement {
-        overflow-y: scroll;
-    }
-
+    .crista-form h4,
     .desinfec-form h4,
     .passage-form h4 ,
     .type-logement h4 ,
@@ -728,6 +736,9 @@ input[type=number]::-webkit-outer-spin-button {
         margin-bottom: 0.75rem;
     }
 
+    .crista-form .card-link-2 span ,
+    .crista-form .mycard span ,
+    .crista-form .mylabel-card .span-lg ,
     .desinfec-form .card-link-2 span ,
     .desinfec-form .mycard span ,
     .desinfec-form .mylabel-card .span-lg ,
@@ -748,7 +759,7 @@ input[type=number]::-webkit-outer-spin-button {
     .product-check .product-icon img {
         max-width: 20px;
     }
-
+    .crista-form,
     .desinfec-form {
         .plat-img {
             max-width: 230px;
@@ -800,6 +811,14 @@ input[type=number]::-webkit-outer-spin-button {
         overflow-y: auto;
     }
 
+    .form-step-wrapper {
+        height: auto!important;
+        overflow-y: auto;
+        .crista-form {
+            overflow-y: auto;
+        }
+    }
+
     .px-4rem {
         margin-right: auto;
         margin-left: auto;
@@ -816,7 +835,7 @@ input[type=number]::-webkit-outer-spin-button {
         min-width: 200px;
         justify-content: space-between;
         counter-reset: step;
-        /* margin: 1rem ; */
+        margin-bottom: 1rem;
         margin-right: auto!important;
         margin-left: auto!important;
     }
@@ -906,10 +925,10 @@ input[type=number]::-webkit-outer-spin-button {
         height: 400px;
     }
 
-    .col-prog-wrapper {
-        position: relative;
-        height: 155px;
-    }
+    // .col-prog-wrapper {
+    //     position: relative;
+    //     height: 155px;
+    // }
 
     .div-login {
         width: 213px;
@@ -934,10 +953,23 @@ input[type=number]::-webkit-outer-spin-button {
 
     /* ---------- img mobile step---------- */
 
-    .img-mobile-wrapper {
-        position: absolute;
-        top: -61px;
-        left: -12px;
-    }
+    // .img-mobile-wrapper {
+    //     position: absolute;
+    //     top: -61px;
+    //     left: -12px;
+    // }
 
+    /* ---------cristalisation ------------*/
+
+    #collapseWidthExample {
+        position: unset !important;
+        top: unset !important;
+        left: unset !important;
+    }
+    .crista-collapse #collapseWidthExample .mylabel-card {
+        margin-right: auto!important;
+        margin-left: auto!important;
+        margin-top: 1rem !important;
+        margin-bottom: 2rem !important;
+    }
 }

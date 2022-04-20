@@ -336,7 +336,7 @@ body {
   border-radius: 1.25rem;
   background-color: #5493FF;
   color: white;
-  box-shadow: 0 0.5rem 1rem rgba(84, 147, 255, 0.4);
+  box-shadow: 0px 3px 12px rgba(51, 126, 255, 0.5);
   padding: 0.3rem 2.5rem;
   transition: box-shadow 0.15s ease-in-out;
 }
@@ -358,7 +358,7 @@ body {
   border-radius: 1.25rem;
   background-color: #5493FF;
   color: white;
-  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
   padding: 0.7rem 2rem;
   transition: box-shadow 0.15s ease-in-out;
 }
@@ -372,7 +372,7 @@ body {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 1.25rem !important;
-  box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+  box-shadow: 0px 6px 12px rgba(84, 147, 255, 0.3);
   background-color: rgba(247, 250, 255, 0.5);
 }
 
@@ -392,7 +392,7 @@ body {
   border: none;
   padding: 0.75rem 0.5rem;
   border-radius: 1.25rem;
-  box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+  box-shadow: 0px 6px 10px rgba(84, 147, 255, 0.3);
   background-color: rgb(255, 255, 255);
 }
 .mycard-lg .mycard-lg-header {
@@ -412,7 +412,7 @@ body {
   font-size: 1.25rem;
   padding: 0.75rem 1.5rem;
   border-radius: 1.25rem;
-  box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+  box-shadow: 0px 2px 6px rgba(84, 147, 255, 0.3);
   background-color: rgb(255, 255, 255);
 }
 
@@ -451,20 +451,20 @@ body {
 }
 
 /* scrollbar css not supported for firefox  need to add @support ( ....)*/
+.form-step-wrapper .form-step::-webkit-scrollbar,
 .mycard-lg .mycard-lg-body::-webkit-scrollbar,
 .row.overflow-auto::-webkit-scrollbar,
 .ul-taches::-webkit-scrollbar,
 .bg-section::-webkit-scrollbar,
-.type-logement::-webkit-scrollbar,
 .div-tache-wrapper::-webkit-scrollbar {
   width: 0.5rem;
 }
 
+.form-step-wrapper .form-step::-webkit-scrollbar-track,
 .mycard-lg .mycard-lg-body::-webkit-scrollbar-track,
 .row.overflow-auto::-webkit-scrollbar-track,
 .ul-taches::-webkit-scrollbar-track,
 .bg-section::-webkit-scrollbar-track,
-.type-logement::-webkit-scrollbar-track,
 .div-tache-wrapper::-webkit-scrollbar-track {
   width: 0.5rem;
   background: #7DB1FF;
@@ -472,22 +472,22 @@ body {
   margin-block: 1rem;
 }
 
+.form-step-wrapper .form-step::-webkit-scrollbar-thumb,
 .mycard-lg .mycard-lg-body::-webkit-scrollbar-thumb,
 .row.overflow-auto::-webkit-scrollbar-thumb,
 .ul-taches::-webkit-scrollbar-thumb,
 .bg-section::-webkit-scrollbar-thumb,
-.type-logement::-webkit-scrollbar-thumb,
 .div-tache-wrapper::-webkit-scrollbar-thumb {
   background: #5493FF;
   /* border: 0.25rem solid $color-3; */
   border-radius: 100vw;
 }
 
+.form-step-wrapper .form-step::-webkit-scrollbar-thumb:hover,
 .mycard-lg .mycard-lg-body::-webkit-scrollbar-thumb:hover,
 .row.overflow-auto::-webkit-scrollbar-thumb:hover,
 .ul-taches::-webkit-scrollbar-thumb:hover,
 .bg-section::-webkit-scrollbar-thumb:hover,
-.type-logement::-webkit-scrollbar-thumb:hover,
 .div-tache-wrapper::-webkit-scrollbar-thumb:hover {
   background: #486A9C;
 }
@@ -709,44 +709,32 @@ body {
   max-width: 150px;
 }
 
-.service-grid {
-  /* height: 65vh; */
-  height: auto;
-}
-
 .img-header-mobile {
   max-width: 100%;
   max-height: 26vh;
 }
 
+.service-grid {
+  height: auto;
+}
 .service-grid .card-img-top {
-  width: 100%;
-  max-height: 15vh;
+  max-width: 42px;
   margin-top: 1rem;
 }
-
 .service-grid .card-body {
-  padding: 1rem 0.5rem;
-}
-
-.service-grid .card-link-wrapper {
-  height: 42px;
-  background-color: #5493FF;
   padding: 0.5rem;
 }
-
-.service-grid .card-link-title {
-  font-size: 0.7rem;
-  color: white;
+.service-grid .card-link-wrapper {
+  height: 35px;
+  background-color: #5493FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.service-grid .card {
-  border: none;
-  backdrop-filter: blur(5px);
-  background-color: rgba(247, 250, 255, 0.5);
-  /* background: rgba(255, 255, 255, 0.7) 0% 0% no-repeat padding-box; */
-  border-radius: 1.25rem !important;
-  box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+.service-grid .card-link-title {
+  line-height: 0.7rem;
+  font-size: 0.6rem;
+  color: white;
 }
 
 @media (max-width: 767.98px) {
@@ -1110,7 +1098,7 @@ body {
   margin-inline: clamp(1rem, 2vw, 2.25rem);
   background-color: rgba(247, 250, 255, 0.7);
   border-radius: 2.25rem !important;
-  box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+  box-shadow: 0px 6px 12px rgba(84, 147, 255, 0.3);
   transition: background-color 100ms ease, box-shadow 100ms ease;
 }
 .card-select:hover {
@@ -1487,7 +1475,8 @@ input[type=number]::-webkit-outer-spin-button {
 .nettsec-form h4,
 .passage-form h4,
 .select-produits h4,
-.desinfec-form h4 {
+.desinfec-form h4,
+.crista-form h4 {
   color: #3D5B8E;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
@@ -1566,29 +1555,35 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /* ------------- désinfection form ------------*/
-.desinfec-form {
+.desinfec-form,
+.crista-form {
   width: 100%;
   max-width: 500px;
 }
-.desinfec-form .mycard {
+.desinfec-form .mycard,
+.crista-form .mycard {
   background-color: rgba(247, 250, 255, 0.6);
 }
-.desinfec-form .mylabel-card {
+.desinfec-form .mylabel-card,
+.crista-form .mylabel-card {
   padding: 1rem 1.5rem;
   margin-top: 2rem;
   margin-bottom: 4rem;
 }
-.desinfec-form .mylabel-sm-card {
+.desinfec-form .mylabel-sm-card,
+.crista-form .mylabel-sm-card {
   width: 195px;
 }
-.desinfec-form .plat-img {
+.desinfec-form .plat-img,
+.crista-form .plat-img {
   display: block;
   width: 100%;
   max-width: 364px;
   margin-right: auto;
   margin-left: auto;
 }
-.desinfec-form .custom-input-number {
+.desinfec-form .custom-input-number,
+.crista-form .custom-input-number {
   display: flex;
   align-items: center;
   width: auto;
@@ -1599,7 +1594,8 @@ input[type=number]::-webkit-outer-spin-button {
   border: 4px #7DB1FF solid;
   border-radius: 1rem;
 }
-.desinfec-form .custom-input-number .cin-input {
+.desinfec-form .custom-input-number .cin-input,
+.crista-form .custom-input-number .cin-input {
   width: 80px;
   height: 49px;
   margin: 0 !important;
@@ -1608,44 +1604,47 @@ input[type=number]::-webkit-outer-spin-button {
   color: #3D5B8E;
   line-height: 0;
 }
-.desinfec-form .custom-input-number .cin-btn {
+.desinfec-form .custom-input-number .cin-btn,
+.crista-form .custom-input-number .cin-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem !important;
   font-weight: 600;
 }
-.desinfec-form .custom-input-number .cin-increment {
+.desinfec-form .custom-input-number .cin-increment,
+.crista-form .custom-input-number .cin-increment {
   line-height: 0.6;
 }
-.desinfec-form .custom-input-number .cin-decrement {
+.desinfec-form .custom-input-number .cin-decrement,
+.crista-form .custom-input-number .cin-decrement {
   line-height: 0;
 }
 
 /* ---------------Cristalisation ---------------*/
-.crista-collapse {
+.crista-form .crista-collapse {
   position: relative;
 }
-.crista-collapse #collapseWidthExample {
-  position: absolute !important;
-  top: 0px !important;
-  left: 516px !important;
+.crista-form .crista-collapse #collapseWidthExample {
+  position: absolute;
+  top: 0px;
+  left: 516px;
 }
-.crista-collapse #collapseWidthExample .mylabel-card {
-  margin: 0 !important;
+.crista-form .crista-collapse #collapseWidthExample .mylabel-card {
+  margin: 0;
 }
-.crista-collapse #collapseWidthExample .mylabel-card label {
+.crista-form .crista-collapse #collapseWidthExample .mylabel-card label {
   padding: 0rem 1rem;
 }
-.crista-collapse #collapseWidthExample .mylabel-card .form-check-input {
+.crista-form .crista-collapse #collapseWidthExample .mylabel-card .form-check-input {
   border: 2px solid #5493FF;
 }
-.crista-collapse #collapseWidthExample .mylabel-card .form-check-input:checked {
+.crista-form .crista-collapse #collapseWidthExample .mylabel-card .form-check-input:checked {
   background-color: #5493FF;
   border-color: white;
   box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.1);
 }
-.crista-collapse #collapseWidthExample .mylabel-card .form-check-input:focus {
+.crista-form .crista-collapse #collapseWidthExample .mylabel-card .form-check-input:focus {
   box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.1);
 }
 
@@ -1729,7 +1728,9 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 0.4rem 0.75rem;
   margin: 0.5rem 0.2rem;
   opacity: 1;
+  background-image: url("../images/svg/arrow_down.svg");
   background-position: right 0.2rem center !important;
+  background-size: 16px 5px;
   cursor: pointer;
   color: #5493FF;
   background-color: white;
@@ -1816,13 +1817,15 @@ input[type=number]::-webkit-outer-spin-button {
   .form-step-wrapper {
     height: 520px;
   }
-
-  .bg-section,
-.type-logement {
-    overflow-y: scroll;
+  .form-step-wrapper .form-step {
+    overflow-y: auto;
+  }
+  .form-step-wrapper .crista-form {
+    overflow-y: unset;
   }
 
-  .desinfec-form h4,
+  .crista-form h4,
+.desinfec-form h4,
 .passage-form h4,
 .type-logement h4,
 .select-produits h4 {
@@ -1831,7 +1834,10 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 0.75rem;
   }
 
-  .desinfec-form .card-link-2 span,
+  .crista-form .card-link-2 span,
+.crista-form .mycard span,
+.crista-form .mylabel-card .span-lg,
+.desinfec-form .card-link-2 span,
 .desinfec-form .mycard span,
 .desinfec-form .mylabel-card .span-lg,
 .passage-form .form-select,
@@ -1853,10 +1859,12 @@ input[type=number]::-webkit-outer-spin-button {
     max-width: 20px;
   }
 
-  .desinfec-form .plat-img {
+  .crista-form .plat-img,
+.desinfec-form .plat-img {
     max-width: 230px;
   }
-  .desinfec-form .mylabel-card {
+  .crista-form .mylabel-card,
+.desinfec-form .mylabel-card {
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
@@ -1907,6 +1915,14 @@ input[type=number]::-webkit-outer-spin-button {
     overflow-y: auto;
   }
 
+  .form-step-wrapper {
+    height: auto !important;
+    overflow-y: auto;
+  }
+  .form-step-wrapper .crista-form {
+    overflow-y: auto;
+  }
+
   .px-4rem {
     margin-right: auto;
     margin-left: auto;
@@ -1924,7 +1940,7 @@ input[type=number]::-webkit-outer-spin-button {
     min-width: 200px;
     justify-content: space-between;
     counter-reset: step;
-    /* margin: 1rem ; */
+    margin-bottom: 1rem;
     margin-right: auto !important;
     margin-left: auto !important;
   }
@@ -2017,11 +2033,6 @@ input[type=number]::-webkit-outer-spin-button {
     height: 400px;
   }
 
-  .col-prog-wrapper {
-    position: relative;
-    height: 155px;
-  }
-
   .div-login {
     width: 213px;
     margin-right: auto;
@@ -2044,10 +2055,18 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   /* ---------- img mobile step---------- */
-  .img-mobile-wrapper {
-    position: absolute;
-    top: -61px;
-    left: -12px;
+  /* ---------cristalisation ------------*/
+  #collapseWidthExample {
+    position: unset !important;
+    top: unset !important;
+    left: unset !important;
+  }
+
+  .crista-collapse #collapseWidthExample .mylabel-card {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    margin-top: 1rem !important;
+    margin-bottom: 2rem !important;
   }
 }
 /* ----------------------- section -------------------- */

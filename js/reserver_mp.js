@@ -3,7 +3,6 @@ const nextBtns = document.querySelectorAll(".btn-next");
 // elements with diffrent steps
 const formSteps = document.querySelectorAll(".form-step");
 const imgSteps = document.querySelectorAll(".img-step");
-const imgMobile = document.querySelectorAll(".img-mobile-step");
 // progress bar
 const progress = document.getElementById("progress");
 const progressSteps = document.querySelectorAll(".progress-step");
@@ -68,18 +67,6 @@ function updateImgSteps() {
         imgStep.classList.remove("img-step-active");
     });
     imgSteps[formStepsNum].classList.add("img-step-active");
-    // that because div taches dont have an image
-    // if (formStepsNum == 3) {
-    //   imgSteps[2].classList.add("img-step-active");
-    // } else {
-    //   imgSteps[formStepsNum].classList.add("img-step-active");
-    // }
-  } else {
-    imgMobile.forEach((imgStep) => {
-      imgStep.classList.contains("img-mobile-active") &&
-        imgStep.classList.remove("img-mobile-active");
-    });
-    imgMobile[formStepsNum].classList.add("img-mobile-active");
   }
 }
 

@@ -1,20 +1,20 @@
 @use  '../abstracts/variables' as *;
 
 /* scrollbar css not supported for firefox  need to add @support ( ....)*/
+.form-step-wrapper .form-step::-webkit-scrollbar,
 .mycard-lg .mycard-lg-body::-webkit-scrollbar,
 .row.overflow-auto::-webkit-scrollbar,
 .ul-taches::-webkit-scrollbar,
 .bg-section::-webkit-scrollbar,
-.type-logement::-webkit-scrollbar,
 .div-tache-wrapper::-webkit-scrollbar {
     width: 0.5rem;
 }
 
+.form-step-wrapper .form-step::-webkit-scrollbar-track,
 .mycard-lg .mycard-lg-body::-webkit-scrollbar-track,
 .row.overflow-auto::-webkit-scrollbar-track,
 .ul-taches::-webkit-scrollbar-track,
 .bg-section::-webkit-scrollbar-track,
-.type-logement::-webkit-scrollbar-track,
 .div-tache-wrapper::-webkit-scrollbar-track {
     width: 0.5rem;
     background: $color-3;
@@ -22,22 +22,22 @@
     margin-block: 1rem;
 }
 
+.form-step-wrapper .form-step::-webkit-scrollbar-thumb,
 .mycard-lg .mycard-lg-body::-webkit-scrollbar-thumb,
 .row.overflow-auto::-webkit-scrollbar-thumb,
 .ul-taches::-webkit-scrollbar-thumb,
 .bg-section::-webkit-scrollbar-thumb,
-.type-logement::-webkit-scrollbar-thumb,
 .div-tache-wrapper::-webkit-scrollbar-thumb {
     background: $color-1;
     /* border: 0.25rem solid $color-3; */
     border-radius: 100vw;
 }
 
+.form-step-wrapper .form-step::-webkit-scrollbar-thumb:hover,
 .mycard-lg .mycard-lg-body::-webkit-scrollbar-thumb:hover,
 .row.overflow-auto::-webkit-scrollbar-thumb:hover,
 .ul-taches::-webkit-scrollbar-thumb:hover,
 .bg-section::-webkit-scrollbar-thumb:hover,
-.type-logement::-webkit-scrollbar-thumb:hover,
 .div-tache-wrapper::-webkit-scrollbar-thumb:hover {
     background: $color-4;
 }

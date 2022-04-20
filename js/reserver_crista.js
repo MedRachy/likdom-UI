@@ -6,7 +6,12 @@ const imgSteps = document.querySelectorAll(".img-step");
 // progress bar
 const progress = document.getElementById("progress");
 const progressSteps = document.querySelectorAll(".progress-step");
+// change collapse style on mobile screen
+const collapseDiv = document.getElementById("collapseWidthExample");
 
+if ($(window).width() <= 992) {
+  collapseDiv.classList.remove("collapse-horizontal");
+}
 let formStepsNum = 0;
 
 nextBtns.forEach((btn) => {
