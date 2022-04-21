@@ -83,7 +83,7 @@
     color: $color-2;
     font-size: 1rem;
     padding: 0.75rem 1.5rem;
-    background-color: rgba(255, 255, 255);
+    background-color: rgba(200, 222, 255, 0.6);
     border-radius: 1.25rem !important;
     box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
     a {
@@ -159,6 +159,19 @@
         font-weight: 600;
         font-style: normal;
         margin-bottom: 0 !important;
+    }
+}
+
+.nbr-agent {
+    color: $color-2;
+    font-weight: 600;
+    border-radius: 50rem!important;
+    padding: 0.75rem;
+    background-color: rgba(255, 255, 255 , 0.4);
+    box-shadow: none;
+    img {
+        max-height: 38px;
+        margin: 0rem;
     }
 }
 
@@ -684,6 +697,7 @@ input[type=number]::-webkit-outer-spin-button {
     .form-step-wrapper {
         height: 520px;
         .form-step {
+            padding: 0.5rem;
             overflow-y: auto;
         }
         // because the collapse is hidden when overlay is scroll 
@@ -872,18 +886,19 @@ input[type=number]::-webkit-outer-spin-button {
         opacity: 1;
     }  
 
-    .type-logement a {
-        margin-right: auto;
-        margin-left: auto;
+    .type-logement {
+        a {
+            margin-right: auto;
+            margin-left: auto;
+        }      
+        h4 {
+            text-align: center;
+            margin-bottom: 2.75rem;
+        }  
+        img {
+            margin-right: 1rem;
+        }
     }
-    .type-logement h4 {
-        text-align: center;
-        margin-bottom: 2.75rem;
-    }
-    .type-logement img {
-        margin-right: 1rem;
-    }
-
     .passage-form h4 {
         margin: 1.75rem 0rem;
     }
@@ -897,17 +912,17 @@ input[type=number]::-webkit-outer-spin-button {
     // }
 
     .div-login {
-        width: 213px;
-        margin-right: auto;
-        margin-left: auto;
-        opacity: 0.875;
+        margin-top: 0rem!important;
+        line-height: normal!important;
+        box-shadow: none!important;
+        padding: 0.5rem!important;
     }
     
-    .div-login a ,
-    .div-login .fas {
-        text-decoration: none;
-        color: $color-1;
-    }
+    // .div-login a ,
+    // .div-login .fas {
+    //     text-decoration: none;
+    //     color: $color-1;
+    // }
 
     .div-tache {
         line-height: 1;

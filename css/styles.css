@@ -1203,7 +1203,7 @@ body {
   color: #3D5B8E;
   font-size: 1rem;
   padding: 0.75rem 1.5rem;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(200, 222, 255, 0.6);
   border-radius: 1.25rem !important;
   box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
 }
@@ -1279,6 +1279,19 @@ body {
   font-weight: 600;
   font-style: normal;
   margin-bottom: 0 !important;
+}
+
+.nbr-agent {
+  color: #3D5B8E;
+  font-weight: 600;
+  border-radius: 50rem !important;
+  padding: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: none;
+}
+.nbr-agent img {
+  max-height: 38px;
+  margin: 0rem;
 }
 
 /*---------------------custom-input-number---------------- */
@@ -1780,6 +1793,7 @@ input[type=number]::-webkit-outer-spin-button {
     height: 520px;
   }
   .form-step-wrapper .form-step {
+    padding: 0.5rem;
     overflow-y: auto;
   }
   .form-step-wrapper .crista-form {
@@ -1978,12 +1992,10 @@ input[type=number]::-webkit-outer-spin-button {
     margin-right: auto;
     margin-left: auto;
   }
-
   .type-logement h4 {
     text-align: center;
     margin-bottom: 2.75rem;
   }
-
   .type-logement img {
     margin-right: 1rem;
   }
@@ -1997,16 +2009,10 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .div-login {
-    width: 213px;
-    margin-right: auto;
-    margin-left: auto;
-    opacity: 0.875;
-  }
-
-  .div-login a,
-.div-login .fas {
-    text-decoration: none;
-    color: #5493FF;
+    margin-top: 0rem !important;
+    line-height: normal !important;
+    box-shadow: none !important;
+    padding: 0.5rem !important;
   }
 
   .div-tache {
@@ -2439,7 +2445,7 @@ body {
   margin-top: 3.75rem;
   line-height: 2.5;
   padding: 0.75rem 1.5rem;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(200, 222, 255, 0.6);
   border: 3px solid #FFFFFF;
   border-radius: 1.25rem !important;
   box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
