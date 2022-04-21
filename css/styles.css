@@ -1289,38 +1289,30 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
+.btn-svg {
+  padding: 0rem;
+  border: none;
+  line-height: 0;
+  background-color: transparent;
+}
+
 .custom-input-number {
-  text-align: right;
-  width: 200px;
-  /* margin: 0 auto; */
-  float: left;
+  display: flex;
+  align-items: center;
+  width: auto;
 }
-
-.cin-btn {
-  display: inline-block;
+.custom-input-number .cin-decrement:active .svg-circle,
+.custom-input-number .cin-increment:active .svg-circle {
+  fill: #5493FF;
+}
+.custom-input-number .cin-decrement:active .svg-line,
+.custom-input-number .cin-increment:active .svg-line {
+  stroke: white;
+}
+.custom-input-number .cin-input {
+  font-size: 1.25rem;
+  font-weight: 600;
   color: #3D5B8E;
-  background: white;
-  border: 1px solid white;
-  border-radius: 50%;
-  margin: 0 auto;
-  font-size: 0.8rem;
-  /* font-weight: 700; */
-  height: 1.8rem;
-  width: 1.8rem;
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-.cin-btn:active {
-  background: #5493FF;
-  border: 1px solid white;
-  color: white;
-}
-.cin-btn:focus {
-  outline: none;
-}
-
-.cin-input {
   border: 0;
   box-shadow: inset 0 0 0 rgba(64, 150, 255, 0.1);
   -webkit-appearance: none;
@@ -1584,10 +1576,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .desinfec-form .custom-input-number,
 .crista-form .custom-input-number {
-  display: flex;
-  align-items: center;
-  width: auto;
-  float: none;
   margin-left: auto;
   padding: 0rem 0.5rem;
   background-color: #C8DEFF;
@@ -1602,23 +1590,6 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 40px;
   font-weight: 600;
   color: #3D5B8E;
-  line-height: 0;
-}
-.desinfec-form .custom-input-number .cin-btn,
-.crista-form .custom-input-number .cin-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem !important;
-  font-weight: 600;
-}
-.desinfec-form .custom-input-number .cin-increment,
-.crista-form .custom-input-number .cin-increment {
-  line-height: 0.6;
-}
-.desinfec-form .custom-input-number .cin-decrement,
-.crista-form .custom-input-number .cin-decrement {
-  line-height: 0;
 }
 
 /* ---------------Cristalisation ---------------*/
@@ -1686,12 +1657,8 @@ input[type=number]::-webkit-outer-spin-button {
   margin-bottom: 1rem;
 }
 .nettsec-form .mycard-lg .mycard-lg-body .mycard-2 .custom-input-number {
-  display: flex;
-  align-items: center;
   justify-content: center;
   flex-grow: 1;
-  width: auto;
-  float: none;
   margin: 0rem;
   padding: 0rem 0.5rem;
 }
@@ -1701,20 +1668,6 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 1.5rem;
   font-weight: 600;
   color: #3D5B8E;
-}
-.nettsec-form .mycard-lg .mycard-lg-body .mycard-2 .btn-svg {
-  padding: 0rem;
-  border: none;
-  line-height: 0;
-  background-color: transparent;
-}
-.nettsec-form .mycard-lg .mycard-lg-body .mycard-2 .cin-decrement:active .svg-circle,
-.nettsec-form .mycard-lg .mycard-lg-body .mycard-2 .cin-increment:active .svg-circle {
-  fill: #5493FF;
-}
-.nettsec-form .mycard-lg .mycard-lg-body .mycard-2 .cin-decrement:active .svg-line,
-.nettsec-form .mycard-lg .mycard-lg-body .mycard-2 .cin-increment:active .svg-line {
-  stroke: white;
 }
 .nettsec-form .mycard-lg .mycard-lg-body .mycard-2 .cin-close:active .svg-circle {
   fill: #ef5479;
