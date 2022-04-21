@@ -259,6 +259,11 @@ body {
    
     .navbar {
         padding-top: 0.5rem;
+        .input-group {
+            width: 75%;
+            max-width: none;
+            min-width: unset;
+        }
     }
    
     .bg-header {
@@ -271,13 +276,6 @@ body {
         background-image: none;
     }
 
-
-    .input-group {
-        width: 75%;
-        max-width: none;
-        min-width: unset;
-    }
-    
     .form-search {
         margin-left: 0px!important;
         border-radius: 20px ;
@@ -294,9 +292,6 @@ body {
     }
  
 }
-
-
-
 
 /* ----------------- section 1 ------------------- */
 

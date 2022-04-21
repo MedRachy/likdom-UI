@@ -24,7 +24,7 @@
         <img src="./images/spinner.svg" alt="">
     </div>
 
-    <section class="bg-section-code">
+    <section class="bg-section-nettsec">
         <nav class="navbar navbar-dark navbar-expand-lg">
             <div class="container justify-content-start justify-content-md-between">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -101,12 +101,11 @@
             </div>
         </nav>
         <div class="container d-flex flex-column height-91">
-            <div class="row overflow-auto py-6 ">
+            <div class="row d-none d-lg-flex overflow-auto py-6 ">
                 <div class="col-lg-12">
                     <div class="nettsec-form">
                         <h4 class="text-start">Nettoyage à sec</h4>
                         <div class="d-flex align-items-center">
-
                             <div class="mycard-lg">
                                 <div class="mycard-lg-header d-flex align-items-center justify-content-between">
                                     <img src="./images/icon_nett_sec/icons8_sofa.svg" alt="">
@@ -189,7 +188,6 @@
                                         Places
                                     </div>
                                 </div>
-
                             </div>
                             <div class="mycard-lg">
                                 <div class="mycard-lg-header d-flex align-items-center justify-content-between">
@@ -496,7 +494,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="mycard-lg">
                                 <div class="mycard-lg-header d-flex align-items-center justify-content-between">
                                     <img src="./images/icon_nett_sec/icons8_bed.svg" alt="">
@@ -530,9 +527,7 @@
                                                 </g>
                                             </svg>
                                         </button>
-
                                     </div>
-
                                 </div>
                             </div>
                             <div class="mycard-lg">
@@ -567,15 +562,424 @@
                                             </svg>
                                         </button>
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row flex-grow-1 pt-4">
+            <div class="row d-lg-none overflow-auto">
+                <div class="col-12">
+                    <div class="nettsec-form">
+                        <h4 class="text-center">Nettoyage à sec</h4>
+                        <p>Sélectionner les pièces à nettoyer, vous pouviez ajouter plusieurs pièces en appuient
+                            <span class="d-inline-flex align-items-center">
+                                sur <img src="./images/svg/Plus.svg" class="ms-2" alt=""></span>
+                        </p>
+                        <div class="d-flex flex-column align-items-center justify-content-evenly">
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between"
+                                    style="transform: rotate(0);">
+                                    <img src="./images/icon_nett_sec/icons8_sofa.svg" alt="">
+                                    <span>Canapé</span>
+                                    <a data-bs-toggle="collapse" href="#collapseCanape" role="button"
+                                        aria-expanded="false" aria-controls="collapseCanape"
+                                        class="stretched-link collapsed">
+                                        <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mycard-lg-body collapse" id="collapseCanape">
+                                    <div class="mycard-2 d-flex align-items-center">
+                                        Places
+                                        <div class="custom-input-number">
+                                            <button type="button" class="btn-svg cin-decrement">
+                                                <svg id="Minus" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                    height="20" viewBox="0 0 20 20">
+                                                    <circle class="svg-circle" data-name="Ellipse 11" cx="10" cy="10"
+                                                        r="10" fill="#fff" />
+                                                    <line class="svg-line" data-name="Ligne 30" x2="10"
+                                                        transform="translate(5 10)" fill="none" stroke="#3d5b8e"
+                                                        stroke-linecap="round" stroke-width="2" />
+                                                </svg>
+                                            </button>
+                                            <input type="number" class="cin-input basket-quantity" step="1" value="2"
+                                                min="1" max="100">
+                                            <button type="button" class="btn-svg cin-increment">
+                                                <svg id="Plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <circle class="svg-circle" data-name="Ellipse 11" cx="10" cy="10"
+                                                        r="10" fill="#fff" />
+                                                    <line class="svg-line" data-name="Ligne 30" x2="10"
+                                                        transform="translate(5 10)" fill="none" stroke="#3d5b8e"
+                                                        stroke-linecap="round" stroke-width="2" />
+                                                    <line class="svg-line" data-name="Ligne 31" x2="10"
+                                                        transform="translate(10 5) rotate(90)" fill="none"
+                                                        stroke="#3d5b8e" stroke-linecap="round" stroke-width="2" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <button type="button" class="btn-svg cin-close">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="28.284" height="28.284"
+                                                viewBox="0 0 28.284 28.284">
+                                                <g transform="translate(0)">
+                                                    <g data-name="Cross" transform="translate(0 14.142) rotate(-45)">
+                                                        <circle class="svg-circle" data-name="Ellipse 11" cx="10"
+                                                            cy="10" r="10" fill="#fff" />
+                                                        <line class="svg-line" data-name="Ligne 30" x2="10"
+                                                            transform="translate(5 10)" fill="none" stroke="#ef5479"
+                                                            stroke-linecap="round" stroke-width="2" />
+                                                        <line class="svg-line" data-name="Ligne 31" x2="10"
+                                                            transform="translate(9.999 5) rotate(90)" fill="none"
+                                                            stroke="#ef5479" stroke-linecap="round" stroke-width="2" />
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+                                    <div class="mycard-2 d-flex align-items-center">
+                                        Places
+                                        <div class="custom-input-number">
+                                            <button type="button" class="btn-svg cin-decrement">
+                                                <svg id="Minus" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                    height="20" viewBox="0 0 20 20">
+                                                    <circle class="svg-circle" data-name="Ellipse 11" cx="10" cy="10"
+                                                        r="10" fill="#fff" />
+                                                    <line class="svg-line" data-name="Ligne 30" x2="10"
+                                                        transform="translate(5 10)" fill="none" stroke="#3d5b8e"
+                                                        stroke-linecap="round" stroke-width="2" />
+                                                </svg>
+                                            </button>
+                                            <input type="number" class="cin-input basket-quantity" step="1" value="2"
+                                                min="1" max="100">
+                                            <button type="button" class="btn-svg cin-increment">
+                                                <svg id="Plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <circle class="svg-circle" data-name="Ellipse 11" cx="10" cy="10"
+                                                        r="10" fill="#fff" />
+                                                    <line class="svg-line" data-name="Ligne 30" x2="10"
+                                                        transform="translate(5 10)" fill="none" stroke="#3d5b8e"
+                                                        stroke-linecap="round" stroke-width="2" />
+                                                    <line class="svg-line" data-name="Ligne 31" x2="10"
+                                                        transform="translate(10 5) rotate(90)" fill="none"
+                                                        stroke="#3d5b8e" stroke-linecap="round" stroke-width="2" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <button type="button" class="btn-svg cin-close">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="28.284" height="28.284"
+                                                viewBox="0 0 28.284 28.284">
+                                                <g transform="translate(0)">
+                                                    <g data-name="Cross" transform="translate(0 14.142) rotate(-45)">
+                                                        <circle class="svg-circle" data-name="Ellipse 11" cx="10"
+                                                            cy="10" r="10" fill="#fff" />
+                                                        <line class="svg-line" data-name="Ligne 30" x2="10"
+                                                            transform="translate(5 10)" fill="none" stroke="#ef5479"
+                                                            stroke-linecap="round" stroke-width="2" />
+                                                        <line class="svg-line" data-name="Ligne 31" x2="10"
+                                                            transform="translate(9.999 5) rotate(90)" fill="none"
+                                                            stroke="#ef5479" stroke-linecap="round" stroke-width="2" />
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" class="stretched-link">Ajouter canapé</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between"
+                                    style="transform: rotate(0);">
+                                    <img src="./images/icon_nett_sec/icons8_armchair_1.svg" alt="">
+                                    <span>Fauteuil</span>
+                                    <a data-bs-toggle="collapse" href="#collapseFauteuil" role="button"
+                                        aria-expanded="false" aria-controls="collapseFauteuil"
+                                        class="stretched-link collapsed">
+                                        <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mycard-lg-body collapse" id="collapseFauteuil">
+                                    <div class="mycard-2 d-flex align-items-center">
+                                        Places
+                                        <div class="custom-input-number">
+                                            <button type="button" class="btn-svg cin-decrement">
+                                                <svg id="Minus" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                    height="20" viewBox="0 0 20 20">
+                                                    <circle class="svg-circle" data-name="Ellipse 11" cx="10" cy="10"
+                                                        r="10" fill="#fff" />
+                                                    <line class="svg-line" data-name="Ligne 30" x2="10"
+                                                        transform="translate(5 10)" fill="none" stroke="#3d5b8e"
+                                                        stroke-linecap="round" stroke-width="2" />
+                                                </svg>
+                                            </button>
+                                            <input type="number" class="cin-input basket-quantity" step="1" value="2"
+                                                min="1" max="100">
+                                            <button type="button" class="btn-svg cin-increment">
+                                                <svg id="Plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <circle class="svg-circle" data-name="Ellipse 11" cx="10" cy="10"
+                                                        r="10" fill="#fff" />
+                                                    <line class="svg-line" data-name="Ligne 30" x2="10"
+                                                        transform="translate(5 10)" fill="none" stroke="#3d5b8e"
+                                                        stroke-linecap="round" stroke-width="2" />
+                                                    <line class="svg-line" data-name="Ligne 31" x2="10"
+                                                        transform="translate(10 5) rotate(90)" fill="none"
+                                                        stroke="#3d5b8e" stroke-linecap="round" stroke-width="2" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <button type="button" class="btn-svg cin-close">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="28.284" height="28.284"
+                                                viewBox="0 0 28.284 28.284">
+                                                <g transform="translate(0)">
+                                                    <g data-name="Cross" transform="translate(0 14.142) rotate(-45)">
+                                                        <circle class="svg-circle" data-name="Ellipse 11" cx="10"
+                                                            cy="10" r="10" fill="#fff" />
+                                                        <line class="svg-line" data-name="Ligne 30" x2="10"
+                                                            transform="translate(5 10)" fill="none" stroke="#ef5479"
+                                                            stroke-linecap="round" stroke-width="2" />
+                                                        <line class="svg-line" data-name="Ligne 31" x2="10"
+                                                            transform="translate(9.999 5) rotate(90)" fill="none"
+                                                            stroke="#ef5479" stroke-linecap="round" stroke-width="2" />
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" class="stretched-link">Ajouter fauteuil</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between"
+                                    style="transform: rotate(0);">
+                                    <img src="./images/icon_nett_sec/icons8_wing_chair.svg" alt="">
+                                    <span>Chaise</span>
+                                    <a data-bs-toggle="collapse" href="#collapseChaise" role="button"
+                                        aria-expanded="false" aria-controls="collapseChaise"
+                                        class="stretched-link collapsed">
+                                        <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mycard-lg-body collapse" id="collapseChaise">
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" class="stretched-link">Ajouter Chaise</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between"
+                                    style="transform: rotate(0);">
+                                    <img src="./images/icon_nett_sec/icons8_armchair_1.svg" alt="">
+                                    <span>Méridienne</span>
+                                    <a data-bs-toggle="collapse" href="#collapseMeridienne" role="button"
+                                        aria-expanded="false" aria-controls="collapseMeridienne"
+                                        class="stretched-link collapsed">
+                                        <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mycard-lg-body collapse" id="collapseMeridienne">
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" class="stretched-link">Ajouter Méridienne</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between"
+                                    style="transform: rotate(0);">
+                                    <img src="./images/icon_nett_sec/icons8_living_room.svg" alt="">
+                                    <span>Canapé lit</span>
+                                    <a data-bs-toggle="collapse" href="#collapseCanapelit" role="button"
+                                        aria-expanded="false" aria-controls="collapseCanapelit"
+                                        class="stretched-link collapsed">
+                                        <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mycard-lg-body collapse" id="collapseCanapelit">
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" class="stretched-link">Ajouter Canapé lit</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between"
+                                    style="transform: rotate(0);">
+                                    <img src="./images/icon_nett_sec/icons8_carpet.svg" alt="">
+                                    <span>Tapis/ Moquette</span>
+                                    <a data-bs-toggle="collapse" href="#collapseTapis" role="button"
+                                        aria-expanded="false" aria-controls="collapseTapis"
+                                        class="stretched-link collapsed">
+                                        <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mycard-lg-body collapse" id="collapseTapis">
+                                    <div class="mycard-2 d-flex align-items-center nett_tapis">
+                                        <select name="tapis" class="form-select">
+                                            <option value="">Poil Long</option>
+                                            <option value="">Soie/Laine</option>
+                                        </select>
+                                        <div class="me-2">
+                                            <input type="text" class="form-control" placeholder="H ( cm )">
+                                            <input type="text" class="form-control" placeholder="L ( cm )">
+                                        </div>
+                                        <button type="button" class="btn-svg cin-close">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="28.284" height="28.284"
+                                                viewBox="0 0 28.284 28.284">
+                                                <g transform="translate(0)">
+                                                    <g data-name="Cross" transform="translate(0 14.142) rotate(-45)">
+                                                        <circle class="svg-circle" data-name="Ellipse 11" cx="10"
+                                                            cy="10" r="10" fill="#fff" />
+                                                        <line class="svg-line" data-name="Ligne 30" x2="10"
+                                                            transform="translate(5 10)" fill="none" stroke="#ef5479"
+                                                            stroke-linecap="round" stroke-width="2" />
+                                                        <line class="svg-line" data-name="Ligne 31" x2="10"
+                                                            transform="translate(9.999 5) rotate(90)" fill="none"
+                                                            stroke="#ef5479" stroke-linecap="round" stroke-width="2" />
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="mycard-2 d-flex align-items-center nett_tapis">
+                                        <select name="tapis" class="form-select">
+                                            <option value="">Poil Long</option>
+                                            <option value="" selected>Soie/Laine</option>
+                                        </select>
+                                        <div class="me-2">
+                                            <input type="text" class="form-control" placeholder="H ( cm )">
+                                            <input type="text" class="form-control" placeholder="L ( cm )">
+                                        </div>
+                                        <button type="button" class="btn-svg cin-close">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="28.284" height="28.284"
+                                                viewBox="0 0 28.284 28.284">
+                                                <g transform="translate(0)">
+                                                    <g data-name="Cross" transform="translate(0 14.142) rotate(-45)">
+                                                        <circle class="svg-circle" data-name="Ellipse 11" cx="10"
+                                                            cy="10" r="10" fill="#fff" />
+                                                        <line class="svg-line" data-name="Ligne 30" x2="10"
+                                                            transform="translate(5 10)" fill="none" stroke="#ef5479"
+                                                            stroke-linecap="round" stroke-width="2" />
+                                                        <line class="svg-line" data-name="Ligne 31" x2="10"
+                                                            transform="translate(9.999 5) rotate(90)" fill="none"
+                                                            stroke="#ef5479" stroke-linecap="round" stroke-width="2" />
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" class="stretched-link">Ajouter Tapis/Moquete</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between"
+                                    style="transform: rotate(0);">
+                                    <img src="./images/icon_nett_sec/icons8_bed.svg" alt="">
+                                    <span>Matelas</span>
+                                    <a data-bs-toggle="collapse" href="#collapseMatelas" role="button"
+                                        aria-expanded="false" aria-controls="collapseMatelas"
+                                        class="stretched-link collapsed">
+                                        <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mycard-lg-body collapse" id="collapseMatelas">
+                                    <div class="mycard-2 d-flex align-items-center">
+                                        Places
+                                        <select name="taille" class="form-select">
+                                            <option value="">92x210 cm</option>
+                                            <option value="">210x510 cm</option>
+                                            <option value="">500x810 cm</option>
+                                        </select>
+                                        <button type="button" class="btn-svg cin-close">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="28.284" height="28.284"
+                                                viewBox="0 0 28.284 28.284">
+                                                <g transform="translate(0)">
+                                                    <g data-name="Cross" transform="translate(0 14.142) rotate(-45)">
+                                                        <circle class="svg-circle" data-name="Ellipse 11" cx="10"
+                                                            cy="10" r="10" fill="#fff" />
+                                                        <line class="svg-line" data-name="Ligne 30" x2="10"
+                                                            transform="translate(5 10)" fill="none" stroke="#ef5479"
+                                                            stroke-linecap="round" stroke-width="2" />
+                                                        <line class="svg-line" data-name="Ligne 31" x2="10"
+                                                            transform="translate(9.999 5) rotate(90)" fill="none"
+                                                            stroke="#ef5479" stroke-linecap="round" stroke-width="2" />
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" class="stretched-link">Ajouter Matelas</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between"
+                                    style="transform: rotate(0);">
+                                    <img src="./images/icon_nett_sec/icons8_open_curtains.svg" alt="">
+                                    <span>Rideau</span>
+                                    <a data-bs-toggle="collapse" href="#collapseRideau" role="button"
+                                        aria-expanded="false" aria-controls="collapseRideau"
+                                        class="stretched-link collapsed">
+                                        <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mycard-lg-body collapse" id="collapseRideau">
+                                    <div class="mycard-2 d-flex align-items-center">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="H ( cm )">
+                                            <input type="text" class="form-control" placeholder="L ( cm )">
+                                        </div>
+                                        <button type="button" class="btn-svg cin-close">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="28.284" height="28.284"
+                                                viewBox="0 0 28.284 28.284">
+                                                <g transform="translate(0)">
+                                                    <g data-name="Cross" transform="translate(0 14.142) rotate(-45)">
+                                                        <circle class="svg-circle" data-name="Ellipse 11" cx="10"
+                                                            cy="10" r="10" fill="#fff" />
+                                                        <line class="svg-line" data-name="Ligne 30" x2="10"
+                                                            transform="translate(5 10)" fill="none" stroke="#ef5479"
+                                                            stroke-linecap="round" stroke-width="2" />
+                                                        <line class="svg-line" data-name="Ligne 31" x2="10"
+                                                            transform="translate(9.999 5) rotate(90)" fill="none"
+                                                            stroke="#ef5479" stroke-linecap="round" stroke-width="2" />
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" class="stretched-link">Ajouter Rideau</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-grow-1 my-4">
                 <div class="col-lg-12">
                     <div class="d-flex d-md-none mycard custom-width shadow-none">
                         <span>Prix total</span>

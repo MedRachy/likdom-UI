@@ -384,7 +384,7 @@ body {
   color: #3D5B8E;
   padding: 0rem 0.75rem;
   border-radius: 1.25rem !important;
-  box-shadow: 0px 6px 12px rgba(84, 147, 255, 0.3);
+  box-shadow: 0px 6px 10px rgba(84, 147, 255, 0.3);
   background-color: rgb(247, 250, 255);
 }
 
@@ -741,6 +741,11 @@ body {
   .navbar {
     padding-top: 0.5rem;
   }
+  .navbar .input-group {
+    width: 75%;
+    max-width: none;
+    min-width: unset;
+  }
 
   .bg-header {
     background-image: url("../images/bg-header-mobile2x.png");
@@ -751,12 +756,6 @@ body {
 
   .bg-mini {
     background-image: none;
-  }
-
-  .input-group {
-    width: 75%;
-    max-width: none;
-    min-width: unset;
   }
 
   .form-search {
@@ -1630,6 +1629,16 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /* ------------ Nettoyage à sec --------------*/
+.bg-section-nettsec {
+  background-image: url("../images/svg/bg-etape1.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+.bg-section-nettsec .custom-width {
+  margin: 0 auto;
+}
+
 .nettsec-form .mycard-lg {
   min-width: 265px;
   height: 45vh;
@@ -1860,7 +1869,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media (max-width: 991.98px) {
-  .bg-section {
+  .bg-section-nettsec,
+.bg-section {
     background-image: url("../images/bg-eatpe2.png");
     background-repeat: no-repeat;
     background-position: top center;
@@ -1958,7 +1968,7 @@ input[type=number]::-webkit-outer-spin-button {
       transform: scale(1, 1);
     }
   }
-  /*  form steps */
+  /* ------------ form steps ------------ */
   .user-form .form-control,
 .user-form .form-select {
     opacity: 1;
@@ -2020,6 +2030,63 @@ input[type=number]::-webkit-outer-spin-button {
     margin-left: auto !important;
     margin-top: 1rem !important;
     margin-bottom: 2rem !important;
+  }
+
+  /* ----------- nettsec mobile ---------------*/
+  .bg-section-nettsec .custom-width {
+    margin-bottom: 1rem;
+  }
+
+  .nettsec-form {
+    padding: 1rem;
+  }
+  .nettsec-form h4 {
+    margin: 0.75rem 0rem;
+  }
+  .nettsec-form p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #3D5B8E;
+    line-height: 1.25;
+  }
+  .nettsec-form .mycard-lg {
+    width: 100%;
+    min-width: auto;
+    height: auto;
+    max-height: unset;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
+  .nettsec-form .mycard-lg .mycard-lg-header {
+    border: none;
+  }
+  .nettsec-form .mycard-lg .mycard-lg-header a img {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transition: 0.3s transform ease-in-out;
+  }
+  .nettsec-form .mycard-lg .mycard-lg-header .collapsed img {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    transform: rotate(0);
+  }
+  .nettsec-form .mycard-lg .mycard-lg-body {
+    border-top: 2px solid #C8DEFF;
+    height: auto;
+    overflow-y: hidden;
+  }
+  .nettsec-form .add-more {
+    border: 1px dashed #5493FF;
+    border-radius: 1.25rem !important;
+  }
+  .nettsec-form .add-more a {
+    text-decoration: none;
+    color: #3D5B8E;
+    font-size: 0.8rem;
+  }
+  .nettsec-form .add-more img {
+    width: 35px;
   }
 }
 /* ----------------------- section -------------------- */

@@ -525,6 +525,16 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* ------------ Nettoyage à sec --------------*/
 
+.bg-section-nettsec {
+    background-image:  url("../images/svg/bg-etape1.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size:  cover;
+    .custom-width {
+        margin: 0 auto;
+    }
+}
+
 .nettsec-form {
     .mycard-lg {
         min-width:265px;
@@ -758,7 +768,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media (max-width:991.98px) {
-
+    .bg-section-nettsec,
     .bg-section {
         background-image: url('../images/bg-eatpe2.png');
         background-repeat: no-repeat;
@@ -856,7 +866,7 @@ input[type=number]::-webkit-outer-spin-button {
           transform: scale(1, 1);
         }
     }
-    /*  form steps */
+    /* ------------ form steps ------------ */
     .user-form .form-control,
     .user-form .form-select {
         opacity: 1;
@@ -928,4 +938,64 @@ input[type=number]::-webkit-outer-spin-button {
         margin-top: 1rem !important;
         margin-bottom: 2rem !important;
     }
+
+    /* ----------- nettsec mobile ---------------*/
+    .bg-section-nettsec {
+        .custom-width {
+            margin-bottom: 1rem;
+        }
+    }
+    .nettsec-form {
+        padding: 1rem;
+        h4 {
+            margin : 0.75rem 0rem
+        }
+        p {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: $color-2;
+            line-height: 1.25;
+        }
+        .mycard-lg {
+            width: 100%;
+            min-width:auto;
+            height: auto;
+            max-height: unset;
+            margin-right: 0rem;
+            margin-bottom: 1rem;
+            .mycard-lg-header {
+                border: none;
+                a img {
+                    -webkit-transform: rotate(180deg);
+                    -moz-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                    transition: .3s transform ease-in-out;
+                }
+                .collapsed img {
+                    -webkit-transform: rotate(0);
+                    -moz-transform: rotate(0);
+                    transform: rotate(0);
+                } 
+            }
+            .mycard-lg-body {
+                border-top: 2px solid $color-5;
+                height: auto;
+                overflow-y: hidden;
+            }
+        }
+        .add-more {
+            border : 1px dashed $color-1;
+            border-radius: 1.25rem !important;
+            a {
+                text-decoration: none;
+                color: $color-2;
+                font-size: 0.8rem;
+            }
+            img {
+                width: 35px;
+            }
+        }
+        
+    }
+    
 }
