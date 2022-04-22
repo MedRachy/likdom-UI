@@ -71,10 +71,11 @@ body {
 
 .g-hexagon {
     fill: #ffff;
+    transition: fill .3s ease-in;
 }
 
 .pill-hexagon-fill {
-    fill: $color-1;
+    fill: $color-3;
     opacity: 0.6;
 }
 
@@ -82,6 +83,25 @@ body {
     .pill-hexagon-fill {
         opacity: 1;
     }
+    .g-hexagon {
+        fill: $color-1;
+    }
+    .g-icon {
+        path , circle {
+            fill: $light-color;
+            stroke: $color-3;
+        }
+        #Tracé_4503 {
+            fill: none;
+            stroke: $light-color;
+        }
+        line {
+            stroke: $light-color;
+        }
+        rect {
+            fill: $light-color;
+        }
+    } 
 }
 
 .pill-text {

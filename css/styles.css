@@ -563,15 +563,33 @@ body {
 
 .g-hexagon {
   fill: white;
+  transition: fill 0.3s ease-in;
 }
 
 .pill-hexagon-fill {
-  fill: #5493FF;
+  fill: #7DB1FF;
   opacity: 0.6;
 }
 
 .link-pill.active .pill-hexagon-fill {
   opacity: 1;
+}
+.link-pill.active .g-hexagon {
+  fill: #5493FF;
+}
+.link-pill.active .g-icon path, .link-pill.active .g-icon circle {
+  fill: white;
+  stroke: #7DB1FF;
+}
+.link-pill.active .g-icon #Tracé_4503 {
+  fill: none;
+  stroke: white;
+}
+.link-pill.active .g-icon line {
+  stroke: white;
+}
+.link-pill.active .g-icon rect {
+  fill: white;
 }
 
 .pill-text {
