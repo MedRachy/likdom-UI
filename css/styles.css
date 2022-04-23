@@ -450,7 +450,6 @@ body {
   outline: 2px #5493FF solid;
 }
 
-/* scrollbar css not supported for firefox  need to add @support ( ....)*/
 .form-step-wrapper .form-step::-webkit-scrollbar,
 .mycard-lg .mycard-lg-body::-webkit-scrollbar,
 .row.overflow-auto::-webkit-scrollbar,
@@ -492,6 +491,13 @@ body {
   background: #486A9C;
 }
 
+/* scrollbar css not supported for firefox  need to add @support ( ....)*/
+@supports (scrollbar-color: #7DB1FF #5493FF) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #5493FF #7DB1FF;
+  }
+}
 body {
   background-color: #F7FAFF;
 }
@@ -1210,7 +1216,7 @@ body {
   font-weight: 600;
 }
 
-.form-step label {
+.form-step.user-form label {
   color: #5493FF;
   padding: 1rem 1.75rem;
 }
@@ -1344,12 +1350,13 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 600;
   color: #3D5B8E;
   border: 0;
+  max-width: 50px;
   box-shadow: inset 0 0 0 rgba(64, 150, 255, 0.1);
   -webkit-appearance: none;
-  -moz-appearance: none;
+  -moz-appearance: textfield;
   -ms-appearance: none;
   -o-appearance: none;
-  appearance: none;
+  appearance: textfield;
   background: transparent;
   margin: 0.5rem 0;
   pointer-events: none;
@@ -1474,24 +1481,35 @@ input[type=number]::-webkit-outer-spin-button {
   width: 80%;
   max-width: 500px;
 }
-.passage-form .form-select {
-  width: 120px;
+.passage-form .select-time {
+  width: 100%;
+  max-width: 380px;
+  padding: 0.57rem 1.25rem;
+  border-radius: 1.25rem;
+  background-color: white;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16) !important;
+}
+.passage-form .select-time .form-select {
+  color: #5493FF;
+  background-color: white;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
   border: none;
-  border-radius: 8px !important;
-  box-shadow: 0 0.5rem 1rem rgba(84, 147, 255, 0.4) !important;
-  padding: 0.4rem 1.25rem;
   opacity: 1;
+  background-image: url("../images/svg/arrow_blue_down.svg");
   background-position: right 1rem center !important;
   cursor: pointer;
 }
-
-.passage-form .form-select,
-.passage-form .form-select option {
-  color: #5493FF;
-  background-color: white;
-  font-size: 1.3rem;
+.passage-form .select-time .form-select option {
+  font-size: 1.25rem;
   font-weight: 600;
-  font-style: normal;
+  text-align: center;
+}
+.passage-form .select-time img {
+  max-width: 40px;
 }
 
 .nettsec-form h4,
@@ -1534,9 +1552,24 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 600;
   text-align: center;
 }
-.product-check input {
-  font-size: 1.25rem;
-  cursor: pointer;
+.product-check .toggle.mystyle {
+  border-radius: 20px;
+}
+.product-check .toggle.mystyle .toggle-on {
+  background-color: #3D5B8E;
+  color: white;
+  font-weight: 600;
+}
+.product-check .toggle.mystyle .toggle-off {
+  background-color: white;
+  color: #5493FF;
+  font-weight: 600;
+}
+.product-check .toggle.mystyle .toggle-handle {
+  border-radius: 50%;
+  background: rgb(84, 147, 255) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 8px rgba(84, 147, 255, 0.5);
+  border: 5px solid rgb(255, 255, 255);
 }
 
 #stars {
@@ -1615,6 +1648,7 @@ input[type=number]::-webkit-outer-spin-button {
 .desinfec-form .custom-input-number .cin-input,
 .crista-form .custom-input-number .cin-input {
   width: 80px;
+  max-width: none;
   height: 49px;
   margin: 0 !important;
   font-size: 40px;
@@ -1866,7 +1900,7 @@ input[type=number]::-webkit-outer-spin-button {
   /* -------- user form ----- */
   .user-form .form-control,
 .user-form .form-select,
-.form-step label {
+.form-step.user-form label {
     padding: 8px 28px;
   }
 

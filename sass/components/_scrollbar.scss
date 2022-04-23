@@ -1,6 +1,6 @@
 @use  '../abstracts/variables' as *;
 
-/* scrollbar css not supported for firefox  need to add @support ( ....)*/
+
 .form-step-wrapper .form-step::-webkit-scrollbar,
 .mycard-lg .mycard-lg-body::-webkit-scrollbar,
 .row.overflow-auto::-webkit-scrollbar,
@@ -40,4 +40,15 @@
 .bg-section::-webkit-scrollbar-thumb:hover,
 .div-tache-wrapper::-webkit-scrollbar-thumb:hover {
     background: $color-4;
+}
+
+// --------- firefox 
+/* scrollbar css not supported for firefox  need to add @support ( ....)*/
+// if property is supperted we select all (*) and change propertys 
+@supports(scrollbar-color : $color-3 $color-1 ) {
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: $color-1 $color-3;
+    }
+    
 }

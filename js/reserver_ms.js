@@ -196,3 +196,9 @@ $(".div-parfum").on("click", function () {
     $(this).find(".form-check-input").prop("checked", true);
   }
 });
+// custom switch checkbox
+$("#input-check-product").bootstrapToggle({
+  on: "Oui",
+  off: "Non",
+  style: "mystyle",
+});
