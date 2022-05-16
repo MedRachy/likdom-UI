@@ -1727,7 +1727,6 @@ input[type=number]::-webkit-outer-spin-button {
   overflow-y: auto;
 }
 .nettsec-form .mycard-lg .mycard-lg-body .mycard-2 {
-  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .nettsec-form .mycard-lg .mycard-lg-body .mycard-2 .custom-input-number {
@@ -1786,6 +1785,18 @@ input[type=number]::-webkit-outer-spin-button {
 .nettsec-form .nett_tapis .form-select {
   background-color: #7DB1FF;
   color: white;
+}
+.nettsec-form .add-more {
+  border: 1px dashed #5493FF;
+  border-radius: 1.25rem !important;
+}
+.nettsec-form .add-more a {
+  text-decoration: none;
+  color: #3D5B8E;
+  font-size: 0.8rem;
+}
+.nettsec-form .add-more img {
+  width: 35px;
 }
 
 /* ------------- form steps & img steps ------- */
@@ -2133,18 +2144,6 @@ input[type=number]::-webkit-outer-spin-button {
     border-top: 2px solid #C8DEFF;
     height: auto;
     overflow-y: hidden;
-  }
-  .nettsec-form .add-more {
-    border: 1px dashed #5493FF;
-    border-radius: 1.25rem !important;
-  }
-  .nettsec-form .add-more a {
-    text-decoration: none;
-    color: #3D5B8E;
-    font-size: 0.8rem;
-  }
-  .nettsec-form .add-more img {
-    width: 35px;
   }
 }
 /* ----------------------- section -------------------- */

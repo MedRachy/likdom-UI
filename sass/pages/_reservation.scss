@@ -599,7 +599,7 @@ input[type=number]::-webkit-outer-spin-button {
             height:85%;
             overflow-y: auto;
             .mycard-2 {
-                margin-top: 1rem;
+                // margin-top: 1rem;
                 margin-bottom: 1rem;
                 .custom-input-number {
                     justify-content: center;
@@ -662,6 +662,18 @@ input[type=number]::-webkit-outer-spin-button {
     .nett_tapis .form-select {
         background-color: $color-3;
         color: $light-color;
+    }
+    .add-more {
+        border : 1px dashed $color-1;
+        border-radius: 1.25rem !important;
+        a {
+            text-decoration: none;
+            color: $color-2;
+            font-size: 0.8rem;
+        }
+        img {
+            width: 35px;
+        }
     }
 }
 
@@ -1027,19 +1039,6 @@ input[type=number]::-webkit-outer-spin-button {
                 overflow-y: hidden;
             }
         }
-        .add-more {
-            border : 1px dashed $color-1;
-            border-radius: 1.25rem !important;
-            a {
-                text-decoration: none;
-                color: $color-2;
-                font-size: 0.8rem;
-            }
-            img {
-                width: 35px;
-            }
-        }
-        
     }
     
 }
