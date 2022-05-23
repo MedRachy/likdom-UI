@@ -5,68 +5,22 @@ let responseDiv;
 let response;
 
 function initMap() {
-  const LatLng = { lat: -34.397, lng: 150.644 };
+  const LatLng = { lat: 33.687381, lng: -7.3784308 };
   map = new google.maps.Map(document.getElementById("map"), {
     center: LatLng,
-    zoom: 8,
+    zoom: 13,
     gestureHandling: "greedy",
   });
-  //   new google.maps.Marker({
-  //     position: LatLng,
-  //     map,
-  //     title: "Ma position",
-  //     draggable: true,
-  //   });
-
-  geocoder = new google.maps.Geocoder();
-  console.log(geocoder);
-  const inputText = document.getElementById("adresse");
-  const submitButton = document.getElementById("btnSearch");
-  const clearButton = document.getElementById("btnClear");
-
   marker = new google.maps.Marker({
-    title: "Ma position",
+    // position: pos,
+    map: map,
+    title: "j'habite ici",
     draggable: true,
-    map,
   });
-  map.addListener("click", (e) => {
-    geocode({ location: e.latLng });
-  });
-  submitButton.addEventListener("click", () =>
-    geocode({ address: inputText.value })
-  );
-  clearButton.addEventListener("click", () => {
-    clear();
-  });
-  clear();
-  function clear() {
-    marker.setMap(null);
-  }
-
-  function geocode(request) {
-    clear();
-    geocoder
-      .geocode(request)
-      .then((result) => {
-        const { results } = result;
-
-        map.setCenter(results[0].geometry.location);
-        marker.setPosition(results[0].geometry.location);
-        marker.setMap(map);
-        return results;
-      })
-      .catch((e) => {
-        alert("Geocode was not successful for the following reason: " + e);
-      });
-  }
   // current location
   infoWindow = new google.maps.InfoWindow();
-  const locationButton = document.createElement("button");
-  locationButton.textContent = "Pan to Current Location";
-  locationButton.classList.add("custom-map-control-button");
-  map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
 
-  locationButton.addEventListener("click", () => {
+  $("#btn-location").on("click", function () {
     // Try HTML5 geolocation.
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -75,10 +29,10 @@ function initMap() {
             lat: position.coords.latitude,
             lng: position.coords.longitude,
           };
-
-          infoWindow.setPosition(pos);
-          infoWindow.setContent("Location found.");
-          infoWindow.open(map);
+          // show_clear_map();
+          map.zoom = 17;
+          marker.setPosition(pos);
+          // console.log(pos);
           map.setCenter(pos);
         },
         () => {
@@ -100,4 +54,20 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   );
   infoWindow.open(map);
 }
+
+$("#btn-next").on("click", function () {
+  savedata();
+});
+
+function show_clear_map() {
+  // change opacity to 1
+}
+
+function savedata() {
+  var lat = marker.position.lat();
+  var lng = marker.position.lng();
+  console.log("lat :" + lat);
+  console.log("lng :" + lng);
+}
+
 window.initMap = initMap;
