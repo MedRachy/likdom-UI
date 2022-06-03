@@ -1,0 +1,624 @@
+@use '../abstracts' as * ;
+
+body {
+    background-color: $color-6;
+}
+
+/* --------------- Header ---------------  */
+
+.bg-header {
+    background-image: url("../images/bg-header@x2.png") ;
+    background-position: top ; 
+    background-repeat: no-repeat;
+    background-size: 100% 83%;
+}   
+
+#mouse-scroll {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 5vh;
+    left: 2vw;
+}
+
+.scrollTop {
+    position: fixed;
+    right: 1%;
+    bottom: 60px;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.4s ease-in-out 0s;
+}
+
+.big-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: clamp(2rem, 1.4655rem + 0.8621vw, 2.5rem); 
+    text-shadow: 0px 3px 6px #3D5B8E4D;
+}
+.slogan {
+    font-size: clamp(1rem, 0.4655rem + 0.8621vw, 1.5rem);
+    color: $light-color;
+}
+
+.img-header {
+    max-width: 640px;
+    max-height: 45vh;
+}
+
+.bg-mini {
+    background-image: url("../images/svg/mini-rounded.svg");
+    background-position-y: 91%;
+    background-position-x: 48%;
+    background-repeat: no-repeat;
+    background-size: 70px;
+}
+
+.header-card {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7) 0% 0% no-repeat padding-box;
+    .card-body {
+        height: 50vh;
+    }
+}
+
+.pill-svg {
+    width: 100%;
+    height: 18vh;
+    max-height: 215px;
+}
+
+.g-hexagon {
+    fill: #ffff;
+    transition: fill .3s ease-in;
+}
+
+.pill-hexagon-fill {
+    fill: $color-3;
+    opacity: 0.6;
+}
+
+.link-pill.active {
+    .pill-hexagon-fill {
+        opacity: 1;
+    }
+    .g-hexagon {
+        fill: $color-1;
+    }
+    .g-icon {
+        path , circle {
+            fill: $light-color;
+            stroke: $color-3;
+        }
+        #Tracé_4503 {
+            fill: none;
+            stroke: $light-color;
+        }
+        line {
+            stroke: $light-color;
+        }
+        rect {
+            fill: $light-color;
+        }
+    } 
+}
+
+.pill-text {
+    fill: $color-1;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.btn-callus {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    width: fit-content;
+    margin-top: 2.5vh;
+    padding-inline: 2rem;
+    font-size: clamp(1rem , 1vw + 1rem , 2rem);
+    letter-spacing: 0.62px;
+    color: $light-color;
+    background-color: #40C351;
+    border: 0.5rem solid $light-color;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.07);
+    transition: color .15s ease-in-out,box-shadow .15s ease-in-out ;
+}
+
+.btn-callus:hover {
+    color: $light-color;
+    box-shadow: none;
+}
+
+.btn-callus svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn-taches {
+    color: $color-1;
+    border: 3px solid $color-1;
+}
+
+.btn-taches:hover {
+    color: $color-1;
+    box-shadow: inset 0px 0px 5px 0px  rgba(84, 147, 255, 0.5);
+}
+
+/* ------------------------------------ */
+
+.bg-bubble {
+    background-image: url("../images/bubble2x.png");
+    background-position: 75% 0px;
+    background-size: 22vw 38vh;
+    background-repeat: no-repeat;  
+}
+
+@media (min-width:2030px) {
+    
+    .bg-bubble {
+        background-size: 60% 38vh;
+    }
+}
+
+.div-callus {
+    padding-top: 7vh;
+    padding-left: 80px;
+}
+
+.h-callus {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: $light-color;
+    font-size: clamp(1.75rem , 2.5vw , 3rem);
+}
+
+.modal-taches {
+    .modal-dialog {
+        max-width: 75%;
+    }    
+    .modal-header , 
+    .modal-footer {
+         padding : 4rem 5rem;
+    }
+    .modal-title {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: clamp(1.75rem , 2vw , 2rem);
+        color: $color-1;
+        font-weight: bold;
+        font-style: normal;
+    }
+    .modal-body {
+        padding: 3rem 5rem;
+        h5 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: $color-1;
+        }
+        li {
+            font-size: 1.25rem;
+            color: $color-2;
+        }
+        li::marker {
+            color: $color-1;
+        }
+    }
+    .modal-content {
+        border-radius: 1.25rem!important;
+    }
+}
+
+/* ------------------- Header mobile ------------------  */
+
+.bg-trace {
+    background-image: url("../images/svg/bg-trace-header1.svg") , url("../images/svg/bg-trace-header2.svg") ;
+    background-repeat: no-repeat , no-repeat;
+    background-position: -84px 70% , calc(100vw - 70px) bottom ;
+}
+
+.intro-header {
+    height: 26vh;
+    h3 {
+        width: 60vw;
+        color: $light-color;
+        font-family: 'Ubuntu', sans-serif; 
+        font-weight: bold;
+        font-style: normal;
+        padding-left: 1rem;
+        letter-spacing: 0px;
+        text-shadow: 0px 2px 3px #3D5B8E66;
+    }
+}
+
+.logo-mobile {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    min-width: 95px;
+    max-width: 150px;
+}
+
+.img-header-mobile {
+    max-width: 100%;
+    max-height: 26vh
+}
+
+.service-grid {
+    height: auto;
+    .card-img-top {
+        max-width: 42px;
+        margin-top: 1rem;
+    }
+    .card-body {
+        padding: 0.5rem;
+    }
+    .card-link-wrapper {
+        height: 35px;
+        background-color: $color-1;
+        // padding: 0rem 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-link-title {
+        // white-space: nowrap;
+        line-height: 0.7rem;
+        font-size: 0.6rem;
+        color: $light-color;
+    }
+}
+
+@media (max-width: 767.98px) {
+   
+    .navbar {
+        padding-top: 0.5rem;
+        .input-group {
+            width: 75%;
+            max-width: none;
+            min-width: unset;
+        }
+    }
+   
+    .bg-header {
+        background-image: url("../images/bg-header-mobile2x.png") ;
+        background-position: top ; 
+        background-repeat: no-repeat;
+        background-size: 100% calc(35vh + 3rem);
+    }   
+    .bg-mini {
+        background-image: none;
+    }
+
+    .form-search {
+        margin-left: 0px!important;
+        border-radius: 20px ;
+        box-shadow: 0px 6px 12px #5493FF4D;
+        /* backdrop-filter: blur(10px) opacity(60%);
+        background-color: $light-color; */
+        background-color: rgb(255 255 255 / 60%);
+    }
+    
+    #button-search {
+        background-color: rgb(255 255 255 / 60%);
+        border-radius: 20px 0px 0px 20px;
+        box-shadow: -5px 4px 12px 0px #5493FF4D;
+    }
+ 
+}
+
+/* ----------------- section 1 ------------------- */
+
+.bg-section-1 {
+    background-image: url("../images/svg/bg-section-1.svg") , url("../images/svg/bg-trace-section1.svg");
+    background-repeat: no-repeat , no-repeat;
+    background-position: bottom center , right 40%;
+    background-size: contain , 23vw;
+}
+
+
+.h-sec {
+    color: $color-1;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: clamp(2rem , 3vw , 3.8rem);
+    margin-bottom: 4rem;
+}
+
+.card-container {
+    width: 100%;
+    height: 51vh;
+    max-height: 60vh;
+}
+
+.row-content {
+    height: 100vh;
+}
+
+.card-steps {
+    .card-title {
+        color: $color-1;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        font-size: clamp(1rem , 2vw , 1.7rem);
+    }
+    .card-text {
+        font-weight: 600;
+        font-style: normal;
+        color: $color-2;
+        font-size:  clamp(0.8rem , 1vw, 2rem);
+    }
+}
+
+.step-number {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 5rem;
+    color: #B2D1FF;
+    padding-left: 0.75rem;
+    margin-bottom: 0;
+}
+
+.img-sec-1 {
+    width: 90%;
+    max-height: 60vh;
+}
+
+.div-img-sec1 {
+    position: relative;
+} 
+.play-icon {
+    width: clamp(96px , 8vw , 162px);
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+@media (max-width: 991.98px) {
+    
+    .bg-section-1 {
+        /* background-color: $light-color; */
+        background-image: url("../images/svg/bg-section-1.svg") , url("../images/svg/bg-trace-sec1-mobile.svg");
+        background-repeat: no-repeat;
+        background-position:bottom center , calc(100vw - 90px) 74% ;
+        background-size: contain , 50%;
+        padding-bottom: 2rem;
+    }
+    
+    .div-img-sec1 {
+        width: 51%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .play-icon {
+        width: 60px;
+        top: 40%;
+        left: 17%;
+    }
+
+    .h-sec {
+        font-size: 1.75rem;
+        margin-block: 2rem;
+    }
+
+    .row-content {
+        height: auto;
+    }
+    .card-container {
+        padding: 1rem;
+        height: auto;
+        max-height: none;
+    }
+    .card-steps {
+        margin-right: 1.5rem!important;
+        margin-left: 1.5rem!important; 
+    }
+    .step-number {
+         font-size: 4rem;
+    }
+
+}
+
+
+/* ----------------- section 2 -------------------  */
+.bg-section-2 {
+    background-image: url("../images/svg/bg-trace-section2.svg") ;
+    background-repeat: no-repeat ;
+    background-position: left 70% ;
+    background-size: 23vw ;
+}
+
+.img-sec-2 {
+    width: 90%;
+    max-height: 60vh;
+}
+
+.p-whyus {
+    font-weight: 600;
+    font-style: normal;
+    color: $color-2;
+    font-size:  clamp(1rem , 1vw, 1.75rem);
+    margin-bottom: 4rem;
+}
+
+.p-whyus span {
+    color: $color-1;
+    font-weight: 600;
+}
+
+.card-whyus {
+    .card-img-top {
+        max-width: 48px;
+    } 
+    .card-title {
+        color: $color-1;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        font-size: clamp(1rem , 1vw, 1.75rem);
+    }
+    .card-text {
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1rem;
+        color: $color-2;
+    }
+}
+
+.icon-wrapper {
+    padding: 1.5rem;
+    background-color: $light-color;
+    margin-top: 1rem;
+}
+
+
+@media (max-width: 991.98px) {
+
+    .img-sec-2 {
+        width: 50%;
+        max-height: 50vh;
+    }
+
+    .p-whyus {
+        margin-bottom: 0;
+        padding: 2rem;
+    }
+}
+@media (max-width: 767.98px) {
+
+    .bg-section-2 {
+        background-image: url("../images/svg/bg-trace-sec2-mobile.svg") , url("../images/svg/bg-trace2-sec2-mobile.svg") ;
+        background-repeat: no-repeat , no-repeat ;
+        background-position: -12vw 60% , 65vw 110%;
+        background-size: 40vw , 100%;
+    }
+
+    .card-whyus-wrapper {
+        width: 65%;
+        margin-right: auto!important;
+        margin-left: auto!important;
+    }
+    .card-whyus .card-img-top {
+        max-width: 40px;
+    }
+}
+
+
+/* ---------------- footer -------------- */
+.bg-footer {
+    background-image: url("../images/bg-footer@2x.png");
+    background-repeat: no-repeat ;
+    background-position: bottom center ;
+    background-size: 100% 65% ;
+}
+
+.vh-50 {
+    height: 50vh;
+}
+
+
+.p-footer {
+    font-weight: 600;
+    font-style: normal;
+    color: $color-2;
+    font-size:  clamp(0.9rem , 1vw, 1rem);
+    /* margin-bottom: 4rem; */
+}
+.bg-footer {
+    .swiper {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+    }
+
+    .swiper-button-next, 
+    .swiper-button-prev {
+        width: auto !important;
+    }
+    .swiper-button-next::after, 
+    .swiper-button-prev::after {
+        content: ""!important;
+    }
+}
+
+.img-persone {
+    width: 50px;
+}
+.name-persone {
+    font-size: clamp(0.8rem , 1vw , 1.3rem);
+    color: $color-2;
+    font-weight: bold;
+    font-style: normal;
+}
+.card-review {
+    background-color: rgba(255 , 255 , 255);
+    .card-text {
+        text-align: center;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1rem;
+    }
+}
+
+.row-footer {
+    h3 {
+        /* font-size: clamp(1.75rem , 2vw , 2.50rem); */
+        color: $color-2;
+        font-weight: 600;
+        font-style: normal;
+        margin-bottom: 4vh;
+    }
+    .nav-link {
+        font-weight: 600;
+        font-style: normal;
+        color: $light-color;
+        font-size: 1rem;
+        /* font-size: clamp(1rem , 1.5vw , 1.9rem); */
+    }
+}
+
+.footer-bottom p {
+    color: $color-2;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+
+@media (max-width: 991.98px) {
+
+    .card-review .card-text {
+        font-size: 0.7rem;
+    }
+
+    .row-footer {
+        margin-top: 2rem;
+        padding-right: 1.5rem!important;
+        padding-left: 1.5rem!important;
+        h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .nav-link {
+            font-size: 0.7rem;
+        }
+    }
+
+    .vh-50 {
+        height: auto;
+    }
+
+    .footer-bottom svg {
+        width: 30px;
+        height: 30px;
+    }
+}

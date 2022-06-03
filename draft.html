@@ -9,19 +9,11 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <!-- Custom Css -->
-    <link rel="stylesheet" href="./css/loader.css">
-    <link rel="stylesheet" href="./css/navbar.css">
-    <style>
-        .bg-header {
-            background-color: #6c757d;
-        }
-    </style>
     <!-- Fonts -->
     <script src="https://kit.fontawesome.com/e807f8aa79.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/datepicker.css">
 
     <title>LIKDOM</title>
 </head>
@@ -32,7 +24,7 @@
         <img src="./images/spinner.svg" alt="">
     </div>
 
-    <section class="bg-header">
+    <section class="bg-section to-custum">
         <nav class="navbar navbar-dark navbar-expand-lg">
             <div class="container justify-content-start justify-content-md-between">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -46,8 +38,8 @@
                         <button class="btn" type="button" id="button-search">
                             <i class="fa fa-search"></i>
                         </button>
-                        <input type="search" class="form-control form-input"
-                            placeholder="Entrer votre code de réservation" aria-describedby="button-search" />
+                        <input type="search" class="form-control form-search" placeholder="Entrer votre code"
+                            aria-describedby="button-search" />
                     </div>
                 </form> -->
 
@@ -76,109 +68,351 @@
                             </li>
                         </ul>
                         <!-- descktop menu -->
-                        <div class="navbar-desktop d-none d-lg-flex justify-content-evenly flex-grow-1">
-                            <a class="btn link-reserv rounded-pill px-5" href="./reserver.html">Réserver</a>
+                        <div
+                            class="navbar-desktop d-none d-lg-flex justify-content-evenly align-items-center flex-grow-1">
+                            <a class="btn link-reserv" href="./services.html">Réserver</a>
                             <form class="d-flex m-0" method="GET" action="{{ route('reserv.code') }}">
                                 <div class="input-group">
                                     <input type="search" class="form-control form-search"
                                         placeholder="Entrer votre code" aria-describedby="button-search" />
-                                    <button class="btn shadow" type="button" id="button-search">
+                                    <button class="btn" type="button" id="button-search">
                                         <i class="fa fa-search"></i>
                                     </button>
                                 </div>
                             </form>
                             <div>
-                                <a class="btn btn-light link-signup rounded-pill px-4 me-2" href="#">Créer un
+                                <a class="btn btn-light link-signup" href="./compte.html">Créer
+                                    un
                                     compte</a>
-                                <a class="btn btn-outline-light link-signin rounded-pill px-4" href="#">Se connecter</a>
+                                <a class="btn btn-outline-light link-signin" href="./login.html">Se
+                                    connecter</a>
                             </div>
-
-                            <a class="btn link-prof rounded-pill px-4" href="#"><i class="fas fa-building"></i>
-                                Professionnel</a>
+                            <a class="btn link-prof" href="./professionnel.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="26" viewBox="0 0 14 26">
+                                    <path id="icons8_manager"
+                                        d="M20,11.667a4.4,4.4,0,0,1-4.455-4.333,4.456,4.456,0,0,1,8.909,0A4.4,4.4,0,0,1,20,11.667ZM24.623,12.9H21.907a.6.6,0,0,1-.064.277l-.955,1.857a.615.615,0,0,1-.14.173l1.148,5.3a.608.608,0,0,1-.125.514L20.5,22.578a.649.649,0,0,1-.995,0L18.23,21.03a.6.6,0,0,1-.125-.514l1.148-5.3a.615.615,0,0,1-.14-.173l-.955-1.857a.6.6,0,0,1-.064-.277H15.377A2.348,2.348,0,0,0,13,15.217V22.19a7,7,0,0,0,14,0V15.217A2.348,2.348,0,0,0,24.623,12.9Z"
+                                        transform="translate(-13 -3)" fill="#3d5b8e" />
+                                </svg>
+                                <span>Likdom Pro</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
+        <div class="container-fluid height-91">
+            <div class="row px-4rem align-items-start">
+                <div class="col-12 d-lg-none d-flex flex-column justify-content-center">
 
-        <svg class="pill-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 166.511 196">
-            <defs>
-                <linearGradient id="linear-PE" x1="0.398" y1="0.005" x2="0.513" y2="0.889"
-                    gradientUnits="objectBoundingBox">
-                    <stop offset="0" stop-color="#5963e0" />
-                    <stop offset="1" stop-color="#5059c9" />
-                </linearGradient>
-                <linearGradient id="linear-PE-2" x1="0.25" y1="0.5" x2="0.882" y2="0.5"
-                    gradientUnits="objectBoundingBox">
-                    <stop offset="0" stop-color="#c48f0c" />
-                    <stop offset="0.251" stop-color="#d19b16" />
-                    <stop offset="0.619" stop-color="#dca51f" />
-                    <stop offset="1" stop-color="#e0a922" />
-                </linearGradient>
-                <linearGradient id="linear-PE-3" x1="-40.068" x2="-39.436" xlink:href="#linear-PE-2" />
-                <radialGradient id="radial-PE" cx="0.5" cy="0.5" r="0.438" gradientUnits="objectBoundingBox">
-                    <stop offset="0" stop-color="#ffcf54" />
-                    <stop offset="0.261" stop-color="#fdcb4d" />
-                    <stop offset="0.639" stop-color="#f7c13a" />
-                    <stop offset="1" stop-color="#f0b421" />
-                </radialGradient>
-                <radialGradient id="radial-PE-2" cx="0.072" cy="0.077" r="1.764" gradientUnits="objectBoundingBox">
-                    <stop offset="0" stop-color="#c26715" />
-                    <stop offset="0.508" stop-color="#b85515" />
-                    <stop offset="1" stop-color="#ad3f16" />
-                </radialGradient>
-            </defs>
-            <g data-name="Pack Etudiant" transform="translate(0.488 0.465)">
-                <g class="g-hexagon" id="Tracé_4498" data-name="Tracé 4498"
-                    transform="translate(56.751 -0.465) rotate(30)" stroke-linecap="round">
-                    <path
-                        d="M84.612.053a20.065,20.065,0,0,1,17.323,10.026L123.451,47.2a20.193,20.193,0,0,1,.025,20.22L102.05,104.5a19.949,19.949,0,0,1-17.3,9.983l-43.186-.053A20.065,20.065,0,0,1,24.242,104.4L2.725,67.275A20.193,20.193,0,0,1,2.7,47.055L24.127,9.983A19.949,19.949,0,0,1,41.426,0Z"
-                        stroke="none" />
-                    <path
-                        d="M 41.40095520019531 -1.52587890625e-05 L 41.40095520019531 7.999984741210938 C 37.15258026123047 7.999984741210938 33.18764495849609 10.29384613037109 31.05348205566406 13.98636627197266 L 9.6270751953125 51.05831909179688 C 7.454597473144531 54.81710433959961 7.462196350097656 59.49372482299805 9.64691162109375 63.26315307617188 L 31.163818359375 100.3878631591797 C 33.31912231445312 104.106559753418 37.30843353271484 106.4199142456055 41.57498168945312 106.4251556396484 L 84.77581787109375 106.478271484375 C 89.02421569824219 106.478271484375 92.98915100097656 104.184440612793 95.12331390380859 100.4918899536133 L 116.5496978759766 63.41996002197266 C 118.7221755981445 59.66115188598633 118.7145767211914 54.98453140258789 116.5298614501953 51.21510314941406 L 95.01295471191406 14.09041595458984 C 92.85765075683594 10.37169647216797 88.86833953857422 8.058341979980469 84.60179138183594 8.0531005859375 L 41.41571807861328 8.000007629394531 L 41.40095520019531 -1.52587890625e-05 M 41.40095520019531 -7.62939453125e-06 C 41.40922546386719 -7.62939453125e-06 41.41728210449219 0 41.42555236816406 7.62939453125e-06 L 84.61162567138672 0.0531005859375 C 91.74376678466797 0.06186676025390625 98.34214782714844 3.880744934082031 101.934455871582 10.07881927490234 L 123.4513626098633 47.20350646972656 C 127.0764312744141 53.45808029174805 127.0858383178711 61.17753219604492 123.4760513305664 67.42317199707031 L 102.049674987793 104.4951019287109 C 98.47248077392578 110.6843643188477 91.88145446777344 114.4870071411133 84.751220703125 114.4782485961914 L 41.56514739990234 114.4251556396484 C 34.43302917480469 114.416389465332 27.83462524414062 110.5975112915039 24.24231719970703 104.3994598388672 L 2.725410461425781 67.27474975585938 C -0.8996353149414062 61.02019882202148 -0.9090652465820312 53.30072402954102 2.70074462890625 47.05508422851562 L 24.12712097167969 9.983154296875 C 27.70016479492188 3.801094055175781 34.27836608886719 -7.62939453125e-06 41.40095520019531 -7.62939453125e-06 Z"
-                        stroke="none" class="pill-hexagon-fill" />
-                </g>
-                <g transform="translate(55.511 53.534)">
-                    <path id="Tracé_4528" data-name="Tracé 4528"
-                        d="M27.81,30.571C16.869,30.571,8,36.664,8,43.306v1.415A2.476,2.476,0,0,0,10.476,47.2H45.144a2.476,2.476,0,0,0,2.476-2.476V43.306C47.62,36.664,38.751,30.571,27.81,30.571Z"
-                        transform="translate(0.238 6.803)" fill="url(#linear-PE)" />
-                    <path id="Tracé_4529" data-name="Tracé 4529"
-                        d="M31.381,32.675c0,2.349-2.476,4.952-6.191,4.952S19,35.024,19,32.675v-8.71H31.381Z"
-                        transform="translate(2.857 5.23)" fill="#d6a121" />
-                    <path id="Tracé_4530" data-name="Tracé 4530"
-                        d="M33.041,18h-.652v4.952h.87a1.264,1.264,0,0,0,1.289-.916l.426-2.109A1.764,1.764,0,0,0,33.041,18Z"
-                        transform="translate(6.046 3.81)" fill="url(#linear-PE-2)" />
-                    <path id="Tracé_4531" data-name="Tracé 4531"
-                        d="M15.461,18h.652v4.952h-.87a1.264,1.264,0,0,1-1.289-.916l-.426-2.109A1.764,1.764,0,0,1,15.461,18Z"
-                        transform="translate(1.548 3.81)" fill="url(#linear-PE-3)" />
-                    <path id="Tracé_4532" data-name="Tracé 4532"
-                        d="M26.143,6.4C20.645,6.4,15,7.236,15,19.122v8.293c0,4.243,6.686,9.443,11.143,9.443s11.143-5.2,11.143-9.443V19.122C37.286,7.236,31.642,6.4,26.143,6.4Z"
-                        transform="translate(1.905 1.048)" fill="url(#radial-PE)" />
-                    <path id="Tracé_4533" data-name="Tracé 4533"
-                        d="M26.381,5.545c-5.391,0-6.191,2.026-6.191,2.026C18,7.894,14,14.818,14,18.488c0,1.238,0,3.714,1.238,4.952.675-8.1,2.785-11.143,4.952-11.143,1.569,0,2.814,1.238,6.191,1.238,2.851,0,3.56-1.238,6.191-1.238,3.714,0,4.952,9.865,4.952,11.143,1.238-1.238,1.238-4.952,1.238-4.952C38.762,14.243,34.069,5.545,26.381,5.545Z"
-                        transform="translate(1.667 0.844)" fill="url(#radial-PE-2)" />
-                    <rect id="Rectangle_264" data-name="Rectangle 264" width="1.238" height="14.857"
-                        transform="translate(46.62 10.667)" fill="#3a41ac" />
-                    <path id="Tracé_4534" data-name="Tracé 4534"
-                        d="M39.857,25.2s1.857-2.318,1.857-3.343a1.857,1.857,0,1,0-3.714,0C38,22.882,39.857,25.2,39.857,25.2Z"
-                        transform="translate(7.382 4.286)" fill="#3a41ac" />
-                    <path id="Tracé_4535" data-name="Tracé 4535"
-                        d="M26.6,19.877,7.578,11.951a.939.939,0,0,1,0-1.735L26.6,2.29a3.762,3.762,0,0,1,2.891,0l19.024,7.926a.939.939,0,0,1,0,1.735L29.493,19.877A3.762,3.762,0,0,1,26.6,19.877Z"
-                        transform="translate(0 0)" fill="#5059c9" />
-                    <path id="Tracé_4536" data-name="Tracé 4536"
-                        d="M26.381,9C19.543,9,14,10.187,14,11.653v6.014a32.164,32.164,0,0,1,12.381,2.476,32.164,32.164,0,0,1,12.381-2.476V11.653C38.762,10.187,33.219,9,26.381,9Z"
-                        transform="translate(1.667 1.667)" fill="#7b83eb" />
-                </g>
-                <text data-name="Pack
-                                    Etudiant" transform="translate(83.474 174.535)" class="pill-text">
-                    <tspan x="-18" y="0">Pack</tspan>
-                    <tspan x="-32" y="20">Etudiant</tspan>
-                </text>
-            </g>
-        </svg>
+                    <!-- Progress bar -->
+                    <div class="progressbar">
+                        <div class="progress" id="progress"></div>
+
+                        <div class="progress-step progress-step-active" data-title="step1"></div>
+                        <div class="progress-step" data-title="step2"></div>
+                        <div class="progress-step" data-title="step3"></div>
+                        <div class="progress-step" data-title="step4"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 my-lg-auto">
+
+                    <!-- form steps -->
+                    <form action="">
+                        <div class="form-step-wrapper d-flex flex-column justify-content-center">
+                            <div class="form-step type-logement mx-auto form-step-active">
+                                <h4> Votre type de logement ?</h4>
+
+                                <a id="link-apart" class="mylabel-card text-decoration-none" data-bs-toggle="collapse"
+                                    href="#collapse-form" role="button" aria-expanded="false"
+                                    aria-controls="collapse-form">
+                                    <img src="./images/svg/icon-apartement.svg" alt="">
+                                    <span>Appartement</span>
+
+                                </a>
+
+                                <a id="link-maison" class="mylabel-card text-decoration-none" data-bs-toggle="collapse"
+                                    href="#collapse-form" role="button" aria-expanded="false"
+                                    aria-controls="collapse-form">
+                                    <img src="./images/svg/icon-maison.svg" alt="">
+                                    <span>Maison</span>
+                                </a>
+
+                                <a id="link-villa" class="mylabel-card text-decoration-none" data-bs-toggle="collapse"
+                                    href="#collapse-form" role="button" aria-expanded="false"
+                                    aria-controls="collapse-form">
+                                    <img src="./images/svg/icon-villa.svg" alt="">
+                                    <span>Villa</span>
+                                </a>
+                                <div class="collapse" id="collapse-form">
+                                    <div class="card card-pieces card-body">
+                                        <h5>Nombre de pièce</h5>
+                                        <div class="d-flex justify-content-between align-items-end mb-3 nbr-piece">
+                                            <label for="chambre" class="form-label"> Chambre</label>
+                                            <div class="custom-input-number">
+                                                <button type="button" class="cin-btn cin-decrement">
+                                                    -
+                                                </button>
+                                                <input type="number" class="cin-input basket-quantity" step="1"
+                                                    value="1" min="0" max="10">
+                                                <button type="button" class="cin-btn cin-increment">
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end mb-3 nbr-piece">
+                                            <label for="chambre" class="form-label"> Cuisine</label>
+                                            <div class="custom-input-number">
+                                                <button type="button" class="cin-btn cin-decrement">
+                                                    -
+                                                </button>
+                                                <input type="number" class="cin-input basket-quantity" step="1"
+                                                    value="1" min="0" max="10">
+                                                <button type="button" class="cin-btn cin-increment">
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end mb-3 nbr-piece">
+                                            <label for="chambre" class="form-label">Salon</label>
+                                            <div class="custom-input-number">
+                                                <button type="button" class="cin-btn cin-decrement">
+                                                    -
+                                                </button>
+                                                <input type="number" class="cin-input basket-quantity" step="1"
+                                                    value="1" min="0" max="10">
+                                                <button type="button" class="cin-btn cin-increment">
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end mb-3 nbr-piece">
+                                            <label for="chambre" class="form-label"> Toilette / Salle de bain</label>
+                                            <div class="custom-input-number">
+                                                <button type="button" class="cin-btn cin-decrement">
+                                                    -
+                                                </button>
+                                                <input type="number" class="cin-input basket-quantity" step="1"
+                                                    value="1" min="0" max="10">
+                                                <button type="button" class="cin-btn cin-increment">
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end mb-3 nbr-piece">
+                                            <label for="chambre" class="form-label"> Cour</label>
+                                            <div class="custom-input-number">
+                                                <button type="button" class="cin-btn cin-decrement">
+                                                    -
+                                                </button>
+                                                <input type="number" class="cin-input basket-quantity" step="1"
+                                                    value="0" min="0" max="10">
+                                                <button type="button" class="cin-btn cin-increment">
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end mb-3 nbr-piece">
+                                            <label for="chambre" class="form-label"> Térasse</label>
+                                            <div class="custom-input-number">
+                                                <button type="button" class="cin-btn cin-decrement">
+                                                    -
+                                                </button>
+                                                <input type="number" class="cin-input basket-quantity" step="1"
+                                                    value="0" min="0" max="10">
+                                                <button type="button" class="cin-btn cin-increment">
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end mb-3 nbr-piece">
+                                            <label for="chambre" class="form-label"> Cave</label>
+                                            <div class="custom-input-number">
+                                                <button type="button" class="cin-btn cin-decrement">
+                                                    -
+                                                </button>
+                                                <input type="number" class="cin-input basket-quantity" step="1"
+                                                    value="0" min="0" max="10">
+                                                <button type="button" class="cin-btn cin-increment">
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end mb-3 nbr-piece">
+                                            <label for="chambre" class="form-label"> Garage</label>
+                                            <div class="custom-input-number">
+                                                <button type="button" class="cin-btn cin-decrement">
+                                                    -
+                                                </button>
+                                                <input type="number" class="cin-input basket-quantity" step="1"
+                                                    value="0" min="0" max="10">
+                                                <button type="button" class="cin-btn cin-increment">
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
 
 
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="form-step passage-form mx-auto">
+                                <h4 class="mt-0">Choisir la date du passage </h4>
+                                <div id="datepicker" class="calendar"></div>
+                                <h4>Choisir l'heure du passage</h4>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="./images/svg/icon-clock.svg" class="me-3" alt="">
+                                    <select class="form-select" aria-label="time-select">
+                                        <option selected value="1">08:30</option>
+                                        <option value="2">09:00</option>
+                                        <option value="2">09:30</option>
+                                        <option value="2">10:00</option>
+                                        <option value="2">10:30</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-step select-produits mx-auto">
+                                <h4>Services optionnels</h4>
+                                <div class="d-flex justify-content-between align-items-center product-check">
+                                    <div class="product-icon">
+                                        <img src="./images/svg/icon-1.svg" class="" alt="">
+                                        <lottie-player id="stars"
+                                            src="https://assets10.lottiefiles.com/private_files/lf30_AwG077.json"
+                                            background="transparent" speed="0.4" style="width: 67px; height: 67px;" loop
+                                            autoplay></lottie-player>
+                                    </div>
+                                    <span>Produits et outils + 130 dh</span>
+                                    <div class="form-check form-switch">
+                                        <input id="input-check-product" class="form-check-input" type="checkbox"
+                                            role="switch" data-on-text="normal" data-off-text="abnormal"
+                                            data-size="large" id="flexSwitchCheckChecked">
+
+                                    </div>
+                                </div>
+                                <h4>Parfum</h4>
+
+                                <div class="div-parfum mylabel-card d-flex align-items-center justify-content-between">
+                                    <img src="./images/parfum/parfum-orange.png" alt="">
+                                    <span>Oud</span>
+                                    <div>
+                                        <input class="form-check-input" type="radio" name="selectedparfum"
+                                            id="selectedparfum" value="" aria-label="..." disabled>
+                                    </div>
+
+                                </div>
+                                <div class="div-parfum mylabel-card d-flex align-items-center justify-content-between">
+                                    <img src="./images/parfum/parfum-citron.png" alt="">
+                                    <span>Citron</span>
+                                    <div>
+                                        <input class="form-check-input" type="radio" name="selectedparfum"
+                                            id="selectedparfum" value="" aria-label="..." disabled>
+                                    </div>
+                                </div>
+                                <div class="div-parfum mylabel-card d-flex align-items-center justify-content-between">
+                                    <img src="./images/parfum/parfum-fleur.png" alt="">
+                                    <span>Lavendre</span>
+                                    <div>
+                                        <input class="form-check-input" type="radio" name="selectedparfum"
+                                            id="selectedparfum" value="" aria-label="..." disabled>
+                                    </div>
+                                </div>
+                                <div class="div-parfum mylabel-card d-flex align-items-center justify-content-between">
+                                    <img src="./images/parfum/parfum-lavendre.png" alt="">
+                                    <span>Sans parfum</span>
+                                    <div>
+                                        <input class="form-check-input" type="radio" name="selectedparfum"
+                                            id="selectedparfum" value="" aria-label="..." disabled>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-step user-form mx-auto">
+                                <!-- <h4>Veuillez saisir vos informations</h4> -->
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="floatingNom"
+                                        placeholder="Nom et prénom">
+                                    <label for="floatingNom">Nom et prénom</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingEmail" placeholder="E-mail">
+                                    <label for="floatingEmail">E-mail</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="tel" class="form-control" id="floatingTel" placeholder="N° téléphone">
+                                    <label for="floatingTel">N° téléphone </label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="floatingAdresse" placeholder="Adresse">
+                                    <label for="floatingAdresse">Adresse</label>
+                                </div>
+
+                                <select class="form-select mb-3" aria-label="ville select" id="floatingVille">
+                                    <option selected value="1">Mohammedia</option>
+                                    <option value="2">Casablanca</option>
+                                </select>
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control " id="floatingComptAdresse"
+                                        placeholder="Complément d'adresse">
+                                    <label for="floatingComptAdresse">Complément d'adresse (optionnel)</label>
+                                </div>
+                                <div class="d-none div-login d-lg-flex align-items-center justify-content-evenly">
+                                    <a href="./login.html">Se connecter</a>
+                                    <span>ou se connecter avec </span>
+                                    <div>
+                                        <a href="" class="me-3"><img src="./images/svg/social-icons/icon-facebook.svg"
+                                                alt=""></a>
+                                        <a href=""><img src="./images/svg/social-icons/icon-google.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="d-flex d-lg-none div-login align-items-center justify-content-between">
+                                    <a href="./login.html" class="">Se connecter</a>
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-between align-items-center mx-auto btn-wrapper">
+                        <a href="#" class="btn-prev text-decoration-none">
+                            <i class="fa fa-chevron-left me-1"></i> Retour</a>
+                        <button class="btn-next">Suivant</button>
+                    </div>
+                </div>
+                <div class="d-none col-lg-6 d-lg-flex justify-content-end" style="height: inherit;">
+                    <div class="d-flex flex-column justify-content-center w-40">
+                        <img src="./images/svg/likdom-femme.svg" class="img-assistant" alt="">
+                    </div>
+                    <div class="d-flex flex-column justify-content-center div-img-wrapper w-60">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="70 0 500 500">
+                            <path id="Big_Bubble" data-name="Big Bubble"
+                                d="M1089.788,1277.57s87.08-91.985,43.587-134.9-228.237,24.885-219.385-93.037,244.5-205.6,359.345-181.128C1404.547,896.469,1374.487,1119.523,1089.788,1277.57Z"
+                                transform="translate(-368.565 -1143.717) rotate(22)" fill="#c8deff" />
+                            <text class="bubble-text" transform="translate(83.474 174.535)">
+                                <tspan x="50" y="15">Merci de saisir</tspan>
+                                <tspan x="50" y="60">vos informations</tspan>
+                            </text>
+                        </svg>
+                        <!-- img steps -->
+                        <div class="d-flex flex-grow-1 flex-column justify-content-center">
+                            <div class="img-step img-log-wrapper align-items-end img-step-active">
+                                <img id="img-maison" src="./images/svg/maison.svg" class="img-logement" alt="">
+                                <img id="img-villa" src="./images/svg/villa.svg" class="img-logement" alt="">
+                                <img id="img-apart" src="./images/svg/appartement.svg" class="img-logement" alt="">
+                            </div>
+                            <div class="img-step mx-auto">
+                                <img src="./images/svg/calendar.svg" class="img-form" alt="">
+                            </div>
+                            <div class="img-step mx-auto">
+                                <img src="./images/svg/produits.svg" class="img-form" alt="">
+                            </div>
+                            <div class="img-step">
+                                <img src="./images/svg/form-step1.svg" class="img-form" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -188,7 +422,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-
+    <!-- datepicker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"
+        integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./jquery-ui/jquery-ui.min.js"></script>
+    <script src="./js/datepicker.js"></script>
+    <!--  -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="./js/reserver_ms.js"></script>
 
 
 </body>

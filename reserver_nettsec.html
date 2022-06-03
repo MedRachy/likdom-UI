@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- Fonts -->
+    <script src="https://kit.fontawesome.com/e807f8aa79.js" crossorigin="anonymous"></script>
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+
+    <title>LIKDOM</title>
+</head>
+
+<body>
+
+    <div class="loader">
+        <img src="./images/spinner.svg" alt="">
+    </div>
+
+    <section class="bg-section-nettsec">
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container justify-content-start justify-content-md-between">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand p-0 d-none d-md-inline-block" href="./index.html"><img src="./images/Logo@2x.png"
+                        class="img-logo" alt="logo" /></a>
+                <!-- <form class="d-md-none flex-grow-1" method="GET" action="{{ route('reserv.code') }}">
+                    <div class="input-group mx-auto">
+                        <button class="btn" type="button" id="button-search">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <input type="search" class="form-control form-search" placeholder="Entrer votre code"
+                            aria-describedby="button-search" />
+                    </div>
+                </form> -->
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LIKDOM</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <!-- mobile menu -->
+                        <ul class="navbar-nav d-lg-none justify-content-evenly flex-grow-1  pe-3">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./reserver.html" class="nav-link">Réserver</a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link link-danger">Professionnel</a>
+                            </li>
+                        </ul>
+                        <!-- descktop menu -->
+                        <div
+                            class="navbar-desktop d-none d-lg-flex justify-content-evenly align-items-center flex-grow-1">
+                            <a class="btn link-reserv" href="./services.html">Réserver</a>
+                            <form class="d-flex m-0" method="GET" action="{{ route('reserv.code') }}">
+                                <div class="input-group">
+                                    <input type="search" class="form-control form-search"
+                                        placeholder="Entrer votre code" aria-describedby="button-search" />
+                                    <button class="btn" type="button" id="button-search">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div>
+                                <a class="btn btn-light link-signup" href="./compte.html">Créer
+                                    un
+                                    compte</a>
+                                <a class="btn btn-outline-light link-signin" href="./login.html">Se
+                                    connecter</a>
+                            </div>
+                            <a class="btn link-prof" href="./professionnel.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="26" viewBox="0 0 14 26">
+                                    <path id="icons8_manager"
+                                        d="M20,11.667a4.4,4.4,0,0,1-4.455-4.333,4.456,4.456,0,0,1,8.909,0A4.4,4.4,0,0,1,20,11.667ZM24.623,12.9H21.907a.6.6,0,0,1-.064.277l-.955,1.857a.615.615,0,0,1-.14.173l1.148,5.3a.608.608,0,0,1-.125.514L20.5,22.578a.649.649,0,0,1-.995,0L18.23,21.03a.6.6,0,0,1-.125-.514l1.148-5.3a.615.615,0,0,1-.14-.173l-.955-1.857a.6.6,0,0,1-.064-.277H15.377A2.348,2.348,0,0,0,13,15.217V22.19a7,7,0,0,0,14,0V15.217A2.348,2.348,0,0,0,24.623,12.9Z"
+                                        transform="translate(-13 -3)" fill="#3d5b8e" />
+                                </svg>
+                                <span>Likdom Pro</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container d-flex flex-column height-91">
+            <!-- descktop sreen -->
+            <div class="row d-none d-lg-flex overflow-auto py-6 ">
+                <div class="col-lg-12">
+                    <div class="nettsec-form">
+                        <h4 class="text-start">Nettoyage à sec</h4>
+                        <div class="d-flex align-items-center">
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between">
+                                    <img src="./images/icon_nett_sec/icons8_sofa.svg" alt="">
+                                    <span>Canapé</span>
+                                    <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                </div>
+                                <div class="mycard-lg-body" id="canape-card">
+
+                                    <!-- places added here -->
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" class="stretched-link add-canape">Ajouter canapé</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between">
+                                    <img src="./images/icon_nett_sec/icons8_armchair_1.svg" alt="">
+                                    <span>Fauteuil</span>
+                                    <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                </div>
+                                <div class="mycard-lg-body" id="fauteuil-card">
+
+                                    <!-- places added here -->
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" id="" class="stretched-link add-fauteuil">Ajouter fauteuil</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between">
+                                    <img src="./images/icon_nett_sec/icons8_wing_chair.svg" alt="">
+                                    <span>Chaise</span>
+                                    <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                </div>
+                                <div class="mycard-lg-body" id="chaise-card">
+                                    <div class="mycard-2 d-flex align-items-center justify-content-between">
+                                        <span> Nombre de chaise</span>
+                                        <select class="form-select w-auto">
+                                            <option value="0" selected>0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="+10">+ 10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between">
+                                    <img src="./images/icon_nett_sec/icons8_armchair_1.svg" alt="">
+                                    <span>Méridienne</span>
+                                    <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                </div>
+                                <div class="mycard-lg-body" id="meridienne-card">
+
+                                    <!-- places added here -->
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" id="" class="stretched-link add-meridienne">Ajouter méridienne</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between">
+                                    <img src="./images/icon_nett_sec/icons8_living_room.svg" alt="">
+                                    <span>Canapé lit</span>
+                                    <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                </div>
+                                <div class="mycard-lg-body" id="canapelit-card">
+
+                                    <!-- places added here -->
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" id="" class="stretched-link add-canapelit">Ajouter canapé lit</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between">
+                                    <img src="./images/icon_nett_sec/icons8_carpet.svg" alt="">
+                                    <span>Tapis/ Moquette</span>
+                                    <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                </div>
+                                <div class="mycard-lg-body" id="tapis-card">
+
+                                    <!-- places added here -->
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" id="" class="stretched-link add-tapis">Ajouter tapis/moquette</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between">
+                                    <img src="./images/icon_nett_sec/icons8_bed.svg" alt="">
+                                    <span>Matelas</span>
+                                    <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                </div>
+                                <div class="mycard-lg-body" id="matelas-card">
+
+                                    <!-- tailles added here -->
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" id="" class="stretched-link add-matelas">Ajouter matelas</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between">
+                                    <img src="./images/icon_nett_sec/icons8_open_curtains.svg" alt="">
+                                    <span>Rideau</span>
+                                    <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                </div>
+                                <div class="mycard-lg-body" id="rideau-card">
+
+                                    <!-- tailles added here -->
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" id="" class="stretched-link add-rideau">Ajouter rideau</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile screen -->
+            <div class="row d-lg-none overflow-auto">
+                <div class="col-12">
+                    <div class="nettsec-form">
+                        <h4 class="text-center">Nettoyage à sec</h4>
+                        <p>Sélectionner les pièces à nettoyer, vous pouviez ajouter plusieurs pièces en appuient
+                            <span class="d-inline-flex align-items-center">
+                                sur <img src="./images/svg/Plus.svg" class="ms-2" alt=""></span>
+                        </p>
+                        <div class="d-flex flex-column align-items-center justify-content-evenly">
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between"
+                                    style="transform: rotate(0);">
+                                    <img src="./images/icon_nett_sec/icons8_sofa.svg" alt="">
+                                    <span>Canapé</span>
+                                    <a data-bs-toggle="collapse" href="#collapseCanape" role="button"
+                                        aria-expanded="false" aria-controls="collapseCanape"
+                                        class="stretched-link collapsed">
+                                        <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mycard-lg-body collapse" id="collapseCanape">
+
+                                    <!-- places added here -->
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" class="stretched-link add-canape">Ajouter canapé</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between"
+                                    style="transform: rotate(0);">
+                                    <img src="./images/icon_nett_sec/icons8_armchair_1.svg" alt="">
+                                    <span>Fauteuil</span>
+                                    <a data-bs-toggle="collapse" href="#collapseFauteuil" role="button"
+                                        aria-expanded="false" aria-controls="collapseFauteuil"
+                                        class="stretched-link collapsed">
+                                        <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mycard-lg-body collapse" id="collapseFauteuil">
+
+                                    <!-- places added here -->
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" id="" class="stretched-link add-fauteuil">Ajouter fauteuil</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between"
+                                    style="transform: rotate(0);">
+                                    <img src="./images/icon_nett_sec/icons8_wing_chair.svg" alt="">
+                                    <span>Chaise</span>
+                                    <a data-bs-toggle="collapse" href="#collapseChaise" role="button"
+                                        aria-expanded="false" aria-controls="collapseChaise"
+                                        class="stretched-link collapsed">
+                                        <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mycard-lg-body collapse" id="collapseChaise">
+                                    <div class="mycard-2 d-flex align-items-center justify-content-between">
+                                        <span> Nombre de chaise</span>
+                                        <select class="form-select w-auto">
+                                            <option value="0" selected>0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="+10">+ 10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between"
+                                    style="transform: rotate(0);">
+                                    <img src="./images/icon_nett_sec/icons8_armchair_1.svg" alt="">
+                                    <span>Méridienne</span>
+                                    <a data-bs-toggle="collapse" href="#collapseMeridienne" role="button"
+                                        aria-expanded="false" aria-controls="collapseMeridienne"
+                                        class="stretched-link collapsed">
+                                        <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mycard-lg-body collapse" id="collapseMeridienne">
+
+                                    <!-- places added here -->
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" id="" class="stretched-link add-meridienne">Ajouter méridienne</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between"
+                                    style="transform: rotate(0);">
+                                    <img src="./images/icon_nett_sec/icons8_living_room.svg" alt="">
+                                    <span>Canapé lit</span>
+                                    <a data-bs-toggle="collapse" href="#collapseCanapelit" role="button"
+                                        aria-expanded="false" aria-controls="collapseCanapelit"
+                                        class="stretched-link collapsed">
+                                        <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mycard-lg-body collapse" id="collapseCanapelit">
+
+                                    <!-- places added here -->
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" id="" class="stretched-link add-canapelit">Ajouter canapé lit</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between"
+                                    style="transform: rotate(0);">
+                                    <img src="./images/icon_nett_sec/icons8_carpet.svg" alt="">
+                                    <span>Tapis/ Moquette</span>
+                                    <a data-bs-toggle="collapse" href="#collapseTapis" role="button"
+                                        aria-expanded="false" aria-controls="collapseTapis"
+                                        class="stretched-link collapsed">
+                                        <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mycard-lg-body collapse" id="collapseTapis">
+
+                                    <!-- places added here -->
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" id="" class="stretched-link add-tapis">Ajouter tapis/moquette</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between"
+                                    style="transform: rotate(0);">
+                                    <img src="./images/icon_nett_sec/icons8_bed.svg" alt="">
+                                    <span>Matelas</span>
+                                    <a data-bs-toggle="collapse" href="#collapseMatelas" role="button"
+                                        aria-expanded="false" aria-controls="collapseMatelas"
+                                        class="stretched-link collapsed">
+                                        <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mycard-lg-body collapse" id="collapseMatelas">
+
+                                    <!-- tailles added here -->
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" id="" class="stretched-link add-matelas">Ajouter matelas</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mycard-lg">
+                                <div class="mycard-lg-header d-flex align-items-center justify-content-between"
+                                    style="transform: rotate(0);">
+                                    <img src="./images/icon_nett_sec/icons8_open_curtains.svg" alt="">
+                                    <span>Rideau</span>
+                                    <a data-bs-toggle="collapse" href="#collapseRideau" role="button"
+                                        aria-expanded="false" aria-controls="collapseRideau"
+                                        class="stretched-link collapsed">
+                                        <img src="./images/svg/arrow-circle-down.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mycard-lg-body collapse" id="collapseRideau">
+
+                                    <!-- tailles added here -->
+                                    <div class="add-more d-flex align-items-center justify-content-center"
+                                        style="transform: rotate(0);">
+                                        <img src="./images/add_icon.svg" alt="">
+                                        <a href="#" id="" class="stretched-link add-rideau">Ajouter rideau</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-grow-1 my-4">
+                <div class="col-lg-12">
+                    <div class="d-flex d-md-none mycard custom-width shadow-none">
+                        <span>Prix total</span>
+                        <span>120 DH</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="#" class="btn-prev text-decoration-none">
+                            <i class="fa fa-chevron-left me-1"></i> Retour</a>
+                        <div class="d-none d-md-flex  mycard custom-width shadow-none">
+                            <span>Prix total</span>
+                            <span>120 DH</span>
+                        </div>
+                        <form id="nett-form" action="">
+                            <input type="hidden" name="canape">
+                            <input type="hidden" name="fauteuil">
+                            <input type="hidden" name="chaise">
+                            <input type="hidden" name="meridienne">
+                            <input type="hidden" name="canapelit">
+                            <input type="hidden" name="matelas">
+                            <input type="hidden" name="tapis">
+                            <input type="hidden" name="rideau">
+                        </form>
+                        <button class="btn-next">Suivant</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./js/loader.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="./js/reserver_nettsec.js"></script>
+
+
+</body>
+
+</html>

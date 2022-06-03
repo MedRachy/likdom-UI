@@ -1,7 +1,7 @@
 .calendar {
  
     width: 100%;
-    box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+    box-shadow: 0px 6px 12px rgba(84, 147, 255, 0.2);
     background: #fff;
     border-radius: 20px;
     overflow: hidden;

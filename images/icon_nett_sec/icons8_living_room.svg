@@ -1,0 +1,18 @@
+<svg id="icons8_living_room" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.662" height="19.027" viewBox="0 0 25.662 19.027">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffb951"/>
+      <stop offset="1" stop-color="#ec8c00"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5493ff"/>
+      <stop offset="1" stop-color="#2867d4"/>
+    </linearGradient>
+  </defs>
+  <g id="Groupe_139" data-name="Groupe 139">
+    <path id="Tracé_6810" data-name="Tracé 6810" d="M11.952,40H10l.976-7h1.952Zm9.758,0h1.952l-.976-7H20.734Z" transform="translate(-4 -20.973)" fill="url(#linear-gradient)"/>
+    <path id="Tracé_6811" data-name="Tracé 6811" d="M4,17H29.662V29.752H4Z" transform="translate(-4 -12.181)" fill="#7db1ff"/>
+    <path id="Tracé_6812" data-name="Tracé 6812" d="M28.4,11.477A2.258,2.258,0,0,0,26.458,9H20.639a2.259,2.259,0,0,0-1.94,2.477V23.036h9.7Zm-9.7,0A2.258,2.258,0,0,0,16.759,9H10.94A2.259,2.259,0,0,0,9,11.477V23.036h9.7Z" transform="translate(-5.868 -9)" fill="url(#linear-gradient-2)"/>
+    <path id="Tracé_6813" data-name="Tracé 6813" d="M28.4,29H9V25c0-1.1.579-2,1.293-2H27.1c.714,0,1.293.9,1.293,2Z" transform="translate(-5.868 -14.964)" fill="#c8deff"/>
+  </g>
+</svg>

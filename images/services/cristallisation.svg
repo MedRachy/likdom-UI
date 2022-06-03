@@ -1,0 +1,32 @@
+<svg id="Cristallisation_icon" data-name="Cristallisation icon" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 54.567 67.041">
+  <g id="Brush" transform="translate(22.272 61.392)">
+    <path id="Rectangle_674" data-name="Rectangle 674" d="M0,0H30.068a0,0,0,0,1,0,0V3.568a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V0A0,0,0,0,1,0,0Z" fill="#ffd56a"/>
+    <line id="Ligne_42" data-name="Ligne 42" y1="2.884" transform="translate(3.83 2.265)" fill="none" stroke="#fbbd1f" stroke-linecap="round" stroke-width="1"/>
+    <line id="Ligne_49" data-name="Ligne 49" y1="2.884" transform="translate(13.877 2.265)" fill="none" stroke="#fbbd1f" stroke-linecap="round" stroke-width="1"/>
+    <line id="Ligne_43" data-name="Ligne 43" y1="2.884" transform="translate(6.342 2.265)" fill="none" stroke="#fbbd1f" stroke-linecap="round" stroke-width="1"/>
+    <line id="Ligne_48" data-name="Ligne 48" y1="2.884" transform="translate(16.388 2.265)" fill="none" stroke="#fbbd1f" stroke-linecap="round" stroke-width="1"/>
+    <line id="Ligne_44" data-name="Ligne 44" y1="2.884" transform="translate(8.854 2.265)" fill="none" stroke="#fbbd1f" stroke-linecap="round" stroke-width="1"/>
+    <line id="Ligne_47" data-name="Ligne 47" y1="2.884" transform="translate(18.9 2.265)" fill="none" stroke="#fbbd1f" stroke-linecap="round" stroke-width="1"/>
+    <line id="Ligne_45" data-name="Ligne 45" y1="2.884" transform="translate(11.365 2.265)" fill="none" stroke="#fbbd1f" stroke-linecap="round" stroke-width="1"/>
+    <line id="Ligne_46" data-name="Ligne 46" y1="2.884" transform="translate(21.412 2.265)" fill="none" stroke="#fbbd1f" stroke-linecap="round" stroke-width="1"/>
+    <line id="Ligne_50" data-name="Ligne 50" y1="2.884" transform="translate(23.923 2.265)" fill="none" stroke="#fbbd1f" stroke-linecap="round" stroke-width="1"/>
+    <line id="Ligne_51" data-name="Ligne 51" y1="2.884" transform="translate(26.435 2.265)" fill="none" stroke="#fbbd1f" stroke-linecap="round" stroke-width="1"/>
+  </g>
+  <g id="Holder" transform="translate(0 0)">
+    <rect id="Rectangle_680" data-name="Rectangle 680" width="3.349" height="41.86" rx="1.674" transform="translate(10.839 1.674) rotate(-30)" fill="#b8b8b8"/>
+    <rect id="Rectangle_681" data-name="Rectangle 681" width="20.045" height="3.341" rx="1.67" transform="translate(0 0.143)" fill="#3d5b8e"/>
+  </g>
+  <g id="Engine" transform="translate(20.045 34.665)">
+    <rect id="Rectangle_675" data-name="Rectangle 675" width="34.522" height="4.454" rx="2.227" transform="translate(0 22.272)" fill="#3d5b8e"/>
+    <rect id="Rectangle_676" data-name="Rectangle 676" width="12.25" height="6.682" transform="translate(11.136 15.591)" fill="#b8b8b8"/>
+    <path id="Tracé_6758" data-name="Tracé 6758" d="M98.555,85.05s-2.955-6.7-8.372-6.7c.007-.018,0,6.7,0,6.7Z" transform="translate(-66.545 -62.802)" fill="#b8b8b8"/>
+    <path id="Tracé_6759" data-name="Tracé 6759" d="M90.184,85.05s2.955-6.7,8.372-6.7c-.007-.018,0,6.7,0,6.7Z" transform="translate(-87.475 -62.802)" fill="#b8b8b8"/>
+    <rect id="Rectangle_678" data-name="Rectangle 678" width="12.25" height="11.136" transform="translate(11.136 3.341)" fill="#c7c7c7"/>
+    <rect id="Rectangle_677" data-name="Rectangle 677" width="14.477" height="3.341" rx="1.67" transform="translate(10.023 13.363)" fill="#3d5b8e"/>
+    <line id="Ligne_52" data-name="Ligne 52" x2="12.558" transform="translate(11.081 10.946)" fill="none" stroke="#afafaf" stroke-linecap="round" stroke-width="1"/>
+    <line id="Ligne_53" data-name="Ligne 53" x2="12.558" transform="translate(11.081 9.272)" fill="none" stroke="#afafaf" stroke-linecap="round" stroke-width="1"/>
+    <line id="Ligne_54" data-name="Ligne 54" x2="12.558" transform="translate(11.081 7.598)" fill="none" stroke="#afafaf" stroke-linecap="round" stroke-width="1"/>
+    <line id="Ligne_55" data-name="Ligne 55" x2="12.558" transform="translate(11.081 5.923)" fill="none" stroke="#afafaf" stroke-linecap="round" stroke-width="1"/>
+    <path id="Rectangle_679" data-name="Rectangle 679" d="M3,0H9.25a3,3,0,0,1,3,3V4.454a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V3A3,3,0,0,1,3,0Z" transform="translate(11.136)" fill="#3d5b8e"/>
+  </g>
+</svg>

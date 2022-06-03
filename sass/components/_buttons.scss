@@ -1,0 +1,57 @@
+@use '../abstracts' as *;
+
+.mybutton {
+    font-weight: 600;
+    font-style: normal;
+    padding: 0.3rem 1.5rem;
+    margin-top: 0.8rem;
+    border-radius: 50rem!important;
+}
+// -----------
+.btn-reserv {
+    background-color: $color-1;
+    color: $light-color;
+}
+.btn-reserv:hover {
+    color: $light-color;
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+// -----------
+.btn-next {
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.25rem;
+    background-color: $color-1;
+    color: $light-color;
+    // box-shadow: 0 .5rem 1rem rgba(84, 147, 255, 0.4);
+    box-shadow: 0px 3px 12px rgba(51, 126, 255, 0.5);
+    padding: 0.3rem 2.5rem;
+    transition: box-shadow .15s ease-in-out ;
+}
+
+.btn-next:hover {
+    box-shadow: none !important;
+}
+
+.btn-prev {
+    font-size: 1.25rem;
+    color: $color-1;
+    font-weight: 600;
+}
+// ----------------
+.btn-submit {
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.25rem;
+    background-color: $color-1;
+    color: $light-color;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 15%);
+    padding: 0.7rem 2rem;
+    transition: box-shadow .15s ease-in-out ;
+}
+
+.btn-submit:hover {
+    box-shadow: none !important;
+}

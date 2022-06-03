@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- Fonts -->
+    <script src="https://kit.fontawesome.com/e807f8aa79.js" crossorigin="anonymous"></script>
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <title>LIKDOM</title>
+</head>
+
+<body>
+
+    <div class="loader">
+        <img src="./images/spinner.svg" alt="">
+    </div>
+
+    <section class="bg-section-services">
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container justify-content-start justify-content-md-between">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand p-0 d-none d-md-inline-block" href="./index.html"><img src="./images/Logo@2x.png"
+                        class="img-logo" alt="logo" /></a>
+                <!-- <form class="d-md-none flex-grow-1" method="GET" action="{{ route('reserv.code') }}">
+                    <div class="input-group mx-auto">
+                        <button class="btn" type="button" id="button-search">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <input type="search" class="form-control form-search" placeholder="Entrer votre code"
+                            aria-describedby="button-search" />
+                    </div>
+                </form> -->
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LIKDOM</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <!-- mobile menu -->
+                        <ul class="navbar-nav d-lg-none justify-content-evenly flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./services.html" class="nav-link">Réserver</a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link link-danger">Professionnel</a>
+                            </li>
+                        </ul>
+                        <!-- descktop menu -->
+                        <div
+                            class="navbar-desktop d-none d-lg-flex justify-content-evenly align-items-center flex-grow-1">
+                            <a class="btn link-reserv" href="./services.html">Réserver</a>
+                            <form class="d-flex m-0" method="GET" action="{{ route('reserv.code') }}">
+                                <div class="input-group">
+                                    <input type="search" class="form-control form-search"
+                                        placeholder="Entrer votre code" aria-describedby="button-search" />
+                                    <button class="btn" type="button" id="button-search">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div>
+                                <a class="btn btn-light link-signup" href="./compte.html">Créer
+                                    un
+                                    compte</a>
+                                <a class="btn btn-outline-light link-signin" href="./login.html">Se
+                                    connecter</a>
+                            </div>
+                            <a class="btn link-prof" href="./professionnel.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="26" viewBox="0 0 14 26">
+                                    <path id="icons8_manager"
+                                        d="M20,11.667a4.4,4.4,0,0,1-4.455-4.333,4.456,4.456,0,0,1,8.909,0A4.4,4.4,0,0,1,20,11.667ZM24.623,12.9H21.907a.6.6,0,0,1-.064.277l-.955,1.857a.615.615,0,0,1-.14.173l1.148,5.3a.608.608,0,0,1-.125.514L20.5,22.578a.649.649,0,0,1-.995,0L18.23,21.03a.6.6,0,0,1-.125-.514l1.148-5.3a.615.615,0,0,1-.14-.173l-.955-1.857a.6.6,0,0,1-.064-.277H15.377A2.348,2.348,0,0,0,13,15.217V22.19a7,7,0,0,0,14,0V15.217A2.348,2.348,0,0,0,24.623,12.9Z"
+                                        transform="translate(-13 -3)" fill="#3d5b8e" />
+                                </svg>
+                                <span>Likdom Pro</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row height-91 align-items-center">
+                <div class="col-12">
+                    <!-- descktop screen -->
+                    <div class="d-none d-lg-flex flex-column justify-content-center align-items-center div-swiper">
+                        <!-- Slider main container -->
+                        <div class="swiper w-100 mx-auto">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="card mycard card-service">
+                                        <div class="img-wrapper rounded-circle shadow mx-auto">
+                                            <img class="card-img-top" src="./images/services/grand_menage.svg" alt="">
+                                        </div>
+
+                                        <div class="card-body">
+                                            <h4 class="card-title text-center">Grand ménage</h4>
+
+                                            <div class="row row-cols-md-2 g-4">
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-chambre.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Chambres</h5>
+                                                            </div>
+
+                                                            <ul>
+                                                                <li>Faire et changer la literie</li>
+                                                                <li>Ranger les chambres </li>
+                                                                <li>Ranger les placards </li>
+                                                                <li>Nettoyer les commodes, et le lit Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-salon.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Salon et sèjour</h5>
+                                                            </div>
+
+                                                            <ul>
+                                                                <li>Ranger chaque chose à sa place </li>
+                                                                <li>Passer l’aspirateur</li>
+                                                                <li>Enlever la poussière</li>
+                                                                <li>Nettoyer les vitres, et les tableaux Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-salle-de-bain.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Salles de bain</h5>
+                                                            </div>
+                                                            <ul>
+                                                                <li> Nettoyer la douche </li>
+                                                                <li>Frottez et désinfectez les sanitaires</li>
+                                                                <li>Éliminez le calcaire des robinets et surfaces</li>
+                                                                <li>Nettoyer les miroirs Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-cuisine.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Cuisine</h5>
+                                                            </div>
+                                                            <ul>
+                                                                <li>Laver la vaisselle, essuyer les comptoirs de cuisine
+                                                                </li>
+                                                                <li>Nettoyer le four et la plaque de cuisson</li>
+                                                                <li>Organiser les placards</li>
+                                                                <li> Nettoyer les sols Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn mybutton btn-reserv d-block mx-auto">
+                                                Réserver un passage
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card mycard card-service">
+                                        <div class="img-wrapper rounded-circle shadow mx-auto">
+                                            <img class="card-img-top" src="./images/services/menage_simple.svg" alt="">
+                                        </div>
+
+                                        <div class="card-body">
+                                            <h4 class="card-title text-center">Ménage simple</h4>
+
+                                            <div class="row row-cols-md-2 g-4">
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-chambre.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Chambres</h5>
+                                                            </div>
+
+                                                            <ul>
+                                                                <li>Faire et changer la literie</li>
+                                                                <li>Ranger les chambres </li>
+                                                                <li>Ranger les placards </li>
+                                                                <li>Nettoyer les commodes, et le lit Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-salon.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Salon et sèjour</h5>
+                                                            </div>
+
+                                                            <ul>
+                                                                <li>Ranger chaque chose à sa place </li>
+                                                                <li>Passer l’aspirateur</li>
+                                                                <li>Enlever la poussière</li>
+                                                                <li>Nettoyer les vitres, et les tableaux Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-salle-de-bain.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Salles de bain</h5>
+                                                            </div>
+                                                            <ul>
+                                                                <li> Nettoyer la douche </li>
+                                                                <li>Frottez et désinfectez les sanitaires</li>
+                                                                <li>Éliminez le calcaire des robinets et surfaces</li>
+                                                                <li>Nettoyer les miroirs Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-cuisine.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Cuisine</h5>
+                                                            </div>
+                                                            <ul>
+                                                                <li>Laver la vaisselle, essuyer les comptoirs de cuisine
+                                                                </li>
+                                                                <li>Nettoyer le four et la plaque de cuisson</li>
+                                                                <li>Organiser les placards</li>
+                                                                <li> Nettoyer les sols Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn mybutton btn-reserv d-block mx-auto">
+                                                Réserver un passage
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card mycard card-service">
+                                        <div class="img-wrapper rounded-circle shadow mx-auto">
+                                            <img class="card-img-top" src="./images/services/menage_perso.svg" alt="">
+                                        </div>
+
+                                        <div class="card-body">
+                                            <h4 class="card-title text-center">Ménage pérsonnalisable</h4>
+
+                                            <div class="row row-cols-md-2 g-4">
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-chambre.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Chambres</h5>
+                                                            </div>
+
+                                                            <ul>
+                                                                <li>Faire et changer la literie</li>
+                                                                <li>Ranger les chambres </li>
+                                                                <li>Ranger les placards </li>
+                                                                <li>Nettoyer les commodes, et le lit Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-salon.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Salon et sèjour</h5>
+                                                            </div>
+
+                                                            <ul>
+                                                                <li>Ranger chaque chose à sa place </li>
+                                                                <li>Passer l’aspirateur</li>
+                                                                <li>Enlever la poussière</li>
+                                                                <li>Nettoyer les vitres, et les tableaux Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-salle-de-bain.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Salles de bain</h5>
+                                                            </div>
+                                                            <ul>
+                                                                <li> Nettoyer la douche </li>
+                                                                <li>Frottez et désinfectez les sanitaires</li>
+                                                                <li>Éliminez le calcaire des robinets et surfaces</li>
+                                                                <li>Nettoyer les miroirs Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-cuisine.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Cuisine</h5>
+                                                            </div>
+                                                            <ul>
+                                                                <li>Laver la vaisselle, essuyer les comptoirs de cuisine
+                                                                </li>
+                                                                <li>Nettoyer le four et la plaque de cuisson</li>
+                                                                <li>Organiser les placards</li>
+                                                                <li> Nettoyer les sols Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-reserv mybutton d-block mx-auto ">
+                                                Réserver un passage
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card mycard card-service">
+                                        <div class="img-wrapper rounded-circle shadow mx-auto">
+                                            <img class="card-img-top" src="./images/services/nettoyage_sec.svg" alt="">
+                                        </div>
+
+                                        <div class="card-body">
+                                            <h4 class="card-title text-center">Nettoyage à sec</h4>
+
+                                            <div class="row row-cols-md-2 g-4">
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-chambre.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Chambres</h5>
+                                                            </div>
+
+                                                            <ul>
+                                                                <li>Faire et changer la literie</li>
+                                                                <li>Ranger les chambres </li>
+                                                                <li>Ranger les placards </li>
+                                                                <li>Nettoyer les commodes, et le lit Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-salon.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Salon et sèjour</h5>
+                                                            </div>
+
+                                                            <ul>
+                                                                <li>Ranger chaque chose à sa place </li>
+                                                                <li>Passer l’aspirateur</li>
+                                                                <li>Enlever la poussière</li>
+                                                                <li>Nettoyer les vitres, et les tableaux Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-salle-de-bain.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Salles de bain</h5>
+                                                            </div>
+                                                            <ul>
+                                                                <li> Nettoyer la douche </li>
+                                                                <li>Frottez et désinfectez les sanitaires</li>
+                                                                <li>Éliminez le calcaire des robinets et surfaces</li>
+                                                                <li>Nettoyer les miroirs Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-cuisine.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Cuisine</h5>
+                                                            </div>
+                                                            <ul>
+                                                                <li>Laver la vaisselle, essuyer les comptoirs de cuisine
+                                                                </li>
+                                                                <li>Nettoyer le four et la plaque de cuisson</li>
+                                                                <li>Organiser les placards</li>
+                                                                <li> Nettoyer les sols Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-reserv mybutton d-block mx-auto ">
+                                                Réserver un passage
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card mycard card-service">
+                                        <div class="img-wrapper rounded-circle shadow mx-auto">
+                                            <img class="card-img-top" src="./images/services/cristallisation.svg"
+                                                alt="">
+                                        </div>
+
+                                        <div class="card-body">
+                                            <h4 class="card-title text-center">Cristallisation</h4>
+
+                                            <div class="row row-cols-md-2 g-4">
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-chambre.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Chambres</h5>
+                                                            </div>
+
+                                                            <ul>
+                                                                <li>Faire et changer la literie</li>
+                                                                <li>Ranger les chambres </li>
+                                                                <li>Ranger les placards </li>
+                                                                <li>Nettoyer les commodes, et le lit Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-salon.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Salon et sèjour</h5>
+                                                            </div>
+
+                                                            <ul>
+                                                                <li>Ranger chaque chose à sa place </li>
+                                                                <li>Passer l’aspirateur</li>
+                                                                <li>Enlever la poussière</li>
+                                                                <li>Nettoyer les vitres, et les tableaux Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-salle-de-bain.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Salles de bain</h5>
+                                                            </div>
+                                                            <ul>
+                                                                <li> Nettoyer la douche </li>
+                                                                <li>Frottez et désinfectez les sanitaires</li>
+                                                                <li>Éliminez le calcaire des robinets et surfaces</li>
+                                                                <li>Nettoyer les miroirs Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-cuisine.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Cuisine</h5>
+                                                            </div>
+                                                            <ul>
+                                                                <li>Laver la vaisselle, essuyer les comptoirs de cuisine
+                                                                </li>
+                                                                <li>Nettoyer le four et la plaque de cuisson</li>
+                                                                <li>Organiser les placards</li>
+                                                                <li> Nettoyer les sols Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-reserv mybutton d-block mx-auto ">
+                                                Réserver un passage
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card mycard card-service">
+                                        <div class="img-wrapper rounded-circle shadow mx-auto">
+                                            <img class="card-img-top" src="./images/services/desinfection.svg" alt="">
+                                        </div>
+
+                                        <div class="card-body">
+                                            <h4 class="card-title text-center">Désinfection</h4>
+
+                                            <div class="row row-cols-md-2 g-4">
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-chambre.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Chambres</h5>
+                                                            </div>
+
+                                                            <ul>
+                                                                <li>Faire et changer la literie</li>
+                                                                <li>Ranger les chambres </li>
+                                                                <li>Ranger les placards </li>
+                                                                <li>Nettoyer les commodes, et le lit Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-salon.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Salon et sèjour</h5>
+                                                            </div>
+
+                                                            <ul>
+                                                                <li>Ranger chaque chose à sa place </li>
+                                                                <li>Passer l’aspirateur</li>
+                                                                <li>Enlever la poussière</li>
+                                                                <li>Nettoyer les vitres, et les tableaux Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-salle-de-bain.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Salles de bain</h5>
+                                                            </div>
+                                                            <ul>
+                                                                <li> Nettoyer la douche </li>
+                                                                <li>Frottez et désinfectez les sanitaires</li>
+                                                                <li>Éliminez le calcaire des robinets et surfaces</li>
+                                                                <li>Nettoyer les miroirs Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card list-taches">
+
+                                                        <div class="card-body ">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <img src="./images/svg/icon-cuisine.svg" alt="">
+                                                                <h5 class="mb-0 ms-2 ">Cuisine</h5>
+                                                            </div>
+                                                            <ul>
+                                                                <li>Laver la vaisselle, essuyer les comptoirs de cuisine
+                                                                </li>
+                                                                <li>Nettoyer le four et la plaque de cuisson</li>
+                                                                <li>Organiser les placards</li>
+                                                                <li> Nettoyer les sols Etc…</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-reserv mybutton d-block mx-auto ">
+                                                Réserver un passage
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- navigation buttons -->
+                            <div class="swiper-button-prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="100" height="100" viewBox="5 0 50 50">
+                                    <defs>
+                                        <filter id="Ellipse_71" x="0" y="0" width="50" height="50"
+                                            filterUnits="userSpaceOnUse">
+                                            <feOffset dy="4" input="SourceAlpha" />
+                                            <feGaussianBlur stdDeviation="5" result="blur" />
+                                            <feFlood flood-color="#5493ff" flood-opacity="0.2" />
+                                            <feComposite operator="in" in2="blur" />
+                                            <feComposite in="SourceGraphic" />
+                                        </filter>
+                                    </defs>
+                                    <g id="Left_Arrow" data-name="Left Arrow" transform="translate(15 11)">
+                                        <g transform="matrix(1, 0, 0, 1, -15, -11)" filter="url(#Ellipse_71)">
+                                            <circle id="Ellipse_71-2" data-name="Ellipse 71" cx="10" cy="10" r="10"
+                                                transform="translate(15 11)" fill="#fff" />
+                                        </g>
+                                        <g id="Right_Arrow" data-name="Right Arrow" transform="translate(6.652 4)">
+                                            <line id="Ligne_34" data-name="Ligne 34" y1="5.86" x2="5.86"
+                                                transform="matrix(-0.996, -0.087, 0.087, -0.996, 5.838, 6.348)"
+                                                fill="none" stroke="#5493ff" stroke-linecap="round" stroke-width="2" />
+                                            <line id="Ligne_35" data-name="Ligne 35" x2="5.86" y2="5.86"
+                                                transform="matrix(0.996, -0.087, 0.087, 0.996, 0, 6.004)" fill="none"
+                                                stroke="#5493ff" stroke-linecap="round" stroke-width="2" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </div>
+                            <div class="swiper-button-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="100" height="100" viewBox="-5 0 50 50">
+                                    <defs>
+                                        <filter id="Ellipse_72" x="0" y="0" width="50" height="50"
+                                            filterUnits="userSpaceOnUse">
+                                            <feOffset dy="4" input="SourceAlpha" />
+                                            <feGaussianBlur stdDeviation="5" result="blur" />
+                                            <feFlood flood-color="#5493ff" flood-opacity="0.2" />
+                                            <feComposite operator="in" in2="blur" />
+                                            <feComposite in="SourceGraphic" />
+                                        </filter>
+                                    </defs>
+                                    <g id="Right_Arrow" data-name="Right Arrow" transform="translate(15.24 11.24)">
+                                        <g transform="matrix(1, 0, 0, 1, -15.24, -11.24)" filter="url(#Ellipse_72)">
+                                            <circle id="Ellipse_72-2" data-name="Ellipse 71" cx="10" cy="10" r="10"
+                                                transform="translate(15 11)" fill="#fff" />
+                                        </g>
+                                        <g id="Right_Arrow-2" data-name="Right Arrow" transform="translate(6.76 3.76)">
+                                            <line id="Ligne_34" data-name="Ligne 34" x2="5.86" y2="5.86"
+                                                transform="matrix(0.996, -0.087, 0.087, 0.996, 0, 0.511)" fill="none"
+                                                stroke="#5493ff" stroke-linecap="round" stroke-width="2" />
+                                            <line id="Ligne_35" data-name="Ligne 35" y1="5.86" x2="5.86"
+                                                transform="matrix(-0.996, -0.087, 0.087, -0.996, 5.838, 11.842)"
+                                                fill="none" stroke="#5493ff" stroke-linecap="round" stroke-width="2" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- mobile screen -->
+                    <div class="d-flex d-lg-none flex-column justify-content-center align-items-center">
+                        <div class="my-5">
+                            <div class="card mycard card-service">
+                                <div class="img-wrapper rounded-circle shadow mx-auto">
+                                    <img class="card-img-top" src="./images/services/grand_menage.svg" alt="">
+                                </div>
+
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Grand ménage</h4>
+
+                                    <div class="row row-cols-md-2 g-4">
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-chambre.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Chambres</h5>
+                                                    </div>
+
+                                                    <ul>
+                                                        <li>Faire et changer la literie</li>
+                                                        <li>Ranger les chambres </li>
+                                                        <li>Ranger les placards </li>
+                                                        <li>Nettoyer les commodes, et le lit Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-salon.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Salon et sèjour</h5>
+                                                    </div>
+
+                                                    <ul>
+                                                        <li>Ranger chaque chose à sa place </li>
+                                                        <li>Passer l’aspirateur</li>
+                                                        <li>Enlever la poussière</li>
+                                                        <li>Nettoyer les vitres, et les tableaux Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-salle-de-bain.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Salles de bain</h5>
+                                                    </div>
+                                                    <ul>
+                                                        <li> Nettoyer la douche </li>
+                                                        <li>Frottez et désinfectez les sanitaires</li>
+                                                        <li>Éliminez le calcaire des robinets et surfaces</li>
+                                                        <li>Nettoyer les miroirs Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-cuisine.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Cuisine</h5>
+                                                    </div>
+                                                    <ul>
+                                                        <li>Laver la vaisselle, essuyer les comptoirs de cuisine
+                                                        </li>
+                                                        <li>Nettoyer le four et la plaque de cuisson</li>
+                                                        <li>Organiser les placards</li>
+                                                        <li> Nettoyer les sols Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-reserv mybutton d-block mx-auto">
+                                        Réserver un passage
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-5">
+                            <div class="card mycard card-service">
+                                <div class="img-wrapper rounded-circle shadow mx-auto">
+                                    <img class="card-img-top" src="./images/services/menage_simple.svg" alt="">
+                                </div>
+
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Ménage simple</h4>
+
+                                    <div class="row row-cols-md-2 g-4">
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-chambre.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Chambres</h5>
+                                                    </div>
+
+                                                    <ul>
+                                                        <li>Faire et changer la literie</li>
+                                                        <li>Ranger les chambres </li>
+                                                        <li>Ranger les placards </li>
+                                                        <li>Nettoyer les commodes, et le lit Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-salon.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Salon et sèjour</h5>
+                                                    </div>
+
+                                                    <ul>
+                                                        <li>Ranger chaque chose à sa place </li>
+                                                        <li>Passer l’aspirateur</li>
+                                                        <li>Enlever la poussière</li>
+                                                        <li>Nettoyer les vitres, et les tableaux Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-salle-de-bain.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Salles de bain</h5>
+                                                    </div>
+                                                    <ul>
+                                                        <li> Nettoyer la douche </li>
+                                                        <li>Frottez et désinfectez les sanitaires</li>
+                                                        <li>Éliminez le calcaire des robinets et surfaces</li>
+                                                        <li>Nettoyer les miroirs Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-cuisine.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Cuisine</h5>
+                                                    </div>
+                                                    <ul>
+                                                        <li>Laver la vaisselle, essuyer les comptoirs de cuisine
+                                                        </li>
+                                                        <li>Nettoyer le four et la plaque de cuisson</li>
+                                                        <li>Organiser les placards</li>
+                                                        <li> Nettoyer les sols Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-reserv mybutton d-block mx-auto">
+                                        Réserver un passage
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-5">
+                            <div class="card mycard card-service">
+                                <div class="img-wrapper rounded-circle shadow mx-auto">
+                                    <img class="card-img-top" src="./images/services/menage_perso.svg" alt="">
+                                </div>
+
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Ménage pérsonnalisable</h4>
+
+                                    <div class="row row-cols-md-2 g-4">
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-chambre.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Chambres</h5>
+                                                    </div>
+
+                                                    <ul>
+                                                        <li>Faire et changer la literie</li>
+                                                        <li>Ranger les chambres </li>
+                                                        <li>Ranger les placards </li>
+                                                        <li>Nettoyer les commodes, et le lit Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-salon.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Salon et sèjour</h5>
+                                                    </div>
+
+                                                    <ul>
+                                                        <li>Ranger chaque chose à sa place </li>
+                                                        <li>Passer l’aspirateur</li>
+                                                        <li>Enlever la poussière</li>
+                                                        <li>Nettoyer les vitres, et les tableaux Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-salle-de-bain.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Salles de bain</h5>
+                                                    </div>
+                                                    <ul>
+                                                        <li> Nettoyer la douche </li>
+                                                        <li>Frottez et désinfectez les sanitaires</li>
+                                                        <li>Éliminez le calcaire des robinets et surfaces</li>
+                                                        <li>Nettoyer les miroirs Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-cuisine.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Cuisine</h5>
+                                                    </div>
+                                                    <ul>
+                                                        <li>Laver la vaisselle, essuyer les comptoirs de cuisine
+                                                        </li>
+                                                        <li>Nettoyer le four et la plaque de cuisson</li>
+                                                        <li>Organiser les placards</li>
+                                                        <li> Nettoyer les sols Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-reserv mybutton d-block mx-auto ">
+                                        Réserver un passage
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-5">
+                            <div class="card mycard card-service">
+                                <div class="img-wrapper rounded-circle shadow mx-auto">
+                                    <img class="card-img-top" src="./images/services/nettoyage_sec.svg" alt="">
+                                </div>
+
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Nettoyage à sec</h4>
+
+                                    <div class="row row-cols-md-2 g-4">
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-chambre.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Chambres</h5>
+                                                    </div>
+
+                                                    <ul>
+                                                        <li>Faire et changer la literie</li>
+                                                        <li>Ranger les chambres </li>
+                                                        <li>Ranger les placards </li>
+                                                        <li>Nettoyer les commodes, et le lit Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-salon.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Salon et sèjour</h5>
+                                                    </div>
+
+                                                    <ul>
+                                                        <li>Ranger chaque chose à sa place </li>
+                                                        <li>Passer l’aspirateur</li>
+                                                        <li>Enlever la poussière</li>
+                                                        <li>Nettoyer les vitres, et les tableaux Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-salle-de-bain.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Salles de bain</h5>
+                                                    </div>
+                                                    <ul>
+                                                        <li> Nettoyer la douche </li>
+                                                        <li>Frottez et désinfectez les sanitaires</li>
+                                                        <li>Éliminez le calcaire des robinets et surfaces</li>
+                                                        <li>Nettoyer les miroirs Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-cuisine.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Cuisine</h5>
+                                                    </div>
+                                                    <ul>
+                                                        <li>Laver la vaisselle, essuyer les comptoirs de cuisine
+                                                        </li>
+                                                        <li>Nettoyer le four et la plaque de cuisson</li>
+                                                        <li>Organiser les placards</li>
+                                                        <li> Nettoyer les sols Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-reserv mybutton d-block mx-auto ">
+                                        Réserver un passage
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-5">
+                            <div class="card mycard card-service">
+                                <div class="img-wrapper rounded-circle shadow mx-auto">
+                                    <img class="card-img-top" src="./images/services/cristallisation.svg" alt="">
+                                </div>
+
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Cristallisation</h4>
+
+                                    <div class="row row-cols-md-2 g-4">
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-chambre.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Chambres</h5>
+                                                    </div>
+
+                                                    <ul>
+                                                        <li>Faire et changer la literie</li>
+                                                        <li>Ranger les chambres </li>
+                                                        <li>Ranger les placards </li>
+                                                        <li>Nettoyer les commodes, et le lit Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-salon.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Salon et sèjour</h5>
+                                                    </div>
+
+                                                    <ul>
+                                                        <li>Ranger chaque chose à sa place </li>
+                                                        <li>Passer l’aspirateur</li>
+                                                        <li>Enlever la poussière</li>
+                                                        <li>Nettoyer les vitres, et les tableaux Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-salle-de-bain.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Salles de bain</h5>
+                                                    </div>
+                                                    <ul>
+                                                        <li> Nettoyer la douche </li>
+                                                        <li>Frottez et désinfectez les sanitaires</li>
+                                                        <li>Éliminez le calcaire des robinets et surfaces</li>
+                                                        <li>Nettoyer les miroirs Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-cuisine.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Cuisine</h5>
+                                                    </div>
+                                                    <ul>
+                                                        <li>Laver la vaisselle, essuyer les comptoirs de cuisine
+                                                        </li>
+                                                        <li>Nettoyer le four et la plaque de cuisson</li>
+                                                        <li>Organiser les placards</li>
+                                                        <li> Nettoyer les sols Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-reserv mybutton d-block mx-auto ">
+                                        Réserver un passage
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-5">
+                            <div class="card mycard card-service">
+                                <div class="img-wrapper rounded-circle shadow mx-auto">
+                                    <img class="card-img-top" src="./images/services/desinfection.svg" alt="">
+                                </div>
+
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Désinfection</h4>
+
+                                    <div class="row row-cols-md-2 g-4">
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-chambre.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Chambres</h5>
+                                                    </div>
+
+                                                    <ul>
+                                                        <li>Faire et changer la literie</li>
+                                                        <li>Ranger les chambres </li>
+                                                        <li>Ranger les placards </li>
+                                                        <li>Nettoyer les commodes, et le lit Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-salon.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Salon et sèjour</h5>
+                                                    </div>
+
+                                                    <ul>
+                                                        <li>Ranger chaque chose à sa place </li>
+                                                        <li>Passer l’aspirateur</li>
+                                                        <li>Enlever la poussière</li>
+                                                        <li>Nettoyer les vitres, et les tableaux Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-salle-de-bain.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Salles de bain</h5>
+                                                    </div>
+                                                    <ul>
+                                                        <li> Nettoyer la douche </li>
+                                                        <li>Frottez et désinfectez les sanitaires</li>
+                                                        <li>Éliminez le calcaire des robinets et surfaces</li>
+                                                        <li>Nettoyer les miroirs Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card list-taches">
+
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <img src="./images/svg/icon-cuisine.svg" alt="">
+                                                        <h5 class="mb-0 ms-2 ">Cuisine</h5>
+                                                    </div>
+                                                    <ul>
+                                                        <li>Laver la vaisselle, essuyer les comptoirs de cuisine
+                                                        </li>
+                                                        <li>Nettoyer le four et la plaque de cuisson</li>
+                                                        <li>Organiser les placards</li>
+                                                        <li> Nettoyer les sols Etc…</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-reserv mybutton d-block mx-auto ">
+                                        Réserver un passage
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="./js/loader.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/services.js"></script>
+</body>
+
+</html>

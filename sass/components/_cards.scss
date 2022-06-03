@@ -1,0 +1,85 @@
+@use '../abstracts' as * ;
+
+.mycard {
+    border: none;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 1.25rem!important;
+    box-shadow: 0px 6px 12px rgba(84, 147, 255, 0.3);
+    background-color: rgba(247, 250, 255, 0.5);
+} 
+
+.mycard-2 {
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+    color: $color-2;
+    padding: 0rem 0.75rem;
+    border-radius: 1.25rem!important;
+    box-shadow: 0px 6px 10px rgba(84, 147, 255, 0.3);
+    background-color: rgba(247, 250, 255);
+}
+
+.mycard-lg {
+    border: none;
+    padding: 0.75rem 0.5rem;
+    border-radius: 1.25rem;
+    box-shadow: 0px 6px 10px rgba(84, 147, 255, 0.3);
+    background-color: rgba(255, 255, 255);
+    .mycard-lg-header {
+        color: $color-1;
+        font-weight: 600;
+        font-style: normal;
+        text-align: center;
+        font-size: 1.25rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+    .mycard-lg-body {
+        padding: 1rem 0.75rem;
+    }
+}
+
+.mylabel-card {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1.25rem;
+    // box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+    box-shadow: 0px 2px 6px rgba(84, 147, 255, 0.3);
+    background-color: rgba(255, 255, 255);
+}
+
+.mylabel-sm-card {
+    color: $color-1;
+    padding: 0.2rem 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 1.25rem;
+    font-weight: bold;
+    font-style: normal;
+    background-color: rgb(247, 250, 255) ;
+}
+
+.card-link-1 {
+    height: 65px;
+    margin-bottom: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(255, 255, 255);
+    border-radius: 1.25rem !important;
+    box-shadow: 0px 10px 16px rgb(0 0 0 / 15%);
+    transition: box-shadow 0.2s ease-in;
+    &:hover {
+        box-shadow: none;
+    }
+}
+
+.card-link-2 {
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(247, 250, 255);
+    border-radius: 1rem!important;
+    &:hover {
+        outline: 2px $color-1 solid;
+    }
+}

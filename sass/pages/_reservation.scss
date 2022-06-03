@@ -1,0 +1,1044 @@
+@use '../abstracts' as *;
+
+.bg-section {
+    background-image: url("../images/svg/bg-etape2-circle.svg"), url("../images/svg/bg-etape1.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 46vw, top center;
+    background-size: 100% 120%, cover;
+}
+
+/* ---------------------------- */
+
+.img-assistant {
+    width: 100%;
+    max-height: 60vh;
+}
+
+.div-img-wrapper {
+    height: inherit;
+    svg {
+        max-width: 100%;
+        max-height: 35vh;
+        align-self: start;
+    }
+}
+
+.form-step-wrapper {
+    height: 750px;
+}
+
+.btn-wrapper {
+    width: 500px;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.bubble-text {
+    fill: $color-2;
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+/* ------------------ user form ------------------- */
+
+.user-form {
+    width: 100%;
+    max-width: 513px;
+    h4 {
+        color: $color-2;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .form-control,
+    .form-select {
+    border: none;
+    border-radius: 1.25rem !important;
+    box-shadow: 0 .5rem 1rem rgba(84, 147, 255, 0.4) !important;
+    padding: 1rem 1.75rem;
+    opacity: 0.6;
+    }
+    .form-select {
+        color: $color-1;
+        cursor: pointer;
+        option {
+            opacity: 1;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+    }
+}
+
+.form-step.user-form label {
+    color: $color-1;
+    padding: 1rem 1.75rem;
+}
+
+.div-login {
+    margin-top: 1.75rem;
+    line-height: 2.5;
+    color: $color-2;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(200, 222, 255, 0.6);
+    border-radius: 1.25rem !important;
+    box-shadow: 0px 10px 16px rgba(84, 147, 255, 0.3);
+    a {
+        color: $color-2;
+        font-weight: bold;
+        img {
+            max-width: 28px;
+        }
+    }
+}
+
+/* ---------------- type logement --------------- */
+
+.type-logement {
+    width: 100%;
+    max-width: 500px;
+    h4 {
+        color: $color-2;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 1.75rem;
+        /* margin-top: 2rem; */
+        margin-bottom: 3vh;
+    }
+    a {
+        width: 60%;
+        min-width: 200px;
+        margin-block: 1rem;
+        display: block;
+        color: $color-1;
+        font-weight: 600;
+        font-style: normal;
+        background-color: rgba(247, 250, 255);
+        span {
+            vertical-align: middle;
+        }
+        transition: width 300ms ease-out , text-align 300ms ease-out;
+    }
+    img {
+        max-height: 32px;
+        margin-right: 3rem;
+    }
+    h5 {
+        color: $color-2;
+        text-align: center;
+        font-weight: bold;
+        font-style: normal;
+        margin-bottom: 1rem;
+    }
+}
+
+.active-type {
+    width: 85%!important;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    img {
+        margin-right: 1rem;
+    }
+}
+
+.card-pieces {
+    background: transparent;
+    border: none;
+}
+
+.nbr-piece {
+    border-bottom: 2px solid $color-1;
+    label {
+        color: $color-2;
+        padding: 0.25rem;
+        font-weight: 600;
+        font-style: normal;
+        margin-bottom: 0 !important;
+    }
+}
+
+.nbr-agent {
+    color: $color-2;
+    font-weight: 600;
+    border-radius: 50rem!important;
+    padding: 0.75rem;
+    background-color: rgba(255, 255, 255 , 0.4);
+    box-shadow: none;
+    img {
+        max-height: 38px;
+        margin: 0rem;
+    }
+}
+
+/*---------------------custom-input-number---------------- */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.btn-svg {
+    padding: 0rem;
+    border: none;
+    line-height: 0;
+    background-color: transparent;
+}
+.custom-input-number {
+    display: flex;
+    align-items: center;
+    width: auto;
+    .cin-decrement:active,
+    .cin-increment:active {
+        .svg-circle {
+            fill: $color-1 ;
+        }
+        .svg-line {
+            stroke: $light-color;
+        }
+    }
+    .cin-input {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: $color-2;
+        border: 0;
+        max-width: 50px;
+        box-shadow: inset 0 0 0 rgba(64, 150, 255, 0.1);
+        -webkit-appearance: none;
+        -moz-appearance:textfield;;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: textfield;
+        background: transparent;
+        margin: 0.5rem 0;
+        pointer-events: none;
+        text-align: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+}
+
+
+
+
+/* -------------------------------------------- */
+
+
+.img-form {
+    max-width: 100%;
+    max-height: 50vh;
+    opacity: 0.45;
+}
+
+.img-logement {
+    opacity: 0.45;
+    transition: opacity 500ms ease-in, transform 0.5s ease;
+}
+
+#img-maison {
+    max-width: 25%;
+}
+
+#img-villa {
+    max-width: 45%;
+    transform: translateY(-30%);
+
+}
+
+#img-apart {
+    max-width: 30%;
+    transform: translateY(-50%);
+}
+
+/* ---------------------show & hide img logement------------------- */
+.show-apart {
+    
+    transform: translate(-100%, -15%) scale(1.5) !important;
+}
+
+.show-maison {
+   
+    transform: translate(100%, -60%) scale(2.5) !important;
+}
+
+.show-villa {
+ 
+    transform: translate(0%, -40%) scale(2.5) !important;
+}
+
+
+.hide-apart {
+    transform: translate(-90%, -70%) !important;
+    opacity: 0;
+}
+
+.hide-maison {
+    transform: translate(-90%, 0%) !important;
+    opacity: 0;
+}
+
+.hide-villa {
+    transform: translate(-90%, -20%) !important;
+    opacity: 0;
+}
+
+/* ------------- select taches --------------- */
+
+.select-taches ,
+.select-produits {
+    width: 100%;
+    max-width: 500px;
+}
+
+.div-tache-wrapper {
+    height: 500px;
+    padding: 1rem;
+    overflow-y: scroll;
+}
+
+.div-tache {
+    height: 84px;
+    cursor: pointer;
+    margin-bottom: 1.25rem;
+    color: $color-2;
+    font-weight: bold;
+    span {
+        line-height: 1;
+        margin-right: 0.8rem;
+        margin-left: 0.8rem;
+        flex-grow: 1!important;
+    }
+}
+
+
+.div-tache .form-check-input,
+.div-parfum .form-check-input {
+    border: 3px solid $color-3;
+    box-shadow: 0px 2px 6px #0000001a;
+}
+
+.div-tache .form-check-input[type=checkbox] ,
+.div-parfum .form-check-input[type=radio] {
+    background-image: none;
+    border-radius: 50%;
+}
+.div-tache .form-check-input:checked ,
+.div-parfum .form-check-input:checked {
+    background-color: $color-1;
+    border-color: $light-color;
+}
+
+.div-prix-tache {
+    padding-inline: 1rem;
+    margin-top: 3rem;
+    span {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: $color-2;
+    }
+}
+
+/* ---------------- passage form ------------ */
+
+.passage-form {
+    width: 80%;
+    max-width: 500px;
+    .select-time {
+        width: 100%;
+        max-width: 380px;
+        padding: 0.57rem 1.25rem;  
+        border-radius: 1.25rem;
+        background-color: $light-color;
+        box-shadow: 0px 2px 8px rgb(0 0 0 / 16%) !important;
+        .form-select {
+            color: $color-1;
+            background-color: $light-color;
+            font-family: 'ProximaNova', sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-style: normal;
+            text-align: center;
+            border: none;
+            opacity: 1;
+            background-image: url("../images/svg/arrow_blue_down.svg");
+            // background-size: 16px 5px;
+            background-position: right 1rem center !important;
+            cursor: pointer;
+            option {
+                font-size: 1.25rem;
+                font-weight: 600;
+                text-align: center;
+            }
+        }
+        img {
+            max-width: 40px;
+        }
+    }
+}
+
+.nettsec-form h4 ,
+.passage-form h4 ,
+.select-produits h4,
+.desinfec-form h4,
+.crista-form h4 {
+    color: $color-2;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.75rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* ---------------- select-produits ----------------- */
+
+.product-check {
+    background-color: #54A4FF;
+    border: 2px solid $light-color;
+    border-radius: 50px;
+    padding-right: 1rem;
+    .product-icon {
+        position: relative;
+        background-color: $light-color;
+        border-radius: 50px;
+        padding: 1rem;
+        margin-left: -4px;
+        img {
+            max-width: 35px;
+            display: block;
+            margin-inline: auto;
+        }
+    }
+    span {
+        color: $light-color;
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    .toggle.mystyle {
+        border-radius: 20px; 
+        .toggle-on { 
+            background-color: $color-2;
+            color: $light-color;   
+            font-weight: 600;      
+        }
+        .toggle-off {
+            background-color: $light-color;
+            color: $color-1;
+            font-weight: 600;
+        }
+        .toggle-handle { 
+            border-radius: 50%; 
+            background: rgba(84, 147, 255, 1) 0% 0% no-repeat padding-box;
+            box-shadow: 0px 0px 8px rgba(84, 147, 255, 0.5);
+            border: 5px solid rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+#stars {
+    position: absolute;
+    top: -8px;
+    left: 0;
+}
+
+#select-parfum {
+ opacity: 0.50;   
+ transition: opacity 500ms ease-in;
+}
+
+.div-parfum {
+    cursor:not-allowed ;
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+    color: $color-1;
+    font-weight: bold;
+    border-radius: 10px !important;
+    opacity: 0.75;
+    img {
+        width: 28px;
+        height: 28px;
+        margin-right: 1rem;
+        /* background-color: grey; */
+    }
+    span {
+        margin-right: 0.8rem;
+        margin-left: 0.8rem;
+        flex-grow: 1!important;
+    }
+}
+
+.active-div {
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* ------------- désinfection form ------------*/
+
+.desinfec-form ,
+.crista-form {
+    width: 100%;
+    max-width: 500px;
+    .mycard {
+        background-color: rgba(247, 250, 255, 0.6);
+    }
+    .mylabel-card {
+        padding: 1rem 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    .mylabel-sm-card {
+        width: 195px;
+    }
+    .plat-img {
+        display: block;
+        width: 100%;
+        max-width: 364px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .custom-input-number {
+        margin-left:auto;
+        padding: 0rem 0.5rem;
+        background-color: #C8DEFF;
+        border: 4px #7DB1FF solid ;
+        border-radius: 1rem;
+        .cin-input {
+            width: 80px;
+            max-width: none;
+            height: 49px;
+            margin: 0!important;
+            font-size: 40px;
+            font-weight: 600;
+            color: $color-2;
+        }
+    }
+}
+
+
+/* ---------------Cristalisation ---------------*/
+
+.crista-form {
+    .crista-collapse {
+        position: relative;
+        #collapseWidthExample {
+            position: absolute;
+            top: 0px;
+            left: 516px;
+            .mylabel-card {
+                margin: 0;
+                label {
+                    padding: 0rem 1rem;
+                }
+                .form-check-input {
+                    border: 2px solid $color-1;
+                    &:checked {
+                        background-color: $color-1;
+                        border-color: $light-color;
+                        box-shadow: 0 0 0 2px rgb(13 110 253 / 10%);
+                    }
+                    &:focus {
+                        box-shadow: 0 0 0 2px rgb(13 110 253 / 10%);
+                    }
+                }
+            }
+        }
+    }   
+}
+
+.card-link-2 {
+    span {
+        color: $color-1;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    .icon-arrow {
+        max-width: 10px;
+        max-height: 18px;
+    }
+}
+
+/* ------------ Nettoyage à sec --------------*/
+
+.bg-section-nettsec {
+    background-image:  url("../images/svg/bg-etape1.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size:  cover;
+    .custom-width {
+        margin: 0 auto;
+    }
+}
+
+.nettsec-form {
+    .mycard-lg {
+        min-width:265px;
+        height: 45vh;
+        max-height: 500px;
+        margin-right: 1rem;
+        .mycard-lg-header {
+            border-bottom: 2px solid $color-5;
+            span {
+                font-size: 1rem;
+                white-space: nowrap;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            img {
+                max-width: 34px;
+            }
+        }
+        .mycard-lg-body {
+            height:85%;
+            overflow-y: auto;
+            .mycard-2 {
+                // margin-top: 1rem;
+                margin-bottom: 1rem;
+                .custom-input-number {
+                    justify-content: center;
+                    flex-grow: 1;
+                    margin: 0rem;
+                    padding: 0rem 0.5rem;
+                    .cin-input {
+                        max-width: 45px;
+                        margin: 0!important;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        color: $color-2;
+                        // line-height: 0;
+                    }
+                }
+                .cin-close:active {
+                    .svg-circle {
+                        fill: #ef5479;
+                    }
+                    .svg-line {
+                      stroke: $light-color;
+                    }
+                }
+
+            }
+        }
+    }
+    .form-select {
+        border: none;
+        border-radius: 8px !important;
+        padding: 0.4rem 0.75rem;
+        margin: 0.5rem 0.2rem;
+        opacity: 1;
+        background-image: url("../images/svg/arrow_down.svg");
+        background-position: right 0.2rem center !important;
+        background-size: 16px 5px;
+        cursor: pointer;
+        color: $color-1;
+        background-color: $light-color;
+        font-size: 0.8rem;
+    }
+    .input-group .form-control ,
+    .nett_tapis .form-control {
+        color: $color-1;
+        font-family: "ProximaNova", sans-serif;
+        font-style: normal;
+        border: none;
+        border-radius: 8px !important;
+        background-color: $light-color;
+        font-size: 0.8rem;
+        margin: 0.5rem;
+        padding: 0.375rem 0.5rem;
+        &::placeholder {
+            color: $color-1;
+        }
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .nett_tapis .form-select {
+        background-color: $color-3;
+        color: $light-color;
+    }
+    .add-more {
+        border : 1px dashed $color-1;
+        border-radius: 1.25rem !important;
+        a {
+            text-decoration: none;
+            color: $color-2;
+            font-size: 0.8rem;
+        }
+        img {
+            width: 35px;
+        }
+    }
+}
+
+
+/* ------------- form steps & img steps ------- */
+.hide {
+    display: none !important;
+}
+
+.form-step,
+.img-step {
+    display: none;
+    transform-origin: top;
+    animation: animate 0.5s ease-in;
+}
+
+.img-mobile-step {
+    display: none;
+    transform-origin: top;
+    animation: animate-img-mobile 0.5s ease;
+} 
+
+.form-step-active {
+    display: block;
+    z-index: 10;
+}
+
+.img-step-active {
+    display: flex;
+}
+
+.img-mobile-active {
+    display: block;
+    max-width: 100%;
+}
+
+@keyframes animate {
+    from {
+        /* transform: scale(1, 0); */
+        transform: translate(-50%);
+        opacity: 0;
+    }
+
+    to {
+        /* transform: scale(1, 1); */
+        transform: translate(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes animate-img-mobile {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-height:934px) {
+
+    .form-step-wrapper {
+        height: 520px;
+        .form-step {
+            padding: 0.5rem;
+            overflow-y: auto;
+        }
+        // because the collapse is hidden when overlay is scroll 
+        .crista-form {
+            overflow-y: unset;
+        }
+    }
+
+    .crista-form h4,
+    .desinfec-form h4,
+    .passage-form h4 ,
+    .type-logement h4 ,
+    .select-produits h4 {
+        font-size: 1.2rem;
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .crista-form .card-link-2 span ,
+    .crista-form .mycard span ,
+    .crista-form .mylabel-card .span-lg ,
+    .desinfec-form .card-link-2 span ,
+    .desinfec-form .mycard span ,
+    .desinfec-form .mylabel-card .span-lg ,
+    .passage-form .form-select, 
+    .passage-form .form-select option ,
+    .product-check span ,
+    .btn-next , 
+    .btn-prev ,
+    .type-logement a ,
+    .div-tache ,
+    .div-parfum {
+        font-size: 1rem;
+    }
+
+    .select-produits {
+        width: 70%;
+    }
+    .product-check .product-icon img {
+        max-width: 20px;
+    }
+    .crista-form,
+    .desinfec-form {
+        .plat-img {
+            max-width: 230px;
+        }  
+        .mylabel-card {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+    /* -------- user form ----- */
+    .user-form .form-control,
+    .user-form .form-select,
+    .form-step.user-form label {
+        padding: 8px 28px;
+    }
+    .form-floating>.form-control, 
+    .form-floating>.form-select {
+        height: 42px;
+        line-height: 1.25;
+    }    
+    .form-floating>.form-control:focus, 
+    .form-floating>.form-control:not(:placeholder-shown){
+        padding-bottom: 0.75rem;
+    }    
+    .form-floating>.form-control:focus~label, 
+    .form-floating>.form-control:not(:placeholder-shown)~label {
+        opacity: .75;
+        transform: scale(.85) translateY(-0.4rem) translateX(0.15rem);
+    }
+    /* ---------------------- */
+    .div-login {
+        line-height: 1.5;
+    }
+    .div-tache-wrapper {
+        height: 300px;
+    }
+}
+.progressbar {
+    display: none;
+}
+
+@media (max-width:991.98px) {
+    .bg-section-nettsec,
+    .bg-section {
+        background-image: url('../images/bg-eatpe2.png');
+        background-repeat: no-repeat;
+        background-position:top center;
+        background-size: 106% 100%;
+        overflow-y: auto;
+    }
+
+    .form-step-wrapper {
+        height: auto!important;
+        overflow-y: auto;
+        .crista-form {
+            overflow-y: auto;
+        }
+    }
+
+    .px-4rem {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .btn-wrapper {
+        width: 100%;
+    }
+    /*------------- Progressbar -------------*/
+    .progressbar {
+        position: relative;
+        display: flex;
+        width: 70%;
+        min-width: 200px;
+        justify-content: space-between;
+        counter-reset: step;
+        margin-bottom: 1rem;
+        margin-right: auto!important;
+        margin-left: auto!important;
+    }
+    
+    .progressbar::before,
+    .progress {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 8px;
+        width: 100%;
+        background-color: $light-color;
+        z-index: 0;
+    }
+    
+    .progress {
+        background-color: $color-1;
+        width: 0%;
+        transition: 0.3s;
+    }
+    
+    .progress-step {
+        width: 2.1875rem;
+        height: 2.1875rem;
+        background-color: $light-color;
+        color: $color-1;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    
+    .progress-step::before {
+        counter-increment: step;
+        content: counter(step);
+    }
+    
+    .progress-step::after {
+        /* content: attr(data-title); */
+        position: absolute;
+        top: calc(100% + 0.5rem);
+        font-size: 0.85rem;
+        color: $color-1;
+    }
+    
+    .progress-step-active {
+        background-color: $color-1;
+        color: #f3f3f3;
+        animation: zoom-in-zoom-out 0.5s ease ;
+    }
+
+    @keyframes zoom-in-zoom-out {
+        0% {
+          transform: scale(1, 1);
+        }
+        50% {
+          transform: scale(1.3, 1.3);
+        }
+        100% {
+          transform: scale(1, 1);
+        }
+    }
+    /* ------------ form steps ------------ */
+    .user-form .form-control,
+    .user-form .form-select {
+        opacity: 1;
+    }  
+
+    .type-logement {
+        a {
+            margin-right: auto;
+            margin-left: auto;
+        }      
+        h4 {
+            text-align: center;
+            margin-bottom: 2.75rem;
+        }  
+        img {
+            margin-right: 1rem;
+        }
+    }
+    .passage-form h4 {
+        margin: 1.75rem 0rem;
+    }
+    .div-tache-wrapper {
+        height: 400px;
+    }
+
+    // .col-prog-wrapper {
+    //     position: relative;
+    //     height: 155px;
+    // }
+
+    .div-login {
+        margin-top: 0rem!important;
+        line-height: normal!important;
+        box-shadow: none!important;
+        padding: 0.5rem!important;
+    }
+    
+    // .div-login a ,
+    // .div-login .fas {
+    //     text-decoration: none;
+    //     color: $color-1;
+    // }
+
+    .div-tache {
+        line-height: 1;
+    }
+
+    .select-produits {
+        width: 100%!important;
+    }
+
+    /* ---------- img mobile step---------- */
+
+    // .img-mobile-wrapper {
+    //     position: absolute;
+    //     top: -61px;
+    //     left: -12px;
+    // }
+
+    /* ---------cristalisation ------------*/
+
+    #collapseWidthExample {
+        position: unset !important;
+        top: unset !important;
+        left: unset !important;
+    }
+    .crista-collapse #collapseWidthExample .mylabel-card {
+        margin-right: auto!important;
+        margin-left: auto!important;
+        margin-top: 1rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    /* ----------- nettsec mobile ---------------*/
+    .bg-section-nettsec {
+        .custom-width {
+            margin-bottom: 1rem;
+        }
+    }
+    .nettsec-form {
+        padding: 1rem;
+        h4 {
+            margin : 0.75rem 0rem
+        }
+        p {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: $color-2;
+            line-height: 1.25;
+        }
+        .mycard-lg {
+            width: 100%;
+            min-width:auto;
+            height: auto;
+            max-height: unset;
+            margin-right: 0rem;
+            margin-bottom: 1rem;
+            .mycard-lg-header {
+                border: none;
+                a img {
+                    -webkit-transform: rotate(180deg);
+                    -moz-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                    transition: .3s transform ease-in-out;
+                }
+                .collapsed img {
+                    -webkit-transform: rotate(0);
+                    -moz-transform: rotate(0);
+                    transform: rotate(0);
+                } 
+            }
+            .mycard-lg-body {
+                border-top: 2px solid $color-5;
+                height: auto;
+                overflow-y: hidden;
+            }
+        }
+    }
+    
+}

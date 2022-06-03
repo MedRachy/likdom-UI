@@ -1,0 +1,137 @@
+@use '../abstracts/variables' as *;
+
+.navbar {
+    height: 9vh;
+    padding-top: 1.3rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: $light-color;
+}
+.navbar-desktop .btn {
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(0.7rem , 1vw , 1rem);
+}
+.img-logo {
+    width: 7vw;
+    min-width: 130px;
+}
+/* ----- links btn ------  */
+.link-reserv {
+    background-color: $color-2;
+    color: $light-color;
+    box-shadow: 0px 4px 10px rgba(61, 91, 142, 0.1);
+    padding-right: 3rem!important;
+    padding-left: 3rem!important;
+    border-radius: 50rem!important;
+    &:hover{
+        color: $light-color;
+        box-shadow: none;
+    }
+}
+
+.link-prof {
+    white-space: nowrap;
+    background: $color-7;
+    color: $color-2;
+    box-shadow: 0px 4px 10px rgba(61, 91, 142, 0.1);
+    padding-right: 2.5rem!important;
+    padding-left: 2.5rem!important;
+    border-radius: 50rem!important;
+    &:hover{
+        box-shadow: none;
+        color: $color-9;
+    }
+    span {
+        vertical-align: middle;
+        padding-left: 0.5rem;
+    }
+}
+// floating link
+// .link-prof {
+//     padding-top: 2.8rem;
+//     margin-top: -37px;
+//     border-radius: 0px 0px 11px 11px;
+//     svg {
+//         display: block;
+//         margin-right: auto;
+//         margin-left: auto;
+//     }
+// }
+
+.link-signup {
+    white-space: nowrap;
+    color: $color-1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    padding-right: 1.5rem!important;
+    padding-left: 1.5rem!important;
+    margin-right: 0.5rem!important;
+    border-radius: 50rem!important;
+    &:hover {
+        color: $color-2;
+        box-shadow:none;
+    }
+}
+
+.link-signin {
+    white-space: nowrap;
+    border-width: 2px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    padding-right: 1.5rem!important;
+    padding-left: 1.5rem!important;
+    border-radius: 50rem!important;
+    &:hover {
+        color: $color-2;
+        box-shadow: none;
+    }
+}
+
+.to-custum .navbar .link-signin {
+    background-color: $color-3!important;
+}
+/* ---------------- */
+.offcanvas {
+    background-color: $color-1;
+}
+
+.navbar .input-group {
+    /* width: 14vw; */
+    max-width: 300px;
+    /* min-width: 14.5rem; */
+}
+
+.form-search {
+    padding-left : 1.5rem;
+    border-radius: 20px 0px 0px 20px;
+    font-size: clamp(0.7rem , 1vw , 1rem);
+    border: none;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.08);
+}
+
+#button-search {
+    padding: 0rem 1rem 0rem 0.7rem;
+    background-color: #C8DEFF;
+    color: $color-3;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.08);
+    // box-shadow: 5px 4px 12px 0px rgba(0,0,0,.15);
+}
+
+.form-search:focus {
+    box-shadow: none;
+    border: none
+}
+.form-search::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $color-3;
+    opacity: 1; /* Firefox */
+}
+
+.form-search:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $color-3;
+}
+
+.form-search::-ms-input-placeholder { /* Microsoft Edge */
+    color: $color-3;
+}
+

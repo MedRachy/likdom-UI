@@ -3,5 +3,5 @@ $(".btn-confirmer").on("click", function () {
 });
 
 $(".btn-modifier").on("click", function () {
-  window.location.href = "./etape2.html";
+  window.location.href = "./reserver_ms.html";
 });
