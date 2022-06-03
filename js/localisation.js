@@ -56,7 +56,9 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 }
 
 $("#btn-next").on("click", function () {
-  savedata();
+  if (marker.position) {
+    savedata();
+  }
 });
 
 function show_clear_map() {
@@ -68,6 +70,11 @@ function savedata() {
   var lng = marker.position.lng();
   console.log("lat :" + lat);
   console.log("lng :" + lng);
+  // var position = {};
+  // position.lat = marker.position.lat();
+  // position.lng = marker.position.lng();
+  // var position_jsonString = JSON.stringify(position);
+  // console.log(position_jsonString);
 }
 
 window.initMap = initMap;
