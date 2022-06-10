@@ -1,0 +1,113 @@
+@use '../abstracts' as *;
+
+.header-rejoindre {
+    background-image: url("../images/bg-header-rejoindre@2x.png") ;
+    background-position: top ; 
+    background-repeat: no-repeat;
+    background-size: 100% 98%;
+    .img-header-1 {
+        max-width: 100%;
+    }
+    .slogan {
+        text-align: justify;
+    }
+    .btn-join-us {
+        display: flex;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 1rem 1.75rem;
+        color: $color-2;
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-align: center;
+        background-color: $light-color;
+        border-radius: 3rem;
+        box-shadow: 0px 8px 16px #3d5b8e1a;
+        img {
+            margin-right: 1rem;
+            max-width: 40px;
+        }
+        &:hover {
+            outline: 2px solid $color-2;
+        }
+    }
+}
+
+.section-rejoindre-1,
+.section-rejoindre-2 {
+    .h-sec {
+        color: $color-2;
+        margin-bottom: 3rem;
+    }
+}
+
+.section-rejoindre-1 {
+    background-image: url("../images/svg/bg-section-rejoindre-1.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    ul {
+        li {
+            color: $color-2;
+            font-weight: 600;
+            font-size: 1.2rem;
+            &::marker {
+                color: $color-1;
+                line-height: 0;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.section-rejoindre-2 {
+    background-image: url("../images/svg/bg-section-rejoindre-2.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    .span-lg {
+        color: #7395CF;
+    }
+    .form-rejoindre {
+        margin-top: 3rem;
+        max-width: 660px;
+        .form-control ,
+        .form-select {
+            color: $color-1;
+            font-weight: 600;
+            font-size: 1.25rem;
+            padding: 1rem 1.75rem;
+            border-radius: 1.25rem !important;
+            box-shadow: 0px 4px 8px rgba(61, 91, 142, 0.1) !important;
+            border: none;
+            box-shadow: none;
+            &:focus,
+            &:-webkit-autofill {
+                background-color: $light-color !important;
+                color: $color-3 !important;
+            }
+            &::placeholder {
+                color: $color-3;
+            }
+        }
+        .form-select {
+            background-image: url("../images/svg/arrow-down-blue.svg");
+            background-position: right 1.75rem center !important;
+            background-size: 25px 14px;
+            cursor: pointer;
+        }
+        .btn-submit {
+            padding: 1rem 1.75rem;
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+.bg-footer.custom-footer {
+    background-size: 100% 100%;
+}

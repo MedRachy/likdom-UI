@@ -116,7 +116,7 @@
                     <!-- form steps -->
                     <form class="form-step-wrapper d-flex flex-column justify-content-center flex-grow-1" action="">
 
-                        <div class="form-step type-logement mx-auto form-step-active">
+                        <div class="form-step type-logement mx-auto">
                             <h4> Votre type de logement ?</h4>
 
                             <a id="link-apart" class="mylabel-card text-decoration-none" data-bs-toggle="collapse"
@@ -406,54 +406,74 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="form-step select-produits mx-auto">
+                        <div class="form-step select-produits mx-auto form-step-active">
                             <h4>Services optionnels</h4>
                             <div class="d-flex justify-content-between align-items-center product-check">
                                 <div class="product-icon">
-                                    <img src="./images/svg/icon-1.svg" class="" alt="">
+                                    <img src="/storage/svg/icon-1.svg" class="" alt="">
                                     <lottie-player id="stars"
                                         src="https://assets10.lottiefiles.com/private_files/lf30_AwG077.json"
                                         background="transparent" speed="0.4" style="width: 67px; height: 67px;" loop
                                         autoplay></lottie-player>
                                 </div>
-                                <span>Produits et outils + 130 dh</span>
+                                <span>Produits et équipements</span>
 
-                                <input id="input-check-product" type="checkbox">
+                                <input id="input-check-product" name="produits" type="checkbox">
 
                             </div>
-                            <h4>Parfum</h4>
-
-                            <div class="div-parfum mylabel-card d-flex align-items-center justify-content-between">
-                                <img src="./images/parfum/parfum-orange.png" alt="">
-                                <span>Oud</span>
-                                <div>
-                                    <input class="form-check-input" type="radio" name="selectedparfum"
-                                        id="selectedparfum" value="" aria-label="..." disabled>
+                            <div id="div-surface-equip">
+                                <h4>Matériaux / surfaces à nettoyer</h4>
+                                <div class="d-flex justify-content-evenly">
+                                    <div class="mylabel-card">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="type_surface[]"
+                                                value="marbre" id="Marbre">
+                                            <label class="form-check-label" for="Marbre">
+                                                Marbre
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="type_surface[]"
+                                                value="cuir" id="Cuir">
+                                            <label class="form-check-label" for="Cuir">
+                                                Cuir
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="type_surface[]"
+                                                value="carrelage" id="Carrelage">
+                                            <label class="form-check-label" for="Carrelage">
+                                                Carrelage
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="type_surface[]"
+                                                value="bois" id="Bois">
+                                            <label class="form-check-label" for="Bois">
+                                                Bois
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="type_surface[]"
+                                                value="parquet" id="parquet">
+                                            <label class="form-check-label" for="parquet">
+                                                Parquet
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="mylabel-card" style="height: fit-content">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="equipements[]"
+                                                value="aspirateur" id="aspirateur">
+                                            <label class="form-check-label" for="aspirateur">
+                                                Aspirateur
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
-
-                            </div>
-                            <div class="div-parfum mylabel-card d-flex align-items-center justify-content-between">
-                                <img src="./images/parfum/parfum-citron.png" alt="">
-                                <span>Citron</span>
-                                <div>
-                                    <input class="form-check-input" type="radio" name="selectedparfum"
-                                        id="selectedparfum" value="" aria-label="..." disabled>
-                                </div>
-                            </div>
-                            <div class="div-parfum mylabel-card d-flex align-items-center justify-content-between">
-                                <img src="./images/parfum/parfum-lavendre.png" alt="">
-                                <span>Lavendre</span>
-                                <div>
-                                    <input class="form-check-input" type="radio" name="selectedparfum"
-                                        id="selectedparfum" value="" aria-label="..." disabled>
-                                </div>
-                            </div>
-                            <div class="div-parfum mylabel-card d-flex align-items-center justify-content-between">
-                                <img src="./images/parfum/parfum-none.png" alt="">
-                                <span>Sans parfum</span>
-                                <div>
-                                    <input class="form-check-input" type="radio" name="selectedparfum"
-                                        id="selectedparfum" value="" aria-label="..." disabled>
+                                <div class="mycard custom-width d-flex shadow-none">
+                                    <span>Prix Total:</span>
+                                    <span>0 DH</span>
                                 </div>
                             </div>
                         </div>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- Fonts -->
+    <script src="https://kit.fontawesome.com/e807f8aa79.js" crossorigin="anonymous"></script>
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+
+    <title>LIKDOM</title>
+</head>
+
+<body>
+
+    <div class="loader">
+        <img src="./images/spinner.svg" alt="">
+    </div>
+
+    <header class="header-rejoindre">
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container justify-content-start justify-content-md-between">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand p-0 d-none d-md-inline-block" href="./index.html"><img src="./images/Logo@2x.png"
+                        class="img-logo" alt="logo" /></a>
+                <!-- <form class="d-md-none flex-grow-1" method="GET" action="{{ route('reserv.code') }}">
+                    <div class="input-group mx-auto">
+                        <button class="btn" type="button" id="button-search">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <input type="search" class="form-control form-search" placeholder="Entrer votre code"
+                            aria-describedby="button-search" />
+                    </div>
+                </form> -->
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LIKDOM</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <!-- mobile menu -->
+                        <ul class="navbar-nav d-lg-none justify-content-evenly flex-grow-1  pe-3">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./reserver.html" class="nav-link">Réserver</a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link link-danger">Professionnel</a>
+                            </li>
+                        </ul>
+                        <!-- descktop menu -->
+                        <div
+                            class="navbar-desktop d-none d-lg-flex justify-content-evenly align-items-center flex-grow-1">
+                            <a class="btn link-reserv" href="./services.html">Réserver</a>
+                            <form class="d-flex m-0" method="GET" action="{{ route('reserv.code') }}">
+                                <div class="input-group">
+                                    <input type="search" class="form-control form-search"
+                                        placeholder="Entrer votre code" aria-describedby="button-search" />
+                                    <button class="btn" type="button" id="button-search">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div>
+                                <a class="btn btn-light link-signup" href="./compte.html">Créer
+                                    un
+                                    compte</a>
+                                <a class="btn btn-outline-light link-signin" href="./login.html">Se
+                                    connecter</a>
+                            </div>
+                            <a class="btn link-prof" href="./professionnel.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="26" viewBox="0 0 14 26">
+                                    <path id="icons8_manager"
+                                        d="M20,11.667a4.4,4.4,0,0,1-4.455-4.333,4.456,4.456,0,0,1,8.909,0A4.4,4.4,0,0,1,20,11.667ZM24.623,12.9H21.907a.6.6,0,0,1-.064.277l-.955,1.857a.615.615,0,0,1-.14.173l1.148,5.3a.608.608,0,0,1-.125.514L20.5,22.578a.649.649,0,0,1-.995,0L18.23,21.03a.6.6,0,0,1-.125-.514l1.148-5.3a.615.615,0,0,1-.14-.173l-.955-1.857a.6.6,0,0,1-.064-.277H15.377A2.348,2.348,0,0,0,13,15.217V22.19a7,7,0,0,0,14,0V15.217A2.348,2.348,0,0,0,24.623,12.9Z"
+                                        transform="translate(-13 -3)" fill="#3d5b8e" />
+                                </svg>
+                                <span>Likdom Pro</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row height-91 ">
+                <div class="col-lg-5 mt-6r">
+                    <h1 class="big-title text-white mb-5">Vous pouvez rejoindre notre équipe Likdom</h1>
+                    <p class="slogan mb-5">Rejoignez Likdom, l'entreprise qui vous met en relation avec une clientèle de
+                        qualité, raffinée. Avec Likdom vous serez libre de faire votre travail quand vous souhaitez et
+                        chez qui vous souhaitez.
+                    </p>
+                    <a href="#" class="btn-join-us">
+                        <img src="./images/svg/icon-employees.svg" alt="">
+                        Devenir agent Likdom
+                    </a>
+                </div>
+                <div class="col-lg-7 my-auto">
+                    <img src="./images/svg/employees.svg" class="img-header-1" alt="equipe employees likdom">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section-rejoindre-1">
+        <div class="container">
+            <div class="row row-content">
+                <div class="col-lg-7 offset-lg-5 my-auto">
+                    <h1 class="h-sec">Pourquoi rejoindre l'équipe Likdom ?</h1>
+                    <span class="span-lg">
+                        Découvrez tous les avantages de notre plateforme pour votre activité
+                    </span>
+                    <p class="p-whyus my-4">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet.
+                    </p>
+                    <ul>
+                        <li>Avantages de rejoindre likdom</li>
+                        <li>Avantages de rejoindre likdom</li>
+                        <li>Avantages de rejoindre likdom</li>
+                        <li>Avantages de rejoindre likdom</li>
+                        <li>Avantages de rejoindre likdom</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-rejoindre-2">
+        <div class="container">
+            <div class="row row-content">
+                <div class="col-lg-7 my-auto">
+                    <h1 class="h-sec">Formulaire d'inscription</h1>
+                    <span class="span-lg">Text ou petite paragraphe explicatif de l'inscription ou la méthode</span>
+                    <form method="POST" action="" class="form-rejoindre">
+
+                        <div class=" mb-4">
+                            <input class="form-control " name="name" value="" required autocomplete="name" type="text"
+                                placeholder="Nom et prénom" aria-label="name">
+                        </div>
+                        <div class=" mb-4">
+                            <input class="form-control " name="date_naissance" value="" required type="date"
+                                placeholder="Date de naissance" aria-label="date naissance">
+                        </div>
+                        <div class=" mb-4">
+                            <input class="form-control " name="tel" value="" required autocomplete="tel" type="text"
+                                placeholder="Téléphone" aria-label="tel">
+                        </div>
+                        <div class="mb-4">
+                            <select class="form-select" name="ville" placeholder="Ville" required>
+                                <option value="">Mohammedia</option>
+                                <option value="">Casablanca</option>
+                                <option value="">Rabat</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <input class="form-control" name="adresse" value="" required autocomplete="adresse"
+                                type="text" placeholder="Adresse" aria-label="adresse">
+                        </div>
+                        <div class="mb-4">
+                            <select class="form-select" name="specialite" placeholder="Spécialité" required>
+                                <option value="">Ménage</option>
+                                <option value="">Jardinage</option>
+                                <option value="">Cuisine</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn-submit mb-4 ">Envoyer votre demande d'inscription</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-footer custom-footer">
+        <div class="container">
+            <div class="row row-footer vh-50 align-items-center">
+                <div class="col-md-4 col-6">
+                    <h3>Entreprise</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">A propos de nous</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Travailler chez likdom</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Confidentialité & CGU</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-6">
+                    <h3>Services</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Ménage à domicile</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Ménage B2B</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Devenir partenaire ménagere</a></li>
+                        <li><a href="" style="opacity: 0;">.</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-12  d-md-block d-flex flex-column  align-items-center text-center ">
+                    <h3>Contact</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Rachidia 1 NR 225 alia ,
+                                Mohammedia</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">06 44 32 00 22</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">06 32 45 21 98</a></li>
+                        <li><a href="" style="opacity: 0;">.</a></li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <div
+                        class="footer-bottom d-flex justify-content-md-between justify-content-center py-4 align-items-center">
+                        <p class="m-0 d-none d-md-block">&copy; 2021 Likdom, Inc. Tous droits réservés.</p>
+                        <ul class="list-unstyled d-flex m-0">
+                            <li class="ms-3">
+                                <a class="link-light" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                                        <path id="icons8-facebook-entouré"
+                                            d="M27,2a25.009,25.009,0,0,0-.947,50V34.628H20.195V27.81h5.858V22.792c0-5.816,3.552-8.986,8.737-8.986a50,50,0,0,1,5.23.263V20.15H36.45c-2.825,0-3.375,1.336-3.375,3.308V27.8h6.75l-.878,6.819H33.035V51.282A25.012,25.012,0,0,0,27,2Z"
+                                            transform="translate(-2 -2)" fill="#fff" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="ms-3">
+                                <a class="link-light" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                                        <path id="icons8-instagram-circle"
+                                            d="M27,2A25,25,0,1,0,52,27,25.029,25.029,0,0,0,27,2ZM20.588,9.692H33.408a10.911,10.911,0,0,1,10.9,10.9V33.408a10.911,10.911,0,0,1-10.9,10.9H20.592a10.911,10.911,0,0,1-10.9-10.9V20.592A10.911,10.911,0,0,1,20.588,9.692Zm0,3.846a7.061,7.061,0,0,0-7.05,7.054V33.412a7.061,7.061,0,0,0,7.054,7.05H33.412a7.061,7.061,0,0,0,7.05-7.054V20.588a7.061,7.061,0,0,0-7.054-7.05Zm15.388,3.2a1.283,1.283,0,1,1-1.285,1.281A1.28,1.28,0,0,1,35.977,16.742ZM27,17.385A9.615,9.615,0,1,1,17.385,27,9.626,9.626,0,0,1,27,17.385Zm0,3.846A5.769,5.769,0,1,0,32.769,27,5.769,5.769,0,0,0,27,21.231Z"
+                                            transform="translate(-2 -2)" fill="#fff" />
+                                    </svg>
+
+                                </a>
+                            </li>
+                            <li class="ms-3">
+                                <a class="link-light" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                                        <path id="icons8-whatsapp"
+                                            d="M28,3A24.959,24.959,0,0,0,6.564,40.813L3.224,53l12.447-3.267A24.994,24.994,0,1,0,28,3ZM19.443,16.338c.406,0,.824,0,1.184.016.446.01.931.043,1.4,1.07.552,1.221,1.754,4.283,1.908,4.594A1.117,1.117,0,0,1,23.98,23.1a4.54,4.54,0,0,1-.61,1.038c-.31.358-.65.8-.932,1.074-.31.31-.631.651-.273,1.27a18.523,18.523,0,0,0,3.442,4.285,16.81,16.81,0,0,0,4.98,3.072c.621.31.98.262,1.339-.155s1.549-1.8,1.965-2.421.821-.513,1.384-.309,3.615,1.7,4.236,2.014,1.028.464,1.184.716a5.113,5.113,0,0,1-.354,2.946c-.515,1.444-3.041,2.84-4.175,2.938s-2.211.514-7.434-1.542c-6.3-2.481-10.273-8.934-10.584-9.351s-2.523-3.355-2.523-6.4a6.972,6.972,0,0,1,2.161-5.168A2.276,2.276,0,0,1,19.443,16.338Z"
+                                            transform="translate(-3 -3)" fill="#fff" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="ms-3">
+                                <a class="link-light" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                                        <path id="icons8-linkedin-entouré"
+                                            d="M28,3A25,25,0,1,0,53,28,25,25,0,0,0,28,3ZM18.617,14.256a2.716,2.716,0,0,1,2.923,2.727c0,1.558-1.169,2.727-3.117,2.727A2.714,2.714,0,0,1,15.5,16.983C15.5,15.425,16.669,14.256,18.617,14.256Zm3.133,24.16H15.5V21.75h6.25Zm20.833,0H36.7V29.308c0-2.519-1.569-3.1-2.156-3.1s-2.55.388-2.55,3.1v9.108H25.917V21.75H32v2.325c.783-1.356,2.352-2.325,5.294-2.325s5.294,2.325,5.294,7.558Z"
+                                            transform="translate(-3 -3)" fill="#fff" />
+                                    </svg>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/loader.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
