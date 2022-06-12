@@ -55,3 +55,38 @@
 .btn-submit:hover {
     box-shadow: none !important;
 }
+
+.btn-devis,
+.btn-brochure {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;  
+    white-space: nowrap;
+    width: 45%;
+    border-radius: 3rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    box-shadow: 0px 6px 10px #00000014;
+    transition: box-shadow .15s ease-in-out ;
+}
+
+.btn-devis {
+    color: $color-2;
+    background-color: #FFCF54;
+    &:hover {
+        color: $color-2;
+        box-shadow: none!important;
+        outline: 2px solid $color-2;
+    }
+}
+
+.btn-brochure {
+    color: $light-color;
+    background-color: $color-2;
+    &:hover {
+        color: $light-color;
+        box-shadow: none!important;
+        outline: 2px solid $light-color;
+    }
+}

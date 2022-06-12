@@ -2,19 +2,19 @@ $(document).ready(function () {
   const link_pill = document.querySelectorAll(".link-pill");
 
   // ---------- scroll to top
-  var scrollTop = $(".scrollTop");
-  $(window).scroll(function () {
-    var topPos = $(this).scrollTop();
-    // if user scrolls down - show scroll to top button
-    if (topPos > 100) {
-      $(scrollTop).css("opacity", "1");
-    } else {
-      $(scrollTop).css("opacity", "0");
-    }
-  });
-  $(scrollTop).click(function () {
-    $(window).scrollTop(0);
-  });
+  // var scrollTop = $(".scrollTop");
+  // $(window).scroll(function () {
+  //   var topPos = $(this).scrollTop();
+  //   // if user scrolls down - show scroll to top button
+  //   if (topPos > 100) {
+  //     $(scrollTop).css("opacity", "1");
+  //   } else {
+  //     $(scrollTop).css("opacity", "0");
+  //   }
+  // });
+  // $(scrollTop).click(function () {
+  //   $(window).scrollTop(0);
+  // });
 
   // -------------- swiper
   const swiperReview = new Swiper(".swiper", {

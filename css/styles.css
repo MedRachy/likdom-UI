@@ -149,6 +149,29 @@ body {
   margin-top: 6rem !important;
 }
 
+.vh-50 {
+  height: 50vh;
+}
+
+@media (max-width: 991.98px) {
+  .vh-100,
+.vh-50 {
+    height: auto !important;
+  }
+}
+.big-title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: clamp(2rem, 1.4655rem + 0.8621vw, 2.5rem);
+  text-shadow: 0px 3px 6px rgba(61, 91, 142, 0.3019607843);
+}
+
+.slogan {
+  font-size: clamp(1rem, 0.4655rem + 0.8621vw, 1.5rem);
+  color: white;
+}
+
 .span-lg {
   color: #5493FF;
   font-size: 1.25rem;
@@ -156,6 +179,22 @@ body {
   font-style: normal;
 }
 
+.h-sec {
+  color: #5493FF;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: clamp(2rem, 3vw, 3.8rem);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 991.98px) {
+  .h-sec {
+    font-size: 1.75rem;
+    margin-block: 2rem;
+  }
+}
 .navbar {
   height: 9vh;
   padding-top: 1.3rem;
@@ -371,6 +410,41 @@ body {
   box-shadow: none !important;
 }
 
+.btn-devis,
+.btn-brochure {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  white-space: nowrap;
+  width: 45%;
+  border-radius: 3rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.0784313725);
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.btn-devis {
+  color: #3D5B8E;
+  background-color: #FFCF54;
+}
+.btn-devis:hover {
+  color: #3D5B8E;
+  box-shadow: none !important;
+  outline: 2px solid #3D5B8E;
+}
+
+.btn-brochure {
+  color: white;
+  background-color: #3D5B8E;
+}
+.btn-brochure:hover {
+  color: white;
+  box-shadow: none !important;
+  outline: 2px solid white;
+}
+
 .mycard {
   border: none;
   backdrop-filter: blur(5px);
@@ -507,7 +581,7 @@ body {
 }
 
 /* --------------- Header ---------------  */
-.bg-header {
+.header-index {
   background-image: url("../images/bg-header@x2.png");
   background-position: top;
   background-repeat: no-repeat;
@@ -529,19 +603,6 @@ body {
   opacity: 0;
   cursor: pointer;
   transition: opacity 0.4s ease-in-out 0s;
-}
-
-.big-title {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  font-size: clamp(2rem, 1.4655rem + 0.8621vw, 2.5rem);
-  text-shadow: 0px 3px 6px rgba(61, 91, 142, 0.3019607843);
-}
-
-.slogan {
-  font-size: clamp(1rem, 0.4655rem + 0.8621vw, 1.5rem);
-  color: white;
 }
 
 .img-header {
@@ -775,7 +836,7 @@ body {
     min-width: unset;
   }
 
-  .bg-header {
+  .header-index {
     background-image: url("../images/bg-header-mobile2x.png");
     background-position: top;
     background-repeat: no-repeat;
@@ -802,30 +863,17 @@ body {
   }
 }
 /* ----------------- section 1 ------------------- */
-.bg-section-1 {
+.section-index-1 {
   background-image: url("../images/svg/bg-section-1.svg"), url("../images/svg/bg-trace-section1.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: bottom center, right 40%;
   background-size: contain, 23vw;
 }
 
-.h-sec {
-  color: #5493FF;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  font-size: clamp(2rem, 3vw, 3.8rem);
-  margin-bottom: 4rem;
-}
-
 .card-container {
   width: 100%;
   height: 51vh;
   max-height: 60vh;
-}
-
-.row-content {
-  height: 100vh;
 }
 
 .card-steps .card-title {
@@ -869,7 +917,7 @@ body {
 }
 
 @media (max-width: 991.98px) {
-  .bg-section-1 {
+  .section-index-1 {
     /* background-color: $light-color; */
     background-image: url("../images/svg/bg-section-1.svg"), url("../images/svg/bg-trace-sec1-mobile.svg");
     background-repeat: no-repeat;
@@ -890,15 +938,6 @@ body {
     left: 17%;
   }
 
-  .h-sec {
-    font-size: 1.75rem;
-    margin-block: 2rem;
-  }
-
-  .row-content {
-    height: auto;
-  }
-
   .card-container {
     padding: 1rem;
     height: auto;
@@ -915,7 +954,7 @@ body {
   }
 }
 /* ----------------- section 2 -------------------  */
-.bg-section-2 {
+.section-index-2 {
   background-image: url("../images/svg/bg-trace-section2.svg");
   background-repeat: no-repeat;
   background-position: left 70%;
@@ -975,7 +1014,7 @@ body {
   }
 }
 @media (max-width: 767.98px) {
-  .bg-section-2 {
+  .section-index-2 {
     background-image: url("../images/svg/bg-trace-sec2-mobile.svg"), url("../images/svg/bg-trace2-sec2-mobile.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: -12vw 60%, 65vw 110%;
@@ -993,15 +1032,11 @@ body {
   }
 }
 /* ---------------- footer -------------- */
-.bg-footer {
+.footer-section {
   background-image: url("../images/bg-footer@2x.png");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 100% 65%;
-}
-
-.vh-50 {
-  height: 50vh;
 }
 
 .p-footer {
@@ -1012,16 +1047,16 @@ body {
   /* margin-bottom: 4rem; */
 }
 
-.bg-footer .swiper {
+.footer-section .swiper {
   padding-left: 4rem !important;
   padding-right: 4rem !important;
 }
-.bg-footer .swiper-button-next,
-.bg-footer .swiper-button-prev {
+.footer-section .swiper-button-next,
+.footer-section .swiper-button-prev {
   width: auto !important;
 }
-.bg-footer .swiper-button-next::after,
-.bg-footer .swiper-button-prev::after {
+.footer-section .swiper-button-next::after,
+.footer-section .swiper-button-prev::after {
   content: "" !important;
 }
 
@@ -1084,10 +1119,6 @@ body {
   }
   .row-footer .nav-link {
     font-size: 0.7rem;
-  }
-
-  .vh-50 {
-    height: auto;
   }
 
   .footer-bottom svg {
@@ -2747,7 +2778,7 @@ body {
 }
 .section-rejoindre-2 .form-rejoindre .form-control,
 .section-rejoindre-2 .form-rejoindre .form-select {
-  color: #5493FF;
+  color: #7DB1FF;
   font-weight: 600;
   font-size: 1.25rem;
   padding: 1rem 1.75rem;
@@ -2772,14 +2803,107 @@ body {
   background-size: 25px 14px;
   cursor: pointer;
 }
+.section-rejoindre-2 .form-rejoindre input[type=date] {
+  cursor: text;
+}
 .section-rejoindre-2 .form-rejoindre .btn-submit {
   padding: 1rem 1.75rem;
   display: block;
   width: 100%;
 }
 
-.bg-footer.custom-footer {
+.footer-section.custom-footer {
   background-size: 100% 100%;
+}
+
+.header-prof {
+  background-image: url("../images/bg-header-prof-2.png"), url("../images/bg-header-prof@2x.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right -268px center, top center;
+  background-size: contain, 100% 90%;
+}
+.header-prof .big-title {
+  font-size: clamp(2.5rem, 2rem + 2vw, 4rem);
+}
+.header-prof .span-lg {
+  color: white;
+}
+.header-prof .slogan {
+  color: #3D5B8E;
+  font-weight: 600;
+}
+
+.section-prof-1 .h-sec {
+  color: #3D5B8E;
+  text-align: center;
+}
+.section-prof-1 .div-wrapper-hexagone {
+  position: relative;
+  width: 453px;
+  height: 679px;
+}
+.section-prof-1 .div-wrapper-hexagone .div-hexagone {
+  position: absolute;
+  display: inline-block;
+  width: 200px;
+  color: #7DB1FF;
+  filter: url(#round);
+  cursor: pointer;
+}
+.section-prof-1 .div-wrapper-hexagone .div-hexagone:before {
+  content: "";
+  display: block;
+  padding-top: 86.6%;
+  background: currentColor;
+  clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
+  transition: 0.2s background-color ease-in, 0.2s transform ease-in;
+}
+.section-prof-1 .div-wrapper-hexagone .div-hexagone a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+.section-prof-1 .div-wrapper-hexagone .div-hexagone:hover::before {
+  background-color: #FFCF54;
+  transform: scale(1.2, 1.2);
+}
+.section-prof-1 .div-wrapper-hexagone .start-23 {
+  left: -23% !important;
+}
+.section-prof-1 .div-wrapper-hexagone .active-hexagone {
+  width: 360px;
+  position: absolute;
+  display: inline-block;
+  color: #7DB1FF;
+  filter: url(#round);
+}
+.section-prof-1 .div-wrapper-hexagone .active-hexagone:before {
+  content: "";
+  display: block;
+  padding-top: 86.6%;
+  background: currentColor;
+  clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
+}
+.section-prof-1 .div-wrapper-hexagone .active-hexagone a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+.section-prof-1 .div-wrapper-hexagone .border-hexagone {
+  width: 380px;
+  position: absolute;
+  display: inline-block;
+  color: #3D5B8E;
+  filter: url(#round) drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.3));
+}
+.section-prof-1 .div-wrapper-hexagone .border-hexagone:before {
+  content: "";
+  display: block;
+  padding-top: 86.6%;
+  background: currentColor;
+  clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
 }
 
 /*# sourceMappingURL=styles.css.map */

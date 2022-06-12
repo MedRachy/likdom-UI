@@ -24,3 +24,13 @@
 .mt-6r {
     margin-top: 6rem !important;
 }
+.vh-50 {
+    height: 50vh;
+}
+
+@media (max-width: 991.98px) {
+    .vh-100 ,
+    .vh-50 {
+        height: auto !important;
+    }
+}

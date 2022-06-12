@@ -1,8 +1,38 @@
 @use '../abstracts' as * ;
 
+.big-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: clamp(2rem, 1.4655rem + 0.8621vw, 2.5rem); 
+    text-shadow: 0px 3px 6px #3D5B8E4D;
+}
+
+.slogan {
+    font-size: clamp(1rem, 0.4655rem + 0.8621vw, 1.5rem);
+    color: $light-color;
+}
+
 .span-lg {
     color: $color-1;
     font-size: 1.25rem;
     font-weight: 600;
     font-style: normal;
+}
+
+.h-sec {
+    color: $color-1;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: clamp(2rem , 3vw , 3.8rem);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+@media (max-width: 991.98px) {
+    .h-sec {
+        font-size: 1.75rem;
+        margin-block: 2rem;
+    }
 }

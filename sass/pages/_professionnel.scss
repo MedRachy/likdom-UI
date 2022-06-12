@@ -1,0 +1,98 @@
+@use '../abstracts' as *;
+
+.header-prof {
+    background-image: url("../images/bg-header-prof-2.png") , url("../images/bg-header-prof@2x.png") ;
+    background-repeat: no-repeat , no-repeat;
+    background-position: right -268px center , top center;
+    background-size: contain , 100% 90% ;
+    .big-title {
+        font-size: clamp(2.5rem, 2rem + 2vw, 4rem);
+    }
+    .span-lg {
+        color: $light-color;
+    }
+    .slogan {
+        color: $color-2;
+        font-weight: 600;
+    }
+}
+
+.section-prof-1 {
+    .h-sec {
+        color: $color-2;
+        text-align: center;
+    }
+    .div-wrapper-hexagone {
+        // outline: 2px solid black;
+        position: relative;
+        width: 453px;
+        height: 679px;
+        .div-hexagone {
+            position: absolute;
+            display:inline-block;
+            width:200px;
+            // height: 200px;
+            color:$color-3;
+            filter:url(#round);
+            cursor: pointer;
+            &:before {
+                content:"";
+                display:block;
+                padding-top:86.6%;
+                background:currentColor;
+                clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
+                transition: .2s background-color ease-in , .2s transform ease-in;
+            }
+            a {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%)!important;
+            }
+            &:hover {
+                &::before {
+                    background-color: #FFCF54;
+                    transform: scale(1.2 , 1.2);
+                }
+            }
+        }
+        .start-23 {
+            left: -23% !important;
+        }
+        .active-hexagone {
+            width: 360px;
+            position: absolute;
+            display:inline-block;
+            color: $color-3;
+            filter:url(#round);
+            &:before {
+                content:"";
+                display:block;
+                padding-top:86.6%;
+                background:currentColor;
+                clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
+            }
+            a {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%)!important;
+            }
+        }
+        // dublicate the svg filter to create a border for the hexagone  
+        .border-hexagone {
+            width: 380px;
+            position: absolute;
+            display:inline-block;
+            color: $color-2;
+            filter:url(#round)  drop-shadow(0px 6px 10px rgba(0, 0, 0 , 0.3));
+            &:before {
+                content:"";
+                display:block;
+                padding-top:86.6%;
+                background:currentColor;
+                clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
+            }
+        }
+    }
+}
