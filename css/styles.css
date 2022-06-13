@@ -2858,7 +2858,9 @@ body {
   clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
   transition: 0.2s background-color ease-in, 0.2s transform ease-in;
 }
-.section-prof-1 .div-wrapper-hexagone .div-hexagone a {
+.section-prof-1 .div-wrapper-hexagone .div-hexagone span {
+  color: white;
+  display: inline-block;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2885,12 +2887,6 @@ body {
   background: currentColor;
   clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
 }
-.section-prof-1 .div-wrapper-hexagone .active-hexagone a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) !important;
-}
 .section-prof-1 .div-wrapper-hexagone .border-hexagone {
   width: 380px;
   position: absolute;
@@ -2904,6 +2900,35 @@ body {
   padding-top: 86.6%;
   background: currentColor;
   clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
+}
+.section-prof-1 .service-info-hexa {
+  width: 500px;
+  position: relative;
+}
+.section-prof-1 .service-info-hexa img {
+  width: 100%;
+}
+.section-prof-1 .service-info-hexa .service-info {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 56%;
+  transform: translate(-50%, -50%) !important;
+}
+.section-prof-1 .service-info-hexa .service-info h4 {
+  text-align: center;
+  color: #5493FF;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.section-prof-1 .service-info-hexa .service-info p {
+  text-align: justify;
+  color: #3D5B8E;
+}
+
+.section-prof-2 .h-sec {
+  color: #3D5B8E;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

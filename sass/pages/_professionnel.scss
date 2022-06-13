@@ -43,7 +43,9 @@
                 clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
                 transition: .2s background-color ease-in , .2s transform ease-in;
             }
-            a {
+            span {
+                color: white;
+                display: inline-block;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -72,12 +74,6 @@
                 background:currentColor;
                 clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
             }
-            a {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%)!important;
-            }
         }
         // dublicate the svg filter to create a border for the hexagone  
         .border-hexagone {
@@ -94,5 +90,46 @@
                 clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
             }
         }
+    }
+    .service-info-hexa {
+        width: 500px;
+        position: relative;
+        // filter:url(#round)  drop-shadow(0px 6px 10px rgba(0, 0, 0 , 0.3));
+        // &:before {
+        //     content:"";
+        //     display:block;
+        //     padding-top:86.6%;
+        //     background:$light-color;
+        //     clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
+        // }
+        img {
+            width: 100%;
+        }
+        .service-info {
+            // width: 100%;
+            // outline: 2px solid black;
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 56%;
+            transform: translate(-50%,-50%)!important;
+            h4 {
+                text-align: center;
+                color: $color-1;
+                font-weight: bold;
+                font-size: 1.25rem;
+            }
+            p {
+                text-align: justify;
+                color: $color-2;
+            }
+        }
+    }
+}
+
+.section-prof-2 {
+    .h-sec {
+        color: $color-2;
+        text-align: center;
     }
 }

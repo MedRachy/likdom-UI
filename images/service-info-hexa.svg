@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="835.5" height="855" viewBox="0 0 835.5 855">
+  <defs>
+    <filter id="Polygone_51" x="90.5" y="0" width="745" height="855" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-color="#5493ff" flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Hexa_with_line_info" data-name="Hexa with line info" transform="translate(-886.5 -2251)">
+    <g transform="matrix(1, 0, 0, 1, 886.5, 2251)" filter="url(#Polygone_51)">
+      <path id="Polygone_51-2" data-name="Polygone 51" d="M582.187,0A40,40,0,0,1,616.8,19.96L795.4,328.46a40,40,0,0,1,0,40.081L616.8,677.04A40,40,0,0,1,582.187,697H224.813A40,40,0,0,1,190.2,677.04L11.6,368.54a40,40,0,0,1,0-40.081L190.2,19.96A40,40,0,0,1,224.813,0Z" transform="translate(811.5 14) rotate(90)" fill="#fff"/>
+    </g>
+    <line id="Ligne_57" data-name="Ligne 57" x2="92" transform="translate(887.5 2675.5)" fill="none" stroke="#5493ff" stroke-linecap="round" stroke-width="2"/>
+    <g id="Ellipse_161" data-name="Ellipse 161" transform="translate(976 2668)" fill="#f7faff" stroke="#5493ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <circle cx="7" cy="7" r="7" stroke="none"/>
+      <circle cx="7" cy="7" r="6" fill="none"/>
+    </g>
+  </g>
+</svg>
