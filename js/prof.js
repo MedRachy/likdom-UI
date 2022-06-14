@@ -4,6 +4,9 @@ $(".div-hexagone").on("click", function () {
   // switch data-attribut
   $(".active-hexagone").attr("data-service", service);
   $(this).attr("data-service", service_shown);
+  // update div hexa img
+  $(this).removeClass("img-" + service);
+  $(this).addClass("img-" + service_shown);
   // update span text
   span = $(this).children();
   span.text(service_shown);

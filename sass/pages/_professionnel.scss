@@ -31,16 +31,14 @@
             position: absolute;
             display:inline-block;
             width:200px;
-            // height: 200px;
-            color:$color-3;
             filter:url(#round);
             cursor: pointer;
             &:before {
                 content:"";
                 display:block;
                 padding-top:86.6%;
-                background:currentColor;
                 clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
+                filter: brightness(0.6);
                 transition: .2s background-color ease-in , .2s transform ease-in;
             }
             span {
@@ -53,7 +51,7 @@
             }
             &:hover {
                 &::before {
-                    background-color: #FFCF54;
+                    filter: brightness(1);
                     transform: scale(1.2 , 1.2);
                 }
             }
@@ -65,13 +63,11 @@
             width: 360px;
             position: absolute;
             display:inline-block;
-            color: $color-3;
             filter:url(#round);
             &:before {
                 content:"";
                 display:block;
                 padding-top:86.6%;
-                background:currentColor;
                 clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
             }
         }
@@ -80,7 +76,7 @@
             width: 380px;
             position: absolute;
             display:inline-block;
-            color: $color-2;
+            color: $color-1;
             filter:url(#round)  drop-shadow(0px 6px 10px rgba(0, 0, 0 , 0.3));
             &:before {
                 content:"";
@@ -88,6 +84,55 @@
                 padding-top:86.6%;
                 background:currentColor;
                 clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
+            }
+        }
+
+        .img-nett_vitre {
+            &::before {
+                background-image: url("../images/services/img-nett_vitre.png");
+                background-repeat: no-repeat;
+                background-position: top center;
+                background-size: cover;
+            }
+        }
+        .img-nett_pro {
+            &::before {
+                background-image: url("../images/services/img-nett_pro.png");
+                background-repeat: no-repeat;
+                background-position: top center;
+                background-size: cover;
+            }
+        }
+        .img-cristalisation {
+            &::before {
+                background-image: url("../images/services/img-cristalisation.png");
+                background-repeat: no-repeat;
+                background-position: top center;
+                background-size: cover;
+            }
+        }
+        .img-desinfection {
+            &::before {
+                background-image: url("../images/services/img-desinfection.png");
+                background-repeat: no-repeat;
+                background-position: top center;
+                background-size: cover;
+            }
+        }
+        .img-lavage_sec {
+            &::before {
+                background-image: url("../images/services/img-Lavage_sec.png");
+                background-repeat: no-repeat;
+                background-position: top center;
+                background-size: cover;
+            }
+        }
+        .img-jardinage {
+            &::before {
+                background-image: url("../images/services/img-jardinage.png");
+                background-repeat: no-repeat;
+                background-position: top center;
+                background-size: cover;
             }
         }
     }
