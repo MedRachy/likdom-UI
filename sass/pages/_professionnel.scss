@@ -30,20 +30,23 @@
         .div-hexagone {
             position: absolute;
             display:inline-block;
-            width:200px;
+            width:180px;
             filter:url(#round);
             cursor: pointer;
             &:before {
                 content:"";
                 display:block;
-                padding-top:86.6%;
+                padding-top:200px;
                 clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
                 filter: brightness(0.6);
                 transition: .2s background-color ease-in , .2s transform ease-in;
             }
             span {
-                color: white;
-                display: inline-block;
+                color: $light-color;
+                font-weight: 600;
+                width: fit-content;
+                text-align: center;
+                font-size: 1.1rem;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -57,31 +60,31 @@
             }
         }
         .start-23 {
-            left: -23% !important;
+            left: -12% !important;
         }
         .active-hexagone {
-            width: 360px;
+            width: 280px;
             position: absolute;
             display:inline-block;
             filter:url(#round);
             &:before {
                 content:"";
                 display:block;
-                padding-top:86.6%;
+                padding-top:300px;
                 clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
             }
         }
         // dublicate the svg filter to create a border for the hexagone  
         .border-hexagone {
-            width: 380px;
+            width: 300px;
             position: absolute;
             display:inline-block;
             color: $color-1;
-            filter:url(#round)  drop-shadow(0px 6px 10px rgba(0, 0, 0 , 0.3));
+            filter:url(#round)  drop-shadow(0px 4px 6px rgba(0, 0, 0 , 0.2));
             &:before {
                 content:"";
                 display:block;
-                padding-top:86.6%;
+                padding-top:320px;
                 background:currentColor;
                 clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
             }
@@ -139,20 +142,11 @@
     .service-info-hexa {
         width: 500px;
         position: relative;
-        // filter:url(#round)  drop-shadow(0px 6px 10px rgba(0, 0, 0 , 0.3));
-        // &:before {
-        //     content:"";
-        //     display:block;
-        //     padding-top:86.6%;
-        //     background:$light-color;
-        //     clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
-        // }
         img {
             width: 100%;
         }
         .service-info {
-            // width: 100%;
-            // outline: 2px solid black;
+            width: 60%;
             display: none;
             position: absolute;
             top: 50%;
@@ -162,19 +156,83 @@
                 text-align: center;
                 color: $color-1;
                 font-weight: bold;
-                font-size: 1.25rem;
+                // font-size: 1.25rem;
             }
             p {
                 text-align: justify;
                 color: $color-2;
+            }
+            h5 {
+                color: $color-1;
+                font-weight: 600;
+                margin: 0 !important;
             }
         }
     }
 }
 
 .section-prof-2 {
+    box-shadow: 0px -6px 6px 10px #5493ff0a;
     .h-sec {
         color: $color-2;
         text-align: center;
+        margin-top: 4rem;
+    }
+    
+    .service-prof-card {
+        cursor: pointer;
+        transition: .2s background-color  ease-in;
+        h4 {
+            color: $color-1;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            font-size: 1.25rem;
+            text-align: center;
+        }
+        svg {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            color: $color-2;
+            text-align: center;
+            font-weight: 600;
+        }
+        .plus-info-link {
+            a {
+                text-decoration: none;
+                color: $color-1;
+                font-weight: bold;
+                transition: .2s transform ease-in ;
+            }   
+            img {
+                max-width: 35px;
+                transition: .2s transform ease-in ;
+            }         
+        }
+        &:hover {
+            background-color: #E6F7FF;
+            box-shadow: 0px 4px 12px rgba(61, 91, 142, 0.1);
+            .svg-circle {
+                fill: transparent;
+                transition: .2s fill ease-in ;
+            }
+            .svg-icon {
+                fill: $color-1;
+                transition: .2s fill ease-in ;
+            }
+            .svg-eco-icon {
+                fill: $light-color;
+                transition: .2s fill ease-in ;
+            }
+            .plus-info-link {
+                a {
+                    transform: translateX(-10%) ;
+                }
+                img {
+                    transform: translateX(10%) ;
+                }
+            }
+        }
     }
 }

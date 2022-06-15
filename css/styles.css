@@ -528,6 +528,13 @@ body {
   outline: 2px #5493FF solid;
 }
 
+.card-simple {
+  padding: 1.75rem;
+  border-radius: 1.25rem;
+  box-shadow: 0px 2px 6px rgba(84, 147, 255, 0.3);
+  background-color: rgb(255, 255, 255);
+}
+
 .form-step-wrapper .form-step::-webkit-scrollbar,
 .mycard-lg .mycard-lg-body::-webkit-scrollbar,
 .row.overflow-auto::-webkit-scrollbar,
@@ -2845,21 +2852,24 @@ body {
 .section-prof-1 .div-wrapper-hexagone .div-hexagone {
   position: absolute;
   display: inline-block;
-  width: 200px;
+  width: 180px;
   filter: url(#round);
   cursor: pointer;
 }
 .section-prof-1 .div-wrapper-hexagone .div-hexagone:before {
   content: "";
   display: block;
-  padding-top: 86.6%;
+  padding-top: 200px;
   clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
   filter: brightness(0.6);
   transition: 0.2s background-color ease-in, 0.2s transform ease-in;
 }
 .section-prof-1 .div-wrapper-hexagone .div-hexagone span {
   color: white;
-  display: inline-block;
+  font-weight: 600;
+  width: fit-content;
+  text-align: center;
+  font-size: 1.1rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2870,10 +2880,10 @@ body {
   transform: scale(1.2, 1.2);
 }
 .section-prof-1 .div-wrapper-hexagone .start-23 {
-  left: -23% !important;
+  left: -12% !important;
 }
 .section-prof-1 .div-wrapper-hexagone .active-hexagone {
-  width: 360px;
+  width: 280px;
   position: absolute;
   display: inline-block;
   filter: url(#round);
@@ -2881,20 +2891,20 @@ body {
 .section-prof-1 .div-wrapper-hexagone .active-hexagone:before {
   content: "";
   display: block;
-  padding-top: 86.6%;
+  padding-top: 300px;
   clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
 }
 .section-prof-1 .div-wrapper-hexagone .border-hexagone {
-  width: 380px;
+  width: 300px;
   position: absolute;
   display: inline-block;
   color: #5493FF;
-  filter: url(#round) drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.3));
+  filter: url(#round) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
 }
 .section-prof-1 .div-wrapper-hexagone .border-hexagone:before {
   content: "";
   display: block;
-  padding-top: 86.6%;
+  padding-top: 320px;
   background: currentColor;
   clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);
 }
@@ -2942,6 +2952,7 @@ body {
   width: 100%;
 }
 .section-prof-1 .service-info-hexa .service-info {
+  width: 60%;
   display: none;
   position: absolute;
   top: 50%;
@@ -2952,16 +2963,76 @@ body {
   text-align: center;
   color: #5493FF;
   font-weight: bold;
-  font-size: 1.25rem;
 }
 .section-prof-1 .service-info-hexa .service-info p {
   text-align: justify;
   color: #3D5B8E;
 }
+.section-prof-1 .service-info-hexa .service-info h5 {
+  color: #5493FF;
+  font-weight: 600;
+  margin: 0 !important;
+}
 
+.section-prof-2 {
+  box-shadow: 0px -6px 6px 10px rgba(84, 147, 255, 0.0392156863);
+}
 .section-prof-2 .h-sec {
   color: #3D5B8E;
   text-align: center;
+  margin-top: 4rem;
+}
+.section-prof-2 .service-prof-card {
+  cursor: pointer;
+  transition: 0.2s background-color ease-in;
+}
+.section-prof-2 .service-prof-card h4 {
+  color: #5493FF;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.section-prof-2 .service-prof-card svg {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.section-prof-2 .service-prof-card p {
+  color: #3D5B8E;
+  text-align: center;
+  font-weight: 600;
+}
+.section-prof-2 .service-prof-card .plus-info-link a {
+  text-decoration: none;
+  color: #5493FF;
+  font-weight: bold;
+  transition: 0.2s transform ease-in;
+}
+.section-prof-2 .service-prof-card .plus-info-link img {
+  max-width: 35px;
+  transition: 0.2s transform ease-in;
+}
+.section-prof-2 .service-prof-card:hover {
+  background-color: #E6F7FF;
+  box-shadow: 0px 4px 12px rgba(61, 91, 142, 0.1);
+}
+.section-prof-2 .service-prof-card:hover .svg-circle {
+  fill: transparent;
+  transition: 0.2s fill ease-in;
+}
+.section-prof-2 .service-prof-card:hover .svg-icon {
+  fill: #5493FF;
+  transition: 0.2s fill ease-in;
+}
+.section-prof-2 .service-prof-card:hover .svg-eco-icon {
+  fill: white;
+  transition: 0.2s fill ease-in;
+}
+.section-prof-2 .service-prof-card:hover .plus-info-link a {
+  transform: translateX(-10%);
+}
+.section-prof-2 .service-prof-card:hover .plus-info-link img {
+  transform: translateX(10%);
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -9,7 +9,7 @@ $(".div-hexagone").on("click", function () {
   $(this).addClass("img-" + service_shown);
   // update span text
   span = $(this).children();
-  span.text(service_shown);
+  span.text(text_formater(service_shown));
   // update active service
   update_active_service(service, service_shown);
 });
@@ -21,4 +21,25 @@ function update_active_service(service, service_shown) {
   // update service info
   $(".service-info").removeClass("d-block");
   $(".service-" + service).addClass("d-block");
+}
+
+function text_formater(service_shown) {
+  if (service_shown == "cristalisation") {
+    return "Cristalisation";
+  }
+  if (service_shown == "nett_vitre") {
+    return "Nettoyage vitre de façade";
+  }
+  if (service_shown == "lavage_sec") {
+    return "Lavage à sec";
+  }
+  if (service_shown == "desinfection") {
+    return "Désinfection";
+  }
+  if (service_shown == "jardinage") {
+    return "Jardinage";
+  }
+  if (service_shown == "nett_pro") {
+    return "Nettoyage Pro";
+  }
 }
