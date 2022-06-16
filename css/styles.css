@@ -3035,4 +3035,51 @@ body {
   transform: translateX(10%);
 }
 
+.header-devis {
+  background-color: #5493FF;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 550px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.form-wrapper h4 {
+  margin-bottom: 2rem;
+}
+.form-wrapper .input-group {
+  background-color: white;
+  padding: 1rem 1.75rem;
+  border-radius: 1.25rem !important;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15) !important;
+}
+.form-wrapper .input-group .form-control,
+.form-wrapper .input-group .form-control:focus,
+.form-wrapper .input-group .form-select {
+  border: none;
+  box-shadow: none;
+}
+.form-wrapper .form-check label {
+  font-size: 1rem;
+  color: #3D5B8E;
+  font-weight: 600;
+}
+.form-wrapper .form-check .form-check-input {
+  border: 2px solid #5493FF;
+}
+.form-wrapper .form-check .form-check-input:checked {
+  background-color: #5493FF;
+  border-color: white;
+  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.1);
+}
+.form-wrapper .form-check .form-check-input:focus {
+  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.1);
+}
+.form-wrapper .btn-submit {
+  padding: 1rem 1.75rem;
+  display: block;
+  width: 100%;
+}
+
 /*# sourceMappingURL=styles.css.map */
