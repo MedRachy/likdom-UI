@@ -179,6 +179,15 @@ body {
   font-style: normal;
 }
 
+.h4-title {
+  color: #3D5B8E;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.75rem;
+}
+
 .h-sec {
   color: #5493FF;
   font-family: "Ubuntu", sans-serif;
@@ -443,6 +452,14 @@ body {
   color: white;
   box-shadow: none !important;
   outline: 2px solid white;
+}
+
+.btn-action {
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 1.25rem;
+  background-color: white;
+  padding: 0.5rem 1.75rem;
 }
 
 .mycard {
@@ -2710,6 +2727,67 @@ body {
     max-height: 21px;
   }
 }
+.section-espace-reserv {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.section-espace-reserv .span-date {
+  display: block;
+  color: #7DB1FF;
+  font-weight: 600;
+  text-align: start;
+  margin-left: 1rem;
+}
+.section-espace-reserv .span-prix {
+  color: #7395CF;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.section-espace-reserv .span-statut {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.section-espace-reserv .span-link a {
+  color: #3D5B8E !important;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+.section-espace-reserv .span-link img {
+  margin-left: 0.7rem;
+  vertical-align: inherit;
+}
+.section-espace-reserv .statut_en_attente {
+  border: 3px solid #FFCF54;
+}
+.section-espace-reserv .statut_en_attente .span-statut {
+  color: #FFCF54;
+}
+.section-espace-reserv .statut_en_attente .btn-action {
+  border: 2px solid #FF6187;
+  color: #FF6187;
+}
+.section-espace-reserv .statut_terminer {
+  border: 3px solid #7DB1FF;
+}
+.section-espace-reserv .statut_terminer .span-statut {
+  color: #7DB1FF;
+}
+.section-espace-reserv .statut_terminer .btn-action {
+  border: 2px solid #5493FF;
+  color: #5493FF;
+}
+.section-espace-reserv .statut_annuler {
+  border: 3px solid #FF6187;
+}
+.section-espace-reserv .statut_annuler .span-statut {
+  color: #FF6187;
+}
+.section-espace-reserv .statut_annuler .btn-action {
+  border: 2px solid #5493FF;
+  color: #5493FF;
+}
+
 .header-rejoindre {
   background-image: url("../images/bg-header-rejoindre@2x.png");
   background-position: top;

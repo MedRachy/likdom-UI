@@ -90,3 +90,12 @@
         outline: 2px solid $light-color;
     }
 }
+
+.btn-action {
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 1.25rem;
+    background-color: $light-color;
+    padding: 0.5rem 1.75rem;
+    // transition: box-shadow .15s ease-in-out ;
+}

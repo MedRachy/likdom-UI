@@ -236,3 +236,71 @@
     }
 
 }
+
+// ----------------- Espace Reservation ---------------- //
+
+.section-espace-reserv {
+    // max-width: 550px;
+    // width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    .span-date {
+        display: block;
+        color: $color-3;
+        font-weight: 600;
+        text-align: start;
+        margin-left: 1rem;
+    }
+    .span-prix {
+        color: #7395CF;
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+    .span-statut {
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+    .span-link {
+        a {
+            color: $color-2 !important;
+            font-weight: 600;
+            text-decoration: none !important;
+        }    
+        img {
+            margin-left: 0.7rem;
+            vertical-align: inherit;
+        }    
+    } 
+
+    .statut_en_attente {
+        border: 3px solid #FFCF54 ;
+        .span-statut {
+            color: #FFCF54 ;
+        }
+        .btn-action {
+            border: 2px solid $color-10;
+            color: $color-10;
+        }
+    }
+    .statut_terminer {
+        border: 3px solid $color-3 ;
+        .span-statut {
+            color: $color-3 ;
+        }
+        .btn-action {
+            border: 2px solid $color-1;
+            color: $color-1;
+        }
+    }
+    .statut_annuler {
+        border: 3px solid $color-10 ;
+        .span-statut {
+            color: $color-10 ;
+        }
+        .btn-action {
+            border: 2px solid $color-1;
+            color: $color-1;
+        }
+    }
+}
