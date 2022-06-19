@@ -39,6 +39,16 @@
     margin-bottom: 4rem;
 }
 
+.link-goback {
+    text-decoration: none;
+    color: $color-2;
+    font-size: 1.25rem;
+    font-weight: 600;
+    &:hover {
+        color: $color-1;
+    }
+}
+
 @media (max-width: 991.98px) {
     .h-sec {
         font-size: 1.75rem;

@@ -100,9 +100,11 @@
             </div>
         </nav>
         <div class="container height-91 d-flex flex-column">
+            <a href="./compte.html" class="link-goback"> <i class="fa fa-chevron-left me-1"></i> Mon compte</a>
             <div class="row overflow-auto py-6 flex-grow-1">
-                <div class="col-lg-5 offset-lg-3 section-espace-reserv">
-                    <h4 class="h4-title mb-4">Espace réservation</h4>
+                <div class="col-lg-6 offset-lg-2 section-espace-reserv">
+
+                    <h4 class="h4-title mb-4">Mes réservations</h4>
                     <div class="card-simple statut_en_attente mb-4">
                         <div class="d-flex justify-content-between mb-3">
                             <span class="span-lg">Ménage Simple</span>
@@ -120,19 +122,51 @@
                             <span class="span-statut">En attente</span>
                         </div>
                         <div class="d-flex align-items-center justify-content-between">
-                            <span class="span-link">
-                                <a data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false"
-                                    aria-controls="collapseExample">Détails de la
-                                    réservation</a>
+                            <a class="span-link collapsed" data-bs-toggle="collapse" href="#collapse-1"
+                                aria-expanded="false" aria-controls="collapse-1">Détails de la
+                                réservation
                                 <img src="./images/svg/arrow-down-blue2.svg" alt="">
-                            </span>
-
+                            </a>
                             <button class="btn-action">Annuler</button>
                         </div>
-                        <div class="collapse" id="collapseExample">
-                            <div class="card card-body">
-                                Some placeholder content for the collapse component. This panel is hidden by default but
-                                revealed when the user activates the relevant trigger.
+                        <div class="collapse row row-cols-md-2 row-cols-lg-3 g-2" id="collapse-1">
+                            <div class="col">
+                                <ul class="list-group list-group-flush ul-pieces">
+                                    <h6>Appartement</h6>
+                                    <li class="list-group-item d-flex align-items-center">
+                                        <span class="flex-grow-1 text-start">Chambre</span>
+                                        <span>3</span>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center">
+                                        <span class="flex-grow-1 text-start">Cuisine</span>
+                                        <span>1</span>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center">
+                                        <span class="flex-grow-1 text-start">Toilette</span>
+                                        <span>2</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul class="list-group list-group-flush ul-pieces">
+                                    <h6>Nettoyants </h6>
+                                    <li class="list-group-item list-group-flush text-start">
+                                        <span>Marbre</span>
+                                    </li>
+                                    <li class="list-group-item list-group-flush text-start">
+                                        <span>Cuire</span>
+                                    </li>
+                                    <li class="list-group-item list-group-flush text-start">
+                                        <span>Parquet</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul class="list-group list-group-flush ul-pieces">
+                                    <h6>Equipements</h6>
+                                    <li class="list-group-item list-group-flush text-start"><span>Aspirateur</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -153,8 +187,24 @@
                             <span class="span-statut">Terminer</span>
                         </div>
                         <div class="d-flex align-items-center justify-content-between">
-                            <span class="span-link"><a href="">Détails de la réservation</a></span>
+                            <a class="span-link collapsed" data-bs-toggle="collapse" href="#collapse-2"
+                                aria-expanded="false" aria-controls="collapse-2">Détails de la
+                                réservation
+                                <img src="./images/svg/arrow-down-blue2.svg" alt="">
+                            </a>
                             <button class="btn-action">Repeter</button>
+                        </div>
+                        <div class="collapse " id="collapse-2">
+                            <ul class="list-group list-group-flush ul-pieces">
+                                <h6>Superficie : 25m</h6>
+                                <span class="text-muted text-start">Type surface :</span>
+                                <li class="list-group-item list-group-flush text-start">
+                                    <span>Marbre</span>
+                                </li>
+                                <li class="list-group-item list-group-flush text-start">
+                                    <span>Cuire</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="card-simple statut_annuler mb-4">
@@ -174,8 +224,15 @@
                             <span class="span-statut">Annuler</span>
                         </div>
                         <div class="d-flex align-items-center justify-content-between">
-                            <span class="span-link"><a href="">Détails de la réservation</a></span>
+                            <a class="span-link collapsed" data-bs-toggle="collapse" href="#collapse-3"
+                                aria-expanded="false" aria-controls="collapse-3">Détails de la
+                                réservation
+                                <img src="./images/svg/arrow-down-blue2.svg" alt="">
+                            </a>
                             <button class="btn-action">Repeter</button>
+                        </div>
+                        <div class="collapse row row-cols-md-2 row-cols-lg-3 g-2" id="collapse-3">
+                            <!-- présentation nett_sec -->
                         </div>
                     </div>
                 </div>
@@ -184,14 +241,18 @@
                 <div class="col-12">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-center py-4">
-                            <li class="page-item disabled">
-                                <a class="page-link">Previous</a>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
                             </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
                             <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
                             </li>
                         </ul>
                     </nav>

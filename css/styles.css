@@ -198,6 +198,16 @@ body {
   margin-bottom: 4rem;
 }
 
+.link-goback {
+  text-decoration: none;
+  color: #3D5B8E;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.link-goback:hover {
+  color: #5493FF;
+}
+
 @media (max-width: 991.98px) {
   .h-sec {
     font-size: 1.75rem;
@@ -459,7 +469,7 @@ body {
   font-weight: 600;
   border-radius: 1.25rem;
   background-color: white;
-  padding: 0.5rem 1.75rem;
+  padding: 0.3rem 1.75rem;
 }
 
 .mycard {
@@ -1195,13 +1205,6 @@ body {
   font-size: clamp(1rem, 2vw, 1.75rem);
   margin-bottom: 2rem;
   text-align: center;
-}
-
-.link-goback {
-  font-size: 1.25rem;
-  color: #5493FF;
-  font-weight: 600;
-  font-style: normal;
 }
 
 .bg-section {
@@ -2519,6 +2522,11 @@ body {
   background-position: top center;
   background-size: cover;
 }
+.bg-section-login .link-goback,
+.bg-section-compte .link-goback {
+  position: absolute;
+  padding-top: 6vh;
+}
 
 .form-wrapper {
   width: 100%;
@@ -2726,6 +2734,14 @@ body {
     max-width: 10px;
     max-height: 21px;
   }
+  .bg-section-compte .link-goback {
+    padding-top: 0;
+    padding-bottom: 1rem;
+    position: initial;
+  }
+  .bg-section-compte .py-6 {
+    padding-top: 0;
+  }
 }
 .section-espace-reserv {
   margin-right: auto;
@@ -2748,14 +2764,24 @@ body {
   font-weight: 600;
   font-size: 1.25rem;
 }
-.section-espace-reserv .span-link a {
+.section-espace-reserv .span-link {
   color: #3D5B8E !important;
   font-weight: 600;
   text-decoration: none !important;
 }
 .section-espace-reserv .span-link img {
-  margin-left: 0.7rem;
+  max-width: 15px;
+  margin-left: 0.4rem;
   vertical-align: inherit;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg);
+  transition: 0.3s transform ease-in-out;
+}
+.section-espace-reserv .collapsed img {
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  transform: rotate(0);
 }
 .section-espace-reserv .statut_en_attente {
   border: 3px solid #FFCF54;
@@ -2786,6 +2812,13 @@ body {
 .section-espace-reserv .statut_annuler .btn-action {
   border: 2px solid #5493FF;
   color: #5493FF;
+}
+.section-espace-reserv .ul-pieces h6 {
+  text-align: start;
+  font-weight: 600;
+}
+.section-espace-reserv .ul-pieces .list-group-item {
+  padding: 0 !important;
 }
 
 .header-rejoindre {

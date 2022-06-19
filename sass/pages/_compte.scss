@@ -7,6 +7,10 @@
     background-repeat:  no-repeat;
     background-position:  top center;
     background-size: cover;
+    .link-goback {
+        position: absolute;
+        padding-top: 6vh;
+    }
 }
 
 
@@ -232,7 +236,15 @@
                 max-width: 10px;
                 max-height: 21px;
             }
-        }         
+        }    
+        .link-goback {
+            padding-top: 0;
+            padding-bottom: 1rem;
+            position: initial;
+        }     
+        .py-6 {
+            padding-top: 0;
+        }
     }
 
 }
@@ -262,16 +274,24 @@
         font-size: 1.25rem;
     }
     .span-link {
-        a {
-            color: $color-2 !important;
-            font-weight: 600;
-            text-decoration: none !important;
-        }    
+        color: $color-2 !important;
+        font-weight: 600;
+        text-decoration: none !important;
         img {
-            margin-left: 0.7rem;
+            max-width: 15px;
+            margin-left: 0.4rem;
             vertical-align: inherit;
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            transform: rotate(180deg);
+            transition: .3s transform ease-in-out;
         }    
     } 
+    .collapsed img {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        transform: rotate(0);
+    }     
 
     .statut_en_attente {
         border: 3px solid #FFCF54 ;
@@ -301,6 +321,15 @@
         .btn-action {
             border: 2px solid $color-1;
             color: $color-1;
+        }
+    }
+    .ul-pieces {
+        h6 {
+            text-align: start;
+            font-weight: 600;
+        }
+        .list-group-item {
+            padding: 0 !important;
         }
     }
 }
