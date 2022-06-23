@@ -1,10 +1,21 @@
 @use '../abstracts' as *;
 /* ----------------------- section -------------------- */
-.bg-section-recap {
+.section-recap {
     background-image: url("../images/svg/recap-img.svg") , url("../images/svg/bg-etape1.svg");
     background-repeat: no-repeat , no-repeat;
     background-position: 97% 95% , top center;
     background-size: 250px , cover;
+    .btn-confirmer {
+        display: block;
+        padding: 0.65rem 1.5rem;
+        margin-top: 0;
+        width: 80%;
+        max-width: 250px;
+    }
+    .mycard-price {
+        width: 80%;
+        max-width: 500px;
+    }
 }
 
 /* ---------------- recap list --------------- */
@@ -41,11 +52,11 @@
         font-size: 1.25rem;
         text-align: left;
         font-weight: 600;
-        margin-bottom: 1.25rem;
+        margin-bottom: 0.75rem;
     }
     .mycard {
         padding: 1.25rem;
-        font-size: 1.25rem;
+        // font-size: 1.25rem;
         font-weight: 600;
         font-style: normal;
         margin-bottom: 1.25rem;
@@ -60,9 +71,13 @@
             margin-bottom: 1rem;
         }
     }
+    .btn-taches {
+        background-color: $light-color;
+    }
 } 
+.ul-ameublements,
 .ul-pieces {
-    padding: 1.25rem;
+    padding: 0.75rem 0rem;
     h6 {
         color: $color-1;
         text-align: center;
@@ -77,48 +92,87 @@
     }
 }
 
-.colored-card {
-    background: linear-gradient(153deg, #FFCF54 0%, #FCB234 100%) ;
-    border-radius: 141px;
-    padding: 0.7rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    position: relative;
-    .product-icon {
-        background-color: $light-color;
-        border-radius: 50%;
-        padding: 0.8rem;
-    }
-    .product-icon img {
-        max-width: 35px;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    span {
-        flex-grow: 1;
-        color: $light-color!important;
-        margin-bottom: 0!important;
-        text-align: center;
-        font-weight: bold;
-        font-style: italic;
-    }
-    #stars-svg {
-        position: absolute;
-        top: -40px;
-        right: 0;
+.ul-ameublements {
+    li {
+        border-radius: 4rem;
+        &:hover {
+            background-color: #E6F7FF ;
+            .link-action {
+                opacity: 1;
+            }
+        }
+        &:last-child {
+            border-radius: 4rem;
+        }
+        .link-action {
+            text-decoration: none;
+            opacity: 0;
+            margin-left: 0.5rem;
+            svg {
+                width: 25px;
+                height: 25px;
+            }
+        }
     }
 }
 
+.passage-recap {
+    position: relative;
+    .link-action {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        transform: translate(-50%,-50%);
+        svg {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+// .colored-card {
+//     background: linear-gradient(153deg, #FFCF54 0%, #FCB234 100%) ;
+//     border-radius: 141px;
+//     padding: 0.7rem;
+//     margin-top: 1rem;
+//     margin-bottom: 1rem;
+//     position: relative;
+//     .product-icon {
+//         background-color: $light-color;
+//         border-radius: 50%;
+//         padding: 0.8rem;
+//     }
+//     .product-icon img {
+//         max-width: 35px;
+//         display: block;
+//         margin-right: auto;
+//         margin-left: auto;
+//     }
+//     span {
+//         flex-grow: 1;
+//         color: $light-color!important;
+//         margin-bottom: 0!important;
+//         text-align: center;
+//         font-weight: bold;
+//         font-style: italic;
+//     }
+//     #stars-svg {
+//         position: absolute;
+//         top: -40px;
+//         right: 0;
+//     }
+// }
+
 .ul-taches {
-    height: 220px;   
-    overflow-y: scroll;
-    background-color: transparent;
-    list-style: disc;
+    // height: 220px;   
+    // overflow-y: scroll;
+    // background-color: transparent;
+    // list-style: disc;
     li {
         color : $color-2;
         font-weight: 600;
         font-size: 0.8rem;
+        padding: 0.2rem 1rem;
         background-color: transparent;
         border: none;
         &::before {
@@ -126,7 +180,11 @@
             margin-right: 0.75rem;
         }
     }
-
+}
+.ul-taches.taches-sup {
+    li {
+        color: $color-1;
+    }
 }
 
 .custom-width {
@@ -142,10 +200,6 @@
     span {
         color: $color-1;
     }
-    .mybutton {
-        padding: 0.65rem 1.5rem;
-        margin-top: 0;
-    }
 }
 .mycard.custom-width {
     border-radius: 50rem!important;
@@ -155,24 +209,23 @@
     font-style: normal;
 }
 
-
-.btn-confirmer {
-    background-color: $color-1;
-    color: $light-color;
-}
-.btn-confirmer:hover {
-    color: $light-color;
-    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-}
-
-.btn-modifier {
-    color: $color-2;
-    border-width: 3px;
-    border-color: $color-2;
-    margin-right: 1.25rem;
-}
-
-.btn-modifier:hover {
-    color: $color-1;
-    box-shadow: inset 0px 0px 5px 0px  rgba(84, 147, 255, 0.5);
+@media (max-width:991.98px) {
+    .ul-ameublements {
+        li {
+            .link-action {
+                opacity: 1;
+            }
+        }
+    }
+    .passage-recap {
+        .link-action {
+            position: initial;
+            transform: translate(0);
+            svg {
+                display: block;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+        }
+    }
 }
