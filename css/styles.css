@@ -2246,20 +2246,20 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 /* ----------------------- section -------------------- */
-.bg-section-recap {
+.section-recap {
   background-image: url("../images/svg/recap-img.svg"), url("../images/svg/bg-etape1.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: 97% 95%, top center;
   background-size: 250px, cover;
 }
-.bg-section-recap .btn-confirmer {
+.section-recap .btn-confirmer {
   display: block;
   padding: 0.65rem 1.5rem;
   margin-top: 0;
   width: 80%;
   max-width: 250px;
 }
-.bg-section-recap .mycard-price {
+.section-recap .mycard-price {
   width: 80%;
   max-width: 500px;
 }
@@ -2298,7 +2298,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 1.25rem;
   text-align: left;
   font-weight: 600;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 .recap-list .mycard {
   padding: 1.25rem;
